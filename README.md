@@ -78,8 +78,8 @@ Your `~/.dotfiles` directory should look like this:
 │       │   └── LICENSE.md
 │       │   └── lua/
 │       │   └── README.md
-│       └── tmux/
-│           └── plugins/
+├── tmux/
+│   └── plugins/
 ├── install.sh
 └── README.md
 ```
