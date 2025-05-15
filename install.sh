@@ -22,3 +22,4 @@ stow zsh
 stow ideavim
 stow p10k
 stow git
+stow config
