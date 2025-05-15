@@ -20,6 +20,5 @@ cd "$(dirname "$0")"
 
 stow zsh
 stow ideavim
+stow p10k
 stow git
-stow config
-
