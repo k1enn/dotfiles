@@ -291,6 +291,14 @@ fi
 # Functions
 #######################################################
 
+# Run current and open current project in Cursor
+cursor() {
+  nohup /opt/cursor/cursor.AppImage "$PWD" >/dev/null 2>&1 &
+  disown
+  exit
+}
+
+
 # Start a program but immediately disown it and detach it from the terminal
 function runfree() {
 	"$@" > /dev/null 2>&1 & disown
