@@ -34,7 +34,6 @@
     "custom/power"
   ],
 
-
     // Load Modules
     "include": ["~/.config/waybar/modules.json"],
 
