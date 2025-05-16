@@ -65,19 +65,19 @@ sudo dnf install git stow
 
 1. **Clone the repository**
 
-   ```bash
-   git clone https://github.com/k1enn/dotfiles.git ~/.dotfiles
-   cd ~/.dotfiles
-   ```
+```bash
+git clone https://github.com/k1enn/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
+```
 
 2. **Run the setup script**
 
 ⚠️**WARNING**⚠️
 Running this script might **override** your current dotfiles to create symlink. See files structure below to know what you should backup.
 
-   ```bash
-   ./install.sh
-   ```
+```bash
+./install.sh
+```
 
    This will use GNU Stow to symlink configuration files from each package (e.g. `zsh`, `p10k`, `ideavim`, `git`) into your home directory.
 
