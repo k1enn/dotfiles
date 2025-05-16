@@ -29,6 +29,7 @@
 window#waybar {
     border: 0px solid rgba(0, 0, 0, 0);
     background-color: rgba(0, 0, 0, 0);
+
 }
 
 #workspaces button {
@@ -36,7 +37,7 @@ window#waybar {
     border-radius: 50%;
     /* background-color: @base; */
     margin: 0px 0px;
-    padding: 4 6 2 0;
+    padding: 0 6 2 0;
 }
 
 #workspaces button:hover {
@@ -102,7 +103,7 @@ window#waybar {
 #custom-launcher,
 #custom-system,
 #mpd {
-    padding: 5px 8px;
+    padding: 4px 8px;
     border-style: solid;
     background-color: shade(@base, 1);
     opacity: 1;
