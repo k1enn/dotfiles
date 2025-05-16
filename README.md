@@ -23,12 +23,12 @@ Your `~/.dotfiles` directory should look like this:
 │   └── .gitconfig
 ├── config/
 │   └──.config/
-│       ├── nvim/
-│       │   └── doc/
-│       │   └── init.lua
-│       │   └── LICENSE.md
-│       │   └── lua/
-│       │   └── README.md
+│        └── nvim/
+│           └── doc/
+│           └── init.lua
+│           └── LICENSE.md
+│           └── lua/
+│           └── README.md
 ├── tmux/
 │   └── plugins/
 ├── install.sh
