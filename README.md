@@ -38,8 +38,9 @@ sudo dnf install git stow
    ```
 
 2. **Run the setup script**
-⚠️**WARNING**
-Running this script will override your current dotfiles to create a symlink. See files structure below to know what you should backup.
+
+⚠️**WARNING**⚠️
+Running this script might **override** your current dotfiles to create symlink. See files structure below to know what you should backup.
 
    ```bash
    ./install.sh
