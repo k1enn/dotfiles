@@ -1,5 +1,5 @@
 # set background
-output * bg /home/k1en/.config/backgrounds/014.jpg fill
+output * bg /home/k1en/.config/backgrounds/001.jpg fill
 
 # run as startup
 bar {
