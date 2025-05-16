@@ -1,0 +1,61 @@
+{
+	"name": "es7-react-js-snippets",
+	"displayName": "ES7 React/Redux/GraphQL/React-Native snippets",
+	"description": "Simple extensions for React, Redux and Graphql in JS/TS with ES7 syntax (forked from dsznajder)",
+	"version": "1.9.3",
+	"publisher": "rodrigovallades",
+	"icon": "images/logo.png",
+	"keywords": [
+		"snippets",
+		"react",
+		"redux",
+		"react-native",
+		"javascript",
+		"typescript"
+	],
+	"engines": {
+		"vscode": "^1.13.0"
+	},
+	"license": "SEE LICENSE",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/rodrigovallades/vscode-es7-javascript-react-snippets"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./snippets/snippets.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "bc0b2fe3-a089-4015-a3dc-07452cb641b2",
+		"publisherId": "2e94e9b5-1512-41e1-a202-8fe6797f585a",
+		"publisherDisplayName": "rodrigovallades",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1746948091167,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery",
+		"size": 133297
+	}
+}
