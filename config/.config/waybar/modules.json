@@ -4,19 +4,20 @@
     "disable-scroll": true,
     "all-outputs": true,
     "format": "{icon}",
+    "active-only": false,
     // "format": "< %g >",
     // "format_focused" : "< %g ● >",
     "format-icons": {
-      "1": "",
-      "2": "",
-      "3": "",
-      "4": "",
-      "5": "",
-      "6": "",
-      "7": "",
-      "8": "",
-      "9": "",
-      "10": ""
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9",
+      "10": "10"
     }
   },
   "mpd": {
@@ -60,13 +61,7 @@
     // Commands to execute on events
     "on-click": "mpc -q pause && mpc -q next && mpc -q start"
   },
-  "custom/swap": {
-    "on-click": "~/.config/waybar/scripts/swap.sh",
-    "format": "Bg  ",
-    "tooltip": true,
-    "tooltip-format": "Swap between waybar Themes"
-  },
-  "custom/mpd": {
+   "custom/mpd": {
     "format": " {title} - {artist}",
     "interval": 5,
     "exec": "mpc current --format='\"title\":\"%title%\",\"artist\":\"%artist%\"'"
@@ -131,7 +126,6 @@
     "format-alt": "  {:%Y-%m-%d  %H:%M:%S}",
     "interval": 1
   },
-
   // System
   "custom/system": {
     "format": "",
@@ -146,8 +140,8 @@
     "on-click": "alacritty -e htop"
   },
   "temperature": {
-    "thermal-zone": 4,
-    // "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
+    // "thermal-zone": 4,
+    "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
     "critical-threshold": 80,
     // "format-critical": "{temperatureC}°C ",
     "format": "  {temperatureC}°C"
@@ -216,7 +210,7 @@
     "on-click": "nm-connection-editor"
   },
   "pulseaudio": {
-    // "scroll-step": 5,
+    "scroll-step": 5,
     "format": "{icon} {volume: >3}%",
     "format-bluetooth": "{icon} {volume: >3}%",
     "format-muted": " muted",
@@ -235,15 +229,7 @@
     "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
     "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%"
   },
-  "custom/pacman": {
-    "format": " {}",
-    "interval": 7200, // every two hours
-    "exec": "i=$(checkupdates); echo \"$i\" |wc -l; echo \"$i\" |column -t |tr '\n' '\r'", // # of updates and tooltip details
-    "exec-if": "exit 0", // always run; consider advanced run conditions
-    "on-click": "alacritty -e sudo pacman -Syu", // update system
-    "signal": 8
-  },
-  "custom/power": {
+    "custom/power": {
     "format": "⏻",
     "on-click": "wlogout -p layer-shell",
     "tooltip": false
