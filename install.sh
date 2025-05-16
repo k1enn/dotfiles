@@ -12,7 +12,8 @@ backup_dir="$HOME/dotfiles_backup_$(date +%Y%m%d%H%M%S)"
 mkdir -p "$backup_dir"
 
 # List of dotfiles to backup
-files=(.zshrc .p10k.zsh .ideavimrc .gitconfig)
+files=(.zshrc .p10k.zsh .ideavimrc .gitconfig .tmux.conf) 
+# Add any file in $HOME you want to
 
 for file in "${files[@]}"; do
   if [ -e "$HOME/$file" ]; then
@@ -21,15 +22,12 @@ for file in "${files[@]}"; do
   fi
 done
 
-# Handle .config subdirectories
-config_dirs=(nvim tmux)
-for dir in "${config_dirs[@]}"; do
-  if [ -d "$HOME/.config/$dir" ]; then
-    echo "Backing up .config/$dir to $backup_dir/.config/"
-    mkdir -p "$backup_dir/.config"
-    mv "$HOME/.config/$dir" "$backup_dir/.config/"
-  fi
-done
+# Handle .config subdirectories for nvim
+if [ -d "$HOME/.config/nvim" ]; then
+  echo "Backing up .config/nvim to $backup_dir/.config/"
+  mkdir -p "$backup_dir/.config"
+  mv "$HOME/.config/nvim" "$backup_dir/.config/"
+fi
 
 # Install stow if not present
 if ! command -v stow &> /dev/null; then
