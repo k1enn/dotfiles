@@ -75,6 +75,7 @@ export VISUAL=nvim visudo
 export SUDO_EDITOR=nvim
 export FCEDIT=nvim
 export TERMINAL=alacritty
+export XDG_CURRENT_DESKTOP=sway
 export BROWSER=com.brave.Browser
 export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
 export PATH=$JAVA_HOME/bin:$PATH
