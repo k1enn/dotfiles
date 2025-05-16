@@ -33,11 +33,13 @@ sudo dnf install git stow
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/k1enn/dotfiles.git ~/.dotfile 
+   git clone https://github.com/k1enn/dotfiles.git ~/.dotfiles
    cd ~/.dotfiles
    ```
 
 2. **Run the setup script**
+⚠️**WARNING**
+Running this script will override your current dotfiles to create a symlink. See files structure below to know what you should backup.
 
    ```bash
    ./install.sh
