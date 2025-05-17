@@ -1,0 +1,25 @@
+* {
+    background: #282c34;
+    base: #282c34;
+    mantle: #21252b;
+    crust: #181a1f;
+    text: #abb2bf;
+    subtext0: #a0a8b7;
+    subtext1: #abb2bf;
+    surface0: #2c313c;
+    surface1: #323842;
+    surface2: #3e4452;
+    overlay0: #4b5263;
+    overlay1: #545862;
+    overlay2: #565c64;
+    blue: #528bff;
+    accent: #528bff;
+    yellow: #e5c07b;
+    red: #e06c75;
+    green: #98c379;
+    magenta: #c678dd;
+    cyan: #56b6c2;
+    selection: #3e4452;
+    border-color: #528bff;
+    border-radius: 12px;
+} 
