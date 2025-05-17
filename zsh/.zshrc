@@ -199,6 +199,9 @@ pathappend "$HOME/.config/tmux/plugins/tmuxifier/bin"
 #######################################################
 # Aliases
 #######################################################
+alias dnd='makoctl mode -a do-not-disturb'
+alias dndoff='makoctl mode -r do-not-disturb'
+
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias c='clear'
 alias q='exit'
