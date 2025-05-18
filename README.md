@@ -1,4 +1,21 @@
-# **dotfiles**
+<h1 align="center">
+  .dotfiles
+</h1>
+<div align="center">
+  <h3>Follow me: </h3>
+</div>
+
+<div align="center">
+ <p>
+    <img src="https://github.com/k1enn/software-engineer-notes/blob/main/subjects/web-programming/Buoi1/Bai01/images/github.png" alt="GitHub Logo" width="20" height="20" />
+    <strong><a style="text-decoration:none;" href="https://github.com/k1enn" target="_blank">GitHub</a></strong>
+    <img style="padding-left: 10px; " src="https://github.com/k1enn/software-engineer-notes/blob/main/subjects/web-programming/Buoi1/Bai01/images/codeforces.png" alt="Codeforces Logo" width="20" height="20" />
+    <strong><a style="text-decoration:none;" href="https://codeforces.com/profile/dinhtrungkien" target="_blank">Codeforces</a></strong>
+    <img style="padding-left: 10px;" src="https://github.com/k1enn/software-engineer-notes/blob/main/subjects/web-programming/Buoi1/Bai01/images/linkedin.png" alt="LinkedIn Logo" width="20" height="20" />
+    <strong><a style="text-decoration:none;" href="https://www.linkedin.com/in/k1enn/" target="_blank">LinkedIn</a></strong>
+  </p>
+      <small> November, 2024</small>
+</div>
 
 Backup my dotfiles in case Fedora system expoded.
 
@@ -8,36 +25,6 @@ Backup my dotfiles in case Fedora system expoded.
 - **DE**: GNOME 48.
 - **DRM**: Wayland.
 - **Kernel**: ASUS ROG.
-
-## **Directory Structure**
-
-Your `~/.dotfiles` directory should look like this:
-
-```
-~/.dotfiles/
-├── zsh/
-│   └── .zshrc
-├── p10k/
-│   └── .p10k.zsh
-├── ideavim/
-│   └── .ideavimrc
-├── git/
-│   └── .gitconfig
-├── config/
-│   └──.config/
-│        └── nvim/
-│           └── doc/
-│           └── init.lua
-│           └── LICENSE.md
-│           └── lua/
-│           └── README.md
-├── tmux/
-│   └── plugins/
-├── install.sh
-└── README.md
-```
-
-Each folder contains the config files for that tool. Stow will symlink them into your `$HOME` directory.
 
 ---
 
@@ -79,7 +66,7 @@ cd ~/.dotfiles
 2. **Run the setup script**
 
 ⚠️**WARNING**⚠️
-Running this script might **override** your current dotfiles to create symlink. See files structure below to know what you should backup.
+Running this script might **OVERRIDE** your current dotfiles to create symlink. See files structure below to know what you should backup.
 
 ```bash
 ./install.sh
@@ -94,6 +81,7 @@ This will use GNU Stow to symlink configuration files from each package (e.g. `z
 > stow p10k
 > stow ideavim
 > stow git
+> stow ...
 > ```
 
 ---

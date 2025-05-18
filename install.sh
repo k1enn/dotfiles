@@ -24,7 +24,7 @@ done
 # Handle .config subdirectories to backup
 config_dirs=(
   nvim sway waybar fcitx5 wlogout mako kitty 
-  rofi environment.d backgrounds ghostty alias tmux
+  rofi environment.d backgrounds ghostty alias tmux swaylock
 )
 
 if [ -d "$HOME/.config" ]; then
