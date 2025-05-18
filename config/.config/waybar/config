@@ -3,7 +3,7 @@
   "position": "top", // Waybar position (top|bottom|left|right)
   "height": 30,
   "margin": "0 0 -8px 0",
-  "width": 1920, // Waybar width
+  //"width": 1930, // Waybar width
   // Choose the order of the modules idle_inhibitor
   "modules-left": [
     "sway/workspaces",

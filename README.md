@@ -1,7 +1,9 @@
 # **dotfiles**
+
 Backup my dotfiles in case Fedora system expoded.
 
 ## **System informations**
+
 - **Linux distro**: Fedora Workstation 42.
 - **DE**: GNOME 48.
 - **DRM**: Wayland.
@@ -40,9 +42,11 @@ Each folder contains the config files for that tool. Stow will symlink them into
 ---
 
 ## **How to install**
+
 ### **Install Prerequisites**
 
 **Ubuntu / Debian**
+
 ```
 bash
 sudo apt update
@@ -50,12 +54,14 @@ sudo apt install git stow
 ```
 
 **Arch Linux**
+
 ```
 bash
 sudo pacman -S git stow
 ```
 
 **Fedora**
+
 ```
 bash
 sudo dnf install git stow
@@ -79,16 +85,16 @@ Running this script might **override** your current dotfiles to create symlink. 
 ./install.sh
 ```
 
-   This will use GNU Stow to symlink configuration files from each package (e.g. `zsh`, `p10k`, `ideavim`, `git`) into your home directory.
+This will use GNU Stow to symlink configuration files from each package (e.g. `zsh`, `p10k`, `ideavim`, `git`) into your home directory.
 
-   > Alternatively, you can stow individual packages manually:
-   >
-   > ```bash
-   > stow zsh
-   > stow p10k
-   > stow ideavim
-   > stow git
-   > ```
+> Alternatively, you can stow individual packages manually:
+>
+> ```bash
+> stow zsh
+> stow p10k
+> stow ideavim
+> stow git
+> ```
 
 ---
 
@@ -99,11 +105,13 @@ To properly set up your dotfiles with your GitHub account information, follow th
 ## Setting Up Your Git Identity
 
 1. Open the .gitconfig file in your favorite text editor:
+
    ```bash
    nano ~/.dotfile/git/.gitconfig
    ```
 
 2. Update the [user] section with your personal information:
+
    ```
    [user]
        name = Your Name
@@ -117,16 +125,19 @@ To properly set up your dotfiles with your GitHub account information, follow th
 Follow these steps to generate SSH keys for secure GitHub access:
 
 1. Check for existing SSH keys first:
+
    ```bash
    ls -al ~/.ssh
    ```
 
 2. If you don't have existing keys (like id_ed25519.pub or id_rsa.pub), generate a new key:
+
    ```bash
    ssh-keygen -t ed25519 -C "your_email@example.com"
    ```
-   
+
    If you're using an older system that doesn't support Ed25519:
+
    ```bash
    ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
    ```
@@ -138,6 +149,7 @@ Follow these steps to generate SSH keys for secure GitHub access:
 ## Starting the SSH Agent
 
 1. Start the SSH agent in the background:
+
    ```bash
    eval "$(ssh-agent -s)"
    ```
@@ -151,9 +163,11 @@ Follow these steps to generate SSH keys for secure GitHub access:
 ## Adding Your SSH Key to GitHub
 
 1. Copy your public SSH key to the clipboard:
+
    ```bash
    cat ~/.ssh/id_ed25519.pub
    ```
+
    (Or `cat ~/.ssh/id_rsa.pub` for RSA keys).
 
 2. Log in to your GitHub account in a web browser.
@@ -173,7 +187,7 @@ Follow these steps to generate SSH keys for secure GitHub access:
 ## Testing Your SSH Connection
 
 Verify your configuration is working:
+
 ```bash
 ssh -T git@github.com
 ```
-

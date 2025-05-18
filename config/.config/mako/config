@@ -9,12 +9,12 @@ width=300
 height=110
 margin=8,8,0,0
 padding=0,5,10
+border-radius=10
 
 # Colors and styling
 background-color=#282c34
 border-color=#528bff
 text-color=#abb2bf
-border-radius=10
 
 # Icon settings
 icons=0
