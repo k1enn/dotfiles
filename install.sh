@@ -12,8 +12,7 @@ backup_dir="$HOME/dotfiles_backup_$(date +%Y%m%d%H%M%S)"
 mkdir -p "$backup_dir"
 
 # List of dotfiles to backup
-files=(.zshrc .p10k.zsh .ideavimrc .gitconfig .tmux.conf) 
-# Add any file in $HOME you want to
+files=(.zshrc .p10k.zsh .ideavimrc .gitconfig .tmux.conf .zshenv) 
 
 for file in "${files[@]}"; do
   if [ -e "$HOME/$file" ]; then
@@ -22,11 +21,27 @@ for file in "${files[@]}"; do
   fi
 done
 
-# Handle .config subdirectories for nvim
-if [ -d "$HOME/.config/nvim" ]; then
-  echo "Backing up .config/nvim to $backup_dir/.config/"
+# Handle .config subdirectories to backup
+config_dirs=(
+  nvim sway waybar fcitx5 wlogout mako kitty 
+  rofi environment.d backgrounds ghostty alias tmux
+)
+
+if [ -d "$HOME/.config" ]; then
   mkdir -p "$backup_dir/.config"
-  mv "$HOME/.config/nvim" "$backup_dir/.config/"
+  
+  # Also backup electron-flags.conf if it exists
+  if [ -f "$HOME/.config/electron-flags.conf" ]; then
+    echo "Backing up .config/electron-flags.conf to $backup_dir/.config/"
+    cp "$HOME/.config/electron-flags.conf" "$backup_dir/.config/"
+  fi
+  
+  for dir in "${config_dirs[@]}"; do
+    if [ -d "$HOME/.config/$dir" ]; then
+      echo "Backing up .config/$dir to $backup_dir/.config/"
+      mv "$HOME/.config/$dir" "$backup_dir/.config/"
+    fi
+  done
 fi
 
 # Install stow if not present
@@ -47,8 +62,15 @@ fi
 
 cd "$(dirname "$0")"
 
+# Stow all directories
+echo "Installing dotfiles..."
 stow zsh
 stow ideavim
 stow p10k
 stow git
 stow config
+stow tmux
+stow zshenv
+stow cursor
+
+echo "Dotfiles installation complete!"
