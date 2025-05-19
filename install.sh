@@ -5,8 +5,8 @@
 # I'm not responsible for any damage it may cause.
 
 # Warning about overriding dotfiles
-read -p "Warning: This script will override existing dotfiles in your home directory. Do you want to continue? (yes/no) " answer
-if [[ "$answer" != "yes" ]]; then
+read -p "Warning: This script will override existing dotfiles in your home directory. Do you want to continue? (y/n) " answer
+if [[ "$answer" != "y" ]]; then
   echo "Aborted by user."
   exit 0
 fi
