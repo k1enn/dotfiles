@@ -1,8 +1,13 @@
 {
-  "layer": "top", // Waybar at top layer
-  "position": "top", // Waybar position (top|bottom|left|right)
-  "height": 30,
-  "margin": "0 0 -8px 0",
+    "layer": "top",
+    "position": "top",
+    "mod": "dock",
+    "height": 30,
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    "reload_style_on_change": true,
+    "margin": "0 -7px -8px 0",
   //"width": 1930, // Waybar width
   // Choose the order of the modules idle_inhibitor
   "modules-left": [

@@ -66,7 +66,7 @@ cd ~/.dotfiles
 2. **Run the setup script**
 
 ⚠️**WARNING**⚠️
-Running this script might **OVERRIDE** your current dotfiles to create symlink. See files structure below to know what you should backup.
+This script is made by **Cursor**. I don't know if it works or not, you can stow each directory manually. I'm not responsible for any damage it may cause.
 
 ```bash
 ./install.sh
