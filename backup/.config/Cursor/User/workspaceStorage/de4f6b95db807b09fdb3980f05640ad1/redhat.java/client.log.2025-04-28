@@ -1,0 +1,106 @@
+{
+  message: "Use the JDK from 'PATH' as the initial default project JDK.",
+  level: 'info',
+  timestamp: '2025-04-28 20:35:39.676'
+}
+{
+  message: 'Starting Java server with: /home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/jre/21.0.6-linux-x86_64/bin/java --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.fs=ALL-UNNAMED -Declipse.application=org.eclipse.jdt.ls.core.id1 -Dosgi.bundles.defaultStartLevel=4 -Declipse.product=org.eclipse.jdt.ls.core.product -Djava.import.generatesMetadataFilesAtProjectRoot=false -DDetectVMInstallationsJob.disabled=true -Dfile.encoding=utf8 -XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -Xlog:disable -javaagent:/home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/lombok/lombok-1.18.36.jar -jar /home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/server/plugins/org.eclipse.equinox.launcher_1.7.0.v20250331-1702.jar -configuration /home/k1en/.config/Cursor/User/globalStorage/redhat.java/1.41.1/config_ss_linux -data /home/k1en/.config/Cursor/User/workspaceStorage/de4f6b95db807b09fdb3980f05640ad1/redhat.java/ss_ws',
+  level: 'info',
+  timestamp: '2025-04-28 20:35:39.737'
+}
+{
+  message: '[Error - 8:35:41 PM] Sending notification workspace/didChangeConfiguration failed',
+  level: 'info',
+  timestamp: '2025-04-28 20:35:41.818'
+}
+{
+  message: "TypeError: Cannot read properties of null (reading 'sendNotification')\n" +
+    '\tat t.SyntaxLanguageClient.<anonymous> (/home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/dist/extension.js:2:1028108)\n' +
+    '\tat Generator.next (<anonymous>)\n' +
+    '\tat /home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/dist/extension.js:2:1027585\n' +
+    '\tat new Promise (<anonymous>)\n' +
+    '\tat r (/home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/dist/extension.js:2:1027330)\n' +
+    '\tat didChangeConfiguration (/home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/dist/extension.js:2:1028048)\n' +
+    '\tat t.SyncConfigurationFeature.onDidChangeConfiguration (/home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/dist/extension.js:2:1165985)\n' +
+    '\tat t.SyncConfigurationFeature.register (/home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/dist/extension.js:2:1165280)\n' +
+    '\tat t.SyncConfigurationFeature.initialize (/home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/dist/extension.js:2:1165029)\n' +
+    '\tat c.initializeFeatures (/home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/dist/extension.js:2:1138611)\n' +
+    '\tat c.doInitialize (/home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/dist/extension.js:2:1125426)\n' +
+    '\tat process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '\tat async c.start (/home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/dist/extension.js:2:1122441)',
+  level: 'info',
+  timestamp: '2025-04-28 20:35:41.818'
+}
+{
+  message: "Use the JDK from 'PATH' as the initial default project JDK.",
+  level: 'info',
+  timestamp: '2025-04-28 22:47:29.441'
+}
+{
+  message: 'Starting Java server with: /home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/jre/21.0.6-linux-x86_64/bin/java --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.fs=ALL-UNNAMED -Declipse.application=org.eclipse.jdt.ls.core.id1 -Dosgi.bundles.defaultStartLevel=4 -Declipse.product=org.eclipse.jdt.ls.core.product -Djava.import.generatesMetadataFilesAtProjectRoot=false -DDetectVMInstallationsJob.disabled=true -Dfile.encoding=utf8 -XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -Xlog:disable -javaagent:/home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/lombok/lombok-1.18.36.jar -jar /home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/server/plugins/org.eclipse.equinox.launcher_1.7.0.v20250331-1702.jar -configuration /home/k1en/.config/Cursor/User/globalStorage/redhat.java/1.41.1/config_ss_linux -data /home/k1en/.config/Cursor/User/workspaceStorage/de4f6b95db807b09fdb3980f05640ad1/redhat.java/ss_ws',
+  level: 'info',
+  timestamp: '2025-04-28 22:47:29.544'
+}
+{
+  message: 'Starting Java server with: /home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/jre/21.0.6-linux-x86_64/bin/java --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.fs=ALL-UNNAMED -Declipse.application=org.eclipse.jdt.ls.core.id1 -Dosgi.bundles.defaultStartLevel=4 -Declipse.product=org.eclipse.jdt.ls.core.product -Djava.import.generatesMetadataFilesAtProjectRoot=false -DDetectVMInstallationsJob.disabled=true -Dfile.encoding=utf8 -XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -Xlog:disable -javaagent:/home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/lombok/lombok-1.18.36.jar -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/home/k1en/.config/Cursor/User/workspaceStorage/de4f6b95db807b09fdb3980f05640ad1/redhat.java -Daether.dependencyCollector.impl=bf -jar /home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/server/plugins/org.eclipse.equinox.launcher_1.7.0.v20250331-1702.jar -configuration /home/k1en/.config/Cursor/User/globalStorage/redhat.java/1.41.1/config_linux -data /home/k1en/.config/Cursor/User/workspaceStorage/de4f6b95db807b09fdb3980f05640ad1/redhat.java/jdt_ws',
+  level: 'info',
+  timestamp: '2025-04-28 22:47:29.706'
+}
+{
+  message: 'Apr 28, 2025 10:47:30 PM org.apache.aries.spifly.BaseActivator log\n' +
+    'INFO: Registered provider ch.qos.logback.classic.servlet.LogbackServletContainerInitializer of service jakarta.servlet.ServletContainerInitializer in bundle ch.qos.logback.classic\n',
+  level: 'info',
+  timestamp: '2025-04-28 22:47:30.965'
+}
+{
+  message: 'Apr 28, 2025 10:47:30 PM org.apache.aries.spifly.BaseActivator log\n' +
+    'INFO: Registered provider ch.qos.logback.classic.spi.LogbackServiceProvider of service org.slf4j.spi.SLF4JServiceProvider in bundle ch.qos.logback.classic\n',
+  level: 'info',
+  timestamp: '2025-04-28 22:47:30.968'
+}
+{
+  message: '[Error - 10:47:32 PM] Sending notification workspace/didChangeConfiguration failed',
+  level: 'info',
+  timestamp: '2025-04-28 22:47:32.117'
+}
+{
+  message: "TypeError: Cannot read properties of null (reading 'sendNotification')\n" +
+    '\tat t.SyntaxLanguageClient.<anonymous> (/home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/dist/extension.js:2:1028108)\n' +
+    '\tat Generator.next (<anonymous>)\n' +
+    '\tat /home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/dist/extension.js:2:1027585\n' +
+    '\tat new Promise (<anonymous>)\n' +
+    '\tat r (/home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/dist/extension.js:2:1027330)\n' +
+    '\tat didChangeConfiguration (/home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/dist/extension.js:2:1028048)\n' +
+    '\tat t.SyncConfigurationFeature.onDidChangeConfiguration (/home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/dist/extension.js:2:1165985)\n' +
+    '\tat t.SyncConfigurationFeature.register (/home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/dist/extension.js:2:1165280)\n' +
+    '\tat t.SyncConfigurationFeature.initialize (/home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/dist/extension.js:2:1165029)\n' +
+    '\tat c.initializeFeatures (/home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/dist/extension.js:2:1138611)\n' +
+    '\tat c.doInitialize (/home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/dist/extension.js:2:1125426)\n' +
+    '\tat process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '\tat async c.start (/home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/dist/extension.js:2:1122441)',
+  level: 'info',
+  timestamp: '2025-04-28 22:47:32.117'
+}
+{
+  message: '[Error - 10:47:33 PM] Sending notification workspace/didChangeConfiguration failed',
+  level: 'info',
+  timestamp: '2025-04-28 22:47:33.939'
+}
+{
+  message: "TypeError: Cannot read properties of null (reading 'sendNotification')\n" +
+    '\tat /home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/dist/extension.js:2:880554\n' +
+    '\tat Generator.next (<anonymous>)\n' +
+    '\tat /home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/dist/extension.js:2:866346\n' +
+    '\tat new Promise (<anonymous>)\n' +
+    '\tat r (/home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/dist/extension.js:2:866091)\n' +
+    '\tat didChangeConfiguration (/home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/dist/extension.js:2:880501)\n' +
+    '\tat t.SyncConfigurationFeature.onDidChangeConfiguration (/home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/dist/extension.js:2:1165985)\n' +
+    '\tat t.SyncConfigurationFeature.register (/home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/dist/extension.js:2:1165280)\n' +
+    '\tat t.SyncConfigurationFeature.initialize (/home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/dist/extension.js:2:1165029)\n' +
+    '\tat c.initializeFeatures (/home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/dist/extension.js:2:1138611)\n' +
+    '\tat c.doInitialize (/home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/dist/extension.js:2:1125426)\n' +
+    '\tat process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '\tat async c.start (/home/k1en/.cursor/extensions/redhat.java-1.41.1-linux-x64/dist/extension.js:2:1122441)',
+  level: 'info',
+  timestamp: '2025-04-28 22:47:33.940'
+}

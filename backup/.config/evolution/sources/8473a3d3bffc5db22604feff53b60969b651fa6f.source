@@ -1,0 +1,29 @@
+[Data Source]
+DisplayName=yhtiamuv@gmail.com
+Enabled=true
+Parent=52b43b5a58ae2e07689ba36b16da35906246b51a
+
+[Mail Submission]
+SentFolder=folder://local/Sent
+TransportUid=d667547df5f191415b2011227a3cad1faeeb732a
+RepliesToOriginFolder=false
+UseSentFolder=true
+
+[Mail Composition]
+Bcc=
+Cc=
+DraftsFolder=folder://local/Drafts
+ReplyStyle=default
+SignImip=true
+TemplatesFolder=
+StartBottom=inconsistent
+TopSignature=inconsistent
+Language=
+
+[Mail Identity]
+Address=yhtiamuv@gmail.com
+Aliases=
+Name=
+Organization=
+ReplyTo=
+SignatureUid=none

@@ -1,0 +1,74 @@
+{
+    "telemetry.devDeviceId": "af67e17f-d6e9-466e-aa48-304ae8ea59c8",
+    "telemetry.machineId": "f15a7f30ef14d9b2fcaf160e29a03db3fd923a36ebb80bdcd4ad99cb4463e465",
+    "telemetry.macMachineId": "1ff803208268a948abe286503079cb1b2398538feed52818e85cbe489156453b1f2aa798121a3e6595dacde8fc44ad10e9f3c9d847ba063a8c75f928126468ae",
+    "telemetry.sqmId": "{779FFB34-E636-4B2C-891E-3FBB7794725C}",
+    "storage.serviceMachineId": "3997300a-8d1d-443e-b493-f6750fc6e0e2",
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [
+            {
+                "folderUri": "file:///home/k1en/Documents/Study/LapTrinhMobile/Practices/Flutter/flta-materials/06-interactive-widgets/projects/starter"
+            }
+        ],
+        "emptyWindows": []
+    },
+    "profileAssociations": {
+        "workspaces": {
+            "file:///home/k1en/Documents/Study/Github/elsa-speak-clone": "__default__profile__",
+            "file:///home/k1en/Documents/Study/Github/k1enn": "__default__profile__",
+            "file:///home/k1en/Documents/Study/LapTrinhMobile/Practices/Flutter/flutter_application_1": "__default__profile__",
+            "file:///home/k1en/Documents/Study/LapTrinhMobile/Practices/Flutter/flta-materials/02-hello-flutter": "__default__profile__",
+            "file:///home/k1en/Documents/Study/LapTrinhMobile/Practices/Flutter/flta-materials/02-hello-flutter/projects/starter/recipes": "__default__profile__",
+            "file:///home/k1en/Documents/Study/LapTrinhMobile/Practices/Flutter/flta-materials/02-hello-flutter/projects/starter": "__default__profile__",
+            "file:///home/k1en/Documents/Study/LapTrinhMobile/Practices/Flutter/flta-materials/02-hello-flutter/projects": "__default__profile__",
+            "file:///home/k1en/Documents/Study/LapTrinhMobile/Practices/Flutter/flta-materials/02-hello-flutter/projects/starter/recipes/android": "__default__profile__",
+            "file:///home/k1en/Documents/Study/LapTrinhMobile/Practices/Flutter/flta-materials/03-basic-widgets/projects/starter": "__default__profile__",
+            "file:///home/k1en/Documents/Study/LapTrinhMobile/Practices/Flutter/flta-materials/04-understanding-widgets/projects/starter": "__default__profile__",
+            "file:///home/k1en/Documents/Study/LapTrinhMobile/Practices/Flutter/flta-materials/05-scrollable-widgets/projects/starter": "__default__profile__",
+            "file:///home/k1en/Documents/Study/LapTrinhMobile/Practices/Flutter/flta-materials/20-build-and-release-an-android-app/projects/final": "__default__profile__",
+            "file:///home/k1en/Documents/Study/LapTrinhMobile/Practices/Flutter/flta-materials/06-interactive-widgets/projects/starter": "__default__profile__"
+        },
+        "emptyWindows": {}
+    },
+    "windowControlHeight": 35,
+    "theme": "vs-dark",
+    "themeBackground": "#23272e",
+    "windowSplash": {
+        "zoomLevel": 0,
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "#cccccc",
+            "background": "#23272e",
+            "editorBackground": "#23272e",
+            "titleBarBackground": "#23272e",
+            "activityBarBackground": "#23272e",
+            "sideBarBackground": "#1e2227",
+            "statusBarBackground": "#1e2227",
+            "statusBarNoFolderBackground": "#1e2227"
+        },
+        "layoutInfo": {
+            "sideBarSide": "left",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 35,
+            "activityBarWidth": 0,
+            "sideBarWidth": 221,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "folder": "file:///home/k1en/Documents/Study/LapTrinhMobile/Practices/Flutter/flta-materials/06-interactive-widgets/projects/starter",
+            "backupPath": "/home/k1en/.config/Cursor/Backups/e113b0cc78a62ade662a1890a0326c7c",
+            "uiState": {
+                "mode": 0,
+                "x": 0,
+                "y": 0,
+                "width": 1176,
+                "height": 832
+            }
+        },
+        "openedWindows": []
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "window.commandCenter": 1,
+    "redhat.telemetry.enabled": true,
+    "java.debug.settings.exceptionBreakpoint.allowClasses": [
+        ""
+    ],
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "files.autoSave": "afterDelay",
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "http.proxySupport": "off"
+}

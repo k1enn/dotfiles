@@ -1,0 +1,14 @@
+2025-05-19 04:00:07.017 [info] updateURL https://api2.cursor.sh/updates/api/update/linux-x64/cursor/0.48.9/43f39327701ef4658bcfcbe4efccee43d76db6c7b1af553973ab44e96e54daf8/stable
+2025-05-19 04:00:07.018 [info] update#setState idle
+2025-05-19 04:00:37.019 [info] update#setState checking for updates
+2025-05-19 04:00:37.299 [info] update#setState ready
+2025-05-19 04:05:34.929 [error] ptyHost terminated unexpectedly with code 15
+2025-05-19 04:05:34.930 [warning] [UtilityProcess type: ptyHost, pid: 5371]: unable to kill the process
+2025-05-19 04:05:34.941 [info] Extension host with pid 5502 exited with code: 15, signal: unknown.
+2025-05-19 04:05:34.941 [error] [UtilityProcess id: 2, type: extensionHost, pid: 5502]: crashed with code 15 and reason 'killed'
+2025-05-19 04:05:34.943 [error] [UtilityProcessWorker]: terminated unexpectedly with code 15, signal: unknown
+2025-05-19 04:05:34.943 [error] [UtilityProcess id: 1, type: fileWatcher, pid: 5370]: crashed with code 15 and reason 'killed'
+2025-05-19 04:05:34.944 [error] [UtilityProcess type: shared-process, pid: 5369]: crashed with code 15 and reason 'killed'
+2025-05-19 04:05:34.952 [info] Extension host with pid 5348 exited with code: 15, signal: unknown.
+2025-05-19 04:05:34.952 [error] [UtilityProcess id: 1, type: extensionHost, pid: 5348]: crashed with code 15 and reason 'killed'
+2025-05-19 04:05:34.964 [error] CodeWindow: renderer process gone (reason: clean-exit, code: <unknown>)

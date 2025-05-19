@@ -1,0 +1,71 @@
+import 'package:flutter/material.dart';
+
+import '../models/restaurant.dart';
+
+class RestaurantLandscapeCard extends StatelessWidget {
+  final Restaurant restaurant;
+
+  const RestaurantLandscapeCard({
+    super.key,
+    required this.restaurant,
+  });
+
+  // TODO: Add _isFavorited property
+  bool _isFavorited = false;
+  @override
+  Widget build(BuildContext context) {
+    final textTheme = Theme.of(context)
+        .textTheme
+        .apply(displayColor: Theme.of(context).colorScheme.onSurface);
+    return Card(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          ClipRRect(
+            borderRadius:
+                const BorderRadius.vertical(top: Radius.circular(8.0)),
+            child: AspectRatio(
+              aspectRatio: 2,
+              // TODO: Convert to a stack
+              child:Stack(
+                fit: StackFit.expand,
+                children: [
+                  Image.asset(widget.restaurant.imageUrl, fit: BoxFit.cover,),
+                  Positioned(
+                    top: 4.0,
+                    right: 4.0,
+                    child: IconButton(onPressed: () {
+                      StepState((){
+                        _isFavorited = !_isFavorited;
+                      });
+                    }, icon: Icon(_isFavorited ? Icons.favorite : Icons.favorite_border),),
+                  )      
+                ],
+
+                ),
+              child: Image.asset(
+                restaurant.imageUrl,
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
+          ListTile(
+            title: Text(
+              restaurant.name,
+              style: textTheme.titleSmall,
+            ),
+            subtitle: Text(
+              restaurant.attributes,
+              maxLines: 1,
+              style: textTheme.bodySmall,
+            ),
+            onTap: () {
+              // ignore: avoid_print
+              print('Tap on ${restaurant.name}');
+            },
+          ),
+        ],
+      ),
+    );
+  }
+}

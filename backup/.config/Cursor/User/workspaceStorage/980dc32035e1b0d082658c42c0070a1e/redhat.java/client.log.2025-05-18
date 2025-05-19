@@ -1,0 +1,10 @@
+{
+  message: 'Removing old folder in globalStorage : 1.41.1',
+  level: 'info',
+  timestamp: '2025-05-18 04:32:50.918'
+}
+{
+  message: "Use the JDK from 'PATH' as the initial default project JDK.",
+  level: 'info',
+  timestamp: '2025-05-18 04:32:51.800'
+}

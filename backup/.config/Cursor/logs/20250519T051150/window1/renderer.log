@@ -1,0 +1,86 @@
+2025-05-19 05:11:53.876 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-vscode.vscode-selfhost-test-provider' wants API proposal 'attributableCoverage' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-05-19 05:11:53.876 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-toolsai.datawrangler' wants API proposal 'debugFocus' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-05-19 05:11:53.876 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.python' wants API proposal 'contribIssueReporter' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-05-19 05:11:53.885 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.debugpy' wants API proposal 'contribIssueReporter' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-05-19 05:11:53.886 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-azuretools.vscode-azure-github-copilot' wants API proposal 'lmTools' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-05-19 05:11:53.886 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-vscode.cpptools' wants API proposal 'lmTools' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-05-19 05:11:53.886 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'vscjava.vscode-java-pack' wants API proposal 'lmTools' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-05-19 05:11:53.886 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'apidev.azure-api-center' wants API proposal 'chatParticipant' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-05-19 05:11:53.886 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'apidev.azure-api-center' wants API proposal 'languageModels' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-05-19 05:11:53.929 [warning] Missing property "modes" in oldValue. Filling with value from initValue. Please add a migration if necessary.
+2025-05-19 05:11:53.930 [warning] Missing property "modes2" in oldValue. Filling with value from initValue. Please add a migration if necessary.
+2025-05-19 05:11:53.930 [warning] Missing property "modes3" in oldValue. Filling with value from initValue. Please add a migration if necessary.
+2025-05-19 05:11:53.930 [warning] Missing property "explicitEnableOrDisable" in oldValue. Filling with value from initValue. Please add a migration if necessary.
+2025-05-19 05:11:53.930 [warning] Missing property "lastBackgroundBugbotAt" in oldValue. Filling with value from initValue. Please add a migration if necessary.
+2025-05-19 05:11:54.381 [info] Started local extension host with pid 44385.
+2025-05-19 05:11:54.968 [info] Placing extension(s) vscodevim.vim on a separate extension host.
+2025-05-19 05:11:55.405 [info] Started local extension host with pid 44461.
+2025-05-19 05:11:55.571 [error] [Extension Host] (node:44385) ExperimentalWarning: Use `importAttributes` instead of `importAssertions`
+(Use `exe --trace-warnings ...` to show where the warning was created)
+2025-05-19 05:11:56.156 [error] [Extension Host] (node:44461) ExperimentalWarning: Use `importAttributes` instead of `importAssertions`
+(Use `exe --trace-warnings ...` to show where the warning was created)
+2025-05-19 05:11:56.698 [error] MainThreadChatAgents2#$updateAgent: No agent with handle 0 registered
+2025-05-19 05:11:56.873 [error] chatParticipant must be declared in package.json: mongodb.participant: Error: chatParticipant must be declared in package.json: mongodb.participant
+    at m$s.$registerAgent (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:2354:75403) chatParticipant must be declared in package.json: mongodb.participant
+2025-05-19 05:11:58.379 [info] [perf] Render performance baseline is 17ms
+2025-05-19 05:20:40.434 [error] [canceled] This operation was aborted: ConnectError: [canceled] This operation was aborted
+    at t (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:2405:131870)
+    at async Object.countTokens (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:98:15147)
+    at async hni.updateTokenCount (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:3063:4843) [canceled] This operation was aborted
+2025-05-19 05:21:28.854 [error] [network] #21: https://marketplace.cursorapi.com/_apis/public/gallery/extensionquery - error POST Canceled
+2025-05-19 05:21:30.270 [error] Unable to resolve nonexistent file 'vscode-userdata:/home/k1en/.config/Cursor/User/globalStorage/zhuangtongfa.material-theme': Error: Unable to resolve nonexistent file 'vscode-userdata:/home/k1en/.config/Cursor/User/globalStorage/zhuangtongfa.material-theme'
+    at L1i.resolve (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:4855:62074)
+    at async UZi (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:93:23104) Unable to resolve nonexistent file 'vscode-userdata:/home/k1en/.config/Cursor/User/globalStorage/zhuangtongfa.material-theme'
+2025-05-19 05:21:37.198 [error] Unable to resolve nonexistent file 'vscode-userdata:/home/k1en/.config/Cursor/User/globalStorage/zhuangtongfa.material-theme': Error: Unable to resolve nonexistent file 'vscode-userdata:/home/k1en/.config/Cursor/User/globalStorage/zhuangtongfa.material-theme'
+    at L1i.resolve (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:4855:62074)
+    at async UZi (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:93:23104) Unable to resolve nonexistent file 'vscode-userdata:/home/k1en/.config/Cursor/User/globalStorage/zhuangtongfa.material-theme'
+2025-05-19 05:21:37.797 [info] Started local extension host with pid 51540.
+2025-05-19 05:21:37.798 [info] Started local extension host with pid 51541.
+2025-05-19 05:21:38.562 [error] [Extension Host] (node:51540) ExperimentalWarning: Use `importAttributes` instead of `importAssertions`
+(Use `exe --trace-warnings ...` to show where the warning was created)
+2025-05-19 05:21:38.577 [error] [Extension Host] (node:51541) ExperimentalWarning: Use `importAttributes` instead of `importAssertions`
+(Use `exe --trace-warnings ...` to show where the warning was created)
+2025-05-19 05:21:39.455 [error] MainThreadChatAgents2#$updateAgent: No agent with handle 0 registered
+2025-05-19 05:21:39.576 [error] chatParticipant must be declared in package.json: mongodb.participant: Error: chatParticipant must be declared in package.json: mongodb.participant
+    at m$s.$registerAgent (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:2354:75403) chatParticipant must be declared in package.json: mongodb.participant
+2025-05-19 05:21:40.017 [error] No registered selector for ID: ms-vscode.npm-command
+2025-05-19 05:27:09.278 [error] [canceled] This operation was aborted: ConnectError: [canceled] This operation was aborted
+    at t (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:2405:131870)
+    at async Object.countTokens (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:98:15147)
+    at async hni.updateTokenCount (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:3063:4843) [canceled] This operation was aborted
+2025-05-19 05:27:49.341 [error] Invoking deltaDecorations recursively could lead to leaking decorations.: Error: Invoking deltaDecorations recursively could lead to leaking decorations.
+    at qI.deltaDecorations (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:364:4065)
+    at hEi.clearPrediction (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:4992:315)
+    at zae.value (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:4992:3221)
+    at M.B (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:49:748)
+    at M.C (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:49:818)
+    at M.fire (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:49:882)
+    at zae.value (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:368:15753)
+    at M.B (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:49:748)
+    at M.fire (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:49:967)
+    at H6n.r (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:364:29759) Invoking deltaDecorations recursively could lead to leaking decorations.
+2025-05-19 05:28:09.239 [error] [canceled] This operation was aborted: ConnectError: [canceled] This operation was aborted
+    at t (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:2405:131870)
+    at async Object.countTokens (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:98:15147)
+    at async hni.updateTokenCount (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:3063:4843) [canceled] This operation was aborted
+2025-05-19 05:29:28.339 [error] [canceled] This operation was aborted: ConnectError: [canceled] This operation was aborted
+    at t (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:2405:131870)
+    at async Object.countTokens (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:98:15147)
+    at async hni.updateTokenCount (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:3063:4843) [canceled] This operation was aborted
+2025-05-19 05:31:52.575 [error] [canceled] This operation was aborted: ConnectError: [canceled] This operation was aborted
+    at t (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:2405:131870)
+    at async Object.countTokens (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:98:15147)
+    at async hni.updateTokenCount (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:3063:4843) [canceled] This operation was aborted
+2025-05-19 05:37:06.105 [error] Invoking deltaDecorations recursively could lead to leaking decorations.: Error: Invoking deltaDecorations recursively could lead to leaking decorations.
+    at qI.deltaDecorations (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:364:4065)
+    at hEi.clearPrediction (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:4992:315)
+    at hEi.clearCursorPrediction (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:4987:24287)
+    at zae.value (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:4972:24779)
+    at M.B (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:49:748)
+    at M.C (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:49:818)
+    at M.fire (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:49:1036)
+    at zae.value (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:368:15500)
+    at M.B (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:49:748)
+    at M.fire (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:49:967) Invoking deltaDecorations recursively could lead to leaking decorations.
+2025-05-19 05:37:07.053 [error] lock() request could not be registered.: InvalidStateError: lock() request could not be registered. lock() request could not be registered.
+2025-05-19 05:37:08.901 [error] lock() request could not be registered.: InvalidStateError: lock() request could not be registered. lock() request could not be registered.

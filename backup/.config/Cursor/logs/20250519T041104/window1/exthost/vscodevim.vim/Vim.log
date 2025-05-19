@@ -1,0 +1,135 @@
+2025-05-19 04:11:10.620 [info] /home/k1en/dotfiles/config/.config/mako/config closed
+2025-05-19 04:11:11.013 [info] Configuration changed
+2025-05-19 04:11:11.253 [info] Configuration changed
+2025-05-19 04:11:11.357 [info] Configuration changed
+2025-05-19 04:11:11.392 [info] Configuration changed
+2025-05-19 04:11:57.549 [info] Active editor: file:///home/k1en/dotfiles/install.sh
+2025-05-19 04:12:03.621 [info] /home/k1en/dotfiles/config/.config/sway/scripts/lockman.sh closed
+2025-05-19 04:12:05.043 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/pkief.material-icon-theme-5.23.0/icons/remix.svg closed
+2025-05-19 04:12:07.233 [info] /home/k1en/dotfiles/README.md closed
+2025-05-19 04:12:07.888 [info] /home/k1en/dotfiles/config/.config/sway/scripts/lockman.sh closed
+2025-05-19 04:12:39.008 [info] /home/k1en/dotfiles/config/.config/sway/scripts/lockman.sh closed
+2025-05-19 04:12:39.028 [info] /home/k1en/dotfiles/config/.config/swaylock/config closed
+2025-05-19 04:12:39.042 [info] /home/k1en/dotfiles/config/.config/sway/scripts/lockman.sh closed
+2025-05-19 04:13:21.776 [info] Active editor: file:///home/k1en/dotfiles/README.md
+2025-05-19 04:13:21.932 [info] /home/k1en/dotfiles/install.sh.git closed
+2025-05-19 04:13:38.263 [info] /home/k1en/dotfiles/README.md.git closed
+2025-05-19 04:13:40.098 [info] Active editor: file:///home/k1en/dotfiles/README.md
+2025-05-19 04:13:43.800 [info] /home/k1en/dotfiles/README.md.git closed
+2025-05-19 04:13:45.734 [info] Active editor: file:///home/k1en/dotfiles/README.md
+2025-05-19 04:13:51.174 [info] Active editor: file:///home/k1en/dotfiles/config/.config/waybar/config
+2025-05-19 04:13:51.187 [info] /home/k1en/dotfiles/README.md.git closed
+2025-05-19 04:13:51.843 [info] /home/k1en/dotfiles/config/.config/waybar/config closed
+2025-05-19 04:13:52.070 [info] Active editor: file:///home/k1en/dotfiles/config/.config/sway/config.d/autostart-applications.conf
+2025-05-19 04:13:52.082 [info] /home/k1en/dotfiles/config/.config/waybar/config.git closed
+2025-05-19 04:13:54.378 [info] Active editor: file:///home/k1en/dotfiles/README.md
+2025-05-19 04:13:54.394 [info] /home/k1en/dotfiles/config/.config/sway/config.d/autostart-applications.conf.git closed
+2025-05-19 04:13:56.586 [info] /home/k1en/dotfiles/README.md.git closed
+2025-05-19 04:14:12.420 [info] Active editor: file:///home/k1en/dotfiles/README.md
+2025-05-19 04:14:37.033 [info] Active editor: file:///home/k1en/dotfiles/ideavim/.ideavimrc
+2025-05-19 04:14:37.043 [info] /home/k1en/dotfiles/README.md.git closed
+2025-05-19 04:14:44.777 [info] Active editor: file:///home/k1en/dotfiles/README.md
+2025-05-19 04:14:44.787 [info] /home/k1en/dotfiles/ideavim/.ideavimrc.git closed
+2025-05-19 04:14:49.442 [info] /home/k1en/dotfiles/config/.config/waybar/config closed
+2025-05-19 04:14:49.442 [info] /home/k1en/dotfiles/config/.config/sway/config.d/autostart-applications.conf closed
+2025-05-19 04:14:49.442 [info] /home/k1en/dotfiles/ideavim/.ideavimrc closed
+2025-05-19 04:14:49.443 [info] /home/k1en/dotfiles/config/.config/mako/config closed
+2025-05-19 04:14:49.443 [info] /home/k1en/dotfiles/README.md.git closed
+2025-05-19 04:14:50.322 [info] Active editor: file:///home/k1en/dotfiles/README.md
+2025-05-19 04:15:02.907 [info] /home/k1en/dotfiles/README.md.git closed
+2025-05-19 04:15:04.677 [info] Active editor: file:///home/k1en/dotfiles/README.md
+2025-05-19 04:16:28.508 [info] /home/k1en/dotfiles/README.md.git closed
+2025-05-19 04:16:30.099 [info] Active editor: file:///home/k1en/dotfiles/README.md
+2025-05-19 04:16:57.094 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/alefragnani.project-manager-12.8.0/package.json closed
+2025-05-19 04:16:57.107 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/xabikos.javascriptsnippets-1.8.0/package.json closed
+2025-05-19 04:16:57.110 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/localizely.flutter-intl-1.19.3/package.json closed
+2025-05-19 04:16:57.117 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/naumovs.color-highlight-2.8.0/package.json closed
+2025-05-19 04:16:57.122 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/robert-brunhage.flutter-riverpod-snippets-1.2.2/package.json closed
+2025-05-19 04:16:57.125 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/pkief.material-icon-theme-5.23.0/package.json closed
+2025-05-19 04:16:57.136 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/redhat.java-1.42.0-linux-x64/package.json closed
+2025-05-19 04:16:57.147 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/felixangelov.bloc-6.8.4/package.json closed
+2025-05-19 04:16:57.155 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/vscodevim.vim-1.29.2/package.json closed
+2025-05-19 04:16:57.164 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/quicktype.quicktype-23.0.170/package.json closed
+2025-05-19 04:16:57.172 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/gruntfuggly.todo-tree-0.0.226/package.json closed
+2025-05-19 04:16:57.180 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/rodrigovallades.es7-react-js-snippets-1.9.3/package.json closed
+2025-05-19 04:16:57.183 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/dracula-theme.theme-dracula-2.25.1/package.json closed
+2025-05-19 04:16:57.192 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/vscodevim.vim-1.29.2/out/package.json closed
+2025-05-19 04:16:57.201 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/vscjava.vscode-maven-0.44.0/package.json closed
+2025-05-19 04:16:57.212 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/christian-kohler.npm-intellisense-1.4.5/package.json closed
+2025-05-19 04:16:57.265 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/eamodio.gitlens-17.0.3/package.json closed
+2025-05-19 04:16:57.334 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/circlecodesolution.ccs-flutter-color-2.0.0/package.json closed
+2025-05-19 04:16:57.340 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/jeroen-meijer.pubspec-assist-2.3.2/package.json closed
+2025-05-19 04:16:57.346 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/vscjava.vscode-java-pack-0.29.0/package.json closed
+2025-05-19 04:16:57.357 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/vscjava.vscode-gradle-3.16.4/package.json closed
+2025-05-19 04:16:57.360 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/marcelovelasquez.flutter-tree-1.0.0/package.json closed
+2025-05-19 04:16:57.369 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/usernamehw.errorlens-3.26.0/package.json closed
+2025-05-19 04:16:57.378 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/nash.awesome-flutter-snippets-4.0.1/package.json closed
+2025-05-19 04:16:57.381 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/aaron-bond.better-comments-3.0.2/package.json closed
+2025-05-19 04:16:57.387 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/rangav.vscode-thunder-client-2.34.4/package.json closed
+2025-05-19 04:16:57.395 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/mongodb.mongodb-vscode-1.13.2/package.json closed
+2025-05-19 04:16:57.404 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/dbaeumer.vscode-eslint-3.0.10/package.json closed
+2025-05-19 04:16:57.410 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/formulahendry.auto-rename-tag-0.1.10/package.json closed
+2025-05-19 04:16:57.416 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/mikestead.dotenv-1.0.1/package.json closed
+2025-05-19 04:16:57.417 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/streetsidesoftware.code-spell-checker-4.0.47/packages/_server/package.json closed
+2025-05-19 04:16:57.423 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/streetsidesoftware.code-spell-checker-4.0.47/packages/client/package.json closed
+2025-05-19 04:16:57.436 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/streetsidesoftware.code-spell-checker-4.0.47/packages/_serverPatternMatcher/package.json closed
+2025-05-19 04:16:57.445 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/humao.rest-client-0.25.1/package.json closed
+2025-05-19 04:16:57.459 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/streetsidesoftware.code-spell-checker-4.0.47/package.json closed
+2025-05-19 04:16:57.478 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/dart-code.dart-code-3.110.0/package.json closed
+2025-05-19 04:16:57.490 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/vscjava.vscode-java-debug-0.58.2/package.json closed
+2025-05-19 04:16:57.498 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/vscjava.vscode-java-test-0.43.1/package.json closed
+2025-05-19 04:16:57.507 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/dart-code.flutter-3.110.0/package.json closed
+2025-05-19 04:16:57.513 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/icrawl.discord-vscode-5.9.2/package.json closed
+2025-05-19 04:16:57.522 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/ritwickdey.liveserver-5.7.9/package.json closed
+2025-05-19 04:16:57.528 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/dsznajder.es7-react-js-snippets-4.4.3/package.json closed
+2025-05-19 04:16:57.536 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/esbenp.prettier-vscode-11.0.0/package.json closed
+2025-05-19 04:16:57.544 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/zhuangtongfa.material-theme-3.19.0/package.json closed
+2025-05-19 04:16:57.551 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/visualstudioexptteam.vscodeintellicode-1.3.2/package.json closed
+2025-05-19 04:16:57.558 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/vscjava.vscode-java-dependency-0.24.1/package.json closed
+2025-05-19 04:16:57.565 [info] /home/k1en/dotfiles/cursor/.cursor/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/package.json closed
+2025-05-19 04:17:04.588 [info] Active editor: file:///home/k1en/dotfiles/cursor/.cursor/mcp.json
+2025-05-19 04:17:04.601 [info] /home/k1en/dotfiles/README.md.git closed
+2025-05-19 04:17:10.266 [info] /home/k1en/dotfiles/cursor/.cursor/mcp.json closed
+2025-05-19 04:17:10.294 [info] Active editor: file:///home/k1en/dotfiles/cursor/.cursor/argv.json
+2025-05-19 04:17:10.303 [info] /home/k1en/dotfiles/cursor/.cursor/mcp.json.git closed
+2025-05-19 04:17:19.715 [info] Active editor: file:///home/k1en/dotfiles/cursor/.cursor/.gitignore
+2025-05-19 04:17:19.728 [info] /home/k1en/dotfiles/cursor/.cursor/argv.json.git closed
+2025-05-19 04:17:29.972 [info] /home/k1en/dotfiles/cursor/.cursor/argv.json closed
+2025-05-19 04:17:30.004 [info] Active editor: file:///home/k1en/dotfiles/cursor/.cursor/mcp.json
+2025-05-19 04:17:30.024 [info] /home/k1en/dotfiles/cursor/.cursor/.gitignore.git closed
+2025-05-19 04:17:45.209 [info] /home/k1en/dotfiles/cursor/.cursor/mcp.json closed
+2025-05-19 04:17:45.232 [info] Active editor: file:///home/k1en/dotfiles/cursor/.cursor/.gitignore
+2025-05-19 04:17:45.243 [info] /home/k1en/dotfiles/cursor/.cursor/mcp.json.git closed
+2025-05-19 04:24:24.321 [info] Active editor: file:///home/k1en/dotfiles/install.sh
+2025-05-19 04:24:24.335 [info] /home/k1en/dotfiles/cursor/.cursor/.gitignore.git closed
+2025-05-19 04:24:38.015 [info] Active editor: file:///home/k1en/dotfiles/README.md
+2025-05-19 04:24:38.028 [info] /home/k1en/dotfiles/install.sh.git closed
+2025-05-19 04:26:05.866 [info] /home/k1en/dotfiles/config/.config/sway/scripts/lockman.sh closed
+2025-05-19 04:26:18.771 [info] /home/k1en/dotfiles/config/.config/sway/scripts/lockman.sh closed
+2025-05-19 04:26:18.778 [info] /home/k1en/dotfiles/config/.config/swaylock/config closed
+2025-05-19 04:26:18.785 [info] /home/k1en/dotfiles/config/.config/sway/scripts/lockman.sh closed
+2025-05-19 04:26:46.148 [info] /home/k1en/dotfiles/config/.config/sway/scripts/lockman.sh closed
+2025-05-19 04:26:50.369 [info] /home/k1en/dotfiles/config/.config/sway/scripts/lockman.sh closed
+2025-05-19 04:26:50.372 [info] /home/k1en/dotfiles/config/.config/swaylock/config closed
+2025-05-19 04:26:50.523 [info] /home/k1en/dotfiles/config/.config/sway/scripts/lockman.sh closed
+2025-05-19 04:26:50.534 [info] /home/k1en/dotfiles/config/.config/swaylock/config closed
+2025-05-19 04:26:50.618 [info] /home/k1en/dotfiles/config/.config/sway/scripts/lockman.sh closed
+2025-05-19 04:26:53.605 [info] /home/k1en/dotfiles/config/.config/sway/scripts/lockman.sh closed
+2025-05-19 04:26:54.874 [info] /home/k1en/dotfiles/config/.config/sway/scripts/lockman.sh closed
+2025-05-19 04:26:57.250 [info] /home/k1en/dotfiles/config/.config/sway/scripts/lockman.sh closed
+2025-05-19 04:26:57.250 [info] /home/k1en/dotfiles/config/.config/swaylock/config closed
+2025-05-19 04:26:57.250 [info] /home/k1en/dotfiles/config/.config/sway/scripts/lockman.sh closed
+2025-05-19 04:26:57.251 [info] /home/k1en/dotfiles/config/.config/swaylock/config closed
+2025-05-19 04:26:57.251 [info] /home/k1en/dotfiles/config/.config/sway/scripts/lockman.sh closed
+2025-05-19 04:28:19.078 [info] /home/k1en/dotfiles/config/.config/sway/scripts/lockman.sh closed
+2025-05-19 04:28:19.087 [info] /home/k1en/dotfiles/config/.config/swaylock/config closed
+2025-05-19 04:28:19.094 [info] /home/k1en/dotfiles/config/.config/sway/scripts/lockman.sh closed
+2025-05-19 04:28:52.552 [info] /home/k1en/dotfiles/README.md.git closed
+2025-05-19 04:28:54.308 [info] Active editor: file:///home/k1en/dotfiles/cursor/.cursor/.gitignore
+2025-05-19 04:28:56.501 [info] Active editor: file:///home/k1en/dotfiles/README.md
+2025-05-19 04:28:56.518 [info] /home/k1en/dotfiles/cursor/.cursor/.gitignore.git closed
+2025-05-19 04:33:44.413 [info] /home/k1en/dotfiles/README.md.git closed
+2025-05-19 04:33:53.290 [info] /home/k1en/dotfiles/config/.config/nvim/.gitignore.git closed
+2025-05-19 04:37:05.537 [info] /home/k1en/dotfiles/README.md.git closed
+2025-05-19 04:37:17.400 [info] /home/k1en/dotfiles/README.md.git closed
+2025-05-19 04:38:02.135 [info] /home/k1en/dotfiles/README.md.git closed

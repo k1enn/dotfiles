@@ -1,0 +1,64 @@
+:root {
+    /* --------- BASE THEME --------- */
+    --blurple-replace: #61afef; /* One Dark Pro blue accent */
+  
+    --background-primary: rgb(40, 44, 52);         /* #282c34 */
+    --background-secondary: rgb(33, 37, 43);       /* #21252b */
+    --background-floating: rgb(44, 49, 58);        /* #2c313a */
+    --background-secondary-alt: var(--background-floating);
+    --background-tertiary: rgb(40, 44, 52);        /* #282c34 */
+    --background-accent: rgb(44, 49, 58);          /* #2c313a */
+    --userarea-background: var(--background-tertiary);
+  
+    --header-primary: #abb2bf;                     /* One Dark Pro foreground */
+    --header-secondary: #5c6370;                   /* One Dark Pro muted */
+  
+    --elevation-low: 0 1px 0 rgba(40, 44, 52, 0.2), 0 1.5px 0 rgba(60, 60, 70, 0.05), 0 2px 0 rgba(40, 44, 52, 0.05);
+    --elevation-high: 0 8px 16px rgba(0, 0, 0, 0.24);
+  
+    --channels-default: #5c6370;                   /* One Dark Pro muted */
+    --channeltextarea-background: rgb(33, 37, 43); /* #21252b */
+  
+    --voice-color: var(--brand-experiment);
+  
+    --interactive-normal: #abb2bf;
+    --interactive-hover: #e5c07b;                  /* One Dark Pro yellow */
+    --interactive-active: #fff;
+    --interactive-muted: #5c6370;
+  
+    --background-modifier-hover: rgba(62, 68, 81, 0.26);   /* #3e4451 */
+    --background-modifier-active: rgba(62, 68, 81, 0.44);
+    --background-modifier-selected: rgba(62, 68, 81, 0.52);
+    --background-modifier-accent: rgb(62, 68, 81);
+  
+    --text-link: #528bff;                          /* One Dark Pro blue */
+    --text-normal: #abb2bf;
+    --text-muted: #5c6370;
+  
+    --deprecated-panel-background: #2c313a;
+    --deprecated-card-bg: var(--background-secondary);
+    --deprecated-card-editable-bg: var(--background-secondary);
+    --deprecated-store-bg: #3e4451;
+    --deprecated-quickswitcher-input-background: #3e4451;
+    --deprecated-quickswitcher-input-placeholder: hsla(0, 0%, 100%, 0.3);
+    --deprecated-text-input-bg: var(--channeltextarea-background);
+    --deprecated-text-input-border: var(--border-color);
+    --deprecated-text-input-border-hover: #21252b;
+    --deprecated-text-input-border-disabled: #181a1f;
+    --deprecated-text-input-prefix: #abb2bf;
+  
+    --background-accent-1: rgba(40, 44, 52, 0.1);
+    --background-accent-3: rgba(40, 44, 52, 0.3);
+    --background-floating-2: rgba(0, 0, 0, 0.2);
+  
+    --border: 1px solid #181a1f;
+    --border-color: #181a1f;
+    --blurple-border: 1px solid #61afef;
+    --border-radius: 5px;
+  
+    --divide-color: #61afef;
+    --brand-experiment: #61afef;
+  
+    /* ...keep the rest of your CSS as is... */
+  }
+  

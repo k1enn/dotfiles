@@ -1,0 +1,337 @@
+2025-05-19 05:11:55.434 [info] Extension host with pid 44385 started
+2025-05-19 05:11:55.434 [info] Skipping acquiring lock for /home/k1en/.config/Cursor/User/workspaceStorage/32387f5590dad7019f3cba821699edee.
+2025-05-19 05:11:55.591 [info] ExtensionService#_doActivateExtension mongodb.mongodb-vscode, startup: false, activationEvent: 'onLanguage:plaintext'
+2025-05-19 05:11:56.151 [info] Extension host with pid 44461 started
+2025-05-19 05:11:56.151 [info] Skipping acquiring lock for /home/k1en/.config/Cursor/User/workspaceStorage/32387f5590dad7019f3cba821699edee.
+2025-05-19 05:11:56.156 [info] Eager extensions activated
+2025-05-19 05:11:56.168 [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: false, activationEvent: 'onStartupFinished'
+2025-05-19 05:11:56.196 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-05-19 05:11:56.217 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
+2025-05-19 05:11:56.231 [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
+2025-05-19 05:11:56.319 [info] ExtensionService#_doActivateExtension humao.rest-client, startup: false, activationEvent: 'onLanguage:markdown'
+2025-05-19 05:11:56.698 [error] Error: chatParticipant must be declared in package.json: mongodb.participant
+    at m$s.$registerAgent (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:2354:75403)
+2025-05-19 05:11:56.751 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-05-19 05:11:56.754 [info] ExtensionService#_doActivateExtension formulahendry.auto-rename-tag, startup: true, activationEvent: '*'
+2025-05-19 05:11:56.775 [info] ExtensionService#_doActivateExtension icrawl.discord-vscode, startup: true, activationEvent: '*'
+2025-05-19 05:11:57.177 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-05-19 05:11:57.249 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-05-19 05:11:57.273 [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
+2025-05-19 05:11:57.369 [info] Eager extensions activated
+2025-05-19 05:11:57.457 [info] ExtensionService#_doActivateExtension anysphere.cursor-always-local, startup: false, activationEvent: 'onStartupFinished'
+2025-05-19 05:11:57.655 [info] ExtensionService#_doActivateExtension anysphere.cursor-retrieval, startup: false, activationEvent: 'onStartupFinished'
+2025-05-19 05:11:57.874 [info] ExtensionService#_doActivateExtension anysphere.cursor-shadow-workspace, startup: false, activationEvent: 'onStartupFinished'
+2025-05-19 05:11:57.940 [info] ExtensionService#_doActivateExtension anysphere.cursor-tokenize, startup: false, activationEvent: 'onStartupFinished'
+2025-05-19 05:11:58.096 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-05-19 05:11:58.099 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-05-19 05:11:58.118 [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint, startup: false, activationEvent: 'onStartupFinished'
+2025-05-19 05:11:58.142 [info] ExtensionService#_doActivateExtension dsznajder.es7-react-js-snippets, startup: false, activationEvent: 'onStartupFinished'
+2025-05-19 05:11:58.528 [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+2025-05-19 05:11:58.577 [info] ExtensionService#_doActivateExtension PKief.material-icon-theme, startup: false, activationEvent: 'onStartupFinished'
+2025-05-19 05:11:58.588 [info] ExtensionService#_doActivateExtension streetsidesoftware.code-spell-checker, startup: false, activationEvent: 'onStartupFinished'
+2025-05-19 05:11:58.667 [info] ExtensionService#_doActivateExtension zhuangtongfa.material-theme, startup: false, activationEvent: 'onStartupFinished'
+2025-05-19 05:11:58.963 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-05-19 05:12:04.221 [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'
+2025-05-19 05:12:14.786 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:json'
+2025-05-19 05:12:14.800 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:json'
+2025-05-19 05:12:14.845 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onLanguage:json'
+2025-05-19 05:21:37.646 [info] Extension host terminating: renderer closed the MessagePort
+2025-05-19 05:21:37.648 [info] Extension host terminating: renderer closed the MessagePort
+2025-05-19 05:21:37.648 [error] TypeError: r.some is not a function
+	at h.saveToDisk (/home/k1en/dotfiles/cursor/.cursor/extensions/vscodevim.vim-1.29.2/out/extension.js:2:641673)
+	at t.deactivate (/home/k1en/dotfiles/cursor/.cursor/extensions/vscodevim.vim-1.29.2/out/extension.js:2:767872)
+	at $Yt.eb (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:11894)
+	at file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:10043
+	at Array.map (<anonymous>)
+	at $Yt.$ (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:10031)
+	at $Yt.terminate (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:10274)
+	at pmt.terminate (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:143:1435)
+	at jr (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:198:15170)
+	at MessagePortMain.<anonymous> (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:198:11700)
+	at MessagePortMain.emit (node:events:518:28)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+2025-05-19 05:21:37.648 [info] Extension host with pid 44461 exiting with code 0
+2025-05-19 05:21:37.682 [error] Canceled: Canceled
+    at new cTt (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:47:111537)
+    at iY.U (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:47:116159)
+    at Proxy.r.<computed>.a.charCodeAt.r.<computed> (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:47:113651)
+    at aG.g (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:32526)
+    at aG.executeCommand (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:32030)
+    at e.registerCommand.description (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:31360)
+    at aG.h (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:33047)
+    at aG.g (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:32123)
+    at aG.executeCommand (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:32030)
+    at Object.executeCommand (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:180:42161)
+    at hO.N [as value] (/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:978077)
+    at C.B (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:32:747)
+    at C (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:32:817)
+    at C.fire (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:32:1034)
+    at Object.f [as dispose] (/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:999653)
+    at /tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1005775
+    at Array.forEach (<anonymous>)
+    at C.dispose (/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1005761)
+    at PH.<anonymous> (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:131:20157)
+    at PH.dispose (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:131:20253)
+    at PH.<anonymous> (/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:980556)
+    at PH.dispose (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:131:20253)
+    at Ms (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:706)
+    at file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:15308
+    at file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:1017
+    at Object.dispose (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:10:708)
+    at $Yt.eb (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:12089)
+    at file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:10043
+    at Array.map (<anonymous>)
+    at $Yt.$ (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:10031)
+    at $Yt.terminate (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:10274)
+    at pmt.terminate (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:143:1435)
+    at jr (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:198:15170)
+    at MessagePortMain.<anonymous> (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:198:11700)
+    at MessagePortMain.emit (node:events:518:28)
+    at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949) setContext undefined
+2025-05-19 05:21:37.682 [error] Canceled: Canceled
+    at new cTt (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:47:111537)
+    at iY.U (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:47:116159)
+    at Proxy.r.<computed>.a.charCodeAt.r.<computed> (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:47:113651)
+    at aG.g (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:32526)
+    at aG.executeCommand (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:32030)
+    at e.registerCommand.description (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:31360)
+    at aG.h (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:33047)
+    at aG.g (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:32123)
+    at aG.executeCommand (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:32030)
+    at Object.executeCommand (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:180:42161)
+    at hO.N [as value] (/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:978077)
+    at C.B (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:32:747)
+    at C (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:32:817)
+    at C.fire (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:32:1034)
+    at Object.f [as dispose] (/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:999653)
+    at /tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1005775
+    at Array.forEach (<anonymous>)
+    at C.dispose (/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1005761)
+    at PH.<anonymous> (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:131:20157)
+    at PH.dispose (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:131:20253)
+    at PH.<anonymous> (/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:980556)
+    at PH.dispose (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:131:20253)
+    at Ms (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:706)
+    at file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:15308
+    at file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:1017
+    at Object.dispose (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:10:708)
+    at $Yt.eb (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:12089)
+    at file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:10043
+    at Array.map (<anonymous>)
+    at $Yt.$ (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:10031)
+    at $Yt.terminate (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:10274)
+    at pmt.terminate (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:143:1435)
+    at jr (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:198:15170)
+    at MessagePortMain.<anonymous> (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:198:11700)
+    at MessagePortMain.emit (node:events:518:28)
+    at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949) setContext undefined
+2025-05-19 05:21:37.684 [error] Canceled: Canceled
+    at new cTt (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:47:111537)
+    at iY.U (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:47:116159)
+    at Proxy.r.<computed>.a.charCodeAt.r.<computed> (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:47:113651)
+    at aG.g (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:32526)
+    at aG.executeCommand (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:32030)
+    at e.registerCommand.description (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:31360)
+    at aG.h (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:33047)
+    at aG.g (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:32123)
+    at aG.executeCommand (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:32030)
+    at Object.executeCommand (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:180:42161)
+    at a.VscodeDevShareProvider.set hasGitHubRepositories [as hasGitHubRepositories] (/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/extensions/github/dist/extension.js:4:328629)
+    at /tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/extensions/github/dist/extension.js:4:329588
+    at hO.value (/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1096192)
+    at C.B (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:32:747)
+    at C (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:32:817)
+    at C.fire (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:32:1034)
+    at Object.f [as dispose] (/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:999653)
+    at /tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1005775
+    at Array.forEach (<anonymous>)
+    at C.dispose (/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1005761)
+    at PH.<anonymous> (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:131:20157)
+    at PH.dispose (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:131:20253)
+    at PH.<anonymous> (/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:980556)
+    at PH.dispose (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:131:20253)
+    at Ms (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:706)
+    at file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:15308
+    at file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:1017
+    at Object.dispose (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:10:708)
+    at $Yt.eb (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:12089)
+    at file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:10043
+    at Array.map (<anonymous>)
+    at $Yt.$ (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:10031)
+    at $Yt.terminate (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:10274)
+    at pmt.terminate (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:143:1435)
+    at jr (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:198:15170)
+    at MessagePortMain.<anonymous> (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:198:11700)
+    at MessagePortMain.emit (node:events:518:28)
+    at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949) setContext undefined
+2025-05-19 05:21:37.687 [info] Extension host with pid 44385 exiting with code 0
+2025-05-19 05:21:38.567 [info] Extension host with pid 51540 started
+2025-05-19 05:21:38.567 [info] Skipping acquiring lock for /home/k1en/.config/Cursor/User/workspaceStorage/32387f5590dad7019f3cba821699edee.
+2025-05-19 05:21:38.578 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-05-19 05:21:38.590 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-05-19 05:21:38.596 [info] Extension host with pid 51541 started
+2025-05-19 05:21:38.596 [info] Skipping acquiring lock for /home/k1en/.config/Cursor/User/workspaceStorage/32387f5590dad7019f3cba821699edee.
+2025-05-19 05:21:38.601 [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: false, activationEvent: 'onCommand:type'
+2025-05-19 05:21:38.632 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-05-19 05:21:38.671 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-05-19 05:21:38.687 [info] ExtensionService#_doActivateExtension mongodb.mongodb-vscode, startup: false, activationEvent: 'onLanguage:plaintext'
+2025-05-19 05:21:38.789 [info] Eager extensions activated
+2025-05-19 05:21:39.178 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
+2025-05-19 05:21:39.188 [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
+2025-05-19 05:21:39.249 [info] ExtensionService#_doActivateExtension humao.rest-client, startup: false, activationEvent: 'onLanguage:markdown'
+2025-05-19 05:21:39.337 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: false, activationEvent: 'onFileSystem:git', root cause: vscode.git
+2025-05-19 05:21:39.340 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-05-19 05:21:39.362 [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'
+2025-05-19 05:21:39.390 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onLanguage:json'
+2025-05-19 05:21:39.574 [error] Error: chatParticipant must be declared in package.json: mongodb.participant
+    at m$s.$registerAgent (vscode-file://vscode-app/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:2354:75403)
+2025-05-19 05:21:39.575 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'onFileSystem:git'
+2025-05-19 05:21:39.663 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-05-19 05:21:39.682 [info] ExtensionService#_doActivateExtension formulahendry.auto-rename-tag, startup: true, activationEvent: '*'
+2025-05-19 05:21:39.702 [info] ExtensionService#_doActivateExtension icrawl.discord-vscode, startup: true, activationEvent: '*'
+2025-05-19 05:21:40.013 [info] Eager extensions activated
+2025-05-19 05:21:40.019 [info] ExtensionService#_doActivateExtension anysphere.cursor-always-local, startup: false, activationEvent: 'onStartupFinished'
+2025-05-19 05:21:40.183 [info] ExtensionService#_doActivateExtension anysphere.cursor-retrieval, startup: false, activationEvent: 'onStartupFinished'
+2025-05-19 05:21:40.425 [info] ExtensionService#_doActivateExtension anysphere.cursor-shadow-workspace, startup: false, activationEvent: 'onStartupFinished'
+2025-05-19 05:21:40.482 [info] ExtensionService#_doActivateExtension anysphere.cursor-tokenize, startup: false, activationEvent: 'onStartupFinished'
+2025-05-19 05:21:40.614 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-05-19 05:21:40.617 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-05-19 05:21:40.631 [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint, startup: false, activationEvent: 'onStartupFinished'
+2025-05-19 05:21:40.653 [info] ExtensionService#_doActivateExtension dsznajder.es7-react-js-snippets, startup: false, activationEvent: 'onStartupFinished'
+2025-05-19 05:21:40.988 [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+2025-05-19 05:21:41.036 [info] ExtensionService#_doActivateExtension PKief.material-icon-theme, startup: false, activationEvent: 'onStartupFinished'
+2025-05-19 05:21:41.049 [info] ExtensionService#_doActivateExtension streetsidesoftware.code-spell-checker, startup: false, activationEvent: 'onStartupFinished'
+2025-05-19 05:22:07.532 [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
+2025-05-19 05:38:51.122 [info] Extension host terminating: renderer closed the MessagePort
+2025-05-19 05:38:51.123 [info] Extension host terminating: renderer closed the MessagePort
+2025-05-19 05:38:51.124 [error] TypeError: r.some is not a function
+	at h.saveToDisk (/home/k1en/dotfiles/cursor/.cursor/extensions/vscodevim.vim-1.29.2/out/extension.js:2:641673)
+	at t.deactivate (/home/k1en/dotfiles/cursor/.cursor/extensions/vscodevim.vim-1.29.2/out/extension.js:2:767872)
+	at $Yt.eb (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:11894)
+	at file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:10043
+	at Array.map (<anonymous>)
+	at $Yt.$ (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:10031)
+	at $Yt.terminate (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:10274)
+	at pmt.terminate (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:143:1435)
+	at jr (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:198:15170)
+	at MessagePortMain.<anonymous> (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:198:11700)
+	at MessagePortMain.emit (node:events:518:28)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+2025-05-19 05:38:51.124 [info] Extension host with pid 51541 exiting with code 0
+2025-05-19 05:38:51.173 [error] Canceled: Canceled
+    at new cTt (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:47:111537)
+    at iY.U (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:47:116159)
+    at Proxy.r.<computed>.a.charCodeAt.r.<computed> (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:47:113651)
+    at aG.g (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:32526)
+    at aG.executeCommand (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:32030)
+    at e.registerCommand.description (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:31360)
+    at aG.h (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:33047)
+    at aG.g (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:32123)
+    at aG.executeCommand (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:32030)
+    at Object.executeCommand (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:180:42161)
+    at hO.N [as value] (/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:978077)
+    at C.B (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:32:747)
+    at C (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:32:817)
+    at C.fire (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:32:1034)
+    at Object.f [as dispose] (/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:999653)
+    at /tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1005775
+    at Array.forEach (<anonymous>)
+    at C.dispose (/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1005761)
+    at PH.<anonymous> (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:131:20157)
+    at PH.dispose (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:131:20253)
+    at PH.<anonymous> (/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:980556)
+    at PH.dispose (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:131:20253)
+    at Ms (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:706)
+    at file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:15308
+    at file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:1017
+    at Object.dispose (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:10:708)
+    at $Yt.eb (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:12089)
+    at file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:10043
+    at Array.map (<anonymous>)
+    at $Yt.$ (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:10031)
+    at $Yt.terminate (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:10274)
+    at pmt.terminate (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:143:1435)
+    at jr (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:198:15170)
+    at MessagePortMain.<anonymous> (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:198:11700)
+    at MessagePortMain.emit (node:events:518:28)
+    at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+    at Object.callbackTrampoline (node:internal/async_hooks:130:17) setContext undefined
+2025-05-19 05:38:51.174 [error] Canceled: Canceled
+    at new cTt (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:47:111537)
+    at iY.U (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:47:116159)
+    at Proxy.r.<computed>.a.charCodeAt.r.<computed> (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:47:113651)
+    at aG.g (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:32526)
+    at aG.executeCommand (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:32030)
+    at e.registerCommand.description (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:31360)
+    at aG.h (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:33047)
+    at aG.g (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:32123)
+    at aG.executeCommand (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:32030)
+    at Object.executeCommand (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:180:42161)
+    at hO.N [as value] (/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:978077)
+    at C.B (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:32:747)
+    at C (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:32:817)
+    at C.fire (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:32:1034)
+    at Object.f [as dispose] (/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:999653)
+    at /tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1005775
+    at Array.forEach (<anonymous>)
+    at C.dispose (/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1005761)
+    at PH.<anonymous> (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:131:20157)
+    at PH.dispose (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:131:20253)
+    at PH.<anonymous> (/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:980556)
+    at PH.dispose (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:131:20253)
+    at Ms (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:706)
+    at file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:15308
+    at file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:1017
+    at Object.dispose (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:10:708)
+    at $Yt.eb (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:12089)
+    at file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:10043
+    at Array.map (<anonymous>)
+    at $Yt.$ (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:10031)
+    at $Yt.terminate (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:10274)
+    at pmt.terminate (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:143:1435)
+    at jr (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:198:15170)
+    at MessagePortMain.<anonymous> (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:198:11700)
+    at MessagePortMain.emit (node:events:518:28)
+    at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+    at Object.callbackTrampoline (node:internal/async_hooks:130:17) setContext undefined
+2025-05-19 05:38:51.176 [error] Canceled: Canceled
+    at new cTt (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:47:111537)
+    at iY.U (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:47:116159)
+    at Proxy.r.<computed>.a.charCodeAt.r.<computed> (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:47:113651)
+    at aG.g (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:32526)
+    at aG.executeCommand (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:32030)
+    at e.registerCommand.description (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:31360)
+    at aG.h (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:33047)
+    at aG.g (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:32123)
+    at aG.executeCommand (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:32030)
+    at Object.executeCommand (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:180:42161)
+    at a.VscodeDevShareProvider.set hasGitHubRepositories [as hasGitHubRepositories] (/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/extensions/github/dist/extension.js:4:328629)
+    at /tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/extensions/github/dist/extension.js:4:329588
+    at hO.value (/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1096192)
+    at C.B (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:32:747)
+    at C (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:32:817)
+    at C.fire (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:32:1034)
+    at Object.f [as dispose] (/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:999653)
+    at /tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1005775
+    at Array.forEach (<anonymous>)
+    at C.dispose (/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1005761)
+    at PH.<anonymous> (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:131:20157)
+    at PH.dispose (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:131:20253)
+    at PH.<anonymous> (/tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:980556)
+    at PH.dispose (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:131:20253)
+    at Ms (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:706)
+    at file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:15308
+    at file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:1017
+    at Object.dispose (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:10:708)
+    at $Yt.eb (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:12089)
+    at file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:10043
+    at Array.map (<anonymous>)
+    at $Yt.$ (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:10031)
+    at $Yt.terminate (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:10274)
+    at pmt.terminate (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:143:1435)
+    at jr (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:198:15170)
+    at MessagePortMain.<anonymous> (file:///tmp/.mount_cursorp4Wffw/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:198:11700)
+    at MessagePortMain.emit (node:events:518:28)
+    at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+    at Object.callbackTrampoline (node:internal/async_hooks:130:17) setContext undefined
+2025-05-19 05:38:51.180 [info] Extension host with pid 51540 exiting with code 0

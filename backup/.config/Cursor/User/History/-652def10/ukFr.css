@@ -1,0 +1,236 @@
+/* =============================================================================
+ *
+ * Waybar configuration - One Dark Pro Theme
+ *
+ * =========================================================================== */
+
+@import "colors.css";
+
+/* -----------------------------------------------------------------------------
+ * Base styles
+ * -------------------------------------------------------------------------- */
+
+* {
+    color: @text;
+    border: 0;
+    padding: 0 0;
+    font-size: 13px;
+    font-family: "Fira Sans Semibold", "Font Awesome 6 Free", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+window#waybar {
+    border: 0px solid rgba(0, 0, 0, 0);
+    background-color: rgba(40, 44, 52, 0.9); /* Slightly transparent @base */
+}
+
+#workspaces button {
+    color: @text;
+    border-radius: 5px;
+    margin: 0px 2px;
+    padding: 2px 6px;
+    background-color: @surface0;
+    transition: all 0.3s ease;
+}
+
+#workspaces button:hover {
+    color: @blue;
+    background-color: @surface1;
+    box-shadow: none;
+    text-shadow: none;
+    border: 0px;
+}
+
+#workspaces {
+    border-style: solid;
+    background-color: @base;
+    opacity: 1;
+    border-radius: 8px;
+    margin: 6px 0px 6px 6px;
+    padding: 0px 5px;
+}
+
+#workspaces button.focused {
+    color: @crust;
+    background-color: @blue;
+    border-radius: 5px;
+}
+
+#clock,
+#custom-swap,
+#custom-cava-internal,
+#battery,
+#cpu,
+#memory,
+#disk,
+#idle_inhibitor,
+#temperature,
+#custom-keyboard-layout,
+#backlight,
+#network,
+#pulseaudio,
+#custom-audio,
+#mode,
+#window,
+#tray,
+#custom-power,
+#custom-pacman,
+#custom-launcher,
+#custom-system,
+#mpd {
+    padding: 3px 8px;
+    background-color: @surface0;
+    opacity: 1;
+    margin: 6px 2px;
+    border-radius: 6px;
+}
+
+/* -----------------------------------------------------------------------------
+ * Module styles
+ * -------------------------------------------------------------------------- */
+
+#mpd {
+    color: @mauve;
+    margin-left: 5px;
+}
+
+#window {
+    color: @text;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: @surface1;
+}
+
+window#waybar.empty #window {
+    background-color: transparent;
+}
+
+#clock {
+    color: @blue;
+    margin: 6px 8px;
+    font-weight: bold;
+}
+
+#backlight {
+    color: @yellow;
+    border-radius: 6px 0 0 6px;
+}
+
+#battery {
+    color: @green;
+    border-radius: 0 6px 6px 0;
+    margin-right: 8px;
+}
+
+#battery.charging {
+    color: @green;
+    background-color: fade(@green, 20%);
+}
+
+@keyframes blink {
+    to {
+        background-color: fade(@red, 30%);
+    }
+}
+
+#battery.warning:not(.charging) {
+    color: @yellow;
+    background-color: fade(@yellow, 20%);
+}
+
+#battery.critical:not(.charging) {
+    color: @text;
+    background-color: @red;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#custom-system {
+    color: @sky;
+}
+
+#cpu {
+    color: @sky;
+}
+
+#memory {
+    color: @lavender;
+}
+
+#disk {
+    color: @peach;
+}
+
+#network.disabled {
+    color: @text;
+    background-color: @red;
+}
+
+#network {
+    color: @green;
+    border-radius: 6px;
+    margin-right: 5px;
+}
+
+#network.disconnected {
+    color: @text;
+    background-color: @red;
+}
+
+#pulseaudio, #custom-audio {
+    color: @flamingo;
+}
+
+#pulseaudio.muted, #custom-audio.muted {
+    color: @text;
+    background-color: fade(@overlay0, 60%);
+}
+
+#temperature {
+    color: @teal;
+    border-radius: 6px 0 0 6px;
+}
+
+#temperature.critical {
+    color: @text;
+    background-color: @red;
+}
+
+#idle_inhibitor {
+    background-color: @yellow;
+    color: @base;
+    border-radius: 6px;
+}
+
+#tray {
+    margin: 6px 8px;
+    border-radius: 6px;
+}
+
+#custom-launcher {
+    background-color: @blue;
+    color: @base;
+    border-radius: 6px;
+    padding: 2px 8px;
+    margin-left: 8px;
+    font-weight: bold;
+}
+
+#custom-power {
+    color: @base;
+    background-color: @red;
+    border-radius: 6px;
+    margin-left: 5px;
+    margin-right: 8px;
+    padding: 2px 8px;
+}
+
+#custom-keyboard-layout {
+    color: @peach;
+    border-radius: 0 6px 6px 0;
+    margin-right: 8px;
+}

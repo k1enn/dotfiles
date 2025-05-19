@@ -1,0 +1,399 @@
+2025-05-17 23:26:48.512 [info] Creating Indexing Repo client:  https://repo42.cursor.sh
+2025-05-17 23:26:48.512 [info] Creating repo client with backend url: https://repo42.cursor.sh
+2025-05-17 23:26:48.512 [error] Git command failed: git config --get remote.origin.url Command failed: git config --get remote.origin.url
+
+2025-05-17 23:26:48.513 [error] Error getting repo info: Command failed: git config --get remote.origin.url
+
+2025-05-17 23:26:48.513 [error] Error: Command failed: git config --get remote.origin.url
+
+	at genericNodeError (node:internal/errors:984:15)
+	at wrappedFn (node:internal/errors:538:14)
+	at ChildProcess.exithandler (node:child_process:422:12)
+	at ChildProcess.emit (node:events:518:28)
+	at maybeClose (node:internal/child_process:1104:16)
+	at Socket.<anonymous> (node:internal/child_process:456:11)
+	at Socket.emit (node:events:518:28)
+	at Pipe.<anonymous> (node:net:343:12)
+2025-05-17 23:26:48.513 [info] Using existing keys for an index
+2025-05-17 23:26:48.513 [info] InternalRepoInfo constructor with preferredEmbeddingModel 0
+2025-05-17 23:26:48.636 [info] Using existing keys for an index
+2025-05-17 23:26:48.636 [info] InternalRepoInfo constructor with preferredEmbeddingModel 0
+2025-05-17 23:26:48.639 [info] Setting global status from status tracker: synced
+2025-05-17 23:26:48.639 [info] Doing a startup handshake.
+2025-05-17 23:26:48.657 [info] Finished computing merkle tree in 12.36389599999984 ms.
+2025-05-17 23:26:48.658 [info] Doing the initial handshake with hash: adcea5c5257fbf77f07cd488f55f3d282c025ab0008ec4a118c96596f0c92c7a
+2025-05-17 23:26:48.663 [info] Computed simhash vector of length: 256
+2025-05-17 23:26:48.663 [info] Path key hash: 1aef23c158a2ea0d22d8a1a2771e6413146803a0a2f521db7cb35b6b07016ac7
+2025-05-17 23:26:48.663 [info] Handshake start
+2025-05-17 23:26:52.664 [warning] Retrying handshake with timeout 4000. Error:  [deadline_exceeded] the operation timed out
+2025-05-17 23:26:52.664 [info] Handshake start
+2025-05-17 23:26:52.676 [info] Creating Indexing Repo client:  https://repo42.cursor.sh
+2025-05-17 23:26:52.676 [info] Creating repo client with backend url: https://repo42.cursor.sh
+2025-05-17 23:26:52.677 [info] multiCodebaseIndexingJob dispose
+2025-05-17 23:26:52.677 [info] Aborting indexing job.
+2025-05-17 23:26:52.677 [info] Using existing keys for an index
+2025-05-17 23:26:52.677 [info] InternalRepoInfo constructor with preferredEmbeddingModel 0
+2025-05-17 23:26:52.677 [info] Indexing job successfully done or aborted.
+2025-05-17 23:26:52.679 [info] Setting global status from status tracker: synced
+2025-05-17 23:26:52.679 [info] Doing a startup handshake.
+2025-05-17 23:26:52.688 [info] Finished computing merkle tree in 6.56013399999938 ms.
+2025-05-17 23:26:52.689 [info] Doing the initial handshake with hash: adcea5c5257fbf77f07cd488f55f3d282c025ab0008ec4a118c96596f0c92c7a
+2025-05-17 23:26:52.690 [info] Computed simhash vector of length: 256
+2025-05-17 23:26:52.690 [info] Path key hash: 1aef23c158a2ea0d22d8a1a2771e6413146803a0a2f521db7cb35b6b07016ac7
+2025-05-17 23:26:52.690 [info] Handshake start
+2025-05-17 23:26:56.693 [warning] Retrying handshake with timeout 4000. Error:  [deadline_exceeded] the operation timed out
+2025-05-17 23:26:56.693 [info] Handshake start
+2025-05-17 23:26:56.994 [info] Handshake timing: 302.55230800000027, response: {"status":"STATUS_SUCCESS","codebases":[{"codebaseId":"ab90a3be-87fc-4b39-8905-fd1a797ae7b5","status":"STATUS_UP_TO_DATE"}]}
+2025-05-17 23:26:56.994 [info] Handshake result: {"status":"STATUS_SUCCESS","codebases":[{"codebaseId":"ab90a3be-87fc-4b39-8905-fd1a797ae7b5","status":"STATUS_UP_TO_DATE"}]}
+2025-05-17 23:26:56.994 [info] Starting fast remote sync.
+2025-05-17 23:26:56.994 [info] Total num embeddable files: 130
+2025-05-17 23:26:56.995 [info] Root hash: adcea5c5257fbf77f07cd488f55f3d282c025ab0008ec4a118c96596f0c92c7a
+2025-05-17 23:26:56.995 [info] Finishing sync (hasUpdates: false, isErr: false)
+2025-05-17 23:26:57.282 [info] Finished indexing repository.
+2025-05-17 23:26:57.283 [info] Indexing job successfully done or aborted.
+2025-05-17 23:31:52.680 [info] multiCodebaseIndexingJob dispose
+2025-05-17 23:31:52.680 [info] Aborting indexing job.
+2025-05-17 23:31:52.680 [info] Setting global status from status tracker: synced
+2025-05-17 23:31:52.680 [info] Doing a startup handshake.
+2025-05-17 23:31:52.686 [info] Finished computing merkle tree in 1.6171099999919534 ms.
+2025-05-17 23:31:52.687 [info] Doing the initial handshake with hash: c649f481c6aa4271e4dc514f40ce9d47936a0f002351fedf1a67798581be4351
+2025-05-17 23:31:52.688 [info] Computed simhash vector of length: 256
+2025-05-17 23:31:52.688 [info] Path key hash: 1aef23c158a2ea0d22d8a1a2771e6413146803a0a2f521db7cb35b6b07016ac7
+2025-05-17 23:31:52.688 [info] Handshake start
+2025-05-17 23:31:52.977 [info] Handshake timing: 289.79885000002105, response: {"status":"STATUS_SUCCESS","codebases":[{"codebaseId":"ab90a3be-87fc-4b39-8905-fd1a797ae7b5","status":"STATUS_OUT_OF_SYNC"}]}
+2025-05-17 23:31:52.977 [info] Handshake result: {"status":"STATUS_SUCCESS","codebases":[{"codebaseId":"ab90a3be-87fc-4b39-8905-fd1a797ae7b5","status":"STATUS_OUT_OF_SYNC"}]}
+2025-05-17 23:31:52.977 [info] Starting fast remote sync.
+2025-05-17 23:31:52.977 [info] Total num embeddable files: 131
+2025-05-17 23:31:52.978 [info] Root hash: c649f481c6aa4271e4dc514f40ce9d47936a0f002351fedf1a67798581be4351
+2025-05-17 23:31:52.978 [info] In the out of sync case.
+2025-05-17 23:31:52.979 [info] Waiting on semaphore to be released 1
+2025-05-17 23:31:53.179 [info] Waiting on semaphore to be released 1
+2025-05-17 23:31:53.382 [info] Waiting on semaphore to be released 6
+2025-05-17 23:31:53.580 [info] Waiting on semaphore to be released 6
+2025-05-17 23:31:53.782 [info] Waiting on semaphore to be released 4
+2025-05-17 23:31:53.980 [info] Waiting on semaphore to be released 3
+2025-05-17 23:31:54.183 [info] Waiting on semaphore to be released 1
+2025-05-17 23:31:54.382 [info] Waiting on semaphore to be released 1
+2025-05-17 23:31:54.583 [info] Waiting on semaphore to be released 1
+2025-05-17 23:31:54.782 [info] Waiting on semaphore to be released 1
+2025-05-17 23:31:54.983 [info] Waiting on semaphore to be released 1
+2025-05-17 23:31:55.182 [info] Waiting on semaphore to be released 1
+2025-05-17 23:31:55.383 [info] Waiting on semaphore to be released 1
+2025-05-17 23:31:55.582 [info] Waiting on semaphore to be released 1
+2025-05-17 23:31:55.783 [info] setting numJobsToGo to 6
+2025-05-17 23:31:55.783 [info] [startSync]: numJobs: 6
+2025-05-17 23:31:55.784 [info] Uploading 6 files.
+2025-05-17 23:31:55.785 [info] Total number of files to embed: 131
+2025-05-17 23:31:55.785 [info] Not aborted
+2025-05-17 23:31:55.785 [info] Starting while loop.
+2025-05-17 23:31:55.785 [info] fileQueue.length: 6
+2025-05-17 23:31:55.785 [info] fileQueue.length: 5
+2025-05-17 23:31:55.785 [info] fileQueue.length: 4
+2025-05-17 23:31:55.785 [info] Waiting for jobs to finish. currentIndexingJobs.length: 2 concurrentUploads.current: 2 fileQueue.length: 4
+2025-05-17 23:31:57.403 [info] Completed job successfully: ab90a3be-87fc-4b39-8905-fd1a797ae7b5 ./mako/config
+2025-05-17 23:31:57.403 [info] fileQueue.length: 3
+2025-05-17 23:31:57.403 [info] fileQueue.length: 2
+2025-05-17 23:31:57.403 [info] Waiting for jobs to finish. currentIndexingJobs.length: 3 concurrentUploads.current: 3 fileQueue.length: 2
+2025-05-17 23:31:58.429 [info] Completed job successfully: ab90a3be-87fc-4b39-8905-fd1a797ae7b5 ./kitty/kitty.conf
+2025-05-17 23:31:58.429 [info] fileQueue.length: 1
+2025-05-17 23:31:58.429 [info] fileQueue.length: 0
+2025-05-17 23:31:58.429 [info] Waiting for jobs to finish. currentIndexingJobs.length: 4 concurrentUploads.current: 4 fileQueue.length: 0
+2025-05-17 23:31:59.392 [info] Completed job successfully: ab90a3be-87fc-4b39-8905-fd1a797ae7b5 ./rofi/themes/catppuccin.rasi
+2025-05-17 23:31:59.392 [info] Waiting for jobs to finish. currentIndexingJobs.length: 3 concurrentUploads.current: 5 fileQueue.length: 0
+2025-05-17 23:31:59.468 [info] Completed job successfully: ab90a3be-87fc-4b39-8905-fd1a797ae7b5 ./waybar/colors.css
+2025-05-17 23:31:59.468 [info] Waiting for jobs to finish. currentIndexingJobs.length: 2 concurrentUploads.current: 6 fileQueue.length: 0
+2025-05-17 23:31:59.621 [info] Completed job successfully: ab90a3be-87fc-4b39-8905-fd1a797ae7b5 ./sway/config.d/colors
+2025-05-17 23:31:59.621 [info] Waiting for jobs to finish. currentIndexingJobs.length: 1 concurrentUploads.current: 7 fileQueue.length: 0
+2025-05-17 23:32:00.406 [info] Completed job successfully: ab90a3be-87fc-4b39-8905-fd1a797ae7b5 ./tmux/plugins/catppuccin/tmux/docs/reference/configuration.md
+2025-05-17 23:32:00.406 [info] Waiting for jobs to finish. currentIndexingJobs.length: 0 concurrentUploads.current: 8 fileQueue.length: 0
+2025-05-17 23:32:00.686 [info] Finishing sync (hasUpdates: true, isErr: false)
+2025-05-17 23:32:01.249 [info] Finished indexing repository.
+2025-05-17 23:32:01.250 [info] Indexing job successfully done or aborted.
+2025-05-17 23:36:52.680 [info] multiCodebaseIndexingJob dispose
+2025-05-17 23:36:52.680 [info] Aborting indexing job.
+2025-05-17 23:36:52.680 [info] Setting global status from status tracker: synced
+2025-05-17 23:36:52.680 [info] Doing a startup handshake.
+2025-05-17 23:36:52.685 [info] Finished computing merkle tree in 1.1222500000149012 ms.
+2025-05-17 23:36:52.686 [info] Doing the initial handshake with hash: dde517fe5bc3e7f9aec6b7b4d25055fcbf8923945194f14ff09b32c865859d8c
+2025-05-17 23:36:52.688 [info] Computed simhash vector of length: 256
+2025-05-17 23:36:52.688 [info] Path key hash: 1aef23c158a2ea0d22d8a1a2771e6413146803a0a2f521db7cb35b6b07016ac7
+2025-05-17 23:36:52.688 [info] Handshake start
+2025-05-17 23:36:52.981 [info] Handshake timing: 294.2410020000534, response: {"status":"STATUS_SUCCESS","codebases":[{"codebaseId":"ab90a3be-87fc-4b39-8905-fd1a797ae7b5","status":"STATUS_OUT_OF_SYNC"}]}
+2025-05-17 23:36:52.981 [info] Handshake result: {"status":"STATUS_SUCCESS","codebases":[{"codebaseId":"ab90a3be-87fc-4b39-8905-fd1a797ae7b5","status":"STATUS_OUT_OF_SYNC"}]}
+2025-05-17 23:36:52.981 [info] Starting fast remote sync.
+2025-05-17 23:36:52.982 [info] Total num embeddable files: 131
+2025-05-17 23:36:52.982 [info] Root hash: dde517fe5bc3e7f9aec6b7b4d25055fcbf8923945194f14ff09b32c865859d8c
+2025-05-17 23:36:52.982 [info] In the out of sync case.
+2025-05-17 23:36:52.983 [info] Waiting on semaphore to be released 1
+2025-05-17 23:36:53.183 [info] Waiting on semaphore to be released 1
+2025-05-17 23:36:53.384 [info] Waiting on semaphore to be released 2
+2025-05-17 23:36:53.583 [info] Waiting on semaphore to be released 2
+2025-05-17 23:36:53.784 [info] Waiting on semaphore to be released 1
+2025-05-17 23:36:53.984 [info] Waiting on semaphore to be released 1
+2025-05-17 23:36:54.185 [info] setting numJobsToGo to 2
+2025-05-17 23:36:54.185 [info] [startSync]: numJobs: 2
+2025-05-17 23:36:54.185 [info] Uploading 2 files.
+2025-05-17 23:36:54.186 [info] Total number of files to embed: 131
+2025-05-17 23:36:54.186 [info] Not aborted
+2025-05-17 23:36:54.186 [info] Starting while loop.
+2025-05-17 23:36:54.186 [info] fileQueue.length: 2
+2025-05-17 23:36:54.186 [info] fileQueue.length: 1
+2025-05-17 23:36:54.186 [info] fileQueue.length: 0
+2025-05-17 23:36:54.186 [info] Waiting for jobs to finish. currentIndexingJobs.length: 2 concurrentUploads.current: 2 fileQueue.length: 0
+2025-05-17 23:36:54.484 [info] Completed job successfully: ab90a3be-87fc-4b39-8905-fd1a797ae7b5 ./sway/config.d/autostart-applications.conf
+2025-05-17 23:36:54.484 [info] Waiting for jobs to finish. currentIndexingJobs.length: 1 concurrentUploads.current: 3 fileQueue.length: 0
+2025-05-17 23:36:55.814 [info] Completed job successfully: ab90a3be-87fc-4b39-8905-fd1a797ae7b5 ./mako/config
+2025-05-17 23:36:55.814 [info] Waiting for jobs to finish. currentIndexingJobs.length: 0 concurrentUploads.current: 4 fileQueue.length: 0
+2025-05-17 23:36:56.101 [info] Finishing sync (hasUpdates: true, isErr: false)
+2025-05-17 23:36:56.653 [info] Finished indexing repository.
+2025-05-17 23:36:56.653 [info] Indexing job successfully done or aborted.
+2025-05-17 23:41:52.680 [info] multiCodebaseIndexingJob dispose
+2025-05-17 23:41:52.680 [info] Aborting indexing job.
+2025-05-17 23:41:52.680 [info] Setting global status from status tracker: synced
+2025-05-17 23:41:52.680 [info] Doing a startup handshake.
+2025-05-17 23:41:52.685 [info] Finished computing merkle tree in 1.2109560000244528 ms.
+2025-05-17 23:41:52.685 [info] Doing the initial handshake with hash: 794d45a45b1b536f7cd627918e1a48ec5328cd71f5beb56995362af01ad38479
+2025-05-17 23:41:52.687 [info] Computed simhash vector of length: 256
+2025-05-17 23:41:52.687 [info] Path key hash: 1aef23c158a2ea0d22d8a1a2771e6413146803a0a2f521db7cb35b6b07016ac7
+2025-05-17 23:41:52.687 [info] Handshake start
+2025-05-17 23:41:52.979 [info] Handshake timing: 292.40489100001287, response: {"status":"STATUS_SUCCESS","codebases":[{"codebaseId":"ab90a3be-87fc-4b39-8905-fd1a797ae7b5","status":"STATUS_OUT_OF_SYNC"}]}
+2025-05-17 23:41:52.979 [info] Handshake result: {"status":"STATUS_SUCCESS","codebases":[{"codebaseId":"ab90a3be-87fc-4b39-8905-fd1a797ae7b5","status":"STATUS_OUT_OF_SYNC"}]}
+2025-05-17 23:41:52.979 [info] Starting fast remote sync.
+2025-05-17 23:41:52.979 [info] Total num embeddable files: 131
+2025-05-17 23:41:52.980 [info] Root hash: 794d45a45b1b536f7cd627918e1a48ec5328cd71f5beb56995362af01ad38479
+2025-05-17 23:41:52.980 [info] In the out of sync case.
+2025-05-17 23:41:52.981 [info] Waiting on semaphore to be released 1
+2025-05-17 23:41:53.181 [info] Waiting on semaphore to be released 1
+2025-05-17 23:41:53.384 [info] Waiting on semaphore to be released 3
+2025-05-17 23:41:53.584 [info] Waiting on semaphore to be released 3
+2025-05-17 23:41:53.787 [info] Waiting on semaphore to be released 1
+2025-05-17 23:41:53.986 [info] Waiting on semaphore to be released 1
+2025-05-17 23:41:54.188 [info] Waiting on semaphore to be released 1
+2025-05-17 23:41:54.388 [info] Waiting on semaphore to be released 1
+2025-05-17 23:41:54.590 [info] Waiting on semaphore to be released 1
+2025-05-17 23:41:54.790 [info] Waiting on semaphore to be released 1
+2025-05-17 23:41:54.992 [info] Waiting on semaphore to be released 1
+2025-05-17 23:41:55.191 [info] Waiting on semaphore to be released 1
+2025-05-17 23:41:55.393 [info] Waiting on semaphore to be released 1
+2025-05-17 23:41:55.593 [info] Waiting on semaphore to be released 1
+2025-05-17 23:41:55.795 [info] setting numJobsToGo to 3
+2025-05-17 23:41:55.795 [info] [startSync]: numJobs: 3
+2025-05-17 23:41:55.795 [info] Uploading 3 files.
+2025-05-17 23:41:55.797 [info] Total number of files to embed: 131
+2025-05-17 23:41:55.797 [info] Not aborted
+2025-05-17 23:41:55.797 [info] Starting while loop.
+2025-05-17 23:41:55.797 [info] fileQueue.length: 3
+2025-05-17 23:41:55.797 [info] fileQueue.length: 2
+2025-05-17 23:41:55.797 [info] fileQueue.length: 1
+2025-05-17 23:41:55.797 [info] Waiting for jobs to finish. currentIndexingJobs.length: 2 concurrentUploads.current: 2 fileQueue.length: 1
+2025-05-17 23:41:57.406 [info] Completed job successfully: ab90a3be-87fc-4b39-8905-fd1a797ae7b5 ./mako/config
+2025-05-17 23:41:57.406 [info] fileQueue.length: 0
+2025-05-17 23:41:57.406 [info] Waiting for jobs to finish. currentIndexingJobs.length: 2 concurrentUploads.current: 3 fileQueue.length: 0
+2025-05-17 23:41:57.422 [info] Completed job successfully: ab90a3be-87fc-4b39-8905-fd1a797ae7b5 ./kitty/kitty.conf
+2025-05-17 23:41:57.422 [info] Waiting for jobs to finish. currentIndexingJobs.length: 1 concurrentUploads.current: 4 fileQueue.length: 0
+2025-05-17 23:41:59.407 [info] Completed job successfully: ab90a3be-87fc-4b39-8905-fd1a797ae7b5 ./tmux/plugins/catppuccin/tmux/docs/reference/configuration.md
+2025-05-17 23:41:59.407 [info] Waiting for jobs to finish. currentIndexingJobs.length: 0 concurrentUploads.current: 5 fileQueue.length: 0
+2025-05-17 23:41:59.692 [info] Finishing sync (hasUpdates: true, isErr: false)
+2025-05-17 23:42:00.267 [info] Finished indexing repository.
+2025-05-17 23:42:00.267 [info] Indexing job successfully done or aborted.
+2025-05-17 23:46:52.681 [info] multiCodebaseIndexingJob dispose
+2025-05-17 23:46:52.681 [info] Aborting indexing job.
+2025-05-17 23:46:52.681 [info] Setting global status from status tracker: synced
+2025-05-17 23:46:52.681 [info] Doing a startup handshake.
+2025-05-17 23:46:52.694 [info] Finished computing merkle tree in 1.3176969999913126 ms.
+2025-05-17 23:46:52.694 [info] Doing the initial handshake with hash: 6fee9a52a7ff55d1dc3c92eee46f1efe71624065b7a1804e789f0448c1f3e494
+2025-05-17 23:46:52.696 [info] Computed simhash vector of length: 256
+2025-05-17 23:46:52.696 [info] Path key hash: 1aef23c158a2ea0d22d8a1a2771e6413146803a0a2f521db7cb35b6b07016ac7
+2025-05-17 23:46:52.696 [info] Handshake start
+2025-05-17 23:46:52.990 [info] Handshake timing: 294.72097000014037, response: {"status":"STATUS_SUCCESS","codebases":[{"codebaseId":"ab90a3be-87fc-4b39-8905-fd1a797ae7b5","status":"STATUS_OUT_OF_SYNC"}]}
+2025-05-17 23:46:52.990 [info] Handshake result: {"status":"STATUS_SUCCESS","codebases":[{"codebaseId":"ab90a3be-87fc-4b39-8905-fd1a797ae7b5","status":"STATUS_OUT_OF_SYNC"}]}
+2025-05-17 23:46:52.990 [info] Starting fast remote sync.
+2025-05-17 23:46:52.990 [info] Total num embeddable files: 131
+2025-05-17 23:46:52.990 [info] Root hash: 6fee9a52a7ff55d1dc3c92eee46f1efe71624065b7a1804e789f0448c1f3e494
+2025-05-17 23:46:52.990 [info] In the out of sync case.
+2025-05-17 23:46:52.991 [info] Waiting on semaphore to be released 1
+2025-05-17 23:46:53.190 [info] Waiting on semaphore to be released 1
+2025-05-17 23:46:53.392 [info] Waiting on semaphore to be released 5
+2025-05-17 23:46:53.590 [info] Waiting on semaphore to be released 5
+2025-05-17 23:46:53.792 [info] Waiting on semaphore to be released 2
+2025-05-17 23:46:53.991 [info] Waiting on semaphore to be released 2
+2025-05-17 23:46:54.190 [info] setting numJobsToGo to 5
+2025-05-17 23:46:54.191 [info] [startSync]: numJobs: 5
+2025-05-17 23:46:54.191 [info] Uploading 5 files.
+2025-05-17 23:46:54.191 [info] Total number of files to embed: 131
+2025-05-17 23:46:54.191 [info] Not aborted
+2025-05-17 23:46:54.191 [info] Starting while loop.
+2025-05-17 23:46:54.191 [info] fileQueue.length: 5
+2025-05-17 23:46:54.191 [info] fileQueue.length: 4
+2025-05-17 23:46:54.191 [info] fileQueue.length: 3
+2025-05-17 23:46:54.191 [info] Waiting for jobs to finish. currentIndexingJobs.length: 2 concurrentUploads.current: 2 fileQueue.length: 3
+2025-05-17 23:46:55.813 [info] Completed job successfully: ab90a3be-87fc-4b39-8905-fd1a797ae7b5 ./mako/config
+2025-05-17 23:46:55.813 [info] fileQueue.length: 2
+2025-05-17 23:46:55.813 [info] fileQueue.length: 1
+2025-05-17 23:46:55.813 [info] Waiting for jobs to finish. currentIndexingJobs.length: 3 concurrentUploads.current: 3 fileQueue.length: 1
+2025-05-17 23:46:55.892 [info] Completed job successfully: ab90a3be-87fc-4b39-8905-fd1a797ae7b5 ./kitty/kitty.conf
+2025-05-17 23:46:55.892 [info] fileQueue.length: 0
+2025-05-17 23:46:55.892 [info] Waiting for jobs to finish. currentIndexingJobs.length: 3 concurrentUploads.current: 4 fileQueue.length: 0
+2025-05-17 23:46:57.816 [info] Completed job successfully: ab90a3be-87fc-4b39-8905-fd1a797ae7b5 ./sway/config.d/colors
+2025-05-17 23:46:57.816 [info] Waiting for jobs to finish. currentIndexingJobs.length: 2 concurrentUploads.current: 5 fileQueue.length: 0
+2025-05-17 23:46:57.893 [info] Completed job successfully: ab90a3be-87fc-4b39-8905-fd1a797ae7b5 ./waybar/colors.css
+2025-05-17 23:46:57.893 [info] Waiting for jobs to finish. currentIndexingJobs.length: 1 concurrentUploads.current: 6 fileQueue.length: 0
+2025-05-17 23:46:58.045 [info] Completed job successfully: ab90a3be-87fc-4b39-8905-fd1a797ae7b5 ./rofi/themes/catppuccin.rasi
+2025-05-17 23:46:58.045 [info] Waiting for jobs to finish. currentIndexingJobs.length: 0 concurrentUploads.current: 7 fileQueue.length: 0
+2025-05-17 23:46:58.329 [info] Finishing sync (hasUpdates: true, isErr: false)
+2025-05-17 23:46:58.911 [info] Finished indexing repository.
+2025-05-17 23:46:58.911 [info] Indexing job successfully done or aborted.
+2025-05-17 23:51:52.681 [info] multiCodebaseIndexingJob dispose
+2025-05-17 23:51:52.681 [info] Aborting indexing job.
+2025-05-17 23:51:52.681 [info] Setting global status from status tracker: synced
+2025-05-17 23:51:52.681 [info] Doing a startup handshake.
+2025-05-17 23:51:52.695 [info] Finished computing merkle tree in 8.736696999985725 ms.
+2025-05-17 23:51:52.696 [info] Doing the initial handshake with hash: 7460aeec1751ba024730aaaf28b88cee065f78c8b4300a57f899b406a7697522
+2025-05-17 23:51:52.697 [info] Computed simhash vector of length: 256
+2025-05-17 23:51:52.697 [info] Path key hash: 1aef23c158a2ea0d22d8a1a2771e6413146803a0a2f521db7cb35b6b07016ac7
+2025-05-17 23:51:52.697 [info] Handshake start
+2025-05-17 23:51:52.993 [info] Handshake timing: 297.1440409999341, response: {"status":"STATUS_SUCCESS","codebases":[{"codebaseId":"ab90a3be-87fc-4b39-8905-fd1a797ae7b5","status":"STATUS_OUT_OF_SYNC"}]}
+2025-05-17 23:51:52.994 [info] Handshake result: {"status":"STATUS_SUCCESS","codebases":[{"codebaseId":"ab90a3be-87fc-4b39-8905-fd1a797ae7b5","status":"STATUS_OUT_OF_SYNC"}]}
+2025-05-17 23:51:52.994 [info] Starting fast remote sync.
+2025-05-17 23:51:52.994 [info] Total num embeddable files: 133
+2025-05-17 23:51:52.994 [info] Root hash: 7460aeec1751ba024730aaaf28b88cee065f78c8b4300a57f899b406a7697522
+2025-05-17 23:51:52.994 [info] In the out of sync case.
+2025-05-17 23:51:52.995 [info] Waiting on semaphore to be released 1
+2025-05-17 23:51:53.196 [info] Waiting on semaphore to be released 1
+2025-05-17 23:51:53.397 [info] Waiting on semaphore to be released 2
+2025-05-17 23:51:53.597 [info] Waiting on semaphore to be released 2
+2025-05-17 23:51:53.799 [info] Waiting on semaphore to be released 2
+2025-05-17 23:51:53.999 [info] Waiting on semaphore to be released 2
+2025-05-17 23:51:54.200 [info] setting numJobsToGo to 4
+2025-05-17 23:51:54.200 [info] [startSync]: numJobs: 4
+2025-05-17 23:51:54.200 [info] Uploading 4 files.
+2025-05-17 23:51:54.201 [info] Total number of files to embed: 133
+2025-05-17 23:51:54.201 [info] Not aborted
+2025-05-17 23:51:54.201 [info] Starting while loop.
+2025-05-17 23:51:54.201 [info] fileQueue.length: 4
+2025-05-17 23:51:54.201 [info] fileQueue.length: 3
+2025-05-17 23:51:54.201 [info] fileQueue.length: 2
+2025-05-17 23:51:54.201 [info] Waiting for jobs to finish. currentIndexingJobs.length: 2 concurrentUploads.current: 2 fileQueue.length: 2
+2025-05-17 23:51:54.491 [info] Completed job successfully: ab90a3be-87fc-4b39-8905-fd1a797ae7b5 ./rofi/themes/catppuccin.rasi
+2025-05-17 23:51:54.491 [info] fileQueue.length: 1
+2025-05-17 23:51:54.491 [info] fileQueue.length: 0
+2025-05-17 23:51:54.491 [info] Waiting for jobs to finish. currentIndexingJobs.length: 3 concurrentUploads.current: 3 fileQueue.length: 0
+2025-05-17 23:51:54.615 [info] Completed job successfully: ab90a3be-87fc-4b39-8905-fd1a797ae7b5 ./sway/config.d/autostart-applications.conf
+2025-05-17 23:51:54.615 [info] Waiting for jobs to finish. currentIndexingJobs.length: 2 concurrentUploads.current: 4 fileQueue.length: 0
+2025-05-17 23:51:55.258 [info] Completed job successfully: ab90a3be-87fc-4b39-8905-fd1a797ae7b5 ./wlogout/layout
+2025-05-17 23:51:55.258 [info] Waiting for jobs to finish. currentIndexingJobs.length: 1 concurrentUploads.current: 5 fileQueue.length: 0
+2025-05-17 23:51:55.334 [info] Completed job successfully: ab90a3be-87fc-4b39-8905-fd1a797ae7b5 ./wlogout/styles.css
+2025-05-17 23:51:55.334 [info] Waiting for jobs to finish. currentIndexingJobs.length: 0 concurrentUploads.current: 6 fileQueue.length: 0
+2025-05-17 23:51:55.615 [info] Finishing sync (hasUpdates: true, isErr: false)
+2025-05-17 23:51:56.161 [info] Finished indexing repository.
+2025-05-17 23:51:56.162 [info] Indexing job successfully done or aborted.
+2025-05-17 23:56:52.680 [info] multiCodebaseIndexingJob dispose
+2025-05-17 23:56:52.680 [info] Aborting indexing job.
+2025-05-17 23:56:52.680 [info] Setting global status from status tracker: synced
+2025-05-17 23:56:52.680 [info] Doing a startup handshake.
+2025-05-17 23:56:52.694 [info] Finished computing merkle tree in 6.812108000041917 ms.
+2025-05-17 23:56:52.694 [info] Doing the initial handshake with hash: b505658f8ae1e1aec3762cfe2292e30a8794bb798acd76a181dd65ef8f3ca49d
+2025-05-17 23:56:52.696 [info] Computed simhash vector of length: 256
+2025-05-17 23:56:52.696 [info] Path key hash: 1aef23c158a2ea0d22d8a1a2771e6413146803a0a2f521db7cb35b6b07016ac7
+2025-05-17 23:56:52.696 [info] Handshake start
+2025-05-17 23:56:52.990 [info] Handshake timing: 294.67471699998714, response: {"status":"STATUS_SUCCESS","codebases":[{"codebaseId":"ab90a3be-87fc-4b39-8905-fd1a797ae7b5","status":"STATUS_OUT_OF_SYNC"}]}
+2025-05-17 23:56:52.990 [info] Handshake result: {"status":"STATUS_SUCCESS","codebases":[{"codebaseId":"ab90a3be-87fc-4b39-8905-fd1a797ae7b5","status":"STATUS_OUT_OF_SYNC"}]}
+2025-05-17 23:56:52.990 [info] Starting fast remote sync.
+2025-05-17 23:56:52.990 [info] Total num embeddable files: 136
+2025-05-17 23:56:52.991 [info] Root hash: b505658f8ae1e1aec3762cfe2292e30a8794bb798acd76a181dd65ef8f3ca49d
+2025-05-17 23:56:52.991 [info] In the out of sync case.
+2025-05-17 23:56:52.991 [info] Waiting on semaphore to be released 1
+2025-05-17 23:56:53.190 [info] Waiting on semaphore to be released 1
+2025-05-17 23:56:53.391 [info] Waiting on semaphore to be released 1
+2025-05-17 23:56:53.591 [info] Waiting on semaphore to be released 1
+2025-05-17 23:56:53.791 [info] setting numJobsToGo to 4
+2025-05-17 23:56:53.793 [info] [startSync]: numJobs: 4
+2025-05-17 23:56:54.441 [info] Uploading 4 files.
+2025-05-17 23:56:54.442 [info] Total number of files to embed: 136
+2025-05-17 23:56:54.442 [info] Not aborted
+2025-05-17 23:56:54.442 [info] Starting while loop.
+2025-05-17 23:56:54.442 [info] fileQueue.length: 4
+2025-05-17 23:56:54.442 [info] fileQueue.length: 3
+2025-05-17 23:56:54.442 [info] fileQueue.length: 2
+2025-05-17 23:56:54.442 [info] Waiting for jobs to finish. currentIndexingJobs.length: 2 concurrentUploads.current: 2 fileQueue.length: 2
+2025-05-17 23:56:55.432 [info] Completed job successfully: ab90a3be-87fc-4b39-8905-fd1a797ae7b5 ./wlogout/colorize_icons.sh
+2025-05-17 23:56:55.432 [info] fileQueue.length: 1
+2025-05-17 23:56:55.432 [info] fileQueue.length: 0
+2025-05-17 23:56:55.432 [info] Waiting for jobs to finish. currentIndexingJobs.length: 3 concurrentUploads.current: 3 fileQueue.length: 0
+2025-05-17 23:56:55.507 [info] Completed job successfully: ab90a3be-87fc-4b39-8905-fd1a797ae7b5 ./wlogout/config
+2025-05-17 23:56:55.507 [info] Waiting for jobs to finish. currentIndexingJobs.length: 2 concurrentUploads.current: 4 fileQueue.length: 0
+2025-05-17 23:56:56.422 [info] Completed job successfully: ab90a3be-87fc-4b39-8905-fd1a797ae7b5 ./wlogout/download_icons.sh
+2025-05-17 23:56:56.422 [info] Waiting for jobs to finish. currentIndexingJobs.length: 1 concurrentUploads.current: 5 fileQueue.length: 0
+2025-05-17 23:56:56.487 [info] Completed job successfully: ab90a3be-87fc-4b39-8905-fd1a797ae7b5 ./wlogout/style.css
+2025-05-17 23:56:56.487 [info] Waiting for jobs to finish. currentIndexingJobs.length: 0 concurrentUploads.current: 6 fileQueue.length: 0
+2025-05-17 23:56:56.769 [info] Finishing sync (hasUpdates: true, isErr: false)
+2025-05-17 23:56:57.315 [info] Finished indexing repository.
+2025-05-17 23:56:57.315 [info] Indexing job successfully done or aborted.
+2025-05-18 00:01:52.681 [info] multiCodebaseIndexingJob dispose
+2025-05-18 00:01:52.681 [info] Aborting indexing job.
+2025-05-18 00:01:52.681 [info] Setting global status from status tracker: synced
+2025-05-18 00:01:52.681 [info] Doing a startup handshake.
+2025-05-18 00:01:52.683 [info] Finished computing merkle tree in 0.8674010001122952 ms.
+2025-05-18 00:01:52.684 [info] Doing the initial handshake with hash: a2f07609df8f2eac915a3cff9187ab73bc4039806ee9b4dbcf0466a6edbfbc95
+2025-05-18 00:01:52.685 [info] Computed simhash vector of length: 256
+2025-05-18 00:01:52.685 [info] Path key hash: 1aef23c158a2ea0d22d8a1a2771e6413146803a0a2f521db7cb35b6b07016ac7
+2025-05-18 00:01:52.685 [info] Handshake start
+2025-05-18 00:01:52.976 [info] Handshake timing: 291.70641899993643, response: {"status":"STATUS_SUCCESS","codebases":[{"codebaseId":"ab90a3be-87fc-4b39-8905-fd1a797ae7b5","status":"STATUS_OUT_OF_SYNC"}]}
+2025-05-18 00:01:52.976 [info] Handshake result: {"status":"STATUS_SUCCESS","codebases":[{"codebaseId":"ab90a3be-87fc-4b39-8905-fd1a797ae7b5","status":"STATUS_OUT_OF_SYNC"}]}
+2025-05-18 00:01:52.976 [info] Starting fast remote sync.
+2025-05-18 00:01:52.976 [info] Total num embeddable files: 134
+2025-05-18 00:01:52.977 [info] Root hash: a2f07609df8f2eac915a3cff9187ab73bc4039806ee9b4dbcf0466a6edbfbc95
+2025-05-18 00:01:52.977 [info] In the out of sync case.
+2025-05-18 00:01:52.977 [info] Waiting on semaphore to be released 1
+2025-05-18 00:01:53.176 [info] Waiting on semaphore to be released 1
+2025-05-18 00:01:53.378 [info] Waiting on semaphore to be released 1
+2025-05-18 00:01:53.577 [info] Waiting on semaphore to be released 1
+2025-05-18 00:01:53.777 [info] setting numJobsToGo to 1
+2025-05-18 00:01:53.779 [info] [startSync]: numJobs: 1
+2025-05-18 00:01:54.424 [info] Uploading 1 files.
+2025-05-18 00:01:54.424 [info] Total number of files to embed: 134
+2025-05-18 00:01:54.424 [info] Not aborted
+2025-05-18 00:01:54.424 [info] Starting while loop.
+2025-05-18 00:01:54.424 [info] fileQueue.length: 1
+2025-05-18 00:01:54.424 [info] fileQueue.length: 0
+2025-05-18 00:01:54.424 [info] Waiting for jobs to finish. currentIndexingJobs.length: 1 concurrentUploads.current: 2 fileQueue.length: 0
+2025-05-18 00:01:56.424 [info] Completed job successfully: ab90a3be-87fc-4b39-8905-fd1a797ae7b5 ./wlogout/style.css
+2025-05-18 00:01:56.424 [info] Waiting for jobs to finish. currentIndexingJobs.length: 0 concurrentUploads.current: 3 fileQueue.length: 0
+2025-05-18 00:01:56.708 [info] Finishing sync (hasUpdates: true, isErr: false)
+2025-05-18 00:01:57.293 [info] Finished indexing repository.
+2025-05-18 00:01:57.293 [info] Indexing job successfully done or aborted.
+2025-05-18 00:06:52.680 [info] multiCodebaseIndexingJob dispose
+2025-05-18 00:06:52.681 [info] Aborting indexing job.
+2025-05-18 00:06:52.681 [info] Setting global status from status tracker: synced
+2025-05-18 00:06:52.681 [info] Doing a startup handshake.
+2025-05-18 00:06:52.707 [info] Finished computing merkle tree in 24.037927999626845 ms.
+2025-05-18 00:06:52.707 [info] Doing the initial handshake with hash: 37293568d12b40aaa316cc4be189c3fac9ef5f2926d325fd8bcbd612d4dc5a00
+2025-05-18 00:06:52.709 [info] Computed simhash vector of length: 256
+2025-05-18 00:06:52.709 [info] Path key hash: 1aef23c158a2ea0d22d8a1a2771e6413146803a0a2f521db7cb35b6b07016ac7
+2025-05-18 00:06:52.709 [info] Handshake start
+2025-05-18 00:06:53.004 [info] Handshake timing: 296.18324899999425, response: {"status":"STATUS_SUCCESS","codebases":[{"codebaseId":"ab90a3be-87fc-4b39-8905-fd1a797ae7b5","status":"STATUS_OUT_OF_SYNC"}]}
+2025-05-18 00:06:53.004 [info] Handshake result: {"status":"STATUS_SUCCESS","codebases":[{"codebaseId":"ab90a3be-87fc-4b39-8905-fd1a797ae7b5","status":"STATUS_OUT_OF_SYNC"}]}
+2025-05-18 00:06:53.005 [info] Starting fast remote sync.
+2025-05-18 00:06:53.005 [info] Total num embeddable files: 130
+2025-05-18 00:06:53.005 [info] Root hash: 37293568d12b40aaa316cc4be189c3fac9ef5f2926d325fd8bcbd612d4dc5a00
+2025-05-18 00:06:53.005 [info] In the out of sync case.
+2025-05-18 00:06:53.006 [info] Waiting on semaphore to be released 1
+2025-05-18 00:06:53.206 [info] Waiting on semaphore to be released 1
+2025-05-18 00:06:53.409 [info] Waiting on semaphore to be released 5
+2025-05-18 00:06:53.608 [info] Waiting on semaphore to be released 5
+2025-05-18 00:06:53.810 [info] Waiting on semaphore to be released 2
+2025-05-18 00:06:54.009 [info] Waiting on semaphore to be released 2
+2025-05-18 00:06:54.208 [info] setting numJobsToGo to 4
+2025-05-18 00:06:54.210 [info] [startSync]: numJobs: 4
+2025-05-18 00:06:54.823 [info] Uploading 4 files.
+2025-05-18 00:06:54.824 [info] Total number of files to embed: 130
+2025-05-18 00:06:54.824 [info] Not aborted
+2025-05-18 00:06:54.824 [info] Starting while loop.
+2025-05-18 00:06:54.824 [info] fileQueue.length: 4
+2025-05-18 00:06:54.824 [info] fileQueue.length: 3
+2025-05-18 00:06:54.824 [info] fileQueue.length: 2
+2025-05-18 00:06:54.824 [info] Waiting for jobs to finish. currentIndexingJobs.length: 2 concurrentUploads.current: 2 fileQueue.length: 2
+2025-05-18 00:06:56.061 [info] multiCodebaseIndexingJob dispose
+2025-05-18 00:06:56.061 [info] Aborting indexing job.
+2025-05-18 00:06:56.063 [info] Completed job unsuccessfully, will retry: ./mako/config error: Bad unexpected error
+2025-05-18 00:06:56.063 [info] Waiting for jobs to finish. currentIndexingJobs.length: 1 concurrentUploads.current: 1 fileQueue.length: 3

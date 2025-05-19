@@ -1,0 +1,40 @@
+{
+  "layer": "top", // Waybar at top layer
+  "position": "top", // Waybar position (top|bottom|left|right)
+  "height": "30",
+  "margin": "0 0 0 0",
+  "modules-left": [
+    "custom/launcher",
+    "sway/workspaces",
+    "custom/swap",
+    "tray",
+    "sway/window",
+    "sway/mode",
+    "custom/cava-internal",
+    "mpd#2",
+    "mpd#3",
+    "mpd#4",
+    "mpd"
+  ],
+  "modules-center": ["clock"],
+  "modules-right": [
+    "backlight",
+    "pulseaudio",
+    "custom/keyboard-layout",
+    //"custom/audio",
+    // "cpu",
+    // "memory",
+    // "disk",
+    "group/hardware",
+    "battery",
+    "network",
+    "idle_inhibitor",
+    "custom/power"
+  ],
+
+    // Load Modules
+    "include": ["~/.config/waybar/modules.json"],
+
+  // Modules configuration
+
+}

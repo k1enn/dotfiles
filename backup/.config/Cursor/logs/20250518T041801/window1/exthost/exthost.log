@@ -1,0 +1,463 @@
+2025-05-18 04:18:05.615 [info] Extension host with pid 26126 started
+2025-05-18 04:18:05.615 [info] Skipping acquiring lock for /home/k1en/.config/Cursor/User/workspaceStorage/5daa10f5f0b5425cc42836441bec75d9.
+2025-05-18 04:18:05.792 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-05-18 04:18:05.820 [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'
+2025-05-18 04:18:06.269 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-05-18 04:18:06.273 [info] ExtensionService#_doActivateExtension icrawl.discord-vscode, startup: true, activationEvent: '*'
+2025-05-18 04:18:06.508 [info] Extension host with pid 26186 started
+2025-05-18 04:18:06.508 [info] Skipping acquiring lock for /home/k1en/.config/Cursor/User/workspaceStorage/5daa10f5f0b5425cc42836441bec75d9.
+2025-05-18 04:18:06.574 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-05-18 04:18:06.579 [info] Eager extensions activated
+2025-05-18 04:18:06.629 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-05-18 04:18:06.678 [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: false, activationEvent: 'onStartupFinished'
+2025-05-18 04:18:06.729 [info] Eager extensions activated
+2025-05-18 04:18:06.794 [info] ExtensionService#_doActivateExtension anysphere.cursor-always-local, startup: false, activationEvent: 'onStartupFinished'
+2025-05-18 04:18:06.953 [info] ExtensionService#_doActivateExtension anysphere.cursor-retrieval, startup: false, activationEvent: 'onStartupFinished'
+2025-05-18 04:18:07.113 [info] ExtensionService#_doActivateExtension anysphere.cursor-shadow-workspace, startup: false, activationEvent: 'onStartupFinished'
+2025-05-18 04:18:07.174 [info] ExtensionService#_doActivateExtension anysphere.cursor-tokenize, startup: false, activationEvent: 'onStartupFinished'
+2025-05-18 04:18:07.347 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-05-18 04:18:07.350 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-05-18 04:18:07.367 [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+2025-05-18 04:18:07.434 [info] ExtensionService#_doActivateExtension PKief.material-icon-theme, startup: false, activationEvent: 'onStartupFinished'
+2025-05-18 04:18:07.449 [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: false, activationEvent: 'onStartupFinished'
+2025-05-18 04:18:07.454 [info] ExtensionService#_doActivateExtension zhuangtongfa.material-theme, startup: false, activationEvent: 'onStartupFinished'
+2025-05-18 04:18:07.776 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:08.057 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:09.058 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:09.059 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:09.060 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:09.060 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:09.060 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:09.060 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:09.061 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:09.061 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:09.061 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:09.061 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:09.062 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:09.062 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:09.062 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:09.062 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:09.063 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:09.063 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:09.063 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:09.063 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:09.064 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:09.064 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:09.064 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:09.064 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:09.064 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:09.065 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:09.065 [error] Error: Git error
+	at ChildProcess.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1062634)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-18 04:18:16.027 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
+2025-05-18 04:18:16.040 [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
+2025-05-18 04:18:16.375 [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
+2025-05-18 04:20:52.350 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:json'
+2025-05-18 04:20:52.362 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:json'
+2025-05-18 04:20:52.404 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onLanguage:json'
+2025-05-18 04:20:56.106 [warning] vscode.json-language-features - Code actions of kind 'quickfix' requested but returned code action is of kind 'source.sort.json'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2025-05-18 04:21:14.954 [warning] vscode.json-language-features - Code actions of kind 'quickfix' requested but returned code action is of kind 'source.sort.json'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2025-05-18 04:21:57.993 [warning] vscode.json-language-features - Code actions of kind 'quickfix' requested but returned code action is of kind 'source.sort.json'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2025-05-18 04:31:18.188 [info] Extension host terminating: renderer closed the MessagePort
+2025-05-18 04:31:18.190 [error] TypeError: r.some is not a function
+	at h.saveToDisk (/home/k1en/dotfiles/cursor/.cursor/extensions/vscodevim.vim-1.29.2/out/extension.js:2:641673)
+	at t.deactivate (/home/k1en/dotfiles/cursor/.cursor/extensions/vscodevim.vim-1.29.2/out/extension.js:2:767872)
+	at $Yt.eb (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:11894)
+	at file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:10043
+	at Array.map (<anonymous>)
+	at $Yt.$ (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:10031)
+	at $Yt.terminate (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:10274)
+	at pmt.terminate (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:143:1435)
+	at jr (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:198:15170)
+	at MessagePortMain.<anonymous> (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:198:11700)
+	at MessagePortMain.emit (node:events:518:28)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+2025-05-18 04:31:18.190 [info] Extension host with pid 26186 exiting with code 0
+2025-05-18 04:31:18.190 [info] Extension host terminating: renderer closed the MessagePort
+2025-05-18 04:31:18.214 [error] Canceled: Canceled
+	at new cTt (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:47:111537)
+	at iY.U (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:47:116159)
+	at r.<computed>.a.charCodeAt.r.<computed> (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:47:113651)
+	at aG.g (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:32526)
+	at aG.executeCommand (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:32030)
+	at e.registerCommand.description (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:31360)
+	at aG.h (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:33047)
+	at aG.g (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:32123)
+	at aG.executeCommand (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:32030)
+	at Object.executeCommand (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:180:42161)
+	at hO.N [as value] (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:978077)
+	at C.B (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:32:747)
+	at C (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:32:817)
+	at C.fire (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:32:1034)
+	at Object.f [as dispose] (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:999653)
+	at /tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1005775
+	at Array.forEach (<anonymous>)
+	at C.dispose (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1005761)
+	at PH.<anonymous> (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:131:20157)
+	at PH.dispose (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:131:20253)
+	at PH.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:980556)
+	at PH.dispose (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:131:20253)
+	at Ms (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:706)
+	at file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:15308
+	at file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:1017
+	at Object.dispose (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:10:708)
+	at $Yt.eb (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:12089)
+	at file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:10043
+	at Array.map (<anonymous>)
+	at $Yt.$ (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:10031)
+	at $Yt.terminate (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:10274)
+	at pmt.terminate (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:143:1435)
+	at jr (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:198:15170)
+	at MessagePortMain.<anonymous> (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:198:11700)
+	at MessagePortMain.emit (node:events:518:28)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949) setContext undefined
+2025-05-18 04:31:18.214 [error] Canceled: Canceled
+	at new cTt (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:47:111537)
+	at iY.U (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:47:116159)
+	at r.<computed>.a.charCodeAt.r.<computed> (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:47:113651)
+	at aG.g (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:32526)
+	at aG.executeCommand (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:32030)
+	at e.registerCommand.description (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:31360)
+	at aG.h (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:33047)
+	at aG.g (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:32123)
+	at aG.executeCommand (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:32030)
+	at Object.executeCommand (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:180:42161)
+	at hO.N [as value] (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:978077)
+	at C.B (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:32:747)
+	at C (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:32:817)
+	at C.fire (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:32:1034)
+	at Object.f [as dispose] (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:999653)
+	at /tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1005775
+	at Array.forEach (<anonymous>)
+	at C.dispose (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1005761)
+	at PH.<anonymous> (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:131:20157)
+	at PH.dispose (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:131:20253)
+	at PH.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:980556)
+	at PH.dispose (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:131:20253)
+	at Ms (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:706)
+	at file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:15308
+	at file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:1017
+	at Object.dispose (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:10:708)
+	at $Yt.eb (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:12089)
+	at file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:10043
+	at Array.map (<anonymous>)
+	at $Yt.$ (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:10031)
+	at $Yt.terminate (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:10274)
+	at pmt.terminate (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:143:1435)
+	at jr (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:198:15170)
+	at MessagePortMain.<anonymous> (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:198:11700)
+	at MessagePortMain.emit (node:events:518:28)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949) setContext undefined
+2025-05-18 04:31:18.214 [error] Canceled: Canceled
+	at new cTt (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:47:111537)
+	at iY.U (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:47:116159)
+	at r.<computed>.a.charCodeAt.r.<computed> (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:47:113651)
+	at aG.g (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:32526)
+	at aG.executeCommand (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:32030)
+	at e.registerCommand.description (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:31360)
+	at aG.h (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:33047)
+	at aG.g (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:32123)
+	at aG.executeCommand (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:32030)
+	at Object.executeCommand (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:180:42161)
+	at set hasGitHubRepositories (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/github/dist/extension.js:4:328629)
+	at /tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/github/dist/extension.js:4:329588
+	at hO.value (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1096192)
+	at C.B (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:32:747)
+	at C (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:32:817)
+	at C.fire (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:32:1034)
+	at Object.f [as dispose] (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:999653)
+	at /tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1005775
+	at Array.forEach (<anonymous>)
+	at C.dispose (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:1005761)
+	at PH.<anonymous> (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:131:20157)
+	at PH.dispose (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:131:20253)
+	at PH.<anonymous> (/tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/extensions/git/dist/main.js:4:980556)
+	at PH.dispose (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:131:20253)
+	at Ms (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:706)
+	at file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:15308
+	at file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:1017
+	at Object.dispose (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:10:708)
+	at $Yt.eb (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:12089)
+	at file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:10043
+	at Array.map (<anonymous>)
+	at $Yt.$ (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:10031)
+	at $Yt.terminate (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:10274)
+	at pmt.terminate (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:143:1435)
+	at jr (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:198:15170)
+	at MessagePortMain.<anonymous> (file:///tmp/.mount_cursor4LQEPx/usr/share/cursor/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:198:11700)
+	at MessagePortMain.emit (node:events:518:28)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949) setContext undefined
+2025-05-18 04:31:18.215 [info] Extension host with pid 26126 exiting with code 0

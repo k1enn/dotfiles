@@ -1,0 +1,56 @@
+{
+	"notifications": [
+		{
+			"guid": "caca4c6b-a41d-44cb-a820-66cc4068c4f3",
+			"timestamp": 1739373334887,
+			"read": false,
+			"displayState": "background",
+			"notification": {
+				"ephemeral": false,
+				"icon": "download",
+				"message": "Docker Desktop 4.38.0 is available.",
+				"actionText": "Download",
+				"action": {
+					"action": "update-available"
+				},
+				"type": "update"
+			}
+		},
+		{
+			"guid": "e63661fa-c2ce-4485-a1af-c97799a9c8cf",
+			"timestamp": 1739373346300,
+			"read": false,
+			"displayState": "background",
+			"notification": {
+				"message": "You must initialize pass before logging in to Docker Desktop",
+				"icon": "error",
+				"type": "action-result",
+				"operation": "user-log-in",
+				"title": "Unable to log in",
+				"actionText": "Learn how",
+				"action": {
+					"action": "open-credential-store-instructions",
+					"params": {}
+				}
+			}
+		},
+		{
+			"guid": "5d3752a9-708f-4d3d-8d55-1a9eb1daa0ba",
+			"timestamp": 1739373358039,
+			"read": false,
+			"displayState": "background",
+			"notification": {
+				"message": "More Docker. Easy Access. New Streamlined Plans.",
+				"icon": "sparkles",
+				"type": "general-purpose",
+				"actionText": "Learn more",
+				"action": {
+					"action": "open-external-url",
+					"params": {
+						"url": "https://www.docker.com/blog/november-2024-updated-plans-announcement/"
+					}
+				}
+			}
+		}
+	]
+}

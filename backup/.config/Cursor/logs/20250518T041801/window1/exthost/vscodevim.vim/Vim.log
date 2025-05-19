@@ -1,0 +1,76 @@
+2025-05-18 04:18:07.160 [info] Configuration changed
+2025-05-18 04:18:07.345 [info] Configuration changed
+2025-05-18 04:18:07.448 [info] Configuration changed
+2025-05-18 04:18:07.665 [info] Configuration changed
+2025-05-18 04:18:15.999 [info] Active editor: file:///home/k1en/dotfiles/config/.config/tmux/plugins/catppuccin/tmux/docs/reference/configuration.md
+2025-05-18 04:18:16.007 [info] /home/k1en/dotfiles/config/.config/wlogout/style.css.git closed
+2025-05-18 04:18:18.416 [info] Active editor: file:///home/k1en/dotfiles/config/.config/tmux/plugins/catppuccin/tmux/docs/reference/status-line.md
+2025-05-18 04:18:18.429 [info] /home/k1en/dotfiles/config/.config/tmux/plugins/catppuccin/tmux/docs/reference/configuration.md.git closed
+2025-05-18 04:18:20.817 [info] /home/k1en/dotfiles/config/.config/tmux/plugins/catppuccin/tmux/docs/reference/status-line.md closed
+2025-05-18 04:18:20.851 [info] Active editor: file:///home/k1en/dotfiles/config/.config/tmux/plugins/catppuccin/tmux/docs/tutorials/01-getting-started.md
+2025-05-18 04:18:20.861 [info] /home/k1en/dotfiles/config/.config/tmux/plugins/catppuccin/tmux/docs/reference/status-line.md.git closed
+2025-05-18 04:18:23.878 [info] /home/k1en/dotfiles/config/.config/tmux/plugins/catppuccin/tmux/docs/tutorials/01-getting-started.md closed
+2025-05-18 04:18:23.903 [info] Active editor: file:///home/k1en/dotfiles/config/.config/tmux/plugins/catppuccin/tmux/docs/explanation/design.md
+2025-05-18 04:18:23.913 [info] /home/k1en/dotfiles/config/.config/tmux/plugins/catppuccin/tmux/docs/tutorials/01-getting-started.md.git closed
+2025-05-18 04:18:34.134 [info] /home/k1en/dotfiles/config/.config/tmux/plugins/catppuccin/tmux/docs/reference/configuration.md closed
+2025-05-18 04:18:34.135 [info] /home/k1en/dotfiles/config/.config/tmux/plugins/catppuccin/tmux/docs/explanation/design.md closed
+2025-05-18 04:18:34.184 [info] Active editor: file:///home/k1en/dotfiles/config/.config/wlogout/style.css
+2025-05-18 04:18:34.200 [info] /home/k1en/dotfiles/config/.config/tmux/plugins/catppuccin/tmux/docs/explanation/design.md.git closed
+2025-05-18 04:19:04.796 [info] Active editor: file:///home/k1en/dotfiles/config/.config/waybar/style-background.css
+2025-05-18 04:19:04.809 [info] /home/k1en/dotfiles/config/.config/wlogout/style.css.git closed
+2025-05-18 04:19:06.390 [info] /home/k1en/dotfiles/config/.config/waybar/style-background.css closed
+2025-05-18 04:19:06.415 [info] Active editor: file:///home/k1en/dotfiles/config/.config/waybar/style.css
+2025-05-18 04:19:06.426 [info] /home/k1en/dotfiles/config/.config/waybar/style-background.css.git closed
+2025-05-18 04:20:51.495 [info] Active editor: file:///home/k1en/dotfiles/config/.config/waybar/config
+2025-05-18 04:20:51.509 [info] /home/k1en/dotfiles/config/.config/waybar/style.css.git closed
+2025-05-18 04:20:52.326 [info] /home/k1en/dotfiles/config/.config/waybar/config closed
+2025-05-18 04:21:56.140 [info] Active editor: file:///home/k1en/dotfiles/config/.config/waybar/config-background
+2025-05-18 04:21:56.148 [info] /home/k1en/dotfiles/config/.config/waybar/config.git closed
+2025-05-18 04:21:56.805 [info] /home/k1en/dotfiles/config/.config/waybar/config-background closed
+2025-05-18 04:22:04.897 [info] Active editor: file:///home/k1en/dotfiles/config/.config/waybar/config
+2025-05-18 04:22:04.906 [info] /home/k1en/dotfiles/config/.config/waybar/config-background.git closed
+2025-05-18 04:23:28.739 [info] Active editor: file:///home/k1en/dotfiles/config/.config/waybar/style.css
+2025-05-18 04:23:28.757 [info] /home/k1en/dotfiles/config/.config/waybar/config.git closed
+2025-05-18 04:24:27.020 [info] Active editor: file:///home/k1en/dotfiles/config/.config/waybar/config
+2025-05-18 04:24:27.031 [info] /home/k1en/dotfiles/config/.config/waybar/style.css.git closed
+2025-05-18 04:24:57.235 [info] Active editor: file:///home/k1en/dotfiles/config/.config/waybar/style.css
+2025-05-18 04:24:57.248 [info] /home/k1en/dotfiles/config/.config/waybar/config.git closed
+2025-05-18 04:25:02.477 [info] Active editor: file:///home/k1en/dotfiles/config/.config/waybar/config-background
+2025-05-18 04:25:02.486 [info] /home/k1en/dotfiles/config/.config/waybar/style.css.git closed
+2025-05-18 04:25:03.162 [info] Active editor: file:///home/k1en/dotfiles/config/.config/waybar/colors.css
+2025-05-18 04:25:03.169 [info] /home/k1en/dotfiles/config/.config/waybar/config-background.git closed
+2025-05-18 04:25:05.199 [info] Active editor: file:///home/k1en/dotfiles/config/.config/waybar/config
+2025-05-18 04:25:05.208 [info] /home/k1en/dotfiles/config/.config/waybar/colors.css.git closed
+2025-05-18 04:25:06.553 [info] Active editor: file:///home/k1en/dotfiles/config/.config/waybar/colors.css
+2025-05-18 04:25:06.567 [info] /home/k1en/dotfiles/config/.config/waybar/config.git closed
+2025-05-18 04:25:14.743 [info] Active editor: file:///home/k1en/dotfiles/config/.config/waybar/style.css
+2025-05-18 04:25:14.754 [info] /home/k1en/dotfiles/config/.config/waybar/colors.css.git closed
+2025-05-18 04:26:55.946 [info] /home/k1en/dotfiles/config/.config/waybar/style-background.css closed
+2025-05-18 04:27:48.733 [info] Active editor: file:///home/k1en/dotfiles/config/.config/waybar/config-background
+2025-05-18 04:27:48.748 [info] /home/k1en/dotfiles/config/.config/waybar/style.css.git closed
+2025-05-18 04:27:51.850 [info] Active editor: file:///home/k1en/dotfiles/config/.config/waybar/config
+2025-05-18 04:27:51.861 [info] /home/k1en/dotfiles/config/.config/waybar/config-background.git closed
+2025-05-18 04:27:55.629 [info] Active editor: file:///home/k1en/dotfiles/config/.config/waybar/modules-background.json
+2025-05-18 04:27:55.643 [info] /home/k1en/dotfiles/config/.config/waybar/config.git closed
+2025-05-18 04:27:56.651 [info] Active editor: file:///home/k1en/dotfiles/config/.config/waybar/config-background
+2025-05-18 04:27:56.664 [info] /home/k1en/dotfiles/config/.config/waybar/modules-background.json.git closed
+2025-05-18 04:28:00.767 [info] /home/k1en/dotfiles/config/.config/waybar/config-background closed
+2025-05-18 04:28:00.793 [info] Active editor: file:///home/k1en/dotfiles/config/.config/waybar/modules-background.json
+2025-05-18 04:28:00.807 [info] /home/k1en/dotfiles/config/.config/waybar/config-background.git closed
+2025-05-18 04:28:00.859 [info] /home/k1en/dotfiles/config/.config/waybar/modules-background.json closed
+2025-05-18 04:28:00.911 [info] Active editor: file:///home/k1en/dotfiles/config/.config/waybar/config
+2025-05-18 04:29:25.909 [info] Active editor: file:///home/k1en/dotfiles/config/.config/waybar/style.css
+2025-05-18 04:29:25.931 [info] /home/k1en/dotfiles/config/.config/waybar/config.git closed
+2025-05-18 04:30:09.092 [info] Active editor: file:///home/k1en/dotfiles/config/.config/waybar/config
+2025-05-18 04:30:09.107 [info] /home/k1en/dotfiles/config/.config/waybar/style.css.git closed
+2025-05-18 04:30:14.575 [info] Active editor: file:///home/k1en/dotfiles/config/.config/electron-flags.conf
+2025-05-18 04:30:14.579 [info] /home/k1en/dotfiles/config/.config/waybar/config.git closed
+2025-05-18 04:30:15.197 [info] Active editor: file:///home/k1en/dotfiles/config/.config/wlogout/style.css
+2025-05-18 04:30:15.212 [info] /home/k1en/dotfiles/config/.config/electron-flags.conf.git closed
+2025-05-18 04:30:50.905 [info] Active editor: file:///home/k1en/dotfiles/config/.config/waybar/config
+2025-05-18 04:30:50.920 [info] /home/k1en/dotfiles/config/.config/wlogout/style.css.git closed
+2025-05-18 04:30:59.538 [info] /home/k1en/dotfiles/config/.config/electron-flags.conf closed
+2025-05-18 04:30:59.566 [info] Active editor: file:///home/k1en/dotfiles/config/.config/waybar/style-background.css
+2025-05-18 04:30:59.584 [info] /home/k1en/dotfiles/config/.config/waybar/config.git closed
+2025-05-18 04:31:00.192 [info] Active editor: file:///home/k1en/dotfiles/config/.config/waybar/style.css
+2025-05-18 04:31:00.228 [info] /home/k1en/dotfiles/config/.config/waybar/style-background.css.git closed

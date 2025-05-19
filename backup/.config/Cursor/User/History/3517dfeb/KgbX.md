@@ -1,0 +1,80 @@
+# Todoist TUI
+
+A feature-rich terminal-based Todo list application with task management capabilities.
+
+## Features
+
+- **Task Management**: Add, edit, and delete tasks with due dates
+- **Task Categories**: View tasks organized as Past, Present, and Future
+- **Task Properties**: 
+  - Priority levels (Low, Medium, High)
+  - Tags support
+  - Due dates
+  - Completion status
+- **Modern UI**:
+  - Color-coded task categories
+  - Visual notifications
+  - Intuitive keyboard navigation
+- **Configuration**:
+  - Customizable settings via config.json
+  - Persistent task storage
+
+## Requirements
+
+- Python 3.7 or higher
+- Terminal with color support
+
+## Installation
+
+1. Clone the repository or download the files
+2. Make sure you have Python 3.7+ installed
+
+## Usage
+
+Run the application:
+
+```bash
+python main.py
+```
+
+### Keyboard Controls
+
+In main view:
+- `q`: Quit application
+- `a`: Add new task
+- `e`: Edit selected task
+- `d`: Delete selected task
+- `Space`: Toggle task completion
+- `Tab`: Switch between Past/Present/Future categories
+- `r`: Refresh tasks
+- `↑/↓`: Navigate between tasks
+- `Page Up/Down`: Navigate pages of tasks
+
+In task edit/add mode:
+- `Tab`: Switch between name and date fields
+- `Enter`: Save task
+- `Esc`: Cancel
+
+## Configuration
+
+The application creates a default `config.json` file on first run. You can customize:
+
+```json
+{
+  "data_file": "tasks.json",
+  "auto_save": true,
+  "page_size": 10
+}
+```
+
+- `data_file`: Path to save tasks
+- `auto_save`: Whether to save automatically after changes
+- `page_size`: Number of tasks displayed per page
+
+## Troubleshooting
+
+The application logs errors and information to `todoist.log`. Check this file if you encounter issues.
+
+## License
+
+MIT License 

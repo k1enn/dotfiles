@@ -1,0 +1,163 @@
+package com.example.elsa_speak_clone.database;
+
+import android.util.Log;
+
+import com.example.elsa_speak_clone.database.entities.Lesson;
+import com.example.elsa_speak_clone.database.entities.Quiz;
+import com.example.elsa_speak_clone.database.entities.Vocabulary;
+
+import java.util.ArrayList;
+import java.util.List;
+
+// To insert default data
+public class DataInitializer {
+    private static final String TAG = "DataInitializer";
+
+    public static void populateDatabase(AppDatabase db) {
+        try {
+            insertDefaultLessons(db);
+            insertDefaultVocabulary(db);
+            insertDefaultQuizzes(db);
+            Log.d(TAG, "Database initialized with default data");
+        } catch (Exception e) {
+            Log.e(TAG, "Error initializing database: " + e.getMessage(), e);
+        }
+    }
+
+    private static void insertDefaultLessons(AppDatabase db) {
+        List<Lesson> lessons = new ArrayList<>();
+        
+        // Add lessons data similar to your original insertDefaultLessons method
+        lessons.add(new Lesson(1, "Basic Greetings", "Learn common greetings...", 1));
+        lessons.add(new Lesson(2, "Family Members", "Vocabulary about family...", 1));
+        // Add all your lessons...
+        
+        db.lessonDao().insertAll(lessons);
+    }
+
+    private static void insertDefaultVocabulary(AppDatabase db) {
+        List<Vocabulary> vocabularyList = new ArrayList<>();
+        
+        // Add vocabulary data similar to your original insertDefaultVocabulary method
+        vocabularyList.add(new Vocabulary(1, "Hello", "/həˈloʊ/", 1));
+        vocabularyList.add(new Vocabulary(2, "Goodbye", "/ˌɡʊdˈbaɪ/", 1));
+        // Add all your vocabulary...
+        
+        db.vocabularyDao().insertAll(vocabularyList);
+    }
+
+    private static void insertDefaultQuizzes(AppDatabase db) {
+        List<Quiz> quizzes = new ArrayList<>();
+        
+        // Lesson 1: Basic Greetings
+        quizzes.add(new Quiz(1, "How ___ you?", "are", 1));
+        quizzes.add(new Quiz(2, "What ___ your name?", "is", 1));
+        quizzes.add(new Quiz(3, "Good ___, how are you?", "morning", 1));
+        quizzes.add(new Quiz(4, "I'm ___ to meet you.", "pleased", 1));
+        quizzes.add(new Quiz(5, "You should greet Dr. Smith ___ when meeting for the first time.", "formally", 1));
+        quizzes.add(new Quiz(6, "When meeting someone for the first time, you should use a ___ greeting.", "formal", 1));
+        quizzes.add(new Quiz(7, "It's appropriate to use ___ titles when greeting professionals.", "professional", 1));
+        quizzes.add(new Quiz(8, "Good ___ is a formal greeting used in the evening.", "evening", 1));
+        quizzes.add(new Quiz(9, "When greeting a female with unknown marital status, use ___.", "Ms", 1));
+        quizzes.add(new Quiz(10, "___ you later is an informal way to say goodbye.", "See", 1));
+        
+        // Lesson 2: Family Members
+        quizzes.add(new Quiz(11, "My mother's daughter is my ___.", "sister", 2));
+        quizzes.add(new Quiz(12, "My mother's mother is my ___.", "grandmother", 2));
+        quizzes.add(new Quiz(13, "My father's son is my ___.", "brother", 2));
+        quizzes.add(new Quiz(14, "My aunt's children are my ___.", "cousins", 2));
+        quizzes.add(new Quiz(15, "My sister's husband is my ___.", "brother-in-law", 2));
+        quizzes.add(new Quiz(16, "My brother's daughter is my ___.", "niece", 2));
+        quizzes.add(new Quiz(17, "My dad's brother is my ___.", "uncle", 2));
+        quizzes.add(new Quiz(18, "My grandpa's father is my ___.", "great grandpa", 2));
+        quizzes.add(new Quiz(19, "My female spouse is my ___.", "wife", 2));
+        quizzes.add(new Quiz(20, "My step-mother's son is my ___.", "step-brother", 2));
+        
+        // Lesson 3: Food & Dining
+        quizzes.add(new Quiz(21, "A place where you buy bread and cakes is called a ___.", "bakery", 3));
+        quizzes.add(new Quiz(22, "The ___ shows all available food options in a restaurant.", "menu", 3));
+        quizzes.add(new Quiz(23, "The first meal of the day is called ___.", "breakfast", 3));
+        quizzes.add(new Quiz(24, "When food tastes very good, it is ___.", "delicious", 3));
+        quizzes.add(new Quiz(25, "A person who doesn't eat meat is called a ___.", "vegetarian", 3));
+        quizzes.add(new Quiz(26, "Food with a hot, pungent flavor is described as ___.", "spicy", 3));
+        quizzes.add(new Quiz(27, "The ___ is what you ask for when you want to pay in a restaurant.", "bill", 3));
+        quizzes.add(new Quiz(28, "The evening meal is commonly called ___.", "dinner", 3));
+        quizzes.add(new Quiz(29, "The midday meal is called ___.", "lunch", 3));
+        quizzes.add(new Quiz(30, "A ___ is a place where you buy food and household items.", "grocery store", 3));
+        
+        // Lesson 4: Travel Essentials
+        quizzes.add(new Quiz(31, "I need to ___ a flight for my vacation.", "book", 4));
+        quizzes.add(new Quiz(32, "The plane ___ at 3 PM.", "departs", 4));
+        quizzes.add(new Quiz(33, "Can I have a window ___?", "seat", 4));
+        quizzes.add(new Quiz(34, "Where is the baggage ___?", "claim", 4));
+        quizzes.add(new Quiz(35, "You need a ___ to travel internationally.", "passport", 4));
+        quizzes.add(new Quiz(36, "A ___ is a place where planes land and take off.", "airport", 4));
+        quizzes.add(new Quiz(37, "You need to make a ___ to secure your hotel room.", "reservation", 4));
+        quizzes.add(new Quiz(38, "Your ___ contains your clothes and personal items for travel.", "luggage", 4));
+        quizzes.add(new Quiz(39, "The ___ is the tallest mountain in the world.", "Mount Everest", 4));
+        quizzes.add(new Quiz(40, "The Nile is the ___ river in the world.", "longest", 4));
+        
+        // Lesson 5: Shopping
+        quizzes.add(new Quiz(41, "A ___ is a shop where you buy medicine.", "pharmacy", 5));
+        quizzes.add(new Quiz(42, "A ___ store is where you buy computers and TVs.", "electronics", 5));
+        quizzes.add(new Quiz(43, "A place to buy rings and necklaces is a ___ store.", "jewelry", 5));
+        quizzes.add(new Quiz(44, "The ___ of this item is too high.", "price", 5));
+        quizzes.add(new Quiz(45, "Can I get a ___ on this item?", "discount", 5));
+        quizzes.add(new Quiz(46, "I need to ___ these clothes before buying them.", "try on", 5));
+        quizzes.add(new Quiz(47, "This item is on ___, so it costs less than usual.", "sale", 5));
+        quizzes.add(new Quiz(48, "I'll pay with my ___ card instead of cash.", "credit", 5));
+        quizzes.add(new Quiz(49, "Please give me a ___ for my purchase.", "receipt", 5));
+        quizzes.add(new Quiz(50, "This product is very ___; it costs a lot of money.", "expensive", 5));
+        
+        // Lesson 6: Weather & Seasons
+        quizzes.add(new Quiz(51, "Today is a ___ day with no clouds in the sky.", "sunny", 6));
+        quizzes.add(new Quiz(52, "Don't forget your umbrella, it's a ___ day.", "rainy", 6));
+        quizzes.add(new Quiz(53, "The sky is ___ today, we can't see the sun.", "cloudy", 6));
+        quizzes.add(new Quiz(54, "In winter, we often see ___ falling from the sky.", "snow", 6));
+        quizzes.add(new Quiz(55, "The ___ today is 25 degrees Celsius.", "temperature", 6));
+        quizzes.add(new Quiz(56, "The weather ___ says it will rain tomorrow.", "forecast", 6));
+        quizzes.add(new Quiz(57, "The hottest season of the year is ___.", "summer", 6));
+        quizzes.add(new Quiz(58, "The coldest season of the year is ___.", "winter", 6));
+        quizzes.add(new Quiz(59, "Another name for fall is ___.", "autumn", 6));
+        quizzes.add(new Quiz(60, "The season that comes after winter is ___.", "spring", 6));
+        
+        // Lesson 7: Business Communication
+        quizzes.add(new Quiz(61, "Let's ___ the meeting at 9 AM.", "schedule", 7));
+        quizzes.add(new Quiz(62, "Could you ___ the presentation with the team?", "share", 7));
+        quizzes.add(new Quiz(63, "We need to ___ this issue in our meeting.", "discuss", 7));
+        quizzes.add(new Quiz(64, "The ___ will be sent after the meeting.", "minutes", 7));
+        quizzes.add(new Quiz(65, "We need to meet the project ___ by Friday.", "deadline", 7));
+        quizzes.add(new Quiz(66, "I'll prepare a ___ for the board meeting.", "presentation", 7));
+        quizzes.add(new Quiz(67, "We should ___ with the client about the terms.", "negotiate", 7));
+        quizzes.add(new Quiz(68, "Please sign the ___ before we proceed.", "contract", 7));
+        quizzes.add(new Quiz(69, "My ___ will attend the meeting in my place.", "colleague", 7));
+        quizzes.add(new Quiz(70, "We need to stay within the ___ for this project.", "budget", 7));
+        
+        // Lesson 8: Academic Language
+        quizzes.add(new Quiz(71, "The ___ shows interesting results.", "data", 8));
+        quizzes.add(new Quiz(72, "We need to ___ more sources in our paper.", "cite", 8));
+        quizzes.add(new Quiz(73, "This research ___ was published last year.", "paper", 8));
+        quizzes.add(new Quiz(74, "The ___ supported our hypothesis.", "findings", 8));
+        quizzes.add(new Quiz(75, "We should ___ the methodology carefully.", "review", 8));
+        quizzes.add(new Quiz(76, "A ___ is the main argument of your research paper.", "thesis", 8));
+        quizzes.add(new Quiz(77, "The ___ section summarizes your research paper.", "abstract", 8));
+        quizzes.add(new Quiz(78, "We conducted an ___ of the experimental results.", "analysis", 8));
+        quizzes.add(new Quiz(79, "The ___ lists all sources used in your paper.", "bibliography", 8));
+        quizzes.add(new Quiz(80, "A ___ is an educated guess that can be tested.", "hypothesis", 8));
+        
+        // Lesson 9: Technology & Internet
+        quizzes.add(new Quiz(81, "I need to ___ this file to my computer.", "download", 9));
+        quizzes.add(new Quiz(82, "Create a strong ___ for your online accounts.", "password", 9));
+        quizzes.add(new Quiz(83, "The company's ___ provides information about their services.", "website", 9));
+        quizzes.add(new Quiz(84, "Computer programs are also called ___.", "software", 9));
+        quizzes.add(new Quiz(85, "Physical computer components are called ___.", "hardware", 9));
+        quizzes.add(new Quiz(86, "A ___ connection doesn't need cables.", "wireless", 9));
+        quizzes.add(new Quiz(87, "A collection of organized information is called a ___.", "database", 9));
+        quizzes.add(new Quiz(88, "An ___ is a step-by-step procedure for calculations.", "algorithm", 9));
+        quizzes.add(new Quiz(89, "___ protects your data from unauthorized access.", "encryption", 9));
+        quizzes.add(new Quiz(90, "Data stored on the ___ can be accessed from anywhere.", "cloud", 9));
+        
+        // Insert all quizzes into the database
+        db.quizDao().insertAll(quizzes);
+    }
+} 

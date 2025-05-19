@@ -1,0 +1,18 @@
+# set background
+output * bg /home/k1en/.config/backgrounds/001.jpg fill
+
+# run as startup
+bar {
+	swaybar_command waybar
+}
+
+# include custom sway config
+include "${XDG_CONFIG_HOME:-$HOME/.config}/sway/config.d/*.conf"
+
+# include default sway config
+include '$(/usr/libexec/sway/layered-include "/usr/share/sway/config.d/*.conf" "/etc/sway/config.d/*.conf")'
+
+exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+
+

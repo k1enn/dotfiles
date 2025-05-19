@@ -1,0 +1,23 @@
+2025-05-19 03:14:12.515 [info] Extension host with pid 27201 started
+2025-05-19 03:14:12.516 [info] Skipping acquiring lock for /home/k1en/.config/Cursor/User/workspaceStorage/a92316210bcb338f4b06137448a22b63.
+2025-05-19 03:14:12.579 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-05-19 03:14:12.584 [info] ExtensionService#_doActivateExtension icrawl.discord-vscode, startup: true, activationEvent: '*'
+2025-05-19 03:14:12.715 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-05-19 03:14:12.778 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-05-19 03:14:12.806 [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'
+2025-05-19 03:14:12.853 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-05-19 03:14:12.870 [info] Extension host with pid 27230 started
+2025-05-19 03:14:12.870 [info] Skipping acquiring lock for /home/k1en/.config/Cursor/User/workspaceStorage/a92316210bcb338f4b06137448a22b63.
+2025-05-19 03:14:12.936 [info] Eager extensions activated
+2025-05-19 03:14:12.974 [info] Eager extensions activated
+2025-05-19 03:14:13.013 [info] ExtensionService#_doActivateExtension anysphere.cursor-always-local, startup: false, activationEvent: 'onStartupFinished'
+2025-05-19 03:14:13.021 [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: false, activationEvent: 'onStartupFinished'
+2025-05-19 03:14:13.202 [info] ExtensionService#_doActivateExtension anysphere.cursor-retrieval, startup: false, activationEvent: 'onStartupFinished'
+2025-05-19 03:14:13.361 [info] ExtensionService#_doActivateExtension anysphere.cursor-shadow-workspace, startup: false, activationEvent: 'onStartupFinished'
+2025-05-19 03:14:13.414 [info] ExtensionService#_doActivateExtension anysphere.cursor-tokenize, startup: false, activationEvent: 'onStartupFinished'
+2025-05-19 03:14:13.544 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-05-19 03:14:13.547 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-05-19 03:14:13.560 [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+2025-05-19 03:14:13.620 [info] ExtensionService#_doActivateExtension PKief.material-icon-theme, startup: false, activationEvent: 'onStartupFinished'
+2025-05-19 03:14:13.632 [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: false, activationEvent: 'onStartupFinished'
+2025-05-19 03:14:13.637 [info] ExtensionService#_doActivateExtension zhuangtongfa.material-theme, startup: false, activationEvent: 'onStartupFinished'

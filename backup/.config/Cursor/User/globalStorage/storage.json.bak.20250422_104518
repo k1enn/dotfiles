@@ -1,0 +1,62 @@
+{
+    "telemetry.devDeviceId": "af67e17f-d6e9-466e-aa48-304ae8ea59c8",
+    "telemetry.machineId": "d59c1fed3088b44770fd99dbbea7c540d5f471947d4a2e1b25525dc77da6c1bf",
+    "telemetry.macMachineId": "51c500685b2cbcb7940d4b12eb1d7f812602b5b67d804f19083992761adefbe113f002a329800509a26565adb2837708ccaa1aebbb55c915473b0608a38d574e",
+    "telemetry.sqmId": "{1FED7807-FD5D-43E2-98DE-2B420AEA08AB}",
+    "storage.serviceMachineId": "962ebec5-709c-40db-a6f5-b683c5e00e4f",
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [
+            {
+                "folderUri": "file:///home/k1en/Documents/Study/Github/elsa-speak-clone"
+            }
+        ],
+        "emptyWindows": []
+    },
+    "profileAssociations": {
+        "workspaces": {
+            "file:///home/k1en/Documents/Study/Github/elsa-speak-clone": "__default__profile__"
+        },
+        "emptyWindows": {}
+    },
+    "windowControlHeight": 35,
+    "theme": "vs-dark",
+    "themeBackground": "#23272e",
+    "windowSplash": {
+        "zoomLevel": 0,
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "#cccccc",
+            "background": "#23272e",
+            "editorBackground": "#23272e",
+            "titleBarBackground": "#23272e",
+            "activityBarBackground": "#23272e",
+            "sideBarBackground": "#1e2227",
+            "statusBarBackground": "#1e2227",
+            "statusBarNoFolderBackground": "#1e2227"
+        },
+        "layoutInfo": {
+            "sideBarSide": "left",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 35,
+            "activityBarWidth": 0,
+            "sideBarWidth": 170,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "folder": "file:///home/k1en/Documents/Study/Github/elsa-speak-clone",
+            "backupPath": "/home/k1en/.config/Cursor/Backups/ffb8d8773d125cc5396846bba5c0d777",
+            "uiState": {
+                "mode": 0,
+                "x": 1709,
+                "y": 227,
+                "width": 1024,
+                "height": 539
+            }
+        },
+        "openedWindows": []
+    }
+}

@@ -1,0 +1,44 @@
+# Font settings
+font=Fira Sans Semibold 12
+
+# Layout
+sort=-time
+layer=overlay
+anchor=top-right
+width=300
+height=110
+margin=8,8,0,0
+padding=0,5,10
+
+# Colors and styling
+background-color=#282c34
+border-color=#528bff
+text-color=#abb2bf
+border-radius=10
+
+# Icon settings
+icons=0
+max-icon-size=64
+
+# Timeout settings
+default-timeout=5000
+ignore-timeout=1
+
+# High urgency notifications
+[urgency=high]
+border-color=#e06c75
+default-timeout=0
+
+# Low urgency notifications
+[urgency=low]
+border-color=#98c379
+default-timeout=3000
+
+# Normal urgency notifications
+[urgency=normal]
+border-color=#528bff
+default-timeout=5000
+
+# Special notifications (like logs)
+[summary~="log-.*"]
+border-color=#e5c07b

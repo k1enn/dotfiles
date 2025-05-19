@@ -1,0 +1,165 @@
+2025-05-18 04:33:14.890 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-vscode.vscode-selfhost-test-provider' wants API proposal 'attributableCoverage' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-05-18 04:33:14.891 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-toolsai.datawrangler' wants API proposal 'debugFocus' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-05-18 04:33:14.891 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.python' wants API proposal 'contribIssueReporter' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-05-18 04:33:14.891 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.debugpy' wants API proposal 'contribIssueReporter' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-05-18 04:33:14.891 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-azuretools.vscode-azure-github-copilot' wants API proposal 'lmTools' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-05-18 04:33:14.891 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-vscode.cpptools' wants API proposal 'lmTools' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-05-18 04:33:14.892 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'vscjava.vscode-java-pack' wants API proposal 'lmTools' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-05-18 04:33:14.892 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'apidev.azure-api-center' wants API proposal 'chatParticipant' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-05-18 04:33:14.892 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'apidev.azure-api-center' wants API proposal 'languageModels' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-05-18 04:33:14.936 [warning] Missing property "modes" in oldValue. Filling with value from initValue. Please add a migration if necessary.
+2025-05-18 04:33:14.937 [warning] Missing property "modes2" in oldValue. Filling with value from initValue. Please add a migration if necessary.
+2025-05-18 04:33:14.937 [warning] Missing property "modes3" in oldValue. Filling with value from initValue. Please add a migration if necessary.
+2025-05-18 04:33:14.937 [warning] Missing property "explicitEnableOrDisable" in oldValue. Filling with value from initValue. Please add a migration if necessary.
+2025-05-18 04:33:14.937 [warning] Missing property "lastBackgroundBugbotAt" in oldValue. Filling with value from initValue. Please add a migration if necessary.
+2025-05-18 04:33:15.320 [info] Started local extension host with pid 36804.
+2025-05-18 04:33:15.740 [info] Placing extension(s) vscodevim.vim on a separate extension host.
+2025-05-18 04:33:16.059 [info] Started local extension host with pid 36854.
+2025-05-18 04:33:16.285 [error] [Extension Host] (node:36804) ExperimentalWarning: Use `importAttributes` instead of `importAssertions`
+(Use `exe --trace-warnings ...` to show where the warning was created)
+2025-05-18 04:33:17.126 [error] MainThreadChatAgents2#$updateAgent: No agent with handle 0 registered
+2025-05-18 04:33:17.134 [error] [Extension Host] (node:36854) ExperimentalWarning: Use `importAttributes` instead of `importAssertions`
+(Use `exe --trace-warnings ...` to show where the warning was created)
+2025-05-18 04:33:17.166 [error] chatParticipant must be declared in package.json: mongodb.participant: Error: chatParticipant must be declared in package.json: mongodb.participant
+    at m$s.$registerAgent (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:2354:75403) chatParticipant must be declared in package.json: mongodb.participant
+2025-05-18 04:33:18.563 [info] [perf] Render performance baseline is 16ms
+2025-05-18 04:46:56.250 [error] [internal] Stream closed with error code NGHTTP2_REFUSED_STREAM: ConnectError: [internal] Stream closed with error code NGHTTP2_REFUSED_STREAM
+    at t (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:2405:131870)
+    at async Object.cppConfig (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:98:15147)
+    at async lEi.loadCppConfigIncludingHandlingProAccess (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:4987:1073)
+    at async lEi.fastPeriodicallyReloadCppConfig (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:4987:803) [internal] Stream closed with error code NGHTTP2_REFUSED_STREAM
+2025-05-18 04:50:49.221 [error] [canceled] This operation was aborted: ConnectError: [canceled] This operation was aborted
+    at t (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:2405:131870)
+    at async Object.countTokens (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:98:15147)
+    at async hni.updateTokenCount (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:3063:4843) [canceled] This operation was aborted
+2025-05-18 04:55:29.122 [error] [canceled] This operation was aborted: ConnectError: [canceled] This operation was aborted
+    at t (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:2405:131870)
+    at async Object.countTokens (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:98:15147)
+    at async hni.updateTokenCount (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:3063:4843) [canceled] This operation was aborted
+2025-05-18 05:09:15.882 [error] File seems to be binary and cannot be opened as text: Error: File seems to be binary and cannot be opened as text
+    at H1i.M (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:4856:9502)
+    at async H1i.readStream (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:4856:9129)
+    at async _ft.Db (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:2925:12123)
+    at async _ft.resolve (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:2925:10598)
+    at async B1i.W (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:4856:5900)
+    at async $ti.r (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:2925:21118)
+    at async fIt.acquire (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:44:2317)
+    at async Fti.createModelReference (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:2925:22678)
+    at async YXe (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:79:44)
+    at async K$t (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:88:107) File seems to be binary and cannot be opened as text
+2025-05-18 05:09:22.004 [error] [canceled] This operation was aborted: ConnectError: [canceled] This operation was aborted
+    at t (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:2405:131870)
+    at async Object.countTokens (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:98:15147)
+    at async hni.updateTokenCount (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:3063:4843) [canceled] This operation was aborted
+2025-05-18 05:19:09.861 [error] Invoking deltaDecorations recursively could lead to leaking decorations.: Error: Invoking deltaDecorations recursively could lead to leaking decorations.
+    at qI.deltaDecorations (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:364:4065)
+    at hEi.clearPrediction (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:4992:315)
+    at hEi.clearCursorPrediction (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:4987:24287)
+    at zae.value (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:4972:24779)
+    at M.B (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:49:748)
+    at M.C (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:49:818)
+    at M.fire (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:49:1036)
+    at zae.value (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:368:15500)
+    at M.B (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:49:748)
+    at M.fire (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:49:967) Invoking deltaDecorations recursively could lead to leaking decorations.
+2025-05-18 05:19:12.979 [error] Invoking deltaDecorations recursively could lead to leaking decorations.: Error: Invoking deltaDecorations recursively could lead to leaking decorations.
+    at qI.deltaDecorations (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:364:4065)
+    at hEi.clearPrediction (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:4992:315)
+    at hEi.clearCursorPrediction (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:4987:24287)
+    at zae.value (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:4972:24779)
+    at M.B (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:49:748)
+    at M.C (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:49:818)
+    at M.fire (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:49:1036)
+    at zae.value (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:368:15500)
+    at M.B (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:49:748)
+    at M.fire (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:49:967) Invoking deltaDecorations recursively could lead to leaking decorations.
+2025-05-18 05:19:25.427 [error] Invoking deltaDecorations recursively could lead to leaking decorations.: Error: Invoking deltaDecorations recursively could lead to leaking decorations.
+    at qI.deltaDecorations (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:364:4065)
+    at hEi.clearPrediction (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:4992:315)
+    at hEi.clearCursorPrediction (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:4987:24287)
+    at zae.value (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:4972:24779)
+    at M.B (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:49:748)
+    at M.C (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:49:818)
+    at M.fire (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:49:1036)
+    at zae.value (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:368:15500)
+    at M.B (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:49:748)
+    at M.fire (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:49:967) Invoking deltaDecorations recursively could lead to leaking decorations.
+2025-05-18 05:24:59.130 [error] [canceled] This operation was aborted: ConnectError: [canceled] This operation was aborted
+    at t (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:2405:131870)
+    at async Object.countTokens (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:98:15147)
+    at async hni.updateTokenCount (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:3063:4843) [canceled] This operation was aborted
+2025-05-18 05:25:18.077 [error] [unavailable] HTTP 502: ConnectError: [unavailable] HTTP 502
+    at t (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:2405:131870)
+    at async Object.countTokens (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:98:15147)
+    at async hni.updateTokenCount (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:3063:4843) [unavailable] HTTP 502
+2025-05-18 05:26:12.462 [error] [canceled] This operation was aborted: ConnectError: [canceled] This operation was aborted
+    at t (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:2405:131870)
+    at async Object.countTokens (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:98:15147)
+    at async hni.updateTokenCount (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:3063:4843) [canceled] This operation was aborted
+2025-05-18 05:30:30.264 [error] [canceled] This operation was aborted: ConnectError: [canceled] This operation was aborted
+    at t (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:2405:131870)
+    at async Object.countTokens (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:98:15147)
+    at async hni.updateTokenCount (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:3063:4843) [canceled] This operation was aborted
+2025-05-18 05:32:28.001 [error] [canceled] This operation was aborted: ConnectError: [canceled] This operation was aborted
+    at t (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:2405:131870)
+    at async Object.countTokens (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:98:15147)
+    at async hni.updateTokenCount (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:3063:4843) [canceled] This operation was aborted
+2025-05-18 05:33:51.811 [error] [internal] Stream closed with error code NGHTTP2_REFUSED_STREAM: ConnectError: [internal] Stream closed with error code NGHTTP2_REFUSED_STREAM
+    at t (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:2405:131870)
+    at async Object.cppConfig (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:98:15147)
+    at async lEi.loadCppConfigIncludingHandlingProAccess (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:4987:1073)
+    at async lEi.fastPeriodicallyReloadCppConfig (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:4987:803) [internal] Stream closed with error code NGHTTP2_REFUSED_STREAM
+2025-05-18 05:34:16.491 [error] [canceled] This operation was aborted: ConnectError: [canceled] This operation was aborted
+    at t (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:2405:131870)
+    at async Object.countTokens (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:98:15147)
+    at async hni.updateTokenCount (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:3063:4843) [canceled] This operation was aborted
+2025-05-18 05:38:14.270 [error] [canceled] This operation was aborted: ConnectError: [canceled] This operation was aborted
+    at t (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:2405:131870)
+    at async Object.countTokens (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:98:15147)
+    at async hni.updateTokenCount (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:3063:4843) [canceled] This operation was aborted
+2025-05-18 05:45:57.717 [error] [canceled] This operation was aborted: ConnectError: [canceled] This operation was aborted
+    at t (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:2405:131870)
+    at async Object.countTokens (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:98:15147)
+    at async hni.updateTokenCount (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:3063:4843) [canceled] This operation was aborted
+2025-05-18 05:46:25.583 [error] i.with is not a function: TypeError: i.with is not a function
+    at nle.normalizePath (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:50:71674)
+    at OSt.asCanonicalUri (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:4855:81843)
+    at Fti.createModelReference (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:2925:22660)
+    at U (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:2303:98199) i.with is not a function
+2025-05-18 05:46:45.014 [error] i.with is not a function: TypeError: i.with is not a function
+    at nle.normalizePath (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:50:71674)
+    at OSt.asCanonicalUri (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:4855:81843)
+    at Fti.createModelReference (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:2925:22660)
+    at U (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:2303:98199) i.with is not a function
+2025-05-18 05:46:47.578 [error] [canceled] This operation was aborted: ConnectError: [canceled] This operation was aborted
+    at t (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:2405:131870)
+    at async Object.countTokens (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:98:15147)
+    at async hni.updateTokenCount (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:3063:4843) [canceled] This operation was aborted
+2025-05-18 05:51:08.391 [error] [canceled] This operation was aborted: ConnectError: [canceled] This operation was aborted
+    at t (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:2405:131870)
+    at async Object.countTokens (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:98:15147)
+    at async hni.updateTokenCount (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:3063:4843) [canceled] This operation was aborted
+2025-05-18 05:52:33.788 [error] [internal] Stream closed with error code NGHTTP2_REFUSED_STREAM: ConnectError: [internal] Stream closed with error code NGHTTP2_REFUSED_STREAM
+    at t (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:2405:131870)
+    at async Object.cppConfig (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:98:15147)
+    at async lEi.loadCppConfigIncludingHandlingProAccess (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:4987:1073)
+    at async lEi.fastPeriodicallyReloadCppConfig (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:4987:803) [internal] Stream closed with error code NGHTTP2_REFUSED_STREAM
+2025-05-18 05:59:59.132 [error] [canceled] This operation was aborted: ConnectError: [canceled] This operation was aborted
+    at t (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:2405:131870)
+    at async Object.countTokens (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:98:15147)
+    at async hni.updateTokenCount (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:3063:4843) [canceled] This operation was aborted
+2025-05-18 06:15:19.687 [error] [canceled] This operation was aborted: ConnectError: [canceled] This operation was aborted
+    at t (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:2405:131870)
+    at async Object.countTokens (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:98:15147)
+    at async hni.updateTokenCount (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:3063:4843) [canceled] This operation was aborted
+2025-05-18 06:19:56.064 [error] Error: The editor could not be opened because the file was not found.
+    at Qvt.gc (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:3960:26662)
+    at async Qvt.setInput (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:3960:25820)
+    at async $Ht.U (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:701:20023)
+    at async $Ht.M (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:701:18574)
+    at async $Ht.openEditor (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:701:17656)
+    at async vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:813:23600
+    at async xti.M (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:2907:29369)
+    at async xti.openCodeEditor (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:2907:20640)
+    at async cri.open (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:3084:696)
+    at async uri.open (vscode-file://vscode-app/tmp/.mount_cursor993tp6/usr/share/cursor/resources/app/out/vs/workbench/workbench.desktop.main.js:3084:1735)

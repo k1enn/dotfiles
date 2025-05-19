@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>jdt.ls-java-project</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>src/io/flutter/plugins/GeneratedPluginRegistrant.java</name>
+			<type>1</type>
+			<location>//home/k1en/Documents/Study/LapTrinhMobile/Practices/Flutter/flta-materials/06-interactive-widgets/projects/starter/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java</location>
+		</link>
+	</linkedResources>
+</projectDescription>

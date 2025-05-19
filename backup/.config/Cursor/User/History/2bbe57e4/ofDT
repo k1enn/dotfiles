@@ -1,0 +1,40 @@
+# Font settings
+font=Fira Sans Semibold 12
+
+# Layout
+sort=-time
+layer=overlay
+anchor=top-center
+
+# Colors and styling (using Catppuccin colors)
+background-color=#24273a99
+border-size=2
+border-color=#8aadf499
+border-radius=4
+
+# Icon settings
+icons=0
+max-icon-size=64
+
+# Timeout settings
+default-timeout=5000
+ignore-timeout=1
+
+# High urgency notifications
+[urgency=high]
+border-color=#ed8796
+default-timeout=0
+
+# Low urgency notifications
+[urgency=low]
+border-color=#8bd5ca
+default-timeout=3000
+
+# Normal urgency notifications
+[urgency=normal]
+border-color=#8aadf4
+default-timeout=5000
+
+# Special notifications (like logs)
+[summary~="log-.*"]
+border-color=#eed49f

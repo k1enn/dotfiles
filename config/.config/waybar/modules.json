@@ -251,14 +251,14 @@
     "tooltip": false
   },
   "custom/keyboard-layout": {
-    "exec": "swaymsg -t get_inputs | grep -m1 'xkb_active_layout_name' | cut -d '\"' -f4",
-    // Interval set only as a fallback, as the value is updated by signal
+    "exec": "~/.config/waybar/scripts/keyboard-layout.sh",
     "interval": 1,
     "format": "  {}", // Icon: keyboard
     // Signal sent by Sway key binding (~/.config/sway/key-bindings)
-    "signal": 1, // SIGHUP
-    "tooltip": false,
-    "on-click": "~/.config/waybar/scripts/keyhint.sh"
+    "tooltip": true,
+    "tooltip-format": "Current layout: {}",
+    "on-click": "fcitx5-remote -t",
+    "on-click-right": "fcitx5-configtool"
   },
   "custom/launcher": {
     "format": "",

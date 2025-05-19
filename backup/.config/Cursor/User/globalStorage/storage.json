@@ -1,0 +1,108 @@
+{
+    "telemetry.devDeviceId": "ca4b9e5e-088c-47be-8ed2-95497b3ff312",
+    "telemetry.machineId": "03b374003c4c7a207e2b14539e2c3e45649d9a98f86b03c13ec055c207c89eac",
+    "telemetry.macMachineId": "0e3eb928a48e49189610b6883f2b1f691888043ee96eba34b9e809d353e66c8433b144bf305549eeb1badf8b9885b69c0f9329e8b3af725dddfc6471c424309a",
+    "telemetry.sqmId": "{47CA18DC-AD0E-4635-A932-C32E6B7C8DFD}",
+    "storage.serviceMachineId": "3dc989a6-f029-4415-9eea-288136d014c0",
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [
+            {
+                "folderUri": "file:///home/k1en/dotfiles"
+            }
+        ],
+        "emptyWindows": []
+    },
+    "profileAssociations": {
+        "workspaces": {
+            "file:///home/k1en/Documents/Study/Github/elsa-speak-clone": "__default__profile__",
+            "file:///home/k1en/Documents/Study/Github/k1enn": "__default__profile__",
+            "file:///home/k1en/Documents/Study/LapTrinhMobile/Practices/Flutter/flutter_application_1": "__default__profile__",
+            "file:///home/k1en/Documents/Study/LapTrinhMobile/Practices/Flutter/flta-materials/02-hello-flutter": "__default__profile__",
+            "file:///home/k1en/Documents/Study/LapTrinhMobile/Practices/Flutter/flta-materials/02-hello-flutter/projects/starter/recipes": "__default__profile__",
+            "file:///home/k1en/Documents/Study/LapTrinhMobile/Practices/Flutter/flta-materials/02-hello-flutter/projects/starter": "__default__profile__",
+            "file:///home/k1en/Documents/Study/LapTrinhMobile/Practices/Flutter/flta-materials/02-hello-flutter/projects": "__default__profile__",
+            "file:///home/k1en/Documents/Study/LapTrinhMobile/Practices/Flutter/flta-materials/02-hello-flutter/projects/starter/recipes/android": "__default__profile__",
+            "file:///home/k1en/Documents/Study/LapTrinhMobile/Practices/Flutter/flta-materials/03-basic-widgets/projects/starter": "__default__profile__",
+            "file:///home/k1en/Documents/Study/LapTrinhMobile/Practices/Flutter/flta-materials/04-understanding-widgets/projects/starter": "__default__profile__",
+            "file:///home/k1en/Documents/Study/LapTrinhMobile/Practices/Flutter/flta-materials/05-scrollable-widgets/projects/starter": "__default__profile__",
+            "file:///home/k1en/Documents/Study/LapTrinhMobile/Practices/Flutter/flta-materials/20-build-and-release-an-android-app/projects/final": "__default__profile__",
+            "file:///home/k1en/Documents/Study/LapTrinhMobile/Practices/Flutter/flta-materials/06-interactive-widgets/projects/starter": "__default__profile__",
+            "file:///home/k1en/Downloads/free-cryptocurrency-website-template": "__default__profile__",
+            "file:///home/k1en/.config/Cursor/Workspaces/1746821810660/workspace.json": "__default__profile__",
+            "file:///home/k1en/Documents/Study/Github/software-engineer-notes": "__default__profile__",
+            "file:///home/k1en/Documents/Study/Github/coffe-store-dotnet": "__default__profile__",
+            "file:///home/k1en/Documents/Study/Web/Projects/mern-ecommerce": "__default__profile__",
+            "file:///home/k1en/Documents/Study/Github/mern-ecommerce": "__default__profile__",
+            "file:///home/k1en/Documents/Study/Web/Projects/mern-crash-course-master": "__default__profile__",
+            "file:///home/k1en/dotfiles/config/.config/sway": "__default__profile__",
+            "file:///home/k1en/dotfiles/config/.config": "__default__profile__",
+            "file:///home/k1en": "__default__profile__",
+            "file:///home/k1en/.var/app/dev.vencord.Vesktop/config/vesktop/themes": "__default__profile__",
+            "file:///home/k1en/Documents/Study/Web/Projects/mern-crash-course": "-5253cfe1",
+            "file:///home/k1en/Downloads/mern-crash-course-master": "-5253cfe1",
+            "file:///home/k1en/Documents/Study/Web/Projects/MERN-eCommerce-from-Scratch-main": "-5253cfe1",
+            "file:///home/k1en/Documents/Study/Web/Projects/proshop": "-5253cfe1",
+            "file:///home/k1en/Documents/Study/Hackathon_2025/learn-pass-web": "-5253cfe1",
+            "file:///home/k1en/Documents/Study/Hackathon_2025/WebHackathon": "-5253cfe1",
+            "file:///home/k1en/Documents/dotfiles-main/.config": "-5253cfe1",
+            "file:///home/k1en/dotfiles": "-5253cfe1",
+            "file:///home/k1en/Documents/Study/Hackathon_2025/crypto_currency_app": "5e9705d3"
+        },
+        "emptyWindows": {}
+    },
+    "windowControlHeight": 30,
+    "theme": "vs-dark",
+    "themeBackground": "#1a1a1a",
+    "windowSplash": {
+        "zoomLevel": 0,
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "rgba(204, 204, 204, 0.87)",
+            "background": "#1a1a1a",
+            "editorBackground": "#1a1a1a",
+            "titleBarBackground": "#141414",
+            "titleBarBorder": "rgba(255, 255, 255, 0.05)",
+            "activityBarBackground": "#141414",
+            "sideBarBackground": "#141414",
+            "sideBarBorder": "rgba(255, 255, 255, 0.05)",
+            "statusBarBackground": "#141414",
+            "statusBarBorder": "rgba(255, 255, 255, 0.05)",
+            "statusBarNoFolderBackground": "#141414"
+        },
+        "layoutInfo": {
+            "sideBarSide": "left",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 30,
+            "activityBarWidth": 0,
+            "sideBarWidth": 220,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "folder": "file:///home/k1en/dotfiles",
+            "backupPath": "/home/k1en/.config/Cursor/Backups/07b787ed70035b074dac82bdefae9143",
+            "uiState": {
+                "mode": 0,
+                "x": 10,
+                "y": 48,
+                "width": 1900,
+                "height": 1022
+            }
+        },
+        "openedWindows": []
+    },
+    "userDataProfiles": [
+        {
+            "location": "-5253cfe1",
+            "name": "JS",
+            "useDefaultFlags": {}
+        },
+        {
+            "location": "5e9705d3",
+            "name": "Flutter"
+        }
+    ]
+}

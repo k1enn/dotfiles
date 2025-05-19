@@ -1,0 +1,189 @@
+* {
+    // Catppuccin colors from your theme
+    base:      #24273a;
+    mantle:    #1e2030;
+    crust:     #181926;
+    text:      #cad3f5;
+    subtext0:  #a5adcb;
+    subtext1:  #b8c0e0;
+    surface0:  #363a4f;
+    surface1:  #494d64;
+    surface2:  #5b6078;
+    overlay0:  #6e738d;
+    overlay1:  #8087a2;
+    overlay2:  #939ab7;
+    blue:      #8aadf4;
+    lavender:  #b7bdf8;
+    sapphire:  #7dc4e4;
+    sky:       #91d7e3;
+    teal:      #8bd5ca;
+    green:     #a6da95;
+    yellow:    #eed49f;
+    peach:     #f5a97f;
+    maroon:    #ee99a0;
+    red:       #ed8796;
+    mauve:     #c6a0f6;
+    pink:      #f5bde6;
+    flamingo:  #f0c6c6;
+    rosewater: #f4dbd6;
+
+    // Theme settings
+    spacing: 2;
+    background-color: transparent;
+    border-color: @blue;
+    anchor: north;
+    location: center;
+    
+    // Border radius
+    border-radius: 12px;
+}
+
+window {
+    transparency: "real";
+    background-color: transparent;
+    border: 0;
+    padding: 0% 0% 1em 0%;
+    x-offset: 0;
+    y-offset: -10%;
+    width: 120%; // Increased by 20%
+}
+
+mainbox {
+    padding: 0px;
+    border: 0;
+    spacing: 1%;
+}
+
+message {
+    border: 2px;
+    padding: 1em;
+    background-color: @base;
+    text-color: @text;
+    border-radius: 12px;
+}
+
+textbox normal {
+    text-color: @text;
+    padding: 0;
+    border: 0;
+}
+
+listview {
+    fixed-height: 1;
+    border: 2px;
+    padding: 1em;
+    reverse: false;
+    columns: 1;
+    background-color: @base;
+    border-radius: 12px;
+}
+
+element {
+    border: 0;
+    padding: 4px;
+    highlight: bold;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+}
+
+element normal.normal {
+    text-color: @text;
+    background-color: transparent;
+}
+
+element normal.urgent {
+    text-color: @red;
+    background-color: @base;
+}
+
+element normal.active {
+    text-color: @blue;
+    background-color: @base;
+}
+
+element selected.normal {
+    text-color: @base;
+    background-color: @blue;
+}
+
+element selected.urgent {
+    text-color: @base;
+    background-color: @red;
+}
+
+element selected.active {
+    text-color: @base;
+    background-color: @blue;
+}
+
+element alternate.normal {
+    text-color: @text;
+    background-color: @surface0;
+}
+
+element alternate.urgent {
+    text-color: @red;
+    background-color: @surface0;
+}
+
+element alternate.active {
+    text-color: @blue;
+    background-color: @surface0;
+}
+
+scrollbar {
+    border: 0;
+    padding: 0;
+}
+
+inputbar {
+    spacing: 0;
+    border: 2px;
+    padding: 0.5em 1em;
+    background-color: @base;
+    index: 0;
+    border-radius: 12px;
+}
+
+inputbar normal {
+    foreground-color: @text;
+    background-color: transparent;
+}
+
+mode-switcher {
+    border: 2px;
+    padding: 0.5em 1em;
+    background-color: @base;
+    index: 10;
+    border-radius: 12px;
+}
+
+button selected {
+    text-color: @blue;
+}
+
+inputbar {
+    children: [ prompt, textbox-prompt-colon, entry, case-indicator ];
+}
+
+prompt, entry {
+    text-color: @text;
+}
+
+textbox-prompt-colon {
+    expand: false;
+    str: ":";
+    margin: 0px 0.3em 0em 0em;
+    text-color: @text;
+}
+
+error-message {
+    border: 2px;
+    padding: 1em;
+    background-color: @red;
+    text-color: @base;
+    border-radius: 12px;
+}

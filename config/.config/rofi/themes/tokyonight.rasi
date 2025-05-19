@@ -34,7 +34,6 @@ window {
     transparency: "real";
     border-color: @primary;   
     border: 1px;
-    border-radius: 6px;
     spacing: 0;
     children: [ mainbox ];
 }
@@ -49,7 +48,6 @@ inputbar {
     padding: 11px;
     border: 3px 3px 2px 3px;
     border-color: @primary;
-    border-radius: 6px 6px 0px 0px;
 }
 
 message {
@@ -78,7 +76,6 @@ listview {
     lines: 12;
     columns: 1;
     border: 0px 3px 3px 3px; 
-    border-radius: 0px 0px 6px 6px;
     border-color: @primary;
     dynamic: false;
 }
@@ -125,7 +122,6 @@ button {
     horizonatal-align: 0.5;
 
     border: 2px 0px 2px 2px;
-    border-radius: 4px 0px 0px 4px;
     border-color: @primary;
 }
 

@@ -1,0 +1,8 @@
+{
+    "window.commandCenter": 1,
+    "redhat.telemetry.enabled": true,
+    "java.debug.settings.exceptionBreakpoint.allowClasses": [
+        ""
+    ],
+    "workbench.colorTheme": "One Dark Pro Darker"
+}

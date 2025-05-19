@@ -1,0 +1,559 @@
+2025-05-18 17:44:39.644 [error] Failed to check if file sync is enabled for user {}
+2025-05-18 17:44:39.644 [error] Failed to fetch fsConfig File sync is disabled
+2025-05-18 17:44:39.644 [error] Failed to fetch fsConfig File sync is disabled
+2025-05-18 17:44:39.682 [info] [registerEventListeners] Registering event listeners
+2025-05-18 17:44:41.247 [info] [ENABLED STATUS] Filesync enabled from server.
+2025-05-18 17:44:41.670 [info] Fetched fsConfig in 422.5295530000003ms
+2025-05-18 17:44:41.670 [info] FSConfig response: {"checkFilesyncHashPercent":0.004999999888241291,"rateLimiterBreakerResetTimeMs":300000,"rateLimiterRps":10,"rateLimiterBurstCapacity":50,"maxRecentUpdatesStored":100,"maxModelVersionCacheSize":100,"maxFileSizeToSyncBytes":500000,"syncRetryMaxAttempts":3,"syncRetryInitialDelayMs":20,"syncRetryTimeMultiplier":2,"fileSyncStatusMaxCacheSize":5,"successiveSyncsRequiredForReliance":5,"extraSuccessfulSyncsNeededAfterErrors":0,"bigChangeStrippingThresholdBytes":10000,"lastNUpdatesToSend":15,"fileSyncStatusTtlMs":300000,"syncDebounceMs":250,"syncUpdateThreshold":10}
+2025-05-18 17:44:43.094 [info] [ENABLED STATUS] Filesync enabled from server.
+2025-05-18 17:44:43.664 [info] Starting sync of visible tabs
+2025-05-18 17:44:43.664 [info] Synced all visible tabs in 0.5424409999995987ms
+2025-05-18 17:44:43.961 [info] Fetched fsConfig in 866.7772750000004ms
+2025-05-18 17:44:43.961 [info] FSConfig response: {"checkFilesyncHashPercent":0.004999999888241291,"rateLimiterBreakerResetTimeMs":300000,"rateLimiterRps":10,"rateLimiterBurstCapacity":50,"maxRecentUpdatesStored":100,"maxModelVersionCacheSize":100,"maxFileSizeToSyncBytes":500000,"syncRetryMaxAttempts":3,"syncRetryInitialDelayMs":20,"syncRetryTimeMultiplier":2,"fileSyncStatusMaxCacheSize":5,"successiveSyncsRequiredForReliance":5,"extraSuccessfulSyncsNeededAfterErrors":0,"bigChangeStrippingThresholdBytes":10000,"lastNUpdatesToSend":15,"fileSyncStatusTtlMs":300000,"syncDebounceMs":250,"syncUpdateThreshold":10}
+2025-05-18 17:44:43.961 [info] File sync enabled status: true
+2025-05-18 17:44:43.961 [info] Starting sync of visible tabs
+2025-05-18 17:44:43.961 [info] Synced all visible tabs in 0.24671500000113156ms
+2025-05-18 17:44:44.086 [info] [ENABLED STATUS] Filesync enabled from server.
+2025-05-18 17:44:44.509 [info] Fetched fsConfig in 422.91057ms
+2025-05-18 17:44:44.509 [info] FSConfig response: {"checkFilesyncHashPercent":0.004999999888241291,"rateLimiterBreakerResetTimeMs":300000,"rateLimiterRps":10,"rateLimiterBurstCapacity":50,"maxRecentUpdatesStored":100,"maxModelVersionCacheSize":100,"maxFileSizeToSyncBytes":500000,"syncRetryMaxAttempts":3,"syncRetryInitialDelayMs":20,"syncRetryTimeMultiplier":2,"fileSyncStatusMaxCacheSize":5,"successiveSyncsRequiredForReliance":5,"extraSuccessfulSyncsNeededAfterErrors":0,"bigChangeStrippingThresholdBytes":10000,"lastNUpdatesToSend":15,"fileSyncStatusTtlMs":300000,"syncDebounceMs":250,"syncUpdateThreshold":10}
+2025-05-18 17:45:03.741 [info] Handled visible editors change in 5.200145999999222ms
+2025-05-18 17:45:04.111 [info] Uploaded file config/.config/waybar/modules.json modelVersion=1 in 211.20566999999937ms
+2025-05-18 17:45:04.112 [info] Handled visible editors change in 354.3025129999987ms
+2025-05-18 17:45:30.208 [info] Handled visible editors change in 3.8246540000036475ms
+2025-05-18 17:45:30.590 [info] Uploaded file config/.config/waybar/scripts/check_updates.sh modelVersion=1 in 206.74246300000232ms
+2025-05-18 17:45:30.590 [info] Handled visible editors change in 262.4044040000008ms
+2025-05-18 17:45:46.226 [info] Handled visible editors change in 4.035840999989887ms
+2025-05-18 17:45:46.558 [info] Uploaded file config/.config/waybar/scripts/usb-audio-control.sh modelVersion=1 in 205.10438299999805ms
+2025-05-18 17:45:46.558 [info] Handled visible editors change in 267.93486499998835ms
+2025-05-18 17:45:47.785 [info] Synced file config/.config/waybar/scripts/usb-audio-control.sh modelVersion=2 in 388.1506970000046ms
+2025-05-18 17:45:51.113 [info] [ENABLED STATUS] Filesync enabled from server.
+2025-05-18 17:45:51.527 [info] Fetched fsConfig in 413.6663719999924ms
+2025-05-18 17:45:51.527 [info] FSConfig response: {"checkFilesyncHashPercent":0.004999999888241291,"rateLimiterBreakerResetTimeMs":300000,"rateLimiterRps":10,"rateLimiterBurstCapacity":50,"maxRecentUpdatesStored":100,"maxModelVersionCacheSize":100,"maxFileSizeToSyncBytes":500000,"syncRetryMaxAttempts":3,"syncRetryInitialDelayMs":20,"syncRetryTimeMultiplier":2,"fileSyncStatusMaxCacheSize":5,"successiveSyncsRequiredForReliance":5,"extraSuccessfulSyncsNeededAfterErrors":0,"bigChangeStrippingThresholdBytes":10000,"lastNUpdatesToSend":15,"fileSyncStatusTtlMs":300000,"syncDebounceMs":250,"syncUpdateThreshold":10}
+2025-05-18 17:45:51.527 [info] File sync enabled status: true
+2025-05-18 17:45:51.527 [info] Starting sync of visible tabs
+2025-05-18 17:45:51.527 [info] Synced all visible tabs in 0.14503200000035577ms
+2025-05-18 17:46:01.591 [info] Handled visible editors change in 4.806897999995272ms
+2025-05-18 17:46:01.608 [info] Handled visible editors change in 5.70063300000038ms
+2025-05-18 17:46:11.524 [info] Synced file config/.config/waybar/modules.json modelVersion=2 in 201.31051599999773ms
+2025-05-18 17:46:11.918 [info] Synced file config/.config/waybar/modules.json modelVersion=2 in 200.4959680000029ms
+2025-05-18 17:46:15.993 [info] Synced file config/.config/waybar/modules.json modelVersion=3 in 198.47912499999802ms
+2025-05-18 17:46:28.550 [info] Synced file config/.config/waybar/modules.json modelVersion=4 in 197.49365599999146ms
+2025-05-18 17:46:29.195 [info] Synced file config/.config/waybar/modules.json modelVersion=5 in 201.52230199999758ms
+2025-05-18 17:46:29.453 [info] Synced file config/.config/waybar/modules.json modelVersion=5 in 199.65272600000026ms
+2025-05-18 17:46:39.429 [info] Synced file config/.config/waybar/modules.json modelVersion=6 in 198.56363200000487ms
+2025-05-18 17:46:40.265 [info] Synced file config/.config/waybar/modules.json modelVersion=9 in 207.3826160000026ms
+2025-05-18 17:46:41.014 [info] Synced file config/.config/waybar/modules.json modelVersion=12 in 198.00579599999764ms
+2025-05-18 17:46:49.346 [info] Synced file config/.config/waybar/modules.json modelVersion=13 in 202.42328600000474ms
+2025-05-18 17:46:49.830 [info] Synced file config/.config/waybar/modules.json modelVersion=16 in 199.48502300001564ms
+2025-05-18 17:46:50.379 [info] Synced file config/.config/waybar/modules.json modelVersion=19 in 204.402551999985ms
+2025-05-18 17:46:51.961 [info] Synced file config/.config/waybar/modules.json modelVersion=20 in 198.50705300000845ms
+2025-05-18 17:46:52.530 [info] [ENABLED STATUS] Filesync enabled from server.
+2025-05-18 17:46:52.669 [info] Synced file config/.config/waybar/modules.json modelVersion=21 in 198.822061999992ms
+2025-05-18 17:46:52.949 [info] Fetched fsConfig in 418.85946099998546ms
+2025-05-18 17:46:52.949 [info] FSConfig response: {"checkFilesyncHashPercent":0.004999999888241291,"rateLimiterBreakerResetTimeMs":300000,"rateLimiterRps":10,"rateLimiterBurstCapacity":50,"maxRecentUpdatesStored":100,"maxModelVersionCacheSize":100,"maxFileSizeToSyncBytes":500000,"syncRetryMaxAttempts":3,"syncRetryInitialDelayMs":20,"syncRetryTimeMultiplier":2,"fileSyncStatusMaxCacheSize":5,"successiveSyncsRequiredForReliance":5,"extraSuccessfulSyncsNeededAfterErrors":0,"bigChangeStrippingThresholdBytes":10000,"lastNUpdatesToSend":15,"fileSyncStatusTtlMs":300000,"syncDebounceMs":250,"syncUpdateThreshold":10}
+2025-05-18 17:46:52.949 [info] File sync enabled status: true
+2025-05-18 17:46:52.949 [info] Starting sync of visible tabs
+2025-05-18 17:46:53.161 [info] Uploaded file config/.config/waybar/modules.json modelVersion=27 in 200.6841790000035ms
+2025-05-18 17:46:53.161 [info] Synced all visible tabs in 212.65749899999355ms
+2025-05-18 17:46:53.502 [info] Synced file config/.config/waybar/modules.json modelVersion=28 in 196.72086800000397ms
+2025-05-18 17:46:53.908 [info] Synced file config/.config/waybar/modules.json modelVersion=28 in 198.93601499998476ms
+2025-05-18 17:47:57.665 [info] Handled visible editors change in 3.335331000009319ms
+2025-05-18 17:47:57.689 [info] Handled visible editors change in 3.8650260000140406ms
+2025-05-18 17:48:24.255 [info] Synced file config/.config/waybar/scripts/usb-audio-control.sh modelVersion=3 in 200.47473700001137ms
+2025-05-18 17:48:26.190 [info] Handled visible editors change in 2.142928999994183ms
+2025-05-18 17:48:26.216 [info] Handled visible editors change in 3.425239000003785ms
+2025-05-18 17:48:27.697 [info] [ENABLED STATUS] Filesync enabled from server.
+2025-05-18 17:48:28.113 [info] Fetched fsConfig in 415.5745520000055ms
+2025-05-18 17:48:28.113 [info] FSConfig response: {"checkFilesyncHashPercent":0.004999999888241291,"rateLimiterBreakerResetTimeMs":300000,"rateLimiterRps":10,"rateLimiterBurstCapacity":50,"maxRecentUpdatesStored":100,"maxModelVersionCacheSize":100,"maxFileSizeToSyncBytes":500000,"syncRetryMaxAttempts":3,"syncRetryInitialDelayMs":20,"syncRetryTimeMultiplier":2,"fileSyncStatusMaxCacheSize":5,"successiveSyncsRequiredForReliance":5,"extraSuccessfulSyncsNeededAfterErrors":0,"bigChangeStrippingThresholdBytes":10000,"lastNUpdatesToSend":15,"fileSyncStatusTtlMs":300000,"syncDebounceMs":250,"syncUpdateThreshold":10}
+2025-05-18 17:48:28.113 [info] File sync enabled status: true
+2025-05-18 17:48:28.113 [info] Starting sync of visible tabs
+2025-05-18 17:48:28.113 [info] Synced all visible tabs in 0.1009290000074543ms
+2025-05-18 17:48:31.629 [info] Handled visible editors change in 2.6426989999890793ms
+2025-05-18 17:48:31.652 [info] Handled visible editors change in 2.983528999990085ms
+2025-05-18 17:48:32.738 [info] Synced file config/.config/waybar/modules.json modelVersion=30 in 196.88434799999231ms
+2025-05-18 17:48:33.430 [info] Handled visible editors change in 2.3183789999748114ms
+2025-05-18 17:48:33.450 [info] Handled visible editors change in 3.278074000001652ms
+2025-05-18 17:48:40.448 [info] Synced file config/.config/waybar/modules.json modelVersion=32 in 198.0784730000014ms
+2025-05-18 17:48:40.923 [info] Synced file config/.config/waybar/modules.json modelVersion=34 in 199.97350700001698ms
+2025-05-18 17:48:42.201 [info] Synced file config/.config/waybar/modules.json modelVersion=35 in 198.02492199998233ms
+2025-05-18 17:48:43.159 [info] Synced file config/.config/waybar/modules.json modelVersion=41 in 198.1129480000236ms
+2025-05-18 17:48:45.367 [info] Synced file config/.config/waybar/modules.json modelVersion=43 in 197.93256799998926ms
+2025-05-18 17:48:45.654 [info] Synced file config/.config/waybar/modules.json modelVersion=44 in 198.59541499998886ms
+2025-05-18 17:48:46.256 [info] Synced file config/.config/waybar/modules.json modelVersion=48 in 197.9218680000049ms
+2025-05-18 17:48:47.442 [info] Synced file config/.config/waybar/modules.json modelVersion=49 in 197.35800900001777ms
+2025-05-18 17:48:48.473 [info] Synced file config/.config/waybar/modules.json modelVersion=55 in 198.46013099999982ms
+2025-05-18 17:48:48.789 [info] Synced file config/.config/waybar/modules.json modelVersion=55 in 199.17703900000197ms
+2025-05-18 17:50:19.794 [info] Synced file config/.config/waybar/modules.json modelVersion=56 in 605.0797400000156ms
+2025-05-18 17:50:20.028 [info] Synced file config/.config/waybar/modules.json modelVersion=57 in 199.18607900000643ms
+2025-05-18 17:50:21.439 [info] Synced file config/.config/waybar/modules.json modelVersion=58 in 283.24423700000625ms
+2025-05-18 17:50:21.741 [info] Synced file config/.config/waybar/modules.json modelVersion=59 in 197.91632199997548ms
+2025-05-18 17:50:22.030 [info] [ENABLED STATUS] Filesync enabled from server.
+2025-05-18 17:50:22.094 [info] Synced file config/.config/waybar/modules.json modelVersion=59 in 198.39798700000392ms
+2025-05-18 17:50:22.449 [info] Fetched fsConfig in 418.7370959999971ms
+2025-05-18 17:50:22.449 [info] FSConfig response: {"checkFilesyncHashPercent":0.004999999888241291,"rateLimiterBreakerResetTimeMs":300000,"rateLimiterRps":10,"rateLimiterBurstCapacity":50,"maxRecentUpdatesStored":100,"maxModelVersionCacheSize":100,"maxFileSizeToSyncBytes":500000,"syncRetryMaxAttempts":3,"syncRetryInitialDelayMs":20,"syncRetryTimeMultiplier":2,"fileSyncStatusMaxCacheSize":5,"successiveSyncsRequiredForReliance":5,"extraSuccessfulSyncsNeededAfterErrors":0,"bigChangeStrippingThresholdBytes":10000,"lastNUpdatesToSend":15,"fileSyncStatusTtlMs":300000,"syncDebounceMs":250,"syncUpdateThreshold":10}
+2025-05-18 17:50:22.449 [info] File sync enabled status: true
+2025-05-18 17:50:22.449 [info] Starting sync of visible tabs
+2025-05-18 17:50:22.449 [info] Synced all visible tabs in 0.11611800000537187ms
+2025-05-18 17:50:42.004 [info] Handled visible editors change in 4.006954000040423ms
+2025-05-18 17:50:42.085 [info] Handled visible editors change in 3.723200000007637ms
+2025-05-18 17:50:44.513 [info] Uploaded file config/.config/waybar/config modelVersion=2 in 198.94970499997726ms
+2025-05-18 17:50:44.521 [info] Uploaded file config/.config/waybar/config modelVersion=2 in 198.9647030000342ms
+2025-05-18 17:51:04.368 [info] Handled visible editors change in 3.7113669999525882ms
+2025-05-18 17:51:04.682 [info] Uploaded file config/.config/sway/scripts/usb-audio-control.sh modelVersion=1 in 200.61500599997817ms
+2025-05-18 17:51:04.682 [info] Handled visible editors change in 305.1331600000267ms
+2025-05-18 17:51:07.262 [info] Handled visible editors change in 2.678364999999758ms
+2025-05-18 17:51:07.555 [info] Uploaded file config/.config/waybar/scripts/check_updates.sh modelVersion=1 in 197.9599140000064ms
+2025-05-18 17:51:07.555 [info] Handled visible editors change in 273.74560899997596ms
+2025-05-18 17:51:08.254 [info] Handled visible editors change in 2.3624210000270978ms
+2025-05-18 17:51:08.635 [info] Uploaded file config/.config/waybar/colors.css modelVersion=1 in 202.07688400003826ms
+2025-05-18 17:51:08.635 [info] Handled visible editors change in 308.96788000001106ms
+2025-05-18 17:51:09.836 [info] Handled visible editors change in 1.7272170000360347ms
+2025-05-18 17:51:09.858 [info] Handled visible editors change in 3.2620929999975488ms
+2025-05-18 17:51:14.331 [info] Handled visible editors change in 2.762354000005871ms
+2025-05-18 17:51:14.695 [info] Uploaded file config/.config/waybar/style-background.css modelVersion=1 in 200.2639860000345ms
+2025-05-18 17:51:14.696 [info] Handled visible editors change in 302.1996050000307ms
+2025-05-18 17:51:15.161 [info] Handled visible editors change in 1.8080189999891445ms
+2025-05-18 17:51:15.487 [info] Uploaded file config/.config/waybar/style.css modelVersion=1 in 199.10547800001223ms
+2025-05-18 17:51:15.487 [info] Handled visible editors change in 270.25107800000114ms
+2025-05-18 17:51:33.254 [info] Synced file config/.config/waybar/style.css modelVersion=3 in 207.7624160000123ms
+2025-05-18 17:51:35.101 [info] [ENABLED STATUS] Filesync enabled from server.
+2025-05-18 17:51:35.521 [info] Fetched fsConfig in 419.38811599998735ms
+2025-05-18 17:51:35.521 [info] FSConfig response: {"checkFilesyncHashPercent":0.004999999888241291,"rateLimiterBreakerResetTimeMs":300000,"rateLimiterRps":10,"rateLimiterBurstCapacity":50,"maxRecentUpdatesStored":100,"maxModelVersionCacheSize":100,"maxFileSizeToSyncBytes":500000,"syncRetryMaxAttempts":3,"syncRetryInitialDelayMs":20,"syncRetryTimeMultiplier":2,"fileSyncStatusMaxCacheSize":5,"successiveSyncsRequiredForReliance":5,"extraSuccessfulSyncsNeededAfterErrors":0,"bigChangeStrippingThresholdBytes":10000,"lastNUpdatesToSend":15,"fileSyncStatusTtlMs":300000,"syncDebounceMs":250,"syncUpdateThreshold":10}
+2025-05-18 17:51:35.521 [info] File sync enabled status: true
+2025-05-18 17:51:35.521 [info] Starting sync of visible tabs
+2025-05-18 17:51:35.521 [info] Synced all visible tabs in 0.1287620000075549ms
+2025-05-18 17:52:57.268 [warning] Failed to sync changes for config/.config/waybar/style.css, version=5, retrying (attempt 1) [internal] Stream closed with error code NGHTTP2_REFUSED_STREAM
+2025-05-18 17:52:57.888 [info] Synced file config/.config/waybar/style.css modelVersion=5 in 599.3269539999892ms
+2025-05-18 17:53:11.831 [info] Handled visible editors change in 3.817806000006385ms
+2025-05-18 17:53:11.853 [info] Handled visible editors change in 3.679945999989286ms
+2025-05-18 17:53:12.503 [info] Handled visible editors change in 2.217398000007961ms
+2025-05-18 17:53:12.525 [info] Handled visible editors change in 4.091490000020713ms
+2025-05-18 17:53:15.802 [info] [ENABLED STATUS] Filesync enabled from server.
+2025-05-18 17:53:16.222 [info] Fetched fsConfig in 420.38147499994375ms
+2025-05-18 17:53:16.222 [info] FSConfig response: {"checkFilesyncHashPercent":0.004999999888241291,"rateLimiterBreakerResetTimeMs":300000,"rateLimiterRps":10,"rateLimiterBurstCapacity":50,"maxRecentUpdatesStored":100,"maxModelVersionCacheSize":100,"maxFileSizeToSyncBytes":500000,"syncRetryMaxAttempts":3,"syncRetryInitialDelayMs":20,"syncRetryTimeMultiplier":2,"fileSyncStatusMaxCacheSize":5,"successiveSyncsRequiredForReliance":5,"extraSuccessfulSyncsNeededAfterErrors":0,"bigChangeStrippingThresholdBytes":10000,"lastNUpdatesToSend":15,"fileSyncStatusTtlMs":300000,"syncDebounceMs":250,"syncUpdateThreshold":10}
+2025-05-18 17:53:16.222 [info] File sync enabled status: true
+2025-05-18 17:53:16.222 [info] Starting sync of visible tabs
+2025-05-18 17:53:16.222 [info] Synced all visible tabs in 0.09133199998177588ms
+2025-05-18 17:53:21.655 [info] Synced file config/.config/waybar/modules.json modelVersion=60 in 201.40221900003962ms
+2025-05-18 17:53:34.884 [info] [ENABLED STATUS] Filesync enabled from server.
+2025-05-18 17:53:35.302 [info] Fetched fsConfig in 418.5680210000137ms
+2025-05-18 17:53:35.303 [info] FSConfig response: {"checkFilesyncHashPercent":0.004999999888241291,"rateLimiterBreakerResetTimeMs":300000,"rateLimiterRps":10,"rateLimiterBurstCapacity":50,"maxRecentUpdatesStored":100,"maxModelVersionCacheSize":100,"maxFileSizeToSyncBytes":500000,"syncRetryMaxAttempts":3,"syncRetryInitialDelayMs":20,"syncRetryTimeMultiplier":2,"fileSyncStatusMaxCacheSize":5,"successiveSyncsRequiredForReliance":5,"extraSuccessfulSyncsNeededAfterErrors":0,"bigChangeStrippingThresholdBytes":10000,"lastNUpdatesToSend":15,"fileSyncStatusTtlMs":300000,"syncDebounceMs":250,"syncUpdateThreshold":10}
+2025-05-18 17:53:35.303 [info] File sync enabled status: true
+2025-05-18 17:53:35.303 [info] Starting sync of visible tabs
+2025-05-18 17:53:35.303 [info] Synced all visible tabs in 0.19231099996250123ms
+2025-05-18 17:53:39.877 [info] Synced file config/.config/waybar/modules.json modelVersion=61 in 200.48050700000022ms
+2025-05-18 17:54:02.583 [info] Handled visible editors change in 2.927434000070207ms
+2025-05-18 17:54:02.611 [info] Handled visible editors change in 3.998888999922201ms
+2025-05-18 17:54:03.537 [info] Handled visible editors change in 2.1973819999257103ms
+2025-05-18 17:54:03.835 [info] Uploaded file config/.config/waybar/config modelVersion=2 in 200.57279100001324ms
+2025-05-18 17:54:03.835 [info] Handled visible editors change in 278.1181210000068ms
+2025-05-18 17:54:10.616 [info] Handled visible editors change in 2.1834449999732897ms
+2025-05-18 17:54:10.682 [info] Handled visible editors change in 3.5136970001040027ms
+2025-05-18 17:54:22.623 [info] Handled visible editors change in 1.8924279999919236ms
+2025-05-18 17:54:22.653 [info] Handled visible editors change in 4.577607000013813ms
+2025-05-18 17:54:25.172 [info] [ENABLED STATUS] Filesync enabled from server.
+2025-05-18 17:54:25.589 [info] Fetched fsConfig in 416.90357099997345ms
+2025-05-18 17:54:25.589 [info] FSConfig response: {"checkFilesyncHashPercent":0.004999999888241291,"rateLimiterBreakerResetTimeMs":300000,"rateLimiterRps":10,"rateLimiterBurstCapacity":50,"maxRecentUpdatesStored":100,"maxModelVersionCacheSize":100,"maxFileSizeToSyncBytes":500000,"syncRetryMaxAttempts":3,"syncRetryInitialDelayMs":20,"syncRetryTimeMultiplier":2,"fileSyncStatusMaxCacheSize":5,"successiveSyncsRequiredForReliance":5,"extraSuccessfulSyncsNeededAfterErrors":0,"bigChangeStrippingThresholdBytes":10000,"lastNUpdatesToSend":15,"fileSyncStatusTtlMs":300000,"syncDebounceMs":250,"syncUpdateThreshold":10}
+2025-05-18 17:54:25.589 [info] File sync enabled status: true
+2025-05-18 17:54:25.589 [info] Starting sync of visible tabs
+2025-05-18 17:54:25.589 [info] Synced all visible tabs in 0.12276099994778633ms
+2025-05-18 17:54:28.313 [info] Handled visible editors change in 2.4284159999806434ms
+2025-05-18 17:54:28.346 [info] Handled visible editors change in 3.6535900000017136ms
+2025-05-18 17:54:33.354 [info] Handled visible editors change in 2.8753759999526665ms
+2025-05-18 17:54:33.436 [info] Handled visible editors change in 2.9103220000397414ms
+2025-05-18 17:54:34.352 [info] Handled visible editors change in 2.037349999998696ms
+2025-05-18 17:54:34.381 [info] Handled visible editors change in 3.0427909999853ms
+2025-05-18 17:54:35.880 [info] Handled visible editors change in 1.9884989999700338ms
+2025-05-18 17:54:35.910 [info] Handled visible editors change in 3.013366000028327ms
+2025-05-18 17:54:36.611 [info] Handled visible editors change in 1.7669720000121742ms
+2025-05-18 17:54:36.640 [info] Handled visible editors change in 3.20859199995175ms
+2025-05-18 17:54:47.590 [info] Synced file config/.config/waybar/config modelVersion=3 in 199.46218599996064ms
+2025-05-18 17:55:03.265 [info] Synced file config/.config/waybar/config modelVersion=4 in 200.05734400008805ms
+2025-05-18 17:55:05.470 [info] Synced file config/.config/waybar/config modelVersion=5 in 205.77001500001643ms
+2025-05-18 17:55:06.567 [info] Handled visible editors change in 2.860738000017591ms
+2025-05-18 17:55:06.596 [info] Handled visible editors change in 4.350540000014007ms
+2025-05-18 17:55:07.226 [info] Handled visible editors change in 2.0906409999588504ms
+2025-05-18 17:55:07.255 [info] Handled visible editors change in 3.530267999973148ms
+2025-05-18 17:55:15.671 [info] Handled visible editors change in 3.0784480000147596ms
+2025-05-18 17:55:15.701 [info] Handled visible editors change in 4.022473000106402ms
+2025-05-18 17:55:19.393 [info] Synced file config/.config/waybar/config modelVersion=6 in 204.2456790000433ms
+2025-05-18 17:55:23.578 [info] Handled visible editors change in 2.1275609999429435ms
+2025-05-18 17:55:23.607 [info] Handled visible editors change in 3.8267139999661595ms
+2025-05-18 17:55:24.343 [info] Handled visible editors change in 2.3527639999520034ms
+2025-05-18 17:55:24.369 [info] Handled visible editors change in 3.043011000030674ms
+2025-05-18 17:55:36.388 [info] Synced file config/.config/waybar/modules.json modelVersion=62 in 205.00578700006008ms
+2025-05-18 17:55:39.124 [info] Synced file config/.config/waybar/modules.json modelVersion=63 in 205.1235690000467ms
+2025-05-18 17:55:42.361 [info] Synced file config/.config/waybar/modules.json modelVersion=64 in 203.94781899999361ms
+2025-05-18 17:55:45.003 [info] Synced file config/.config/waybar/modules.json modelVersion=65 in 203.82842499995604ms
+2025-05-18 17:55:57.640 [info] Handled visible editors change in 2.3162229999434203ms
+2025-05-18 17:55:57.669 [info] Handled visible editors change in 4.304930999991484ms
+2025-05-18 17:56:03.533 [info] Handled visible editors change in 2.1417760000331327ms
+2025-05-18 17:56:03.560 [info] Handled visible editors change in 2.5668249999871477ms
+2025-05-18 17:56:05.578 [info] Handled visible editors change in 2.290305000031367ms
+2025-05-18 17:56:05.607 [info] Handled visible editors change in 3.1813400000100955ms
+2025-05-18 17:56:07.414 [info] Handled visible editors change in 1.9354069998953491ms
+2025-05-18 17:56:07.441 [info] Handled visible editors change in 2.906533000059426ms
+2025-05-18 17:56:35.691 [info] Synced file config/.config/waybar/modules.json modelVersion=66 in 205.39929699990898ms
+2025-05-18 17:56:39.283 [info] [ENABLED STATUS] Filesync enabled from server.
+2025-05-18 17:56:39.702 [info] Fetched fsConfig in 419.5067919999128ms
+2025-05-18 17:56:39.702 [info] FSConfig response: {"checkFilesyncHashPercent":0.004999999888241291,"rateLimiterBreakerResetTimeMs":300000,"rateLimiterRps":10,"rateLimiterBurstCapacity":50,"maxRecentUpdatesStored":100,"maxModelVersionCacheSize":100,"maxFileSizeToSyncBytes":500000,"syncRetryMaxAttempts":3,"syncRetryInitialDelayMs":20,"syncRetryTimeMultiplier":2,"fileSyncStatusMaxCacheSize":5,"successiveSyncsRequiredForReliance":5,"extraSuccessfulSyncsNeededAfterErrors":0,"bigChangeStrippingThresholdBytes":10000,"lastNUpdatesToSend":15,"fileSyncStatusTtlMs":300000,"syncDebounceMs":250,"syncUpdateThreshold":10}
+2025-05-18 17:56:39.702 [info] File sync enabled status: true
+2025-05-18 17:56:39.702 [info] Starting sync of visible tabs
+2025-05-18 17:56:39.702 [info] Synced all visible tabs in 0.09656099998392165ms
+2025-05-18 17:56:48.076 [info] Handled visible editors change in 1.9791489999042824ms
+2025-05-18 17:56:48.107 [info] Handled visible editors change in 3.938439999939874ms
+2025-05-18 17:56:54.849 [info] Synced file config/.config/waybar/config modelVersion=8 in 203.61272700002883ms
+2025-05-18 17:56:55.634 [info] Synced file config/.config/waybar/config modelVersion=12 in 204.47387500002515ms
+2025-05-18 17:56:55.922 [info] Synced file config/.config/waybar/config modelVersion=12 in 203.39450599998236ms
+2025-05-18 17:56:57.844 [info] Synced file config/.config/waybar/config modelVersion=14 in 202.72022899996955ms
+2025-05-18 17:57:11.759 [info] Handled visible editors change in 2.0050380000611767ms
+2025-05-18 17:57:11.787 [info] Handled visible editors change in 3.176158000016585ms
+2025-05-18 17:57:12.642 [info] Handled visible editors change in 2.7933089999714866ms
+2025-05-18 17:57:12.671 [info] Handled visible editors change in 3.8573369999649003ms
+2025-05-18 17:57:17.127 [info] Handled visible editors change in 1.943392000044696ms
+2025-05-18 17:57:17.466 [info] Uploaded file config/.config/waybar/colors.css modelVersion=1 in 203.0670209999662ms
+2025-05-18 17:57:17.466 [info] Handled visible editors change in 314.2718230000464ms
+2025-05-18 17:57:22.068 [info] Handled visible editors change in 2.2298500000033528ms
+2025-05-18 17:57:22.095 [info] Handled visible editors change in 2.7048620000714436ms
+2025-05-18 17:57:23.652 [info] Handled visible editors change in 1.902013000100851ms
+2025-05-18 17:57:23.680 [info] Handled visible editors change in 4.397351999999955ms
+2025-05-18 17:57:33.671 [info] Synced file config/.config/waybar/modules.json modelVersion=67 in 205.9028699999908ms
+2025-05-18 17:57:41.458 [info] [ENABLED STATUS] Filesync enabled from server.
+2025-05-18 17:57:41.807 [info] Fetched fsConfig in 348.77613300003577ms
+2025-05-18 17:57:41.807 [info] FSConfig response: {"checkFilesyncHashPercent":0.004999999888241291,"rateLimiterBreakerResetTimeMs":300000,"rateLimiterRps":10,"rateLimiterBurstCapacity":50,"maxRecentUpdatesStored":100,"maxModelVersionCacheSize":100,"maxFileSizeToSyncBytes":500000,"syncRetryMaxAttempts":3,"syncRetryInitialDelayMs":20,"syncRetryTimeMultiplier":2,"fileSyncStatusMaxCacheSize":5,"successiveSyncsRequiredForReliance":5,"extraSuccessfulSyncsNeededAfterErrors":0,"bigChangeStrippingThresholdBytes":10000,"lastNUpdatesToSend":15,"fileSyncStatusTtlMs":300000,"syncDebounceMs":250,"syncUpdateThreshold":10}
+2025-05-18 17:57:41.807 [info] File sync enabled status: true
+2025-05-18 17:57:41.807 [info] Starting sync of visible tabs
+2025-05-18 17:57:41.807 [info] Synced all visible tabs in 0.138751000049524ms
+2025-05-18 17:57:45.931 [info] Handled visible editors change in 3.062785999965854ms
+2025-05-18 17:57:45.963 [info] Handled visible editors change in 3.5901079999748617ms
+2025-05-18 17:58:08.673 [info] Handled visible editors change in 1.803048999980092ms
+2025-05-18 17:58:08.692 [info] Handled visible editors change in 3.4801610000431538ms
+2025-05-18 17:58:11.064 [info] Handled visible editors change in 1.9654839999275282ms
+2025-05-18 17:58:11.082 [info] Handled visible editors change in 2.6066899999277666ms
+2025-05-18 17:58:30.536 [info] Synced file config/.config/waybar/modules.json modelVersion=68 in 205.40815099992324ms
+2025-05-18 17:58:30.859 [info] Synced file config/.config/waybar/modules.json modelVersion=68 in 204.3034050000133ms
+2025-05-18 18:00:21.769 [info] Handled visible editors change in 1.7226889999583364ms
+2025-05-18 18:00:22.694 [info] Uploaded file config/.config/sway/scripts/usb-audio-control.sh modelVersion=1 in 833.3766259999247ms
+2025-05-18 18:00:22.694 [info] Handled visible editors change in 902.5194089999422ms
+2025-05-18 18:00:28.543 [info] Synced file config/.config/waybar/modules.json modelVersion=69 in 200.2045480000088ms
+2025-05-18 18:00:28.544 [info] Synced file config/.config/waybar/colors.css modelVersion=2 in 202.27418800001033ms
+2025-05-18 18:00:52.123 [info] Handled visible editors change in 1.9234660000074655ms
+2025-05-18 18:00:52.149 [info] Handled visible editors change in 2.7657490000128746ms
+2025-05-18 18:00:59.644 [info] [ENABLED STATUS] Filesync enabled from server.
+2025-05-18 18:01:00.062 [info] Fetched fsConfig in 418.1741869999096ms
+2025-05-18 18:01:00.062 [info] FSConfig response: {"checkFilesyncHashPercent":0.004999999888241291,"rateLimiterBreakerResetTimeMs":300000,"rateLimiterRps":10,"rateLimiterBurstCapacity":50,"maxRecentUpdatesStored":100,"maxModelVersionCacheSize":100,"maxFileSizeToSyncBytes":500000,"syncRetryMaxAttempts":3,"syncRetryInitialDelayMs":20,"syncRetryTimeMultiplier":2,"fileSyncStatusMaxCacheSize":5,"successiveSyncsRequiredForReliance":5,"extraSuccessfulSyncsNeededAfterErrors":0,"bigChangeStrippingThresholdBytes":10000,"lastNUpdatesToSend":15,"fileSyncStatusTtlMs":300000,"syncDebounceMs":250,"syncUpdateThreshold":10}
+2025-05-18 18:01:00.063 [info] File sync enabled status: true
+2025-05-18 18:01:00.063 [info] Starting sync of visible tabs
+2025-05-18 18:01:00.063 [info] Synced all visible tabs in 0.15138500009197742ms
+2025-05-18 18:01:03.734 [info] Synced file config/.config/waybar/modules.json modelVersion=71 in 201.23749700002372ms
+2025-05-18 18:01:04.172 [info] Synced file config/.config/waybar/modules.json modelVersion=72 in 200.18345600005705ms
+2025-05-18 18:01:04.467 [info] Synced file config/.config/waybar/modules.json modelVersion=72 in 197.73336000007112ms
+2025-05-18 18:01:14.299 [info] Handled visible editors change in 1.9476610000710934ms
+2025-05-18 18:01:14.362 [info] Handled visible editors change in 3.5978630000026897ms
+2025-05-18 18:01:19.158 [info] Uploaded file config/.config/waybar/config modelVersion=2 in 200.97544499998912ms
+2025-05-18 18:01:19.167 [info] Uploaded file config/.config/waybar/config modelVersion=2 in 199.1169419999933ms
+2025-05-18 18:01:21.856 [info] Synced file config/.config/waybar/config modelVersion=5 in 200.78093900007661ms
+2025-05-18 18:01:22.155 [info] Synced file config/.config/waybar/config modelVersion=5 in 199.9950719999615ms
+2025-05-18 18:01:31.064 [info] Synced file config/.config/waybar/config modelVersion=12 in 200.4350390000036ms
+2025-05-18 18:01:32.044 [info] Synced file config/.config/waybar/config modelVersion=13 in 198.7730750000337ms
+2025-05-18 18:01:32.431 [info] Synced file config/.config/waybar/config modelVersion=14 in 200.07582299993373ms
+2025-05-18 18:01:32.793 [info] Synced file config/.config/waybar/config modelVersion=15 in 200.65832899999805ms
+2025-05-18 18:01:33.122 [info] Synced file config/.config/waybar/config modelVersion=16 in 200.0123939999612ms
+2025-05-18 18:01:33.612 [info] Synced file config/.config/waybar/config modelVersion=18 in 198.9892809999874ms
+2025-05-18 18:01:34.046 [info] Synced file config/.config/waybar/config modelVersion=19 in 200.29140899993945ms
+2025-05-18 18:01:38.085 [info] Synced file config/.config/waybar/config modelVersion=20 in 200.11588900000788ms
+2025-05-18 18:01:38.562 [info] Synced file config/.config/waybar/config modelVersion=21 in 198.4035900000017ms
+2025-05-18 18:01:38.841 [info] Synced file config/.config/waybar/config modelVersion=21 in 199.45638900005724ms
+2025-05-18 18:04:18.963 [info] Handled visible editors change in 2.2164660000707954ms
+2025-05-18 18:04:18.983 [info] Handled visible editors change in 3.370295000029728ms
+2025-05-18 18:04:28.126 [info] [ENABLED STATUS] Filesync enabled from server.
+2025-05-18 18:04:28.547 [info] Fetched fsConfig in 421.52618400007486ms
+2025-05-18 18:04:28.547 [info] FSConfig response: {"checkFilesyncHashPercent":0.004999999888241291,"rateLimiterBreakerResetTimeMs":300000,"rateLimiterRps":10,"rateLimiterBurstCapacity":50,"maxRecentUpdatesStored":100,"maxModelVersionCacheSize":100,"maxFileSizeToSyncBytes":500000,"syncRetryMaxAttempts":3,"syncRetryInitialDelayMs":20,"syncRetryTimeMultiplier":2,"fileSyncStatusMaxCacheSize":5,"successiveSyncsRequiredForReliance":5,"extraSuccessfulSyncsNeededAfterErrors":0,"bigChangeStrippingThresholdBytes":10000,"lastNUpdatesToSend":15,"fileSyncStatusTtlMs":300000,"syncDebounceMs":250,"syncUpdateThreshold":10}
+2025-05-18 18:04:28.547 [info] File sync enabled status: true
+2025-05-18 18:04:28.548 [info] Starting sync of visible tabs
+2025-05-18 18:04:28.548 [info] Synced all visible tabs in 0.20608699996955693ms
+2025-05-18 18:05:31.263 [info] Synced file config/.config/waybar/modules.json modelVersion=75 in 204.34971900004894ms
+2025-05-18 18:05:31.715 [info] [ENABLED STATUS] Filesync enabled from server.
+2025-05-18 18:05:32.105 [info] Synced file config/.config/waybar/modules.json modelVersion=78 in 203.01308599999174ms
+2025-05-18 18:05:32.138 [info] Fetched fsConfig in 422.7949789999984ms
+2025-05-18 18:05:32.138 [info] FSConfig response: {"checkFilesyncHashPercent":0.004999999888241291,"rateLimiterBreakerResetTimeMs":300000,"rateLimiterRps":10,"rateLimiterBurstCapacity":50,"maxRecentUpdatesStored":100,"maxModelVersionCacheSize":100,"maxFileSizeToSyncBytes":500000,"syncRetryMaxAttempts":3,"syncRetryInitialDelayMs":20,"syncRetryTimeMultiplier":2,"fileSyncStatusMaxCacheSize":5,"successiveSyncsRequiredForReliance":5,"extraSuccessfulSyncsNeededAfterErrors":0,"bigChangeStrippingThresholdBytes":10000,"lastNUpdatesToSend":15,"fileSyncStatusTtlMs":300000,"syncDebounceMs":250,"syncUpdateThreshold":10}
+2025-05-18 18:05:32.138 [info] File sync enabled status: true
+2025-05-18 18:05:32.138 [info] Starting sync of visible tabs
+2025-05-18 18:05:32.138 [info] Synced all visible tabs in 0.0985859998036176ms
+2025-05-18 18:05:32.506 [info] Synced file config/.config/waybar/modules.json modelVersion=78 in 204.0132969999686ms
+2025-05-18 18:05:34.433 [info] Synced file config/.config/waybar/modules.json modelVersion=79 in 203.38545599998906ms
+2025-05-18 18:05:36.109 [info] Synced file config/.config/waybar/modules.json modelVersion=81 in 203.62051799986511ms
+2025-05-18 18:05:36.445 [info] Synced file config/.config/waybar/modules.json modelVersion=82 in 204.90203700005077ms
+2025-05-18 18:05:36.741 [info] Synced file config/.config/waybar/modules.json modelVersion=82 in 203.27738300012425ms
+2025-05-18 18:06:28.638 [info] Synced file config/.config/waybar/modules.json modelVersion=83 in 202.3737250000704ms
+2025-05-18 18:06:29.357 [info] Synced file config/.config/waybar/modules.json modelVersion=86 in 201.01746600004844ms
+2025-05-18 18:06:30.408 [info] Synced file config/.config/waybar/modules.json modelVersion=90 in 202.38574800011702ms
+2025-05-18 18:06:30.797 [info] Synced file config/.config/waybar/modules.json modelVersion=91 in 203.4678609999828ms
+2025-05-18 18:06:31.723 [info] [ENABLED STATUS] Filesync enabled from server.
+2025-05-18 18:06:32.146 [info] Fetched fsConfig in 421.57495500007644ms
+2025-05-18 18:06:32.146 [info] FSConfig response: {"checkFilesyncHashPercent":0.004999999888241291,"rateLimiterBreakerResetTimeMs":300000,"rateLimiterRps":10,"rateLimiterBurstCapacity":50,"maxRecentUpdatesStored":100,"maxModelVersionCacheSize":100,"maxFileSizeToSyncBytes":500000,"syncRetryMaxAttempts":3,"syncRetryInitialDelayMs":20,"syncRetryTimeMultiplier":2,"fileSyncStatusMaxCacheSize":5,"successiveSyncsRequiredForReliance":5,"extraSuccessfulSyncsNeededAfterErrors":0,"bigChangeStrippingThresholdBytes":10000,"lastNUpdatesToSend":15,"fileSyncStatusTtlMs":300000,"syncDebounceMs":250,"syncUpdateThreshold":10}
+2025-05-18 18:06:32.146 [info] File sync enabled status: true
+2025-05-18 18:06:32.146 [info] Starting sync of visible tabs
+2025-05-18 18:06:32.146 [info] Synced all visible tabs in 0.09874599985778332ms
+2025-05-18 18:07:12.418 [info] Handled visible editors change in 1.864284000126645ms
+2025-05-18 18:07:12.743 [info] Uploaded file config/.config/electron-flags.conf modelVersion=1 in 210.90304400003515ms
+2025-05-18 18:07:12.743 [info] Handled visible editors change in 265.94081099983305ms
+2025-05-18 18:07:15.541 [info] Handled visible editors change in 1.5452550000045449ms
+2025-05-18 18:07:16.757 [info] Handled visible editors change in 3.6607099999673665ms
+2025-05-18 18:07:17.468 [info] Handled visible editors change in 2.282890999922529ms
+2025-05-18 18:07:17.519 [info] Handled visible editors change in 3.191378000192344ms
+2025-05-18 18:07:30.034 [info] Handled visible editors change in 1.399489999981597ms
+2025-05-18 18:07:30.346 [info] Uploaded file config/.config/sway/config.d/default-options-and-keymaps.conf modelVersion=1 in 204.98195699998178ms
+2025-05-18 18:07:30.346 [info] Handled visible editors change in 268.18522999994457ms
+2025-05-18 18:07:54.364 [info] Handled visible editors change in 1.7522229999303818ms
+2025-05-18 18:07:54.687 [info] Uploaded file config/.config/sway/scripts/usb-audio-control.sh modelVersion=1 in 204.422496000072ms
+2025-05-18 18:07:54.687 [info] Handled visible editors change in 303.3095110000577ms
+2025-05-18 18:07:57.236 [info] Handled visible editors change in 2.384781999979168ms
+2025-05-18 18:07:57.263 [info] Handled visible editors change in 3.677220999961719ms
+2025-05-18 18:08:16.865 [info] Handled visible editors change in 2.243896999862045ms
+2025-05-18 18:08:17.181 [info] Uploaded file config/.config/sway/scripts/record.sh modelVersion=1 in 202.2475980001036ms
+2025-05-18 18:08:17.181 [info] Handled visible editors change in 252.51731399982236ms
+2025-05-18 18:08:17.571 [info] Handled visible editors change in 1.9165620000567287ms
+2025-05-18 18:08:17.591 [info] Handled visible editors change in 3.082452999893576ms
+2025-05-18 18:08:22.695 [info] Handled visible editors change in 2.197679999982938ms
+2025-05-18 18:08:22.717 [info] Handled visible editors change in 3.2447989999782294ms
+2025-05-18 18:08:40.203 [info] Synced file config/.config/sway/config.d/default-options-and-keymaps.conf modelVersion=5 in 201.5592239999678ms
+2025-05-18 18:08:43.713 [info] [ENABLED STATUS] Filesync enabled from server.
+2025-05-18 18:08:44.132 [info] Fetched fsConfig in 418.5988499999512ms
+2025-05-18 18:08:44.132 [info] FSConfig response: {"checkFilesyncHashPercent":0.004999999888241291,"rateLimiterBreakerResetTimeMs":300000,"rateLimiterRps":10,"rateLimiterBurstCapacity":50,"maxRecentUpdatesStored":100,"maxModelVersionCacheSize":100,"maxFileSizeToSyncBytes":500000,"syncRetryMaxAttempts":3,"syncRetryInitialDelayMs":20,"syncRetryTimeMultiplier":2,"fileSyncStatusMaxCacheSize":5,"successiveSyncsRequiredForReliance":5,"extraSuccessfulSyncsNeededAfterErrors":0,"bigChangeStrippingThresholdBytes":10000,"lastNUpdatesToSend":15,"fileSyncStatusTtlMs":300000,"syncDebounceMs":250,"syncUpdateThreshold":10}
+2025-05-18 18:08:44.132 [info] File sync enabled status: true
+2025-05-18 18:08:44.132 [info] Starting sync of visible tabs
+2025-05-18 18:08:44.132 [info] Synced all visible tabs in 0.12160900002345443ms
+2025-05-18 18:09:23.055 [info] Handled visible editors change in 2.8666670001111925ms
+2025-05-18 18:09:23.363 [info] Uploaded file config/.config/waybar/colors.css modelVersion=2 in 201.93137299991213ms
+2025-05-18 18:09:23.363 [info] Handled visible editors change in 286.9422120000236ms
+2025-05-18 18:09:30.982 [info] Synced file config/.config/waybar/colors.css modelVersion=3 in 201.33968199999072ms
+2025-05-18 18:10:49.520 [info] Handled visible editors change in 1.7938719999510795ms
+2025-05-18 18:10:49.581 [info] Handled visible editors change in 4.5805989999789745ms
+2025-05-18 18:10:54.114 [info] Handled visible editors change in 1.8335059999953955ms
+2025-05-18 18:10:54.189 [info] Handled visible editors change in 4.002894000150263ms
+2025-05-18 18:12:53.213 [info] Handled visible editors change in 2.4439740001689643ms
+2025-05-18 18:12:53.287 [info] Handled visible editors change in 3.096190000185743ms
+2025-05-18 18:13:17.583 [info] Handled visible editors change in 2.0408459999598563ms
+2025-05-18 18:13:17.605 [info] Handled visible editors change in 4.452318999916315ms
+2025-05-18 18:14:57.113 [info] Handled visible editors change in 2.9059920001309365ms
+2025-05-18 18:14:57.134 [info] Handled visible editors change in 4.193721999879926ms
+2025-05-18 18:15:00.769 [info] Handled visible editors change in 3.796585999894887ms
+2025-05-18 18:15:00.791 [info] Handled visible editors change in 4.909969000145793ms
+2025-05-18 18:16:09.261 [info] Handled visible editors change in 2.890152000123635ms
+2025-05-18 18:16:09.335 [info] Handled visible editors change in 3.8712759998161346ms
+2025-05-18 18:16:09.994 [info] Handled visible editors change in 2.2794550000689924ms
+2025-05-18 18:16:10.015 [info] Handled visible editors change in 4.157785000046715ms
+2025-05-18 18:16:28.521 [info] Handled visible editors change in 2.9118530000559986ms
+2025-05-18 18:16:28.543 [info] Handled visible editors change in 4.6154650000389665ms
+2025-05-18 18:16:50.636 [info] Handled visible editors change in 2.6627140000928193ms
+2025-05-18 18:16:50.657 [info] Handled visible editors change in 3.834506999934092ms
+2025-05-18 18:18:45.272 [info] Handled visible editors change in 6.1088930000551045ms
+2025-05-18 18:18:45.295 [info] Handled visible editors change in 7.248395000118762ms
+2025-05-18 18:19:00.665 [info] Handled visible editors change in 3.072385000064969ms
+2025-05-18 18:19:00.717 [info] Handled visible editors change in 4.521949999965727ms
+2025-05-18 18:19:09.854 [info] Handled visible editors change in 2.6605210001580417ms
+2025-05-18 18:19:09.873 [info] Handled visible editors change in 3.649250000016764ms
+2025-05-18 18:19:12.114 [info] Handled visible editors change in 3.8586530000902712ms
+2025-05-18 18:19:12.150 [info] Handled visible editors change in 4.828856999985874ms
+2025-05-18 18:19:15.537 [info] Handled visible editors change in 3.2185899999458343ms
+2025-05-18 18:19:15.617 [info] Handled visible editors change in 4.895702000008896ms
+2025-05-18 18:19:25.088 [info] Handled visible editors change in 2.5692690000869334ms
+2025-05-18 18:19:25.138 [info] Handled visible editors change in 4.345428000204265ms
+2025-05-18 18:19:31.404 [info] Handled visible editors change in 2.955085000023246ms
+2025-05-18 18:19:31.468 [info] Handled visible editors change in 5.066333000082523ms
+2025-05-18 18:19:41.065 [info] Handled visible editors change in 2.7228680001571774ms
+2025-05-18 18:19:41.104 [info] Handled visible editors change in 3.8373529999516904ms
+2025-05-18 18:19:41.510 [info] Handled visible editors change in 3.0326100001111627ms
+2025-05-18 18:19:41.557 [info] Handled visible editors change in 4.34370500035584ms
+2025-05-18 18:19:42.615 [info] Handled visible editors change in 2.6655699997209013ms
+2025-05-18 18:19:42.638 [info] Handled visible editors change in 4.337945000268519ms
+2025-05-18 18:19:44.814 [info] Handled visible editors change in 2.7128890003077686ms
+2025-05-18 18:19:44.833 [info] Handled visible editors change in 4.158235999755561ms
+2025-05-18 18:20:21.192 [info] Handled visible editors change in 2.30208700010553ms
+2025-05-18 18:20:22.196 [info] Uploaded file config/.config/waybar/modules-background.json modelVersion=1 in 846.2751500001177ms
+2025-05-18 18:20:22.196 [info] Handled visible editors change in 932.295553999953ms
+2025-05-18 18:20:24.155 [info] Handled visible editors change in 2.231173999607563ms
+2025-05-18 18:20:24.209 [info] Handled visible editors change in 4.140201999805868ms
+2025-05-18 18:20:25.429 [info] [ENABLED STATUS] Filesync enabled from server.
+2025-05-18 18:20:25.715 [info] Handled visible editors change in 2.0612540002912283ms
+2025-05-18 18:20:25.851 [info] Fetched fsConfig in 420.9828200000338ms
+2025-05-18 18:20:25.851 [info] FSConfig response: {"checkFilesyncHashPercent":0.004999999888241291,"rateLimiterBreakerResetTimeMs":300000,"rateLimiterRps":10,"rateLimiterBurstCapacity":50,"maxRecentUpdatesStored":100,"maxModelVersionCacheSize":100,"maxFileSizeToSyncBytes":500000,"syncRetryMaxAttempts":3,"syncRetryInitialDelayMs":20,"syncRetryTimeMultiplier":2,"fileSyncStatusMaxCacheSize":5,"successiveSyncsRequiredForReliance":5,"extraSuccessfulSyncsNeededAfterErrors":0,"bigChangeStrippingThresholdBytes":10000,"lastNUpdatesToSend":15,"fileSyncStatusTtlMs":300000,"syncDebounceMs":250,"syncUpdateThreshold":10}
+2025-05-18 18:20:25.851 [info] File sync enabled status: true
+2025-05-18 18:20:25.851 [info] Starting sync of visible tabs
+2025-05-18 18:20:26.068 [info] Uploaded file config/.config/waybar/style-background.css modelVersion=1 in 211.29856200003996ms
+2025-05-18 18:20:26.069 [info] Handled visible editors change in 277.2591699999757ms
+2025-05-18 18:20:26.150 [info] Uploaded file config/.config/waybar/style-background.css modelVersion=1 in 206.5491839996539ms
+2025-05-18 18:20:26.151 [info] Synced all visible tabs in 299.9528470002115ms
+2025-05-18 18:20:29.559 [info] Handled visible editors change in 2.1850180001929402ms
+2025-05-18 18:20:29.627 [info] Handled visible editors change in 3.738096000161022ms
+2025-05-18 18:20:32.568 [info] Handled visible editors change in 2.9959009997546673ms
+2025-05-18 18:20:32.886 [info] Uploaded file config/.config/waybar/modules.json modelVersion=91 in 206.95553799998015ms
+2025-05-18 18:20:32.886 [info] Handled visible editors change in 300.43796900007874ms
+2025-05-18 18:21:36.356 [info] Handled visible editors change in 3.161733999848366ms
+2025-05-18 18:21:36.685 [info] Uploaded file config/.config/sway/scripts/lockman.sh modelVersion=1 in 203.56016699969769ms
+2025-05-18 18:21:36.685 [info] Handled visible editors change in 276.0746680004522ms
+2025-05-18 18:21:38.263 [info] Handled visible editors change in 2.051297000143677ms
+2025-05-18 18:21:38.549 [info] Uploaded file config/.config/sway/scripts/usb-audio-control.sh modelVersion=1 in 205.32948300009593ms
+2025-05-18 18:21:38.549 [info] Handled visible editors change in 268.480922000017ms
+2025-05-18 18:21:39.204 [info] Handled visible editors change in 2.3945710002444685ms
+2025-05-18 18:21:39.276 [info] Handled visible editors change in 2.9207700002007186ms
+2025-05-18 18:21:42.852 [info] Handled visible editors change in 1.9019059999845922ms
+2025-05-18 18:21:43.134 [info] Uploaded file config/.config/sway/config.d/default-options-and-keymaps.conf modelVersion=5 in 206.0035500000231ms
+2025-05-18 18:21:43.134 [info] Handled visible editors change in 265.53602600004524ms
+2025-05-18 18:22:12.952 [info] Synced file config/.config/sway/config.d/default-options-and-keymaps.conf modelVersion=7 in 205.06283099995926ms
+2025-05-18 18:22:16.397 [info] [ENABLED STATUS] Filesync enabled from server.
+2025-05-18 18:22:16.817 [info] Fetched fsConfig in 419.8630289998837ms
+2025-05-18 18:22:16.817 [info] FSConfig response: {"checkFilesyncHashPercent":0.004999999888241291,"rateLimiterBreakerResetTimeMs":300000,"rateLimiterRps":10,"rateLimiterBurstCapacity":50,"maxRecentUpdatesStored":100,"maxModelVersionCacheSize":100,"maxFileSizeToSyncBytes":500000,"syncRetryMaxAttempts":3,"syncRetryInitialDelayMs":20,"syncRetryTimeMultiplier":2,"fileSyncStatusMaxCacheSize":5,"successiveSyncsRequiredForReliance":5,"extraSuccessfulSyncsNeededAfterErrors":0,"bigChangeStrippingThresholdBytes":10000,"lastNUpdatesToSend":15,"fileSyncStatusTtlMs":300000,"syncDebounceMs":250,"syncUpdateThreshold":10}
+2025-05-18 18:22:16.817 [info] File sync enabled status: true
+2025-05-18 18:22:16.817 [info] Starting sync of visible tabs
+2025-05-18 18:22:16.817 [info] Synced all visible tabs in 0.11784199997782707ms
+2025-05-18 18:22:36.766 [info] Synced file config/.config/sway/config.d/default-options-and-keymaps.conf modelVersion=8 in 205.08386199967936ms
+2025-05-18 18:22:38.431 [info] Synced file config/.config/sway/config.d/default-options-and-keymaps.conf modelVersion=9 in 203.23003599978983ms
+2025-05-18 18:22:38.792 [info] Synced file config/.config/sway/config.d/default-options-and-keymaps.conf modelVersion=9 in 204.88946599978954ms
+2025-05-18 18:22:39.101 [info] Synced file config/.config/sway/config.d/default-options-and-keymaps.conf modelVersion=10 in 204.62815500004217ms
+2025-05-18 18:22:39.379 [info] Synced file config/.config/sway/config.d/default-options-and-keymaps.conf modelVersion=10 in 205.70019999984652ms
+2025-05-18 18:28:08.029 [info] Handled visible editors change in 2.510721000377089ms
+2025-05-18 18:28:08.107 [info] Handled visible editors change in 4.262813999783248ms
+2025-05-18 18:28:11.904 [info] Uploaded file config/.config/mako/config modelVersion=1 in 828.6225679996423ms
+2025-05-18 18:30:22.510 [info] Handled visible editors change in 3.7506820000708103ms
+2025-05-18 18:30:23.385 [info] Uploaded file config/.config/waybar/style.css modelVersion=1 in 613.1018710001372ms
+2025-05-18 18:30:23.386 [info] Handled visible editors change in 787.2631680001505ms
+2025-05-18 18:30:26.902 [info] [ENABLED STATUS] Filesync enabled from server.
+2025-05-18 18:30:27.325 [info] Fetched fsConfig in 422.94407900003716ms
+2025-05-18 18:30:27.325 [info] FSConfig response: {"checkFilesyncHashPercent":0.004999999888241291,"rateLimiterBreakerResetTimeMs":300000,"rateLimiterRps":10,"rateLimiterBurstCapacity":50,"maxRecentUpdatesStored":100,"maxModelVersionCacheSize":100,"maxFileSizeToSyncBytes":500000,"syncRetryMaxAttempts":3,"syncRetryInitialDelayMs":20,"syncRetryTimeMultiplier":2,"fileSyncStatusMaxCacheSize":5,"successiveSyncsRequiredForReliance":5,"extraSuccessfulSyncsNeededAfterErrors":0,"bigChangeStrippingThresholdBytes":10000,"lastNUpdatesToSend":15,"fileSyncStatusTtlMs":300000,"syncDebounceMs":250,"syncUpdateThreshold":10}
+2025-05-18 18:30:27.325 [info] File sync enabled status: true
+2025-05-18 18:30:27.325 [info] Starting sync of visible tabs
+2025-05-18 18:30:27.325 [info] Synced all visible tabs in 0.07445000018924475ms
+2025-05-18 18:30:32.696 [info] Handled visible editors change in 2.186690999660641ms
+2025-05-18 18:30:33.012 [info] Uploaded file config/.config/waybar/config modelVersion=21 in 202.49379399977624ms
+2025-05-18 18:30:33.012 [info] Handled visible editors change in 299.71589000010863ms
+2025-05-18 18:30:35.651 [info] Handled visible editors change in 2.5030159996822476ms
+2025-05-18 18:30:35.671 [info] Handled visible editors change in 4.2466140002943575ms
+2025-05-18 18:30:45.758 [info] Synced file config/.config/waybar/style.css modelVersion=2 in 202.5691470000893ms
+2025-05-18 18:30:46.255 [info] Synced file config/.config/waybar/style.css modelVersion=5 in 203.42836200026795ms
+2025-05-18 18:30:47.170 [info] Synced file config/.config/waybar/style.css modelVersion=6 in 200.5457820002921ms
+2025-05-18 18:30:48.991 [info] Synced file config/.config/waybar/style.css modelVersion=7 in 203.09628699999303ms
+2025-05-18 18:30:50.787 [info] Synced file config/.config/waybar/style.css modelVersion=24 in 203.84351300029084ms
+2025-05-18 18:30:52.719 [info] Synced file config/.config/waybar/style.css modelVersion=25 in 201.94406100036576ms
+2025-05-18 18:30:53.855 [info] Synced file config/.config/waybar/style.css modelVersion=29 in 203.2734410003759ms
+2025-05-18 18:30:54.218 [info] Synced file config/.config/waybar/style.css modelVersion=30 in 202.6634139996022ms
+2025-05-18 18:30:54.944 [info] Synced file config/.config/waybar/style.css modelVersion=31 in 203.15437599970028ms
+2025-05-18 18:30:55.740 [info] Synced file config/.config/waybar/style.css modelVersion=35 in 203.96189499972388ms
+2025-05-18 18:30:56.057 [info] Synced file config/.config/waybar/style.css modelVersion=36 in 203.35486300010234ms
+2025-05-18 18:31:00.211 [info] Synced file config/.config/waybar/style.css modelVersion=37 in 202.50870300037786ms
+2025-05-18 18:31:00.708 [info] Synced file config/.config/waybar/style.css modelVersion=39 in 203.4835549998097ms
+2025-05-18 18:31:15.275 [info] Synced file config/.config/waybar/style.css modelVersion=40 in 202.49164100037888ms
+2025-05-18 18:31:15.925 [info] Synced file config/.config/waybar/style.css modelVersion=41 in 201.48837500019ms
+2025-05-18 18:31:16.267 [info] Synced file config/.config/waybar/style.css modelVersion=42 in 201.39589100005105ms
+2025-05-18 18:31:17.171 [info] Synced file config/.config/waybar/style.css modelVersion=43 in 201.89680300001055ms
+2025-05-18 18:31:17.454 [info] Synced file config/.config/waybar/style.css modelVersion=44 in 202.8806119998917ms
+2025-05-18 18:31:17.771 [info] Synced file config/.config/waybar/style.css modelVersion=45 in 203.2247489998117ms
+2025-05-18 18:31:18.370 [info] Synced file config/.config/waybar/style.css modelVersion=46 in 204.43753999983892ms
+2025-05-18 18:31:18.625 [info] Synced file config/.config/waybar/style.css modelVersion=46 in 203.80271500023082ms
+2025-05-18 18:31:19.998 [info] Handled visible editors change in 2.827787000220269ms
+2025-05-18 18:31:20.094 [info] Handled visible editors change in 5.388030000030994ms
+2025-05-18 18:31:22.149 [info] Handled visible editors change in 2.210174999665469ms
+2025-05-18 18:31:22.167 [info] Handled visible editors change in 3.8644449999555945ms
+2025-05-18 18:31:26.876 [info] [ENABLED STATUS] Filesync enabled from server.
+2025-05-18 18:31:27.298 [info] Fetched fsConfig in 421.7016940000467ms
+2025-05-18 18:31:27.298 [info] FSConfig response: {"checkFilesyncHashPercent":0.004999999888241291,"rateLimiterBreakerResetTimeMs":300000,"rateLimiterRps":10,"rateLimiterBurstCapacity":50,"maxRecentUpdatesStored":100,"maxModelVersionCacheSize":100,"maxFileSizeToSyncBytes":500000,"syncRetryMaxAttempts":3,"syncRetryInitialDelayMs":20,"syncRetryTimeMultiplier":2,"fileSyncStatusMaxCacheSize":5,"successiveSyncsRequiredForReliance":5,"extraSuccessfulSyncsNeededAfterErrors":0,"bigChangeStrippingThresholdBytes":10000,"lastNUpdatesToSend":15,"fileSyncStatusTtlMs":300000,"syncDebounceMs":250,"syncUpdateThreshold":10}
+2025-05-18 18:31:27.299 [info] File sync enabled status: true
+2025-05-18 18:31:27.299 [info] Starting sync of visible tabs
+2025-05-18 18:31:27.710 [info] Synced file config/.config/waybar/config modelVersion=23 in 398.2589579997584ms
+2025-05-18 18:31:27.711 [info] Uploaded file config/.config/waybar/config modelVersion=23 in 411.7730459999293ms
+2025-05-18 18:31:27.711 [info] Synced all visible tabs in 412.6460870001465ms
+2025-05-18 18:31:27.837 [info] Synced file config/.config/waybar/config modelVersion=23 in 199.5741449999623ms
+2025-05-18 18:31:32.175 [info] Synced file config/.config/waybar/config modelVersion=24 in 198.93903099978343ms
+2025-05-18 18:31:33.223 [info] Synced file config/.config/waybar/config modelVersion=28 in 197.48326499992982ms
+2025-05-18 18:31:33.511 [info] Synced file config/.config/waybar/config modelVersion=28 in 199.38198400009423ms
+2025-05-18 18:31:57.327 [info] Handled visible editors change in 3.2029019999317825ms
+2025-05-18 18:31:57.647 [info] Uploaded file config/.config/sway/config.d/autostart-applications.conf modelVersion=1 in 197.78090400015935ms
+2025-05-18 18:31:57.647 [info] Handled visible editors change in 257.58407900016755ms
+2025-05-18 18:32:02.679 [info] Synced file config/.config/sway/config.d/autostart-applications.conf modelVersion=3 in 198.44870900036767ms
+2025-05-18 18:32:03.192 [info] Synced file config/.config/sway/config.d/autostart-applications.conf modelVersion=4 in 198.61282799998298ms
+2025-05-18 18:32:03.679 [info] Synced file config/.config/sway/config.d/autostart-applications.conf modelVersion=5 in 200.09122700011358ms
+2025-05-18 18:32:04.418 [info] Synced file config/.config/sway/config.d/autostart-applications.conf modelVersion=6 in 197.98068000003695ms
+2025-05-18 18:32:05.708 [info] Synced file config/.config/sway/config.d/autostart-applications.conf modelVersion=7 in 200.83275200007483ms
+2025-05-18 18:32:07.188 [info] Synced file config/.config/sway/config.d/autostart-applications.conf modelVersion=22 in 200.74163099983707ms
+2025-05-18 18:32:07.562 [info] Synced file config/.config/sway/config.d/autostart-applications.conf modelVersion=23 in 202.4114800002426ms
+2025-05-18 18:32:14.590 [info] Synced file config/.config/sway/config.d/autostart-applications.conf modelVersion=25 in 200.09443400008604ms
+2025-05-18 18:32:18.802 [info] Synced file config/.config/sway/config.d/autostart-applications.conf modelVersion=26 in 199.4349139998667ms
+2025-05-18 18:32:19.128 [info] Synced file config/.config/sway/config.d/autostart-applications.conf modelVersion=26 in 198.0551999998279ms
+2025-05-18 18:32:21.976 [info] Handled visible editors change in 3.863694000057876ms
+2025-05-18 18:32:22.085 [info] Handled visible editors change in 3.8151330002583563ms
+2025-05-18 18:32:59.197 [info] Handled visible editors change in 2.5864830003120005ms
+2025-05-18 18:32:59.514 [info] Uploaded file config/.config/waybar/modules.json modelVersion=91 in 205.6897740000859ms
+2025-05-18 18:32:59.514 [info] Handled visible editors change in 301.7107810000889ms
+2025-05-18 18:33:03.155 [info] [ENABLED STATUS] Filesync enabled from server.
+2025-05-18 18:33:03.575 [info] Fetched fsConfig in 419.64978600014ms
+2025-05-18 18:33:03.575 [info] FSConfig response: {"checkFilesyncHashPercent":0.004999999888241291,"rateLimiterBreakerResetTimeMs":300000,"rateLimiterRps":10,"rateLimiterBurstCapacity":50,"maxRecentUpdatesStored":100,"maxModelVersionCacheSize":100,"maxFileSizeToSyncBytes":500000,"syncRetryMaxAttempts":3,"syncRetryInitialDelayMs":20,"syncRetryTimeMultiplier":2,"fileSyncStatusMaxCacheSize":5,"successiveSyncsRequiredForReliance":5,"extraSuccessfulSyncsNeededAfterErrors":0,"bigChangeStrippingThresholdBytes":10000,"lastNUpdatesToSend":15,"fileSyncStatusTtlMs":300000,"syncDebounceMs":250,"syncUpdateThreshold":10}
+2025-05-18 18:33:03.575 [info] File sync enabled status: true
+2025-05-18 18:33:03.575 [info] Starting sync of visible tabs
+2025-05-18 18:33:03.575 [info] Synced all visible tabs in 0.1076630000025034ms
+2025-05-18 18:33:07.658 [info] Synced file config/.config/waybar/modules.json modelVersion=92 in 199.70212699985132ms
+2025-05-18 18:33:09.389 [info] Synced file config/.config/waybar/modules.json modelVersion=93 in 200.14492799993604ms
+2025-05-18 18:33:10.188 [info] Synced file config/.config/waybar/modules.json modelVersion=94 in 197.91591899981722ms
+2025-05-18 18:33:17.037 [info] Synced file config/.config/waybar/modules.json modelVersion=95 in 198.87437100009993ms
+2025-05-18 18:33:17.918 [info] Synced file config/.config/waybar/modules.json modelVersion=99 in 199.5132909999229ms
+2025-05-18 18:33:18.289 [info] Synced file config/.config/waybar/modules.json modelVersion=99 in 200.1031700000167ms
+2025-05-18 18:33:21.052 [info] Synced file config/.config/waybar/modules.json modelVersion=100 in 200.34692799998447ms
+2025-05-18 18:33:22.024 [info] Synced file config/.config/waybar/modules.json modelVersion=105 in 199.2317519998178ms
+2025-05-18 18:33:22.437 [info] Synced file config/.config/waybar/modules.json modelVersion=105 in 200.40712200012058ms
+2025-05-18 18:33:42.614 [info] Synced file config/.config/waybar/modules.json modelVersion=108 in 199.32807199982926ms
+2025-05-18 18:33:43.964 [info] Synced file config/.config/waybar/modules.json modelVersion=120 in 202.16929499991238ms
+2025-05-18 18:34:40.399 [info] [ENABLED STATUS] Filesync enabled from server.
+2025-05-18 18:34:40.818 [info] Fetched fsConfig in 419.0383159997873ms
+2025-05-18 18:34:40.818 [info] FSConfig response: {"checkFilesyncHashPercent":0.004999999888241291,"rateLimiterBreakerResetTimeMs":300000,"rateLimiterRps":10,"rateLimiterBurstCapacity":50,"maxRecentUpdatesStored":100,"maxModelVersionCacheSize":100,"maxFileSizeToSyncBytes":500000,"syncRetryMaxAttempts":3,"syncRetryInitialDelayMs":20,"syncRetryTimeMultiplier":2,"fileSyncStatusMaxCacheSize":5,"successiveSyncsRequiredForReliance":5,"extraSuccessfulSyncsNeededAfterErrors":0,"bigChangeStrippingThresholdBytes":10000,"lastNUpdatesToSend":15,"fileSyncStatusTtlMs":300000,"syncDebounceMs":250,"syncUpdateThreshold":10}
+2025-05-18 18:34:40.818 [info] File sync enabled status: true
+2025-05-18 18:34:40.818 [info] Starting sync of visible tabs
+2025-05-18 18:34:40.818 [info] Synced all visible tabs in 0.06510200025513768ms
+2025-05-18 18:34:41.303 [info] Synced file config/.config/waybar/modules.json modelVersion=122 in 199.6860269997269ms
+2025-05-18 18:34:46.980 [info] Handled visible editors change in 2.898419000208378ms
+2025-05-18 18:34:46.999 [info] Handled visible editors change in 3.942011000122875ms
+2025-05-18 18:34:50.476 [info] Handled visible editors change in 2.675701000262052ms
+2025-05-18 18:34:50.497 [info] Handled visible editors change in 4.675168999936432ms
+2025-05-18 18:34:54.985 [info] Handled visible editors change in 3.469462000299245ms
+2025-05-18 18:34:55.003 [info] Handled visible editors change in 3.6748290001414716ms
+2025-05-18 18:34:56.806 [info] Synced file config/.config/sway/config.d/autostart-applications.conf modelVersion=28 in 200.16272300016135ms
+2025-05-18 18:34:57.917 [info] Synced file config/.config/sway/config.d/autostart-applications.conf modelVersion=29 in 200.53162699984387ms
+2025-05-18 18:35:31.240 [info] Handled visible editors change in 3.429346999619156ms
+2025-05-18 18:35:31.557 [info] Uploaded file config/.config/sway/scripts/light.sh modelVersion=1 in 198.3659449997358ms
+2025-05-18 18:35:31.557 [info] Handled visible editors change in 268.6396090001799ms
+2025-05-18 18:35:31.853 [info] Handled visible editors change in 3.488438999745995ms
+2025-05-18 18:35:32.163 [info] Uploaded file config/.config/sway/scripts/lockman.sh modelVersion=1 in 210.20116499997675ms
+2025-05-18 18:35:32.164 [info] Handled visible editors change in 265.520293999929ms
+2025-05-18 18:35:58.351 [info] Handled visible editors change in 2.2614219998940825ms
+2025-05-18 18:35:58.645 [info] Uploaded file config/.config/sway/config.d/default-options-and-keymaps.conf modelVersion=10 in 202.1887019998394ms
+2025-05-18 18:35:58.645 [info] Handled visible editors change in 278.4794469997287ms
+2025-05-18 18:35:59.819 [info] Synced file config/.config/sway/config.d/default-options-and-keymaps.conf modelVersion=11 in 200.44170800037682ms
+2025-05-18 18:36:00.841 [info] Synced file config/.config/sway/config.d/default-options-and-keymaps.conf modelVersion=12 in 200.60965400002897ms
+2025-05-18 18:36:03.448 [info] [ENABLED STATUS] Filesync enabled from server.
+2025-05-18 18:36:03.910 [info] Handled visible editors change in 2.5555839999578893ms
+2025-05-18 18:36:03.929 [info] Handled visible editors change in 4.049342999700457ms
+2025-05-18 18:36:03.931 [info] Fetched fsConfig in 482.6157610001974ms
+2025-05-18 18:36:03.931 [info] FSConfig response: {"checkFilesyncHashPercent":0.004999999888241291,"rateLimiterBreakerResetTimeMs":300000,"rateLimiterRps":10,"rateLimiterBurstCapacity":50,"maxRecentUpdatesStored":100,"maxModelVersionCacheSize":100,"maxFileSizeToSyncBytes":500000,"syncRetryMaxAttempts":3,"syncRetryInitialDelayMs":20,"syncRetryTimeMultiplier":2,"fileSyncStatusMaxCacheSize":5,"successiveSyncsRequiredForReliance":5,"extraSuccessfulSyncsNeededAfterErrors":0,"bigChangeStrippingThresholdBytes":10000,"lastNUpdatesToSend":15,"fileSyncStatusTtlMs":300000,"syncDebounceMs":250,"syncUpdateThreshold":10}
+2025-05-18 18:36:03.931 [info] File sync enabled status: true
+2025-05-18 18:36:03.931 [info] Starting sync of visible tabs
+2025-05-18 18:36:03.931 [info] Synced all visible tabs in 0.05116600031033158ms
+2025-05-18 18:38:52.558 [info] Synced file config/.config/sway/scripts/lockman.sh modelVersion=2 in 458.46331499982625ms
+2025-05-18 18:38:55.723 [info] [ENABLED STATUS] Filesync enabled from server.
+2025-05-18 18:38:56.146 [info] Fetched fsConfig in 422.57515599997714ms
+2025-05-18 18:38:56.146 [info] FSConfig response: {"checkFilesyncHashPercent":0.004999999888241291,"rateLimiterBreakerResetTimeMs":300000,"rateLimiterRps":10,"rateLimiterBurstCapacity":50,"maxRecentUpdatesStored":100,"maxModelVersionCacheSize":100,"maxFileSizeToSyncBytes":500000,"syncRetryMaxAttempts":3,"syncRetryInitialDelayMs":20,"syncRetryTimeMultiplier":2,"fileSyncStatusMaxCacheSize":5,"successiveSyncsRequiredForReliance":5,"extraSuccessfulSyncsNeededAfterErrors":0,"bigChangeStrippingThresholdBytes":10000,"lastNUpdatesToSend":15,"fileSyncStatusTtlMs":300000,"syncDebounceMs":250,"syncUpdateThreshold":10}
+2025-05-18 18:38:56.146 [info] File sync enabled status: true
+2025-05-18 18:38:56.146 [info] Starting sync of visible tabs
+2025-05-18 18:38:56.146 [info] Synced all visible tabs in 0.08589099999517202ms
+2025-05-18 18:47:53.138 [info] Handled visible editors change in 6.625155000016093ms
+2025-05-18 18:47:53.202 [info] Handled visible editors change in 5.7925990000367165ms
+2025-05-18 18:48:16.031 [info] Uploaded file config/.config/swaylock/config modelVersion=4 in 609.732050999999ms
+2025-05-18 18:48:16.031 [info] Uploaded file config/.config/swaylock/config modelVersion=2 in 837.6225399998948ms
+2025-05-18 18:48:16.032 [info] Uploaded file config/.config/swaylock/config modelVersion=4 in 601.0479650003836ms
+2025-05-18 18:48:16.032 [info] Uploaded file config/.config/swaylock/config modelVersion=4 in 757.8294210000895ms
+2025-05-18 18:48:16.034 [info] Uploaded file config/.config/swaylock/config modelVersion=2 in 822.67202299973ms
+2025-05-18 18:48:16.066 [info] Uploaded file config/.config/swaylock/config modelVersion=4 in 793.1165399998426ms
+2025-05-18 18:48:21.458 [info] [ENABLED STATUS] Filesync enabled from server.
+2025-05-18 18:48:21.879 [info] Fetched fsConfig in 421.35466599976644ms
+2025-05-18 18:48:21.879 [info] FSConfig response: {"checkFilesyncHashPercent":0.004999999888241291,"rateLimiterBreakerResetTimeMs":300000,"rateLimiterRps":10,"rateLimiterBurstCapacity":50,"maxRecentUpdatesStored":100,"maxModelVersionCacheSize":100,"maxFileSizeToSyncBytes":500000,"syncRetryMaxAttempts":3,"syncRetryInitialDelayMs":20,"syncRetryTimeMultiplier":2,"fileSyncStatusMaxCacheSize":5,"successiveSyncsRequiredForReliance":5,"extraSuccessfulSyncsNeededAfterErrors":0,"bigChangeStrippingThresholdBytes":10000,"lastNUpdatesToSend":15,"fileSyncStatusTtlMs":300000,"syncDebounceMs":250,"syncUpdateThreshold":10}
+2025-05-18 18:48:21.879 [info] File sync enabled status: true
+2025-05-18 18:48:21.879 [info] Starting sync of visible tabs
+2025-05-18 18:48:21.879 [info] Synced all visible tabs in 0.11037699971348047ms

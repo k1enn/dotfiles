@@ -1,0 +1,28 @@
+* {
+	background-image: none;
+	box-shadow: none;
+}
+
+window {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+button {
+	border-radius: 0;
+	border-color: #ffffff;
+	text-decoration-color: #cccccc;
+	text-align: center;
+	font-size: 2rem;
+	color: #cccccc;
+	background-color: #222222;
+	border-style: solid;
+	border-width: 1px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25%;
+}
+
+button:focus, button:active, button:hover {
+	background-color: #444444;
+	outline-style: none;
+}

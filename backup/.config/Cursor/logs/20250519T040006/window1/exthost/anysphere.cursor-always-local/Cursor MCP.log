@@ -1,0 +1,36 @@
+2025-05-19 04:00:14.579 [info] king: Handling CreateClient action
+2025-05-19 04:00:14.579 [info] king: getOrCreateClient for stdio server.  process.platform: linux isElectron: true
+2025-05-19 04:00:14.579 [info] king: Starting new stdio process with command: npx -y @modelcontextprotocol/server-sequential-thinking
+2025-05-19 04:00:17.157 [info] king: Successfully connected to stdio server
+2025-05-19 04:00:17.157 [info] king: Storing stdio client
+2025-05-19 04:00:17.168 [info] teer: Handling CreateClient action
+2025-05-19 04:00:17.168 [info] teer: getOrCreateClient for stdio server.  process.platform: linux isElectron: true
+2025-05-19 04:00:17.168 [info] teer: Starting new stdio process with command: npx -y @modelcontextprotocol/server-puppeteer
+2025-05-19 04:00:18.290 [info] teer: Successfully connected to stdio server
+2025-05-19 04:00:18.290 [info] teer: Storing stdio client
+2025-05-19 04:00:18.303 [info] thub: Handling CreateClient action
+2025-05-19 04:00:18.303 [info] thub: getOrCreateClient for stdio server.  process.platform: linux isElectron: true
+2025-05-19 04:00:18.303 [info] thub: Starting new stdio process with command: npx -y @modelcontextprotocol/server-github
+2025-05-19 04:00:19.411 [info] thub: Successfully connected to stdio server
+2025-05-19 04:00:19.411 [info] thub: Storing stdio client
+2025-05-19 04:00:19.412 [info] king: Handling ListOfferings action
+2025-05-19 04:00:19.412 [info] king: Listing offerings
+2025-05-19 04:00:19.412 [info] king: getOrCreateClient for stdio server.  process.platform: linux isElectron: true
+2025-05-19 04:00:19.412 [info] king: Reusing existing stdio client
+2025-05-19 04:00:19.412 [info] king: Connected to stdio server, fetching offerings
+2025-05-19 04:00:19.413 [info] listOfferings: Found 1 tools
+2025-05-19 04:00:19.413 [info] king: Found 1 tools, 0 resources, and 0 resource templates
+2025-05-19 04:00:19.413 [info] teer: Handling ListOfferings action
+2025-05-19 04:00:19.413 [info] teer: Listing offerings
+2025-05-19 04:00:19.413 [info] teer: getOrCreateClient for stdio server.  process.platform: linux isElectron: true
+2025-05-19 04:00:19.413 [info] teer: Reusing existing stdio client
+2025-05-19 04:00:19.414 [info] teer: Connected to stdio server, fetching offerings
+2025-05-19 04:00:19.414 [info] listOfferings: Found 7 tools
+2025-05-19 04:00:19.414 [info] teer: Found 7 tools, 0 resources, and 0 resource templates
+2025-05-19 04:00:19.415 [info] thub: Handling ListOfferings action
+2025-05-19 04:00:19.415 [info] thub: Listing offerings
+2025-05-19 04:00:19.415 [info] thub: getOrCreateClient for stdio server.  process.platform: linux isElectron: true
+2025-05-19 04:00:19.415 [info] thub: Reusing existing stdio client
+2025-05-19 04:00:19.415 [info] thub: Connected to stdio server, fetching offerings
+2025-05-19 04:00:19.420 [info] listOfferings: Found 26 tools
+2025-05-19 04:00:19.420 [info] thub: Found 26 tools, 0 resources, and 0 resource templates

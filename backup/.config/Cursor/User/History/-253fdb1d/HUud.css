@@ -1,0 +1,106 @@
+* {
+	background-image: none;
+	font-family: "Fira Sans", sans-serif;
+	font-size: 14px;
+}
+
+window {
+	background-color: rgba(40, 44, 52, 0.2);
+	border-radius: 16px;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+}
+
+button {
+	color: #abb2bf;
+	background-color: rgba(40, 44, 52, 0.5);
+	border-style: solid;
+	border-width: 2px;
+	border-color: #3e4452;
+	border-radius: 10px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 35%;
+	margin: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	transition: all 0.15s ease-in-out;
+	outline: none;
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+}
+
+button:focus, button:active {
+	color: #ffffff;
+	background-color: rgba(62, 68, 82, 0.8);
+	border-color: #528bff;
+	box-shadow: 0 2px 12px rgba(82, 139, 255, 0.5);
+}
+
+button:hover {
+	color: #ffffff;
+	background-color: rgba(62, 68, 82, 0.7);
+	border-color: #61afef;
+	box-shadow: 0 4px 12px rgba(82, 139, 255, 0.4);
+	transform: translateY(-2px);
+}
+
+#lock {
+	background-image: image(url("./icons/lock.png"), url("/usr/share/wlogout/icons/lock.png"));
+}
+
+#logout {
+	background-image: image(url("./icons/logout.png"), url("/usr/share/wlogout/icons/logout.png"));
+}
+
+#suspend {
+	background-image: image(url("./icons/suspend.png"), url("/usr/share/wlogout/icons/suspend.png"));
+}
+
+#hibernate {
+	background-image: image(url("./icons/hibernate.png"), url("/usr/share/wlogout/icons/hibernate.png"));
+}
+
+#shutdown {
+	background-image: image(url("./icons/shutdown.png"), url("/usr/share/wlogout/icons/shutdown.png"));
+}
+
+#reboot {
+	background-image: image(url("./icons/reboot.png"), url("/usr/share/wlogout/icons/reboot.png"));
+}
+
+/* Button labels */
+button label {
+	color: #abb2bf;
+	font-size: 16px;
+	margin-top: 160px;
+	font-weight: 500;
+}
+
+button:focus label, button:active label, button:hover label {
+	color: #ffffff;
+}
+
+/* Button specific colors */
+#lock:hover {
+	border-color: #528bff;
+}
+
+#logout:hover {
+	border-color: #56b6c2;
+}
+
+#suspend:hover {
+	border-color: #e5c07b;
+}
+
+#hibernate:hover {
+	border-color: #c678dd;
+}
+
+#shutdown:hover {
+	border-color: #e06c75;
+}
+
+#reboot:hover {
+	border-color: #98c379;
+} 

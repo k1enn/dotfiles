@@ -1,0 +1,43 @@
+{
+  "mcpServers": {
+    "sequential-thinking": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"],
+      "env": {}
+    },
+    "puppeteer": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-puppeteer"],
+      "env": {}
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_TOKEN": "your-github-token-here"
+      }
+    },
+    "dotnet-tools": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-dotnet"],
+      "env": {}
+    },
+    "web-fetch": {
+      "command": "npx",
+      "args": ["-y", "mcp-server-fetch"],
+      "env": {}
+    },
+    "xml-tools": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-xml"],
+      "env": {}
+    },
+    "flutter-tools": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-flutter"],
+      "env": {
+        "FLUTTER_HOME": "/home/k1en/development/flutter"
+      }
+    }
+  }
+}
