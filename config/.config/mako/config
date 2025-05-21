@@ -9,6 +9,7 @@ width=300
 height=110
 margin=8,8,0,0
 padding=0,5,10
+border-radius=8
 
 # Colors and styling
 background-color=#282c34

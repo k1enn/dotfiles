@@ -10,6 +10,6 @@ case "$layout" in
         echo "VN"
         ;;
     *)
-        echo "$layout"
+        echo "US"
         ;;
 esac 
