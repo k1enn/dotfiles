@@ -1,6 +1,0 @@
-README.md
-CNAME
-.github/workflows/deploy-portfolio.yml
-.github/workflows/profile-3d.yml
-Portfolio/style.css
-Portfolio/index.html
