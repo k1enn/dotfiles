@@ -23,7 +23,7 @@ TOUCHPAD_DEVICE="asup1205:00-093a:2008-touchpad"  # Your current setting
 
 enable_touchpad() {
     printf "true" > "$STATUS_FILE"
-    notify-send -u low -i "$notif" "Enabling touchpad"
+    notify-send -u low  "Enabling touchpad"
     if ! hyprctl keyword "device[$TOUCHPAD_DEVICE]:enabled" true; then
         notify-send -u critical "Error: Failed to enable touchpad"
         return 1
@@ -32,7 +32,7 @@ enable_touchpad() {
 
 disable_touchpad() {
     printf "false" > "$STATUS_FILE"
-    notify-send -u low -i "$notif" "Disabling touchpad"
+    notify-send -u low  "Disabling touchpad"
     if ! hyprctl keyword "device[$TOUCHPAD_DEVICE]:enabled" false; then
         notify-send -u critical "Error: Failed to disable touchpad"
         return 1

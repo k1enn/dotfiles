@@ -18,60 +18,60 @@ window#waybar.empty #window {
 }
 
 tooltip {
-	color: white;
-	background: #1e1e1e;
-	opacity: 0.8;
-	border-radius: 10px;
+    color: white;
+    background: #1e1e1e;
+    opacity: 0.8;
+    border-radius: 10px;
 }
 
 tooltip label{
-	color: white;
+    color: white;
 }
 /*-----module groups----*/
 .modules-right {
-	background-color: rgba(0, 0, 0, 0.8);
-	color: white;
-	border-radius: 10px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	padding-right: 4px;
-	padding-left: 4px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border-radius: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 3px;
+    padding-left: 3px;
 }
 .modules-center {
-	background-color: rgba(0, 0, 0, 0.8);
-	color: white;
-	border-radius: 10px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	padding-right: 4px;
-	padding-left: 4px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border-radius: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 3px;
+    padding-left: 3px;
 }
 .modules-left {
-	background-color: rgba(0, 0, 0, 0.8);
-	color: white;
-	border-radius: 10px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	padding-right: 4px;
-	padding-left: 4px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border-radius: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 3px;
+    padding-left: 3px;
 }
 /*-----modules indv----*/
 #taskbar button,
 #workspaces button {
-	color: dimgrey;
+    color: dimgrey;
     box-shadow: none;
-	text-shadow: none;
+    text-shadow: none;
     padding: 0px;
     border-radius: 9px;
-    padding-left: 4px;
-    padding-right: 4px;
+    padding-left: 3px;
+    padding-right: 3px;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
 }
 #taskbar button:hover,
 #workspaces button:hover {
-	color: white;
-	background-color: #e3e3e3;
+    color: white;
+    background-color: #e3e3e3;
     padding-left: 2px;
     padding-right: 2px;
     animation: gradient_f 20s ease-in infinite;
@@ -80,15 +80,15 @@ tooltip label{
 
 #taskbar button.active,
 #workspaces button.active {
-	color: white;
-    padding-left: 8px;
-    padding-right: 8px;
+    color: white;
+    padding-left: 6px;
+    padding-right: 6px;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
 #workspaces button.persistent {
-	border-radius: 10px;
+    border-radius: 10px;
 }
 
 #backlight,
@@ -148,58 +148,58 @@ tooltip label{
 #custom-weather.showyIcyDay,
 #custom-weather.snowyIcyNight,
 #custom-weather.sunnyDay {
-	padding-top: 4px;
-	padding-bottom: 4px;
-	padding-right: 6px;
-	padding-left: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 /*-----Indicators----*/
 #custom-hypridle.notactive,
 #idle_inhibitor.activated {
-	color: #39FF14;
+    color: #39FF14;
 }
 
 #pulseaudio.muted {
-	color: #cc3436;
+    color: #cc3436;
 }
 #temperature.critical {
-	color: red;
+    color: red;
 }
 
 @keyframes blink {
-	to {
-		color: #000000;
-	}
+    to {
+        color: #000000;
+    }
 }
 
 #battery.critical:not(.charging) {
-	color: #f53c3c;
-	animation-name: blink;
-	animation-duration: 3.0s;
-	animation-timing-function: steps(12);
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
+    color: #f53c3c;
+    animation-name: blink;
+    animation-duration: 3.0s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 #backlight-slider slider,
 #pulseaudio-slider slider {
-	min-width: 0px;
-	min-height: 0px;
-	opacity: 0;
-	background-image: none;
-	border: none;
-	box-shadow: none;
+    min-width: 0px;
+    min-height: 0px;
+    opacity: 0;
+    background-image: none;
+    border: none;
+    box-shadow: none;
 }
 
 #backlight-slider trough,
 #pulseaudio-slider trough {
-	min-width: 80px;
-	min-height: 5px;
-	border-radius: 5px;
+    min-width: 80px;
+    min-height: 5px;
+    border-radius: 5px;
 }
 
 #backlight-slider highlight,
 #pulseaudio-slider highlight {
-	min-height: 10px;
-	border-radius: 5px;
+    min-height: 10px;
+    border-radius: 5px;
 }

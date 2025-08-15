@@ -89,7 +89,7 @@ entry {
     background-color:            inherit;
     text-color:                  inherit;
     cursor:                      text;
-    placeholder:                 "Search     👀 NOTE: CTRL TAB to change MODE";
+    placeholder:                 "Search     CTRL TAB to change MODE";
     placeholder-color:           inherit;
 }
 

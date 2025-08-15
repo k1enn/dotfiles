@@ -3,7 +3,7 @@
 
 # Variables
 rofi_theme="$HOME/.config/rofi/config-emoji.rasi"
-msg='** note ** 👀 Click or Return to choose || Ctrl V to Paste'
+msg='Click or Return to choose || Ctrl V to Paste'
 
 # Check if rofi is already running
 if pidof rofi > /dev/null; then
@@ -213,7 +213,7 @@ exit
 🧠 brain smart intelligent
 🦷 tooth teeth dentist
 🦴 bone skeleton
-👀 eyes look watch stalk peek see
+ eyes look watch stalk peek see
 👁️ eye face look see watch stare
 👅 tongue mouth playful
 👄 mouth mouth kiss

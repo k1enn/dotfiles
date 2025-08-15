@@ -65,7 +65,7 @@ prompt {
 }
 
 entry {
-    placeholder:       "Search     👀 NOTE: CTRL TAB to change MODE";
+    placeholder:       "Search     CTRL TAB to change MODE";
     placeholder-color: @base01;
     text-color:        @red;
 }

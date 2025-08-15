@@ -40,3 +40,5 @@ alias l='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
+
+export PATH=$PATH:/home/k1en/.spicetify

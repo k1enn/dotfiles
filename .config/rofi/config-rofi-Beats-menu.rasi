@@ -14,7 +14,7 @@ entry {
   expand: false;
   width: 25%;
   width: 25%;
-  placeholder: " 📻 Choose Music Source";
+  placeholder: "Choose Music Source";
   horizontal-align: 0.5;
   horizontal-align: 0.5;
 }

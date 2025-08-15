@@ -95,7 +95,7 @@ entry {
     background-color:            @selected;
     text-color:                  @text-selected;
     cursor:                      text;
-    placeholder:                 " 🖥️ Search ";
+    placeholder:                 " Search ";
     placeholder-color:           inherit;
 }
 

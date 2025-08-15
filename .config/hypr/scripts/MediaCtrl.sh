@@ -2,7 +2,6 @@
 # /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
 # Playerctl
 
-music_icon="$HOME/.config/swaync/icons/music.png"
 
 # Play the next track
 play_next() {
@@ -25,7 +24,7 @@ toggle_play_pause() {
 # Stop playback
 stop_playback() {
     playerctl stop
-    notify-send -e -u low -i $music_icon " Playback:" " Stopped"
+    notify-send -e -u low "Playback:" " Stopped"
 }
 
 # Display notification with song information
@@ -34,9 +33,9 @@ show_music_notification() {
     if [[ "$status" == "Playing" ]]; then
         song_title=$(playerctl metadata title)
         song_artist=$(playerctl metadata artist)
-        notify-send -e -u low -i $music_icon "Now Playing:" "$song_title by $song_artist"
+        notify-send -e -u low "Now Playing:" "$song_title by $song_artist"
     elif [[ "$status" == "Paused" ]]; then
-        notify-send -e -u low -i $music_icon " Playback:" " Paused"
+        notify-send -e -u low  " Playback:" " Paused"
     fi
 }
 

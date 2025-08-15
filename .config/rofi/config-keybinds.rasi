@@ -13,7 +13,7 @@ mainbox {
 /* ---- Entry ---- */
 entry {
   expand: true;
-  placeholder: " 🧮 Search Keybinds";
+  placeholder: "Search Keybinds";
 }
 
 /* ---- Listview ---- */

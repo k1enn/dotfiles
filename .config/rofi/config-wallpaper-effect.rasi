@@ -13,7 +13,7 @@ mainbox {
 /* ---- Entry ---- */ 
 entry {
   width: 32%;
-  placeholder: " 🏙️ Search / Choose desired wallpaper effect";
+  placeholder: "Search / Choose desired wallpaper effect";
 }
 
 /* ---- Window ---- */

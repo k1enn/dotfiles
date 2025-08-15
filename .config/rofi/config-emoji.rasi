@@ -18,7 +18,7 @@ window {
 /* ---- Entry ---- */
 entry {
   width: 37%;
-  placeholder: " 💫 Search / Choose Emoji's";
+  placeholder: "Search / Choose Emoji's";
   horizontal-align: 0.0;
 }
 
