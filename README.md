@@ -14,17 +14,27 @@
     <img style="padding-left: 10px;" src="https://github.com/k1enn/software-engineer-notes/blob/main/subjects/web-programming/Buoi1/Bai01/images/linkedin.png" alt="LinkedIn Logo" width="20" height="20" />
     <strong><a style="text-decoration:none;" href="https://www.linkedin.com/in/k1enn/" target="_blank">LinkedIn</a></strong>
   </p>
-      <small>August, 2025</small>
+      <small>September, 2025</small>
 </div>
 
-Backup my dotfiles in case Fedora system expoded.
+Backup my dotfiles in case Fedora system explode.
 
 ## **System informations**
 
 - **Linux distro**: Fedora Workstation 42.
-- **WN**: Hyprland (JaKooLit's Dotfiles)
+- **WM**: Hyprland (JaKooLit's Dotfiles)
 - **DRM**: XWayland.
+
+### Currently
+- WM: DRM (X11)
 
 ---
 
-Too lazy to write installation guide
+## Installation
+```
+sudo dnf install stow 
+git clone git@github.com:k1enn/dotfiles.git ~/.dotfiles 
+cd ~/.dotfiles
+stow .
+
+```
