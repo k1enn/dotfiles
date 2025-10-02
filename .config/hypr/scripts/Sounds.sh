@@ -60,7 +60,7 @@ iDIR="$sDIR/../$iTheme"
 # Find the sound file and play it.
 sound_file=$(find -L $sDIR/stereo -name "$soundoption" -print -quit)
 if ! test -f "$sound_file"; then
-    sound_file=$(find -L/stereo -name "$soundoption" -print -quit)
+    sound_file=$(find -L $iDIR/stereo -name "$soundoption" -print -quit)
     if ! test -f "$sound_file"; then
         sound_file=$(find -L $userDIR/$defaultTheme/stereo -name "$soundoption" -print -quit)
         if ! test -f "$sound_file"; then

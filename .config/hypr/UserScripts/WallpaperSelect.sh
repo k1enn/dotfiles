@@ -9,7 +9,7 @@ SCRIPTSDIR="$HOME/.config/hypr/scripts"
 wallpaper_current="$HOME/.config/hypr/wallpaper_effects/.wallpaper_current"
 
 # Directory for swaync
-
+iDIR="$HOME/.config/swaync/images"
 iDIRi="$HOME/.config/swaync/icons"
 
 # swww transition config
@@ -21,7 +21,7 @@ SWWW_PARAMS="--transition-fps $FPS --transition-type $TYPE --transition-duration
 
 # Check if package bc exists
 if ! command -v bc &>/dev/null; then
-  notify-send -i  "bc missing" "Install package bc first"
+  notify-send -i "$iDIR/error.png" "bc missing" "Install package bc first"
   exit 1
 fi
 
@@ -31,7 +31,7 @@ focused_monitor=$(hyprctl monitors -j | jq -r '.[] | select(.focused) | .name')
 
 # Ensure focused_monitor is detected
 if [[ -z "$focused_monitor" ]]; then
-  notify-send -i  "E-R-R-O-R" "Could not detect focused monitor"
+  notify-send -i "$iDIR/error.png" "E-R-R-O-R" "Could not detect focused monitor"
   exit 1
 fi
 
@@ -120,7 +120,7 @@ set_sddm_wallpaper() {
 
       # Check if terminal exists
       if ! command -v "$terminal" &>/dev/null; then
-        notify-send -i  "Missing $terminal" "Install $terminal to enable setting of wallpaper background"
+        notify-send -i "$iDIR/error.png" "Missing $terminal" "Install $terminal to enable setting of wallpaper background"
         exit 1
       fi
 	  
@@ -182,7 +182,7 @@ apply_video_wallpaper() {
 
   # Check if mpvpaper is installed
   if ! command -v mpvpaper &>/dev/null; then
-    notify-send -i  "E-R-R-O-R" "mpvpaper not found"
+    notify-send -i "$iDIR/error.png" "E-R-R-O-R" "mpvpaper not found"
     return 1
   fi
   kill_wallpaper_for_video

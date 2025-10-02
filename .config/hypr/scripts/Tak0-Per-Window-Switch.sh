@@ -85,7 +85,7 @@ cmd_toggle() {
   NEXT=$(( (i+1) % count ))
   do_switch "$NEXT"
   save_map "$W" "${kb_layouts[NEXT]}"
-  notify-send -u low "kb_layout: ${kb_layouts[NEXT]}"
+  notify-send -u low -i "$ICON" "kb_layout: ${kb_layouts[NEXT]}"
 }
 
 # Restore layout on focus

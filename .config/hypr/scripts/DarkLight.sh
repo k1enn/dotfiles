@@ -11,6 +11,7 @@ hypr_config_path="$HOME/.config/hypr"
 swaync_style="$HOME/.config/swaync/style.css"
 ags_style="$HOME/.config/ags/user/style.css"
 SCRIPTSDIR="$HOME/.config/hypr/scripts"
+notif="$HOME/.config/swaync/images/bell.png"
 wallust_rofi="$HOME/.config/wallust/templates/colors-rofi.rasi"
 
 kitty_conf="$HOME/.config/kitty/kitty.conf"
@@ -50,7 +51,7 @@ update_theme_mode() {
 
 # Function to notify user
 notify_user() {
-    notify-send -u low "Switching to" " $1 mode"
+    notify-send -u low -i "$notif" " Switching to" " $1 mode"
 }
 
 # Use sed to replace the palette setting in the wallust config file
@@ -247,7 +248,7 @@ ${SCRIPTSDIR}/Refresh.sh
 
 sleep 0.5
 # Display notifications for theme and icon changes 
-notify-send -u low "Themes switched to:" " $next_mode Mode"
+notify-send -u low -i "$notif" " Themes switched to:" " $next_mode Mode"
 
 exit 0
 

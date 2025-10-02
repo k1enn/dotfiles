@@ -2,6 +2,7 @@
 # /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
 # Game Mode. Turning off all animations
 
+notif="$HOME/.config/swaync/images/ja.png"
 SCRIPTSDIR="$HOME/.config/hypr/scripts"
 
 
@@ -18,7 +19,7 @@ if [ "$HYPRGAMEMODE" = 1 ] ; then
 	
 	hyprctl keyword "windowrule opacity 1 override 1 override 1 override, ^(.*)$"
     swww kill 
-    notify-send -e -u low  "Gamemode:" " enabled"
+    notify-send -e -u low -i "$notif" " Gamemode:" " enabled"
     exit
 else
 	swww-daemon --format xrgb && swww img "$HOME/.config/rofi/.current_wallpaper" &
@@ -26,7 +27,7 @@ else
 	${SCRIPTSDIR}/WallustSwww.sh
 	sleep 0.5
 	${SCRIPTSDIR}/Refresh.sh	 
-    notify-send -e -u normal  "Gamemode:" " disabled"
+    notify-send -e -u normal -i "$notif" " Gamemode:" " disabled"
     exit
 fi
 hyprctl reload
