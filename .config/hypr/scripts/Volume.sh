@@ -15,24 +15,10 @@ get_volume() {
     fi
 }
 
-# Get icons
-get_icon() {
-    current=$(get_volume)
-    if [[ "$current" == "Muted" ]]; then
-        echo "$iDIR/volume-mute.png"
-    elif [[ "${current%\%}" -le 30 ]]; then
-        echo "$iDIR/volume-low.png"
-    elif [[ "${current%\%}" -le 60 ]]; then
-        echo "$iDIR/volume-mid.png"
-    else
-        echo "$iDIR/volume-high.png"
-    fi
-}
-
 # Notify
 notify_user() {
     if [[ "$(get_volume)" == "Muted" ]]; then
-        notify-send -e -h string:x-canonical-private-synchronous:volume_notif -h boolean:SWAYNC_BYPASS_DND:true -u low -i "$(get_icon)" " Volume:" " Muted"
+        notify-send -e -h string:x-canonical-private-synchronous:volume_notif -h boolean:SWAYNC_BYPASS_DND:true -u low  " Volume:" " Muted"
     else
         notify-send -e -h int:value:"$(get_volume | sed 's/%//')" -h string:x-canonical-private-synchronous:volume_notif -h boolean:SWAYNC_BYPASS_DND:true -u low -i "$(get_icon)" " Volume Level:" " $(get_volume)" &&
         "$sDIR/Sounds.sh" --volume
@@ -60,9 +46,9 @@ dec_volume() {
 # Toggle Mute
 toggle_mute() {
 	if [ "$(pamixer --get-mute)" == "false" ]; then
-		pamixer -m && notify-send -e -u low -h boolean:SWAYNC_BYPASS_DND:true -i "$iDIR/volume-mute.png" " Mute"
+		pamixer -m && notify-send -e -u low -h boolean:SWAYNC_BYPASS_DND:true  " Mute"
 	elif [ "$(pamixer --get-mute)" == "true" ]; then
-		pamixer -u && notify-send -e -u low -h boolean:SWAYNC_BYPASS_DND:true -i "$(get_icon)" " Volume:" " Switched ON"
+		pamixer -u && notify-send -e -u low -h boolean:SWAYNC_BYPASS_DND:true  " Volume:" " Switched ON"
 	fi
 }
 
