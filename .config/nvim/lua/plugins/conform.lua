@@ -1,21 +1,12 @@
 return {
-  "stevearc/conform.nvim",
-  event = { "BufReadPre", "BufNewFile" },
-  config = function()
-    local conform = require("conform")
-
-    conform.setup({
+  {
+    "stevearc/conform.nvim",
+    opts = {
       formatters_by_ft = {
-        javascript = { "prettier" },
-        typescript = { "prettier" },
-        javascriptreact = { "prettier" },
-        typescriptreact = { "prettier" },
-        json = { "prettier" },
-        css = { "prettier" },
-        html = { "prettier" },
-        markdown = { "prettier" },
-        csharp = { "prettier" },
+        cs = { "csharpier" },
+        razor = { "html-lsp" }, -- Use HTML formatter for Razor files
+        ["html.cshtml.razor"] = { "html-lsp" },
       },
-    })
-  end,
+    },
+  },
 }
