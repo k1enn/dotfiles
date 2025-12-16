@@ -1,1 +1,9 @@
-../../../../.dotfiles/.config/nvim/lua/plugins/disable-news-alert.lua
+return {
+	"LazyVim/LazyVim",
+	opts = {
+		news = {
+			lazyvim = false,
+			neovim = false,
+		},
+	},
+}

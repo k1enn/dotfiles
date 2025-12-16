@@ -1,1 +1,5 @@
-../../../../.dotfiles/.config/nvim/lua/plugins/cord.lua
+return {
+  "vyfor/cord.nvim",
+  build = ":Cord update",
+  -- opts = {}
+}

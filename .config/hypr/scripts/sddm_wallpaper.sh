@@ -16,9 +16,6 @@ sddm_simple="/usr/share/sddm/themes/simple_sddm_2"
 rofi_wallust="$HOME/.config/rofi/wallust/colors-rofi.rasi"
 sddm_theme_conf="$sddm_simple/theme.conf"
 
-# Directory for swaync
-iDIR="$HOME/.config/swaync/images"
-iDIRi="$HOME/.config/swaync/icons"
 
 # Parse arguments
 mode="effects" # default
@@ -72,5 +69,5 @@ sudo sed -i \"s/PasswordIconColor=\\\"#.*\\\"/PasswordIconColor=\\\"$color7\\\"/
 # Copy wallpaper to SDDM theme
 sudo cp \"$wallpaper_path\" \"$sddm_simple/Backgrounds/default\"
 
-notify-send -i \"$iDIR/ja.png\" \"SDDM\" \"Background SET\"
+notify-send \"SDDM\" \"Background SET\"
 "

@@ -135,4 +135,17 @@
         "custom/reboot"
       ]
 },
+
+"group/tray": {
+	"orientation": "inherit",
+	"drawer": {
+		"transition-duration": 500,
+		"children-class": "tray",
+		"transition-left-to-right": false
+	},
+	"modules": [
+		"custom/tray_toggle",
+		"tray"
+	]
+},
 }

@@ -15,7 +15,6 @@ keybinds_conf="$HOME/.config/hypr/configs/Keybinds.conf"
 user_keybinds_conf="$HOME/.config/hypr/UserConfigs/UserKeybinds.conf"
 laptop_conf="$HOME/.config/hypr/UserConfigs/Laptops.conf"
 rofi_theme="$HOME/.config/rofi/config-keybinds.rasi"
-msg='☣️ NOTE ☣️: Clicking with Mouse or Pressing ENTER will have NO function'
 
 # combine the contents of the keybinds files and filter for keybinds
 keybinds=$(cat "$keybinds_conf" "$user_keybinds_conf" | grep -E '^bind')
@@ -36,4 +35,4 @@ fi
 display_keybinds=$(echo "$keybinds" | sed 's/\$mainMod/SUPER/g')
 
 # use rofi to display the keybinds with the modified content
-echo "$display_keybinds" | rofi -dmenu -i -config "$rofi_theme" -mesg "$msg"
+echo "$display_keybinds" | rofi -dmenu -i -config "$rofi_theme"

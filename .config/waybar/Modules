@@ -49,11 +49,6 @@
 	"smooth-scrolling-threshold": 1,
 },
 
-"backlight#2": {
-  "device": "intel_backlight",
-  "format": "{icon} {percent}%",
-  "format-icons": ["", ""]
-},
 
 "battery": {
 	//"interval": 5,
@@ -125,8 +120,8 @@
 },
 
 "clock#2": {
- //   "format": " {:%I:%M %p}", // AM PM format
- "format": "  {:%H:%M}",// 24H
+ //   "format": "{:%I:%M %p}", // AM PM format
+ "format": "{:%H:%M}",// 24H
     "format-alt": "{:%A  |  %H:%M  |  %e %B}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
 },
@@ -300,6 +295,23 @@
 	"format-icons": [
 		"󰤯", "󰤟", "󰤢", "󰤥", "󰤨"
 	]
+},
+
+"network#name": {
+	"format": "{ifname}",
+	"format-wifi": "{icon} {essid}",
+	"format-ethernet": "󰌘 {ifname}",
+	"format-disconnected": "󰌙 Disconnected",
+	"format-linked": "󰈁 {ifname} (No IP)",
+	"tooltip-format": "{ipaddr}",
+	"tooltip-format-wifi": "{essid} {icon} {signalStrength}%\n {bandwidthUpBits}  {bandwidthDownBits}",
+	"tooltip-format-ethernet": "{ifname} 󰌘\n {bandwidthUpBits}  {bandwidthDownBits}",
+	"tooltip-format-disconnected": "󰌙 Disconnected",
+	"max-length": 20,
+	"format-icons": [
+		"󰤯", "󰤟", "󰤢", "󰤥", "󰤨"
+	],
+	"on-click-right": "$HOME/.config/hypr/scripts/WaybarScripts.sh --nmtui"
 },
 
 "power-profiles-daemon": {

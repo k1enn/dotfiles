@@ -69,12 +69,6 @@
 	"tooltip-format": "Left Click: Quick Tips\nRight Click: Keybinds",
 },
 
-"custom/dot_update": {
-	"format": " 󰁈 ",
-	"on-click": "$HOME/.config/hypr/scripts/KooLsDotsUpdate.sh",
-	"tooltip": true,
-	"tooltip-format": "Check KooL Dots update\nIf available",
-},
 
 // Hypridle inhibitor
 "custom/hypridle": {
@@ -140,11 +134,11 @@
 },
     
 "custom/power": {
-	"format": " ⏻ ",
+	"format": " ",
 	"on-click": "$HOME/.config/hypr/scripts/Wlogout.sh",
 	"on-click-right": "$HOME/.config/hypr/scripts/ChangeBlur.sh",
 	"tooltip": true,
-	"tooltip-format": "Left Click: Logout Menu\nRight Click: Change Blur",
+	"tooltip-format": "Left Click: Logout Menu\nRight Click: Change Blur"
 },
 
 "custom/reboot": {
@@ -164,7 +158,7 @@
 "custom/swaync": {
 	"tooltip": true,
 	"tooltip-format": "Left Click: Launch Notification Center\nRight Click: Do not Disturb",
-	"format": "{} {icon} ",
+	"format": "{icon} ",
 	"format-icons": {
 		"notification": "<span foreground='red'><sup></sup></span>",
 		"none": "",
@@ -210,7 +204,7 @@
 	"tooltip": false
 },
 "custom/separator#blank": {
-	"format": "",
+	"format": " ",
 	"interval": "once",
 	"tooltip": false
 },
@@ -269,8 +263,15 @@
 	"tooltip": false
 },
 
+
 "custom/arrow10": {
-	"format": "",
+		"format": "",
 	"tooltip": false
+},
+
+"custom/tray_toggle": {
+	"format": " ",
+	"tooltip": true,
+	"tooltip-format": "Click to toggle system tray"
 }
 }

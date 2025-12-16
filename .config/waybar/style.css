@@ -1,1 +1,206 @@
-/home/k1en/.config/waybar/style/[Black & White] Monochrome.css
+/* ---- 💫 https://github.com/JaKooLit 💫 ---- */
+/*  Black & White MonoChrome */
+
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  font-weight: bold;
+  min-height: 0;
+  /* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
+  font-size: 98%;
+  font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+}
+
+window#waybar,
+window#waybar.empty,
+window#waybar.empty #window {
+  background-color: transparent;
+  padding: 0px;
+}
+
+tooltip {
+  color: white;
+  background: #1e1e1e;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+
+tooltip label {
+  color: white;
+}
+/*-----module groups----*/
+.modules-right {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border-radius: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 3px;
+  padding-left: 3px;
+}
+.modules-center {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border-radius: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 3px;
+  padding-left: 3px;
+}
+.modules-left {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border-radius: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 3px;
+  padding-left: 3px;
+}
+/*-----modules indv----*/
+#taskbar button,
+#workspaces button {
+  color: dimgrey;
+  box-shadow: none;
+  text-shadow: none;
+  padding: 0px;
+  border-radius: 9px;
+  padding-left: 6px;
+  padding-right: 6px;
+  border: solid 1px transparent;
+  transition: all 0.2s ease-in-out;
+}
+#taskbar button:hover,
+#workspaces button:hover {
+  color: white;
+  border: solid 1px #f8f9fd;
+}
+
+#taskbar button.active,
+#workspaces button.active {
+  color: white;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+#workspaces button.persistent {
+  border-radius: 10px;
+}
+
+#backlight,
+#backlight-slider,
+#battery,
+#bluetooth,
+#clock,
+#cpu,
+#disk,
+#idle_inhibitor,
+#keyboard-state,
+#memory,
+#mode,
+#mpris,
+#network,
+#power-profiles-daemon,
+#pulseaudio,
+#pulseaudio-slider,
+#taskbar,
+#temperature,
+#tray,
+#window,
+#wireplumber,
+#workspaces,
+#custom-backlight,
+#custom-browser,
+#custom-cava_mviz,
+#custom-cycle_wall,
+#custom-dot_update,
+#custom-file_manager,
+#custom-keybinds,
+#custom-keyboard,
+#custom-light_dark,
+#custom-lock,
+#custom-hint,
+#custom-hypridle,
+#custom-menu,
+#custom-playerctl,
+#custom-power_vertical,
+#custom-power,
+#custom-quit,
+#custom-reboot,
+#custom-settings,
+#custom-spotify,
+#custom-swaync,
+#custom-tty,
+#custom-updater,
+#custom-hyprpicker,
+#custom-weather,
+#custom-weather.clearNight,
+#custom-weather.cloudyFoggyDay,
+#custom-weather.cloudyFoggyNight,
+#custom-weather.default,
+#custom-weather.rainyDay,
+#custom-weather.rainyNight,
+#custom-weather.severe,
+#custom-weather.showyIcyDay,
+#custom-weather.snowyIcyNight,
+#custom-weather.sunnyDay {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+/*-----Indicators----*/
+#custom-hypridle.notactive,
+#idle_inhibitor.activated {
+  color: #39ff14;
+}
+
+#pulseaudio.muted {
+  color: #cc3436;
+}
+#temperature.critical {
+  color: red;
+}
+
+@keyframes blink {
+  to {
+    color: #000000;
+  }
+}
+
+#battery.critical:not(.charging) {
+  color: #f53c3c;
+  animation-name: blink;
+  animation-duration: 3s;
+  animation-timing-function: steps(12);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#backlight-slider slider,
+#pulseaudio-slider slider {
+  min-width: 0px;
+  min-height: 0px;
+  opacity: 0;
+  background-image: none;
+  border: none;
+  box-shadow: none;
+}
+
+#backlight-slider trough,
+#pulseaudio-slider trough {
+  min-width: 80px;
+  min-height: 5px;
+  border-radius: 5px;
+}
+
+#backlight-slider highlight,
+#pulseaudio-slider highlight {
+  min-height: 10px;
+  border-radius: 5px;
+}
+
+  #custom-power {
+      background-image: url("/home/k1en/.config/waybar/icons/arch.png");
+      background-size: 14px 14px;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
