@@ -52,6 +52,9 @@ kitty.target = '~/.config/kitty/kitty-themes/01-Wallust.conf'
 quickshell.template = 'qml_color.json'
 quickshell.target = '~/.config/quickshell/qml_color.json'
 
+wlogout.template = 'colors-wlogout.css'
+wlogout.target = '~/.config/wlogout/nova.css'
+
 #swaync.template = 'colors-swaync.css'
 #swaync.target = '~/.config/swaync/wallust/colors-wallust.css'
 

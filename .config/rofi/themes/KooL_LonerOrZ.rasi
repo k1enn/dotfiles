@@ -16,7 +16,7 @@ configuration {
 
 /*****----- Global Properties -----*****/
 * {
-    font: "Iosevka 12";
+    font: "JetBrainsMono Nerd Font 12";
     
     BG:    #1E1D2Fff;
     BGA:   #89DCEBff;
@@ -57,7 +57,7 @@ textbox-prompt-colon {
     background-color:               @SEL;
     text-color:                     @FG;
     padding:                        8px 12px 8px 12px;
-    font:			                "Iosevka Nerd Font 10";
+    font:			                "JetBrainsMono Nerd Font 12";
 }
 
 entry {
