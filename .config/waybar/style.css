@@ -63,10 +63,12 @@ tooltip label {
   text-shadow: none;
   padding: 0px;
   border-radius: 9px;
-  padding-left: 6px;
-  padding-right: 6px;
+  padding-left: 1px;
+  padding-right: 1px;
+  margin-left: 2px;
+  margin-right: 2px;
   border: solid 1px transparent;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 #taskbar button:hover,
 #workspaces button:hover {
@@ -77,8 +79,8 @@ tooltip label {
 #taskbar button.active,
 #workspaces button.active {
   color: white;
-  padding-left: 6px;
-  padding-right: 6px;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 #workspaces button.persistent {
