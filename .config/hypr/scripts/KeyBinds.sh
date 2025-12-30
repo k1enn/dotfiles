@@ -11,19 +11,11 @@ if pidof rofi > /dev/null; then
 fi
 
 # define the config files
-keybinds_conf="$HOME/.config/hypr/configs/Keybinds.conf"
-user_keybinds_conf="$HOME/.config/hypr/UserConfigs/UserKeybinds.conf"
-laptop_conf="$HOME/.config/hypr/UserConfigs/Laptops.conf"
+keybinds_conf="$HOME/.config/hypr/configs/keybinds.conf"
 rofi_theme="$HOME/.config/rofi/config-keybinds.rasi"
 
-# combine the contents of the keybinds files and filter for keybinds
-keybinds=$(cat "$keybinds_conf" "$user_keybinds_conf" | grep -E '^bind')
-
-# check if laptop.conf exists and add its keybinds if present
-if [[ -f "$laptop_conf" ]]; then
-    laptop_binds=$(grep -E '^bind' "$laptop_conf")
-    keybinds+=$'\n'"$laptop_binds"
-fi
+# get keybinds from config file
+keybinds=$(grep -E '^bind' "$keybinds_conf")
 
 # check for any keybinds to display
 if [[ -z "$keybinds" ]]; then

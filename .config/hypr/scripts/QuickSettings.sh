@@ -3,7 +3,7 @@
 # Rofi menu for KooL Hyprland Quick Settings (SUPER SHIFT E)
 
 # Modify this config file for default terminal and EDITOR
-config_file="$HOME/.config/hypr/UserConfigs/01-UserDefaults.conf"
+config_file="$HOME/.config/hypr/configs/_variables.conf"
 
 tmp_config_file=$(mktemp)
 sed 's/^\$//g; s/ = /=/g' "$config_file" >"$tmp_config_file"
@@ -12,7 +12,6 @@ source "$tmp_config_file"
 
 # variables
 configs="$HOME/.config/hypr/configs"
-UserConfigs="$HOME/.config/hypr/UserConfigs"
 rofi_theme="$HOME/.config/rofi/config-edit.rasi"
 scriptsDir="$HOME/.config/hypr/scripts"
 UserScripts="$HOME/.config/hypr/UserScripts"
@@ -20,16 +19,16 @@ UserScripts="$HOME/.config/hypr/UserScripts"
 # Function to display the menu options without numbers
 menu() {
   cat <<EOF
-view/edit User Defaults
-view/edit ENV variables
-view/edit Window Rules
-view/edit User Keybinds
-view/edit User Settings
-view/edit Startup Apps
-view/edit Decorations
-view/edit Animations
-view/edit Laptop Keybinds
-view/edit Default Keybinds
+_variables
+animations
+appearance
+env
+input
+keybinds
+layouts
+rules
+settings
+startup
 Choose Kitty Terminal Theme
 Configure Monitors (nwg-displays)
 Configure Workspace Rules (nwg-displays)
@@ -37,8 +36,6 @@ GTK Settings (nwg-look)
 QT Apps Settings (qt6ct)
 QT Apps Settings (qt5ct)
 Choose Hyprland Animations
-Choose Monitor Profiles
-Choose Rofi Themes
 Search for Keybinds
 Toggle Game Mode
 Switch Dark-Light Theme
@@ -51,16 +48,16 @@ main() {
 
   # Map choices to corresponding files
   case "$choice" in
-  "view/edit User Defaults") file="$UserConfigs/01-UserDefaults.conf" ;;
-  "view/edit ENV variables") file="$UserConfigs/ENVariables.conf" ;;
-  "view/edit Window Rules") file="$UserConfigs/WindowRules.conf" ;;
-  "view/edit User Keybinds") file="$UserConfigs/UserKeybinds.conf" ;;
-  "view/edit User Settings") file="$UserConfigs/UserSettings.conf" ;;
-  "view/edit Startup Apps") file="$UserConfigs/Startup_Apps.conf" ;;
-  "view/edit Decorations") file="$UserConfigs/UserDecorations.conf" ;;
-  "view/edit Animations") file="$UserConfigs/UserAnimations.conf" ;;
-  "view/edit Laptop Keybinds") file="$UserConfigs/Laptops.conf" ;;
-  "view/edit Default Keybinds") file="$configs/Keybinds.conf" ;;
+  "_variables") file="$configs/_variables.conf" ;;
+  "animations") file="$configs/animations.conf" ;;
+  "appearance") file="$configs/appearance.conf" ;;
+  "env") file="$configs/env.conf" ;;
+  "input") file="$configs/input.conf" ;;
+  "keybinds") file="$configs/keybinds.conf" ;;
+  "layouts") file="$configs/layouts.conf" ;;
+  "rules") file="$configs/rules.conf" ;;
+  "settings") file="$configs/settings.conf" ;;
+  "startup") file="$configs/startup.conf" ;;
   "Configure Monitors (nwg-displays)")
     if ! command -v nwg-displays &>/dev/null; then
       notify-send "E-R-R-O-R" "Install nwg-displays first"
@@ -97,8 +94,6 @@ main() {
     qt5ct
     ;;
   "Choose Hyprland Animations") $scriptsDir/Animations.sh ;;
-  "Choose Monitor Profiles") $scriptsDir/MonitorProfiles.sh ;;
-  "Choose Rofi Themes") $scriptsDir/RofiThemeSelector.sh ;;
   "Search for Keybinds") $scriptsDir/KeyBinds.sh ;;
   "Toggle Game Mode") $scriptsDir/GameMode.sh ;;
   "Switch Dark-Light Theme") $scriptsDir/DarkLight.sh ;;
@@ -107,7 +102,7 @@ main() {
 
   # Open the selected file in the terminal with the text editor
   if [ -n "$file" ]; then
-    $term -e $edit "$file"
+    $term -e $editor "$file"
   fi
 }
 
@@ -117,4 +112,3 @@ if pidof rofi >/dev/null; then
 fi
 
 main
-

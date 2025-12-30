@@ -3,7 +3,7 @@
 # For Searching via web browsers
 
 # Define the path to the config file
-config_file=$HOME/.config/hypr/UserConfigs/01-UserDefaults.conf
+config_file=$HOME/.config/hypr/configs/_variables.conf
 
 # Check if the config file exists
 if [[ ! -f "$config_file" ]]; then
@@ -17,9 +17,9 @@ config_content=$(sed 's/\$//g' "$config_file" | sed 's/ = /=/')
 # Source the modified content directly from the variable
 eval "$config_content"
 
-# Check if $term is set correctly
-if [[ -z "$Search_Engine" ]]; then
-    echo "Error: \$Search_Engine is not set in the configuration file!"
+# Check if $searchEngine is set correctly
+if [[ -z "$searchEngine" ]]; then
+    echo "Error: \$searchEngine is not set in the configuration file!"
     exit 1
 fi
 
@@ -32,4 +32,4 @@ if pgrep -x "rofi" >/dev/null; then
 fi
 
 # Open Rofi and pass the selected query to xdg-open for Google search
-echo "" | rofi -dmenu -config "$rofi_theme" | xargs -I{} xdg-open $Search_Engine
+echo "" | rofi -dmenu -config "$rofi_theme" | xargs -I{} xdg-open $searchEngine

@@ -308,6 +308,7 @@
 	"format-icons": [
 		"󰤯", "󰤟", "󰤢", "󰤥", "󰤨"
 	],
+	"on-click": "$HOME/.config/hypr/scripts/WaybarScripts.sh --nmtui",
 	"on-click-right": "$HOME/.config/hypr/scripts/WaybarScripts.sh --nmtui"
 },
 
