@@ -6,11 +6,18 @@ return {
     config = function()
       local vscode = require("vscode")
       vscode.setup({
-        transparent = false,
+        transparent = true,
         italic_comments = true,
         underline_links = true,
-        disable_nvimtree_bg = true,
+        disable_nvimtree_bg = false,
         group_overrides = {
+          -- Transparent neo-tree
+          NeoTreeNormal = { bg = "NONE" },
+          NeoTreeNormalNC = { bg = "NONE" },
+          NeoTreeEndOfBuffer = { bg = "NONE" },
+          NeoTreeWinSeparator = { bg = "NONE" },
+          NeoTreeFloatBorder = { bg = "NONE" },
+          NeoTreeFloatTitle = { bg = "NONE" },
           -- Better TS/JS highlighting
           ["@variable"] = { fg = "#9CDCFE" },
           ["@variable.builtin"] = { fg = "#9CDCFE" },
@@ -39,9 +46,16 @@ return {
     end,
   },
   {
+    "nyoom-engineering/oxocarbon.nvim",
+    -- Add in any other configuration;
+    --   event = foo,
+    --   config = bar
+    --   end,
+  },
+  {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "vscode",
+      colorscheme = "oxocarbon",
     },
   },
 }

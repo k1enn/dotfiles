@@ -1,11 +1,5 @@
 return {
   {
-    "catppuccin/nvim",
-    name = "catppuccin",
-    lazy = true,
-    priority = 1000,
-  },
-  {
     "Mofiqul/vscode.nvim",
     lazy = false,
     priority = 1000,
@@ -44,5 +38,12 @@ return {
       })
       vscode.load()
     end,
+  },
+  {
+    "nyoom-engineering/oxocarbon.nvim",
+    -- Add in any other configuration;
+    --   event = foo,
+    --   config = bar
+    --   end,
   },
 }
