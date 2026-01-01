@@ -47,15 +47,74 @@ return {
   },
   {
     "nyoom-engineering/oxocarbon.nvim",
-    -- Add in any other configuration;
-    --   event = foo,
-    --   config = bar
-    --   end,
+    lazy = false,
+    priority = 1000,
+    config = function()
+      -- Override Visual mode highlights for better visibility
+      vim.api.nvim_create_autocmd("ColorScheme", {
+        pattern = "oxocarbon",
+        callback = function()
+          -- Better visual mode highlight - muted purple bg
+          vim.api.nvim_set_hl(0, "Visual", { bg = "#33395a", fg = "NONE" })
+          vim.api.nvim_set_hl(0, "VisualNOS", { bg = "#33395a", fg = "NONE" })
+
+          -- Line number column matches background
+          vim.api.nvim_set_hl(0, "LineNr", { bg = "NONE" })
+          vim.api.nvim_set_hl(0, "CursorLineNr", { bg = "NONE" })
+          vim.api.nvim_set_hl(0, "SignColumn", { bg = "NONE" })
+
+          -- Vertical separator and status line transparent
+          vim.api.nvim_set_hl(0, "VertSplit", { bg = "NONE", fg = "#393939" })
+          vim.api.nvim_set_hl(0, "WinSeparator", { bg = "NONE", fg = "#393939" })
+          vim.api.nvim_set_hl(0, "StatusLine", { bg = "NONE" })
+          vim.api.nvim_set_hl(0, "StatusLineNC", { bg = "NONE" })
+        end,
+      })
+    end,
   },
   {
     "LazyVim/LazyVim",
     opts = {
       colorscheme = "oxocarbon",
+    },
+  },
+  {
+    "nvim-lualine/lualine.nvim",
+    opts = {
+      options = {
+        theme = {
+          normal = {
+            a = { bg = "NONE" },
+            b = { bg = "NONE" },
+            c = { bg = "NONE" },
+          },
+          insert = {
+            a = { bg = "NONE" },
+            b = { bg = "NONE" },
+            c = { bg = "NONE" },
+          },
+          visual = {
+            a = { bg = "NONE" },
+            b = { bg = "NONE" },
+            c = { bg = "NONE" },
+          },
+          replace = {
+            a = { bg = "NONE" },
+            b = { bg = "NONE" },
+            c = { bg = "NONE" },
+          },
+          command = {
+            a = { bg = "NONE" },
+            b = { bg = "NONE" },
+            c = { bg = "NONE" },
+          },
+          inactive = {
+            a = { bg = "NONE" },
+            b = { bg = "NONE" },
+            c = { bg = "NONE" },
+          },
+        },
+      },
     },
   },
 }
