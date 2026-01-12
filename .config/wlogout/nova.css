@@ -3,7 +3,7 @@
 window {
     font-family: Fira Code Medium;
     font-size: 14pt;
-    color: #F4F4F4;
+    color: #F0F0F0;
     background-color: rgba(46,46,46, 0.85);
 }
 
@@ -29,7 +29,7 @@ button:focus {
 
 button:hover {
     background-size: 25%;
-    background-color: #A1A1A1;
+    background-color: #9E9E9E;
     border: none;
     outline: none;
     box-shadow: none;

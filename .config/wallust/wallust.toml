@@ -55,6 +55,9 @@ quickshell.target = '~/.config/quickshell/qml_color.json'
 wlogout.template = 'colors-wlogout.css'
 wlogout.target = '~/.config/wlogout/nova.css'
 
+neovim.template = 'colors-neovim.lua'
+neovim.target = '~/.config/nvim/lua/wallust/colors.lua'
+
 #swaync.template = 'colors-swaync.css'
 #swaync.target = '~/.config/swaync/wallust/colors-wallust.css'
 
