@@ -1,7 +1,7 @@
 /* wallust wlogout - monochrome */
 
 window {
-    font-family: JetBrains Mono;
+    font-family: Fira Code Medium;
     font-size: 14pt;
     color: #CACACA;
     background-color: rgba(19,19,19, 0.85);
@@ -15,7 +15,7 @@ button {
     border: none;
     outline: none;
     box-shadow: none;
-    border-radius: 10px;
+    border-radius: 0px;
     margin: 10px;
     transition: all 0.3s ease-in;
 }
@@ -33,7 +33,7 @@ button:hover {
     border: none;
     outline: none;
     box-shadow: none;
-    transition: all 0.2s cubic-bezier(.55, 0.0, .28, 1.682);
+    transition: all 0.3s cubic-bezier(.55, 0.0, .28, 1.682);
 }
 
 #shutdown {
@@ -54,8 +54,4 @@ button:hover {
 
 #hibernate {
     background-image: image(url("icons/hibernate.png"));
-}
-
-#idle {
-  background-image: image(url("icons/arch-icon.png"));
 }

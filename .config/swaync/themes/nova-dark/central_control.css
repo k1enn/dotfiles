@@ -23,7 +23,7 @@
 
 .control-center {
   background: alpha(@background, .55);
-  border-radius: 10px;
+  border-radius: 0px;
   border: 1px solid @selected;
   box-shadow: 0 0 10px 0 rgba(0,0,0,.6);
   margin: 18px;
@@ -34,7 +34,7 @@
 .control-center .notification-row .notification-background,
 .control-center .notification-row .notification-background .notification.critical {
   background-color: @background-alt;
-  border-radius: 16px;
+  border-radius: 0px;
   margin: 4px 0px;
   padding: 4px;
 }
@@ -55,7 +55,7 @@
 .control-center .notification-row .notification-background .notification > *:last-child > * .notification-action {
   background: alpha(@selected, .6);
   color: @text;
-  border-radius: 12px;
+  border-radius: 0px;
   margin: 6px;
 }
 
@@ -71,7 +71,7 @@
 
 .control-center .notification-row .notification-background .close-button {
   background: transparent;
-  border-radius: 6px;
+  border-radius: 0px;
   color: @text;
   margin: 0px;
   padding: 4px;
@@ -88,7 +88,7 @@
 progressbar,
 progress,
 trough {
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 progressbar {
@@ -117,7 +117,7 @@ progressbar {
   background: transparent;
   color: @text;
   margin: 4px; 
-  border-radius: 6px;
+  border-radius: 0px;
   padding: 4px;
 }
 
@@ -136,7 +136,7 @@ progressbar {
 
 .widget-title button {
   background: @background-alt;
-  border-radius: 6px;
+  border-radius: 0px;
   padding: 4px 16px;
 }
 
@@ -157,7 +157,7 @@ progressbar {
 .widget-dnd > switch {
   background: @background-alt;
   font-size: initial;
-  border-radius: 8px;
+  border-radius: 0px;
   box-shadow: none;
   padding: 2px;
 }
@@ -176,7 +176,7 @@ progressbar {
 
 .widget-dnd > switch slider {
   background: @text;
-  border-radius: 6px;
+  border-radius: 0px;
 }
 
   /* Buttons menu */
@@ -184,7 +184,7 @@ progressbar {
   font-size: x-large;
   padding: 6px 2px;
   margin: 6px;
-  border-radius: 12px;
+  border-radius: 0px;
   background: @background-alt;
 }
 
@@ -192,7 +192,7 @@ progressbar {
   margin: 4px 10px;
   padding: 6px 12px;
   background: transparent;
-  border-radius: 8px;
+  border-radius: 0px;
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button:hover {
@@ -203,31 +203,31 @@ progressbar {
   /* Music player */
 .widget-mpris {
     background: @background-alt;
-    border-radius: 16px;
+    border-radius: 0px;
     color: @text;
     margin:  20px 6px;
 }
 
 .widget-mpris-player {
-    border-radius: 16px;
+    border-radius: 0px;
     margin: 6px;
     overflow: hidden;
 }
 
 .widget-mpris-player .mpris-background {
     filter: blur(20px);
-    border-radius: 16px;
+    border-radius: 0px;
 }
 
 .widget-mpris-player .mpris-overlay {
     background-color: alpha(@background, 0.4);
     padding: 12px;
-    border-radius: 16px;
+    border-radius: 0px;
 }
 
 .widget-mpris > box > button {
   color: @text;
-  border-radius: 20px;
+  border-radius: 0px;
 }
 
 .widget-mpris button {
@@ -239,7 +239,7 @@ progressbar {
 }
 
 .widget-mpris-album-art {
-  border-radius: 12px;
+  border-radius: 0px;
 }
  
 .widget-mpris-title {
@@ -258,5 +258,5 @@ progressbar {
   color: @background;
   padding: 4px;
   margin: 6px;
-  border-radius: 6px;
+  border-radius: 0px;
 }
