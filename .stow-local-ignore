@@ -1,0 +1,3 @@
+# Ignore absolute symlinks that stow can't handle
+\.config/rofi/\.current_wallpaper
+.git
