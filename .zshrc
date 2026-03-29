@@ -13,6 +13,9 @@ export EDITOR='nvim'
 export BROWSER='firefox'
 export HISTORY_IGNORE="(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
 export SUDO_PROMPT="Password for root access:"
+export GOPATH="$HOME/go"
+export GOBIN="$GOPATH/bin"
+export PATH="$PATH:$GOBIN"
 
 if [ -d "$HOME/.local/bin" ] ;
   then PATH="$HOME/.local/bin:$PATH"
@@ -122,3 +125,7 @@ alias lla='ls -la'
 alias lt='ls --tree'
 # Set-up FZF key bindings (CTRL R for fuzzy history finder)
 source <(fzf --zsh)
+alias rdp='xfreerdp3 /v:localhost:3389 /u:Docker /p:admin \
+  +dynamic-resolution /gfx:AVC444:on /gdi:hw /bpp:32 \
+  +clipboard /compression-level:0 /cert:ignore +f \
+  /frame-ack:0 /video /sec:tls /audio-mode:2'

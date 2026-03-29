@@ -1,0 +1,264 @@
+// Window opacity rules — converted from Hyprland
+// Niri has no tag system, so categories are matched directly by app-id/title.
+// Each category needs two rules: base (unfocused) opacity + focused override.
+window-rule {
+    background-effect {
+        blur true
+        xray false
+    }
+}
+
+// Block out mako notifications from screencasts. (DOESNT work)
+layer-rule {
+    match namespace="^notifications$"
+    background-effect {
+      blur true
+      xray false
+    }
+    opacity 0.9
+    block-out-from "screencast"
+}
+
+// Make fuzzel semitransparent.
+layer-rule {
+    match namespace="^dms:bar$"
+
+    background-effect {
+      blur true
+      xray false
+    }
+    opacity 0.7
+}
+layer-rule {
+    match namespace="^dms:spotlight$"
+    background-effect {
+        blur false
+        xray false
+    }
+    opacity 0.7
+}
+// ========================================
+// Browsers — focused: 0.9 / unfocused: 0.7
+// ========================================
+window-rule {
+    match app-id=r#"^([Ff]irefox|org\.mozilla\.firefox|[Ff]irefox-esr|[Ff]irefox-bin)$"#
+    match app-id=r#"^[Gg]oogle-chrome(-beta|-dev|-unstable)?$"#
+    match app-id=r#"^chrome-.+-Default$"#
+    match app-id=r#"^[Cc]hromium$"#
+    match app-id=r#"^[Mm]icrosoft-edge(-stable|-beta|-dev|-unstable)$"#
+    match app-id=r#"^Brave-browser(-beta|-dev|-unstable)?$"#
+    match app-id=r#"^([Tt]horium-browser|[Cc]achy-browser)$"#
+    match app-id=r#"^zen(-alpha)?$"#
+    opacity 0.7
+}
+window-rule {
+    match app-id=r#"^([Ff]irefox|org\.mozilla\.firefox|[Ff]irefox-esr|[Ff]irefox-bin)$"# is-focused=true
+    match app-id=r#"^[Gg]oogle-chrome(-beta|-dev|-unstable)?$"# is-focused=true
+    match app-id=r#"^chrome-.+-Default$"# is-focused=true
+    match app-id=r#"^[Cc]hromium$"# is-focused=true
+    match app-id=r#"^[Mm]icrosoft-edge(-stable|-beta|-dev|-unstable)$"# is-focused=true
+    match app-id=r#"^Brave-browser(-beta|-dev|-unstable)?$"# is-focused=true
+    match app-id=r#"^([Tt]horium-browser|[Cc]achy-browser)$"# is-focused=true
+    match app-id=r#"^zen(-alpha)?$"# is-focused=true
+    opacity 0.9
+}
+
+// ========================================
+// Projects (IDEs) — focused: 0.9 / unfocused: 0.8
+// ========================================
+window-rule {
+    match app-id=r#"^(codium|codium-url-handler|VSCodium)$"#
+    match app-id=r#"^(VSCode|code-url-handler)$"#
+    match app-id=r#"^jetbrains-.+"#
+    opacity 0.8
+}
+window-rule {
+    match app-id=r#"^(codium|codium-url-handler|VSCodium)$"# is-focused=true
+    match app-id=r#"^(VSCode|code-url-handler)$"# is-focused=true
+    match app-id=r#"^jetbrains-.+"# is-focused=true
+    opacity 0.9
+}
+
+// ========================================
+// IM (Messaging) — focused: 0.94 / unfocused: 0.86
+// ========================================
+window-rule {
+    match app-id=r#"^([Dd]iscord|[Ww]ebCord|[Vv]esktop)$"#
+    match app-id=r#"^[Ll]ark$"#
+    match app-id=r#"^[Ff]erdium$"#
+    match app-id=r#"^[Ww]hatsapp-for-linux$"#
+    match app-id=r#"^(ZapZap|com\.rtosta\.zapzap)$"#
+    match app-id=r#"^(org\.telegram\.desktop|io\.github\.tdesktop_x64\.TDesktop)$"#
+    match app-id=r#"^teams-for-linux$"#
+    match app-id=r#"^(im\.riot\.Riot|Element)$"#
+    opacity 0.86
+}
+window-rule {
+    match app-id=r#"^([Dd]iscord|[Ww]ebCord|[Vv]esktop)$"# is-focused=true
+    match app-id=r#"^[Ll]ark$"# is-focused=true
+    match app-id=r#"^[Ff]erdium$"# is-focused=true
+    match app-id=r#"^[Ww]hatsapp-for-linux$"# is-focused=true
+    match app-id=r#"^(ZapZap|com\.rtosta\.zapzap)$"# is-focused=true
+    match app-id=r#"^(org\.telegram\.desktop|io\.github\.tdesktop_x64\.TDesktop)$"# is-focused=true
+    match app-id=r#"^teams-for-linux$"# is-focused=true
+    match app-id=r#"^(im\.riot\.Riot|Element)$"# is-focused=true
+    opacity 0.94
+}
+
+// ========================================
+// Multimedia (audio) — focused: 0.94 / unfocused: 0.86
+// ========================================
+window-rule {
+    match app-id=r#"^[Aa]udacious$"#
+    opacity 0.86
+}
+window-rule {
+    match app-id=r#"^[Aa]udacious$"# is-focused=true
+    opacity 0.94
+}
+
+// ========================================
+// Multimedia (video) — opacity: 1.0 / no blur
+// ========================================
+window-rule {
+    match app-id=r#"^([Mm]pv|vlc)$"#
+    opacity 1.0
+    background-effect {
+        blur false
+    }
+}
+
+// ========================================
+// File Manager — focused: 0.9 / unfocused: 0.8
+// ========================================
+window-rule {
+    match app-id=r#"^([Tt]hunar|org\.gnome\.Nautilus|[Pp]cmanfm-qt)$"#
+    match app-id=r#"^app\.drey\.Warp$"#
+    opacity 0.8
+}
+window-rule {
+    match app-id=r#"^([Tt]hunar|org\.gnome\.Nautilus|[Pp]cmanfm-qt)$"# is-focused=true
+    match app-id=r#"^app\.drey\.Warp$"# is-focused=true
+    opacity 0.9
+}
+
+// ========================================
+// Terminal — focused: 0.8 / unfocused: 0.7
+// ========================================
+window-rule {
+    match app-id=r#"^(Alacritty|kitty|kitty-dropterm)$"#
+    opacity 0.7
+}
+window-rule {
+    match app-id=r#"^(Alacritty|kitty|kitty-dropterm)$"# is-focused=true
+    opacity 0.8
+}
+
+// ========================================
+// Settings — focused: 0.8 / unfocused: 0.7
+// ========================================
+window-rule {
+    match title=r#"^ROG Control$"#
+    match app-id=r#"^wihotspot(-gui)?$"#
+    match app-id=r#"^([Bb]aobab|org\.gnome\.[Bb]aobab)$"#
+    match app-id=r#"^gnome-disks$"#
+    match title=r#"Kvantum Manager"#
+    match app-id=r#"^(file-roller|org\.gnome\.FileRoller)$"#
+    match app-id=r#"^(nm-applet|nm-connection-editor|blueman-manager)$"#
+    match app-id=r#"^(pavucontrol|org\.pulseaudio\.pavucontrol|com\.saivert\.pwvucontrol)$"#
+    match app-id=r#"^(qt5ct|qt6ct|[Yy]ad)$"#
+    match app-id=r#"xdg-desktop-portal-gtk"#
+    match app-id=r#"^org\.kde\.polkit-kde-authentication-agent-1$"#
+    match app-id=r#"^[Rr]ofi$"#
+    opacity 0.7
+}
+window-rule {
+    match title=r#"^ROG Control$"# is-focused=true
+    match app-id=r#"^wihotspot(-gui)?$"# is-focused=true
+    match app-id=r#"^([Bb]aobab|org\.gnome\.[Bb]aobab)$"# is-focused=true
+    match app-id=r#"^gnome-disks$"# is-focused=true
+    match title=r#"Kvantum Manager"# is-focused=true
+    match app-id=r#"^(file-roller|org\.gnome\.FileRoller)$"# is-focused=true
+    match app-id=r#"^(nm-applet|nm-connection-editor|blueman-manager)$"# is-focused=true
+    match app-id=r#"^(pavucontrol|org\.pulseaudio\.pavucontrol|com\.saivert\.pwvucontrol)$"# is-focused=true
+    match app-id=r#"^(qt5ct|qt6ct|[Yy]ad)$"# is-focused=true
+    match app-id=r#"xdg-desktop-portal-gtk"# is-focused=true
+    match app-id=r#"^org\.kde\.polkit-kde-authentication-agent-1$"# is-focused=true
+    match app-id=r#"^[Rr]ofi$"# is-focused=true
+    opacity 0.8
+}
+
+// ========================================
+// Viewer — focused: 0.82 / unfocused: 0.75
+// ========================================
+window-rule {
+    match app-id=r#"^(gnome-system-monitor|org\.gnome\.SystemMonitor|io\.missioncenter\.MissionCenter)$"#
+    match app-id=r#"^evince$"#
+    match app-id=r#"^(eog|org\.gnome\.Loupe)$"#
+    opacity 0.75
+}
+window-rule {
+    match app-id=r#"^(gnome-system-monitor|org\.gnome\.SystemMonitor|io\.missioncenter\.MissionCenter)$"# is-focused=true
+    match app-id=r#"^evince$"# is-focused=true
+    match app-id=r#"^(eog|org\.gnome\.Loupe)$"# is-focused=true
+    opacity 0.82
+}
+
+// ========================================
+// Text Editors — focused: 0.8 / unfocused: 0.7
+// ========================================
+window-rule {
+    match app-id=r#"^(gedit|org\.gnome\.TextEditor|mousepad)$"#
+    opacity 0.7
+}
+window-rule {
+    match app-id=r#"^(gedit|org\.gnome\.TextEditor|mousepad)$"# is-focused=true
+    opacity 0.8
+}
+
+// ========================================
+// Wallpaper tools — focused: 0.9 / unfocused: 0.7
+// ========================================
+window-rule {
+    match app-id=r#"^[Ww]aytrogen$"#
+    opacity 0.7
+}
+window-rule {
+    match app-id=r#"^[Ww]aytrogen$"# is-focused=true
+    opacity 0.9
+}
+
+// ========================================
+// Misc apps
+// ========================================
+// Deluge — focused: 0.9 / unfocused: 0.8
+window-rule {
+    match app-id=r#"^deluge$"#
+    opacity 0.8
+}
+window-rule {
+    match app-id=r#"^deluge$"# is-focused=true
+    opacity 0.9
+}
+
+// Seahorse — focused: 0.9 / unfocused: 0.8
+window-rule {
+    match app-id=r#"^seahorse$"#
+    opacity 0.8
+}
+window-rule {
+    match app-id=r#"^seahorse$"# is-focused=true
+    opacity 0.9
+}
+
+// ========================================
+// Picture-in-Picture — focused: 0.95 / unfocused: 0.75
+// ========================================
+window-rule {
+    match title=r#"^Picture-in-Picture$"#
+    opacity 0.75
+}
+window-rule {
+    match title=r#"^Picture-in-Picture$"# is-focused=true
+    opacity 0.95
+}
