@@ -28,13 +28,13 @@
   "useFahrenheit": false,
   "windSpeedUnit": "kmh",
   "nightModeEnabled": false,
-  "animationSpeed": 1,
-  "customAnimationDuration": 500,
-  "syncComponentAnimationSpeeds": true,
-  "popoutAnimationSpeed": 1,
-  "popoutCustomAnimationDuration": 150,
-  "modalAnimationSpeed": 1,
-  "modalCustomAnimationDuration": 150,
+  "animationSpeed": 4,
+  "customAnimationDuration": 119,
+  "syncComponentAnimationSpeeds": false,
+  "popoutAnimationSpeed": 4,
+  "popoutCustomAnimationDuration": 90,
+  "modalAnimationSpeed": 4,
+  "modalCustomAnimationDuration": 90,
   "enableRippleEffects": true,
   "wallpaperFillMode": "Stretch",
   "blurredWallpaperLayer": false,
@@ -407,7 +407,10 @@
   "screenPreferences": {},
   "showOnLastDisplay": {},
   "niriOutputSettings": {
-    "eDP-1": {}
+    "eDP-1": {},
+    "HDMI-A-1": {
+      "focusAtStartup": true
+    }
   },
   "hyprlandOutputSettings": {},
   "displayProfiles": {},
@@ -450,7 +453,7 @@
       "transparency": 1,
       "widgetTransparency": 1,
       "squareCorners": false,
-      "noBackground": true,
+      "noBackground": false,
       "gothCornersEnabled": false,
       "gothCornerRadiusOverride": false,
       "gothCornerRadiusValue": 12,

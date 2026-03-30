@@ -61,7 +61,7 @@ input {
         // accel-speed 0.2
         // accel-profile "flat"
         // scroll-method "two-finger"
-        disabled-on-external-mouse
+        // disabled-on-external-mouse
     }
 
     mouse {
@@ -289,5 +289,3 @@ include "dms/alttab.kdl"
 include "dms/binds.kdl"
 include "dms/outputs.kdl"
 include "dms/cursor.kdl"
-
-include "dms/windowrules.kdl"

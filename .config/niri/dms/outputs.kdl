@@ -6,3 +6,10 @@ output "eDP-1" {
     position x=0 y=0
 }
 
+output "HDMI-A-1" {
+    mode "1024x768@60.004"
+    scale 1
+    position x=1536 y=0
+    focus-at-startup
+}
+
