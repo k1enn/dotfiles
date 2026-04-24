@@ -1,51 +1,14 @@
 return {
   {
-    "Mofiqul/vscode.nvim",
+    "navarasu/onedark.nvim",
     lazy = false,
     priority = 1000,
     config = function()
-      local vscode = require("vscode")
-      vscode.setup({
+      require("onedark").setup({
+        style = "darker",
         transparent = true,
-        italic_comments = true,
-        underline_links = true,
-        disable_nvimtree_bg = true,
-        group_overrides = {
-          -- Better visual mode highlight - muted purple bg
-          Visual = { bg = "#33395a", fg = "NONE" },
-          VisualNOS = { bg = "#33395a", fg = "NONE" },
-          -- Line number column matches background
-          LineNr = { bg = "NONE" },
-          CursorLineNr = { bg = "NONE" },
-          SignColumn = { bg = "NONE" },
-          -- Vertical separator and status line transparent
-          VertSplit = { bg = "NONE", fg = "#393939" },
-          WinSeparator = { bg = "NONE", fg = "#393939" },
-          StatusLine = { bg = "NONE" },
-          StatusLineNC = { bg = "NONE" },
-          -- Better TS/JS highlighting
-          ["@variable"] = { fg = "#9CDCFE" },
-          ["@variable.builtin"] = { fg = "#9CDCFE" },
-          ["@property"] = { fg = "#9CDCFE" },
-          ["@function"] = { fg = "#DCDCAA" },
-          ["@function.call"] = { fg = "#DCDCAA" },
-          ["@method"] = { fg = "#DCDCAA" },
-          ["@method.call"] = { fg = "#DCDCAA" },
-          ["@keyword"] = { fg = "#569CD6" },
-          ["@keyword.function"] = { fg = "#569CD6" },
-          ["@keyword.return"] = { fg = "#C586C0" },
-          ["@type"] = { fg = "#4EC9B0" },
-          ["@type.builtin"] = { fg = "#4EC9B0" },
-          ["@constructor"] = { fg = "#4EC9B0" },
-          ["@string"] = { fg = "#CE9178" },
-          ["@number"] = { fg = "#B5CEA8" },
-          ["@boolean"] = { fg = "#4e94ce" },
-          ["@comment"] = { fg = "#6A9955", italic = true },
-          -- SQL specific
-          ["@keyword.sql"] = { fg = "#569CD6" },
-          ["@type.sql"] = { fg = "#4EC9B0" },
-        },
       })
+      require("onedark").load()
     end,
   },
   {
@@ -102,7 +65,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "oxocarbon",
+      colorscheme = "onedark",
     },
   },
 }
