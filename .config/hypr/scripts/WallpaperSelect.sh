@@ -45,11 +45,7 @@ rofi_override="element-icon{size:${adjusted_icon_size}%;}"
 
 # Kill existing wallpaper daemons for video
 kill_wallpaper_for_video() {
-<<<<<<< HEAD
-  swww kill 2>/dev/null
-=======
   awww kill 2>/dev/null
->>>>>>> hyprland-monochrome
   pkill mpvpaper 2>/dev/null
   pkill swaybg 2>/dev/null
   pkill hyprpaper 2>/dev/null
@@ -185,21 +181,12 @@ apply_image_wallpaper() {
 
   kill_wallpaper_for_image
 
-<<<<<<< HEAD
-  if ! pgrep -x "swww-daemon" >/dev/null; then
-    echo "Starting swww-daemon..."
-    swww-daemon --format xrgb &
-  fi
-
-  swww img -o "$focused_monitor" "$image_path" $SWWW_PARAMS
-=======
   if ! pgrep -x "awww-daemon" >/dev/null; then
     echo "Starting awww-daemon..."
     awww-daemon --format xrgb &
   fi
 
   awww img -o "$focused_monitor" "$image_path" $SWWW_PARAMS
->>>>>>> hyprland-monochrome
 
   # Run additional scripts (pass the image path to avoid cache race conditions)
   "$SCRIPTSDIR/WallustSwww.sh" "$image_path"
