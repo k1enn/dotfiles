@@ -14,27 +14,17 @@
     <img style="padding-left: 10px;" src="https://github.com/k1enn/software-engineer-notes/blob/main/subjects/web-programming/Buoi1/Bai01/images/linkedin.png" alt="LinkedIn Logo" width="20" height="20" />
     <strong><a style="text-decoration:none;" href="https://www.linkedin.com/in/k1enn/" target="_blank">LinkedIn</a></strong>
   </p>
-      <small>September, 2025</small>
+      <small>April, 2026</small>
 </div>
 
-Backup my dotfiles in case Fedora system explode.
+Backup my dotfiles in case CachyOS system explode.
 
 ## **System informations**
 
-- **Linux distro**: Fedora Workstation 42.
+- **Linux distro**: CachyOS
 - **WM**: Hyprland (JaKooLit's Dotfiles)
 - **DRM**: XWayland.
 
 ### Currently
-- WM: DRM (X11)
+- WM: Hyprland
 
----
-
-## Installation
-```
-sudo dnf install stow 
-git clone git@github.com:k1enn/dotfiles.git ~/.dotfiles 
-cd ~/.dotfiles
-stow .
-
-```
