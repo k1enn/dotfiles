@@ -1,6 +1,6 @@
 /* ---- 💫 https://github.com/JaKooLit 💫 ---- */
-/* Wallust dynamic colors */
-@import 'wallust/colors-waybar.css';
+/*  Wallust themed - import colors first */
+@import "./wallust/colors-waybar.css";
 
 * {
   font-family: "JetBrainsMono Nerd Font";
@@ -27,18 +27,19 @@ tooltip {
 tooltip label {
   color: @foreground;
 }
+
 /*-----module groups----*/
 .modules-right {
-  background-color: @background-alt;
-  color: @foreground;
+  background-color: transparent;
   border-radius: 10px;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  color: @foreground;
+  padding-top: 2px;
+  padding-bottom: 2px;
   padding-right: 3px;
   padding-left: 3px;
 }
 .modules-center {
-  background-color: @background-alt;
+  background-color: transparent;
   color: @foreground;
   border-radius: 10px;
   padding-top: 0px;
@@ -47,7 +48,7 @@ tooltip label {
   padding-left: 3px;
 }
 .modules-left {
-  background-color: @background-alt;
+  background-color: transparent;
   color: @foreground;
   border-radius: 10px;
   padding-top: 0px;
@@ -55,6 +56,7 @@ tooltip label {
   padding-right: 3px;
   padding-left: 3px;
 }
+
 /*-----modules indv----*/
 #taskbar button,
 #workspaces button {
@@ -73,7 +75,7 @@ tooltip label {
 #taskbar button:hover,
 #workspaces button:hover {
   color: @foreground;
-  border: none;
+  border: solid 1px @foreground;
 }
 
 #taskbar button.active,
@@ -149,15 +151,17 @@ tooltip label {
   padding-right: 5px;
   padding-left: 5px;
 }
+
 /*-----Indicators----*/
 #custom-hypridle.notactive,
 #idle_inhibitor.activated {
-  color: @color6;
+  color: @color5;
 }
 
 #pulseaudio.muted {
   color: @color1;
 }
+
 #temperature.critical {
   color: @color1;
 }
@@ -200,10 +204,9 @@ tooltip label {
   border-radius: 5px;
 }
 
-  #custom-power {
-      background-image: url("/home/k1en/.config/waybar/icons/arch.png");
-      background-size: 14px 14px;
-      background-repeat: no-repeat;
-      background-position: center;
-      margin-left: 6px;
-  }
+#custom-power {
+  background-image: url("/home/k1en/.config/waybar/icons/arch.png");
+  background-size: 14px 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+}

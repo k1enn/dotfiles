@@ -29,8 +29,8 @@
     "keybind" : "l"
 }
 {
-    "label" : "idle",
-    "action" : "hypridle",
-    "text" : "Idle",
-    "keybind" : "i"
+    "label" : "Close",
+    "action" : "",
+    "text" : "Close",
+    "keybind" : "x"
 }
