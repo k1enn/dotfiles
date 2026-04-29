@@ -14,8 +14,10 @@
 window#waybar,
 window#waybar.empty,
 window#waybar.empty #window {
-  background-color: transparent;
-  padding: 0px;
+  background-color: @background;
+  padding-right: 5px;
+  padding-left: 5px;
+  border-radius: 10px;
 }
 
 tooltip {

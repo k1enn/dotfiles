@@ -179,7 +179,9 @@ apply_image_wallpaper() {
   fi
 
   awww img -o "$focused_monitor" "$image_path" $SWWW_PARAMS
+  # Update wallpaper_effect target that hyprlock reads ln -sf "$image_path" "$HOME/.config/hypr/wallpaper_effects/.wallpaper_current"
 
+  wallust run "$image_path"
   # Run additional scripts (pass the image path to avoid cache race conditions)
   "$SCRIPTSDIR/WallustSwww.sh" "$image_path"
   sleep 2

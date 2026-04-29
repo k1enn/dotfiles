@@ -15,7 +15,8 @@ export SUDO_PROMPT="Password for root access:"
 if [ -d "$HOME/.local/bin" ] ;
   then PATH="$HOME/.local/bin:$PATH"
 fi
-
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 # LOAD ENGINE
 autoload -Uz compinit
 
@@ -118,3 +119,4 @@ alias lla='ls -la'
 alias lt='ls --tree'
 # Set-up FZF key bindings (CTRL R for fuzzy history finder)
 source <(fzf --zsh)
+source /usr/share/nvm/init-nvm.sh

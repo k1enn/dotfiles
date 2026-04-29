@@ -58,8 +58,8 @@ wlogout.target = '~/.config/wlogout/nova.css'
 neovim.template = 'colors-neovim.lua'
 neovim.target = '~/.config/nvim/lua/wallust/colors.lua'
 
-#swaync.template = 'colors-swaync.css'
-#swaync.target = '~/.config/swaync/wallust/colors-wallust.css'
+swaync.template = 'colors-swaync.css'
+swaync.target = '~/.config/swaync/wallust/colors-wallust.css'
 
 #macchina.template = 'colors-macchina.toml'
 #macchina.target = '~/.config/macchina/themes/wallust.toml'
