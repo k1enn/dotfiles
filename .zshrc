@@ -15,9 +15,6 @@ export SUDO_PROMPT="Password for root access:"
 if [ -d "$HOME/.local/bin" ] ;
   then PATH="$HOME/.local/bin:$PATH"
 fi
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-# LOAD ENGINE
 autoload -Uz compinit
 
 local zcompdump="$HOME/.config/zsh/zcompdump"
@@ -120,3 +117,14 @@ alias lt='ls --tree'
 # Set-up FZF key bindings (CTRL R for fuzzy history finder)
 source <(fzf --zsh)
 source /usr/share/nvm/init-nvm.sh
+
+
+# bun completions
+[ -s "/home/k1en/.bun/_bun" ] && source "/home/k1en/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
