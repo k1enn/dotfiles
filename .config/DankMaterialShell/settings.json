@@ -1,6 +1,6 @@
 {
-  "currentThemeName": "custom",
-  "currentThemeCategory": "registry",
+  "currentThemeName": "dynamic",
+  "currentThemeCategory": "dynamic",
   "customThemeFile": "/home/k1en/.config/DankMaterialShell/themes/amoledBlack/theme.json",
   "registryThemeVariants": {
     "amoledBlack": {
@@ -17,7 +17,7 @@
       }
     }
   },
-  "matugenScheme": "scheme-tonal-spot",
+  "matugenScheme": "scheme-monochrome",
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
   "popupTransparency": 1,
@@ -247,7 +247,7 @@
   "useAutoLocation": false,
   "weatherEnabled": true,
   "networkPreference": "auto",
-  "iconTheme": "System Default",
+  "iconTheme": "breeze-dark",
   "cursorSettings": {
     "theme": "System Default",
     "size": 24,
@@ -333,7 +333,7 @@
   "matugenTemplateKitty": true,
   "matugenTemplateFoot": true,
   "matugenTemplateAlacritty": true,
-  "matugenTemplateNeovim": false,
+  "matugenTemplateNeovim": true,
   "matugenTemplateWezterm": true,
   "matugenTemplateDgop": true,
   "matugenTemplateKcolorscheme": true,
@@ -489,7 +489,7 @@
       "borderColor": "surfaceText",
       "borderOpacity": 1,
       "borderThickness": 1,
-      "fontScale": 1,
+      "fontScale": 1.2,
       "autoHide": false,
       "autoHideDelay": 250,
       "openOnOverview": false,
@@ -500,7 +500,8 @@
       "shadowIntensity": 0,
       "maximizeWidgetIcons": false,
       "maximizeWidgetText": false,
-      "maximizeDetection": true
+      "maximizeDetection": true,
+      "iconScale": 1.1
     }
   ],
   "desktopClockEnabled": false,
