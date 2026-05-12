@@ -481,9 +481,9 @@
       "transparency": 1,
       "widgetTransparency": 1,
       "squareCorners": false,
-      "noBackground": true,
+      "noBackground": false,
       "gothCornersEnabled": false,
-      "gothCornerRadiusOverride": false,
+      "gothCornerRadiusOverride": true,
       "gothCornerRadiusValue": 12,
       "borderEnabled": false,
       "borderColor": "surfaceText",
@@ -501,7 +501,8 @@
       "maximizeWidgetIcons": false,
       "maximizeWidgetText": false,
       "maximizeDetection": true,
-      "iconScale": 1.1
+      "iconScale": 1.1,
+      "widgetOutlineEnabled": false
     }
   ],
   "desktopClockEnabled": false,
