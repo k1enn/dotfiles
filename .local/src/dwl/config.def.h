@@ -30,8 +30,10 @@ static const Rule rules[] = {
 	/* app_id             title       tags mask     isfloating   monitor */
 	{ "Gimp_EXAMPLE",     NULL,       0,            1,           -1 }, /* Start on currently visible tags floating, not tiled */
 	{ "firefox_EXAMPLE",  NULL,       1 << 8,       0,           -1 }, /* Start on ONLY tag "9" */
-	/* scratchpad: floating terminal parked on tag 9, toggled with MODKEY+grave */
+	/* scratchpad: spawned at autostart, hidden on tag 9, toggled with MODKEY+grave */
 	{ "scratchpad",       NULL,       1 << 8,       1,           -1 },
+	/* floating terminal: spawned centered with MODKEY+n (centered via alwayscenter) */
+	{ "floatterm",        NULL,       0,            1,           -1 },
 	/* wl-mirror window floats so the monitor-menu mirror option behaves */
 	{ "at.yrlf.wl_mirror",NULL,       0,            1,           -1 },
     /* default/example rule: can be changed but cannot be eliminated; at least one rule must exist */
@@ -128,7 +130,10 @@ static const enum libinput_config_tap_button_map button_map = LIBINPUT_CONFIG_TA
 static const char *termcmd[]    = { "foot", NULL };
 static const char *menucmd[]    = { "fuzzel", NULL };
 static const char *scratchcmd[] = { "foot", "--app-id=scratchpad", NULL };
+static const char *floattermcmd[]= { "foot", "--app-id=floatterm", NULL };
 static const char *monitorcmd[] = { "monitor-menu.sh", NULL };
+static const char *powercmd[]   = { "power-menu.sh", NULL };
+static const char *refreshcmd[] = { "refresh-menu.sh", NULL };
 /* clipboard history: cliphist + fuzzel picker (deps: cliphist, wl-clipboard, fuzzel) */
 static const char *clipcmd[]    = { "/bin/sh", "-c", "cliphist list | fuzzel --dmenu | cliphist decode | wl-copy", NULL };
 /* region screenshot to clipboard (deps: grim, slurp, wl-clipboard) */
@@ -141,7 +146,10 @@ static const Key keys[] = {
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_V,           spawn,            {.v = clipcmd} },
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_S,           spawn,            {.v = shotcmd} },
 	{ MODKEY,                    XKB_KEY_grave,       toggleview,       {.ui = 1 << 8} },
-	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_asciitilde,  spawn,            {.v = scratchcmd} },
+	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_asciitilde,  spawn,            {.v = scratchcmd} }, /* respawn scratchpad if killed */
+	{ MODKEY,                    XKB_KEY_n,           spawn,            {.v = floattermcmd} },
+	{ MODKEY,                    XKB_KEY_a,           spawn,            {.v = powercmd} },
+	{ MODKEY,                    XKB_KEY_r,           spawn,            {.v = refreshcmd} },
 	{ MODKEY,                    XKB_KEY_o,           spawn,            {.v = monitorcmd} },
 	{ MODKEY,					 XKB_KEY_Return,      spawn,            {.v = termcmd} },
 	{ MODKEY,                    XKB_KEY_b,           togglebar,        {0} },

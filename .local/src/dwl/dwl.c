@@ -2034,6 +2034,12 @@ mapnotify(struct wl_listener *listener, void *data)
 	} else {
 		applyrules(c);
 	}
+	/* alwayscenter: center floating clients in their monitor work area (dwl#390) */
+	if (c->isfloating && c->mon)
+		resize(c, (struct wlr_box){
+			.x = c->mon->w.x + (c->mon->w.width  - c->geom.width)  / 2,
+			.y = c->mon->w.y + (c->mon->w.height - c->geom.height) / 2,
+			.width = c->geom.width, .height = c->geom.height }, 0);
 	drawbars();
 
 unset_fullscreen:
