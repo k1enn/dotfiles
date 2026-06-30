@@ -148,6 +148,7 @@ typedef struct {
 	uint32_t tags;
 	int isfloating, isurgent, isfullscreen;
 	uint32_t resize; /* configure serial of a pending resize */
+	struct wl_list link_temp; /* simple_scratchpad: membership in a scratchpad slot */
 } Client;
 
 typedef struct {
@@ -371,8 +372,11 @@ static void tagmon(const Arg *arg);
 static void tile(Monitor *m);
 static void togglebar(const Arg *arg);
 static void togglefloating(const Arg *arg);
-static void togglescratch(const Arg *arg);
 static void togglefullscreen(const Arg *arg);
+static void addscratchpad(const Arg *arg);
+static void togglescratchpad(const Arg *arg);
+static void removescratchpad(const Arg *arg);
+static void setscratchpad(const Arg *arg);
 static void toggletag(const Arg *arg);
 static void toggleview(const Arg *arg);
 static void unlocksession(struct wl_listener *listener, void *data);
@@ -501,6 +505,12 @@ static struct wlr_xwayland *xwayland;
 
 /* attempt to encapsulate suck into one file */
 #include "client.h"
+
+/* simple_scratchpad: per-slot client lists + visibility, included impl */
+static struct wl_list scratchpad_clients[SCRATCHPAD_COUNT];
+static int scratchpad_visible[SCRATCHPAD_COUNT];
+static int scratchpad_sel = 0;
+#include "simple_scratchpad.c"
 
 /* function implementations */
 void
@@ -1498,10 +1508,20 @@ void
 destroynotify(struct wl_listener *listener, void *data)
 {
 	/* Called when the xdg_toplevel is destroyed. */
-	Client *c = wl_container_of(listener, c, destroy);
+	Client *sc, *c = wl_container_of(listener, c, destroy);
 	wl_list_remove(&c->destroy.link);
 	wl_list_remove(&c->set_title.link);
 	wl_list_remove(&c->fullscreen.link);
+	/* simple_scratchpad: drop a destroyed client from any slot it was in */
+	for (int i = 0; i < SCRATCHPAD_COUNT; i++) {
+		wl_list_for_each(sc, &scratchpad_clients[i], link_temp) {
+			if (sc == c) {
+				wl_list_remove(&c->link_temp);
+				goto scratchpad_destroy_done;
+			}
+		}
+	}
+scratchpad_destroy_done:;
 #ifdef XWAYLAND
 	if (c->type != XDGShell) {
 		wl_list_remove(&c->activate.link);
@@ -2536,11 +2556,23 @@ setcursorshape(struct wl_listener *listener, void *data)
 void
 setfloating(Client *c, int floating)
 {
-	Client *p = client_get_parent(c);
+	Client *sc, *p = client_get_parent(c);
 	c->isfloating = floating;
 	/* If in floating layout do not change the client's layer */
 	if (!c->mon || !client_surface(c)->mapped || !c->mon->lt[c->mon->sellt]->arrange)
 		return;
+	/* simple_scratchpad: unfloating removes a client from its slot */
+	if (!floating) {
+		for (int i = 0; i < SCRATCHPAD_COUNT; i++) {
+			wl_list_for_each(sc, &scratchpad_clients[i], link_temp) {
+				if (sc == c) {
+					wl_list_remove(&c->link_temp);
+					goto scratchpad_float_done;
+				}
+			}
+		}
+scratchpad_float_done:;
+	}
 	wlr_scene_node_reparent(&c->scene->node, layers[c->isfullscreen ||
 			(p && p->isfullscreen) ? LyrFS
 			: c->isfloating ? LyrFloat : LyrTile]);
@@ -2759,6 +2791,11 @@ setup(void)
 	 */
 	wl_list_init(&clients);
 	wl_list_init(&fstack);
+	/* simple_scratchpad: init each slot's client list, start visible */
+	for (int j = 0; j < SCRATCHPAD_COUNT; j++) {
+		wl_list_init(&scratchpad_clients[j]);
+		scratchpad_visible[j] = 1;
+	}
 
 	xdg_shell = wlr_xdg_shell_create(dpy, 6);
 	wl_signal_add(&xdg_shell->events.new_toplevel, &new_xdg_toplevel);
@@ -2995,28 +3032,6 @@ togglefloating(const Arg *arg)
 	/* return if fullscreen */
 	if (sel && !sel->isfullscreen)
 		setfloating(sel, !sel->isfloating);
-}
-
-/* Single drop-down scratchpad (fork-local; re-apply after upstream pull).
- * Hidden it parks on SCRATCHTAG (1<<9), outside the 9 nav tags, so it is never
- * reachable by tag navigation. First press spawns it (maps centered, current tag). */
-#define SCRATCHTAG (1 << 9)
-void
-togglescratch(const Arg *arg)
-{
-	Client *c, *s = NULL;
-	const char *id;
-	wl_list_for_each(c, &clients, link)
-		if ((id = client_get_appid(c)) && !strcmp(id, "scratchpad")) { s = c; break; }
-	if (!s) { spawn(arg); return; }
-	if (s->tags & selmon->tagset[selmon->seltags]) {
-		s->tags = SCRATCHTAG;                  /* visible here -> hide off-screen */
-		arrange(selmon);
-	} else {
-		setmon(s, selmon, selmon->tagset[selmon->seltags]); /* hidden -> pull to current view */
-		focusclient(s, 1);
-		arrange(selmon);
-	}
 }
 
 void

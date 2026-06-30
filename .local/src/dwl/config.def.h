@@ -26,13 +26,12 @@ static char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 /* logging */
 static int log_level = WLR_ERROR;
 
+#define SCRATCHPAD_COUNT 1   /* simple_scratchpad: number of scratchpad slots */
+
 static const Rule rules[] = {
 	/* app_id             title       tags mask     isfloating   monitor */
 	{ "Gimp_EXAMPLE",     NULL,       0,            1,           -1 }, /* Start on currently visible tags floating, not tiled */
 	{ "firefox_EXAMPLE",  NULL,       1 << 8,       0,           -1 }, /* Start on ONLY tag "9" */
-	/* scratchpad: drop-down floating term, toggled with MODKEY+grave (togglescratch).
-	 * tags=0 -> spawns on current view; hidden it parks off-screen on tag bit 1<<9. */
-	{ "scratchpad",       NULL,       0,            1,           -1 },
 	/* floating terminal: spawned centered with MODKEY+n (centered via alwayscenter) */
 	{ "floatterm",        NULL,       0,            1,           -1 },
 	/* wl-mirror window floats so the monitor-menu mirror option behaves */
@@ -130,7 +129,6 @@ static const enum libinput_config_tap_button_map button_map = LIBINPUT_CONFIG_TA
 /* commands */
 static const char *termcmd[]    = { "foot", NULL };
 static const char *menucmd[]    = { "fuzzel", NULL };
-static const char *scratchcmd[] = { "foot", "--app-id=scratchpad", NULL };
 static const char *floattermcmd[]= { "foot", "--app-id=floatterm", NULL };
 static const char *monitorcmd[] = { "monitor-menu.sh", NULL };
 static const char *powercmd[]   = { "power-menu.sh", NULL };
@@ -146,7 +144,10 @@ static const Key keys[] = {
 	/* --- custom: clipboard / screenshot / scratchpad / monitor --- */
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_V,           spawn,            {.v = clipcmd} },
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_S,           spawn,            {.v = shotcmd} },
-	{ MODKEY,                    XKB_KEY_grave,       togglescratch,    {.v = scratchcmd} },
+	/* simple_scratchpad: Shift+z capture focused win, z remove, grave toggle show/hide */
+	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_z,           addscratchpad,    {0} },
+	{ MODKEY,                    XKB_KEY_z,           removescratchpad, {0} },
+	{ MODKEY,                    XKB_KEY_grave,       togglescratchpad, {0} },
 	{ MODKEY,                    XKB_KEY_n,           spawn,            {.v = floattermcmd} },
 	{ MODKEY,                    XKB_KEY_a,           spawn,            {.v = powercmd} },
 	{ MODKEY,                    XKB_KEY_r,           spawn,            {.v = refreshcmd} },

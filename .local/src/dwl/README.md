@@ -65,6 +65,36 @@ effect the next time dwl is executed.
 As in the [dwm] community, we encourage users to share patches they have
 created. Check out the [dwl-patches] repository!
 
+## Fork patches (local)
+
+This tree carries a few local modifications on top of upstream dwl. Re-apply them
+after any upstream pull (grep the markers):
+
+- **alwayscenter** (`dwl.c`, in `mapnotify`) — floating clients open centered.
+- **simple_scratchpad** ([dwl-patches], v0.8) — dwm-style scratchpad. Lives in
+  `simple_scratchpad.c` (included from `dwl.c`) plus small hunks in `dwl.c`
+  (Client struct `link_temp`, `destroynotify`, `setfloating`, `setup`) and
+  keybinds in `config.def.h`. Configured for a single slot (`SCRATCHPAD_COUNT 1`).
+
+### Scratchpad usage
+
+Build and install after any of the above change:
+
+    cd ~/.local/src/dwl && make && sudo make install
+    # then re-login (Wayland can't restart the compositor in place)
+
+It captures an existing window — there is no dedicated scratch terminal:
+
+| Key | Action |
+| --- | --- |
+| `Super`+`Shift`+`z` | Add the focused window to the scratchpad (it floats) |
+| `Super`+`grave` (`` ` ``) | Toggle the scratchpad hidden/shown on the current tag |
+| `Super`+`z` | Remove the focused window from the scratchpad |
+
+Typical flow: open a terminal (`Super`+`Return`), `Super`+`Shift`+`z` to capture
+it, then `Super`+`` ` `` to drop it in/out. Un-floating a captured window (or
+closing it) removes it from the scratchpad automatically.
+
 ## Running dwl
 
 dwl can be run on any of the backends supported by wlroots. This means you can
