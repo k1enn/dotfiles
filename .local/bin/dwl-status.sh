@@ -127,18 +127,17 @@ pp_click() {
 
 refresh_click() {
 	command -v wlr-randr >/dev/null 2>&1 || return
-	out=$(wlr_out); res=$(wlr_res); cur=$(wlr_hz)
+	out=$(wlr_out); res=$(wlr_res)
 	[ -n "$out" ] && [ -n "$res" ] || return
-	# integer rates for the current resolution, ascending & unique
+	# Full-precision rates: wlr-randr only matches the exact mode value, so
+	# 60 != 60.061001 and `--mode res@60` silently no-ops. Keep the floats.
+	cur=$(wlr-randr 2>/dev/null | awk '/current/{for(i=1;i<=NF;i++) if($i=="Hz"){print $(i-1); exit}}')
 	rates=$(wlr-randr 2>/dev/null | awk -v r="$res" \
-		'$1==r{for(i=1;i<=NF;i++) if($i=="Hz") print int($(i-1))}' | sort -un)
-	# next rate after the current one, wrapping to the first
+		'$1==r{for(i=1;i<=NF;i++) if($i=="Hz") print $(i-1)}')
+	# next rate after the current one (listed order), wrapping to the first
 	next=$(printf '%s\n' "$rates" | awk -v c="$cur" \
 		'{a[NR]=$1} END{for(i=1;i<=NR;i++) if(a[i]==c){print (i<NR)?a[i+1]:a[1]; exit}}')
 	[ -n "$next" ] || next=$(printf '%s\n' "$rates" | head -1)
-	# ponytail: integer rate may not byte-match a float mode (144 vs 144.001);
-	# wlr-randr resolves the closest, no-op if it can't. Add precise float here
-	# only if a panel ever refuses the match.
 	[ -n "$next" ] && wlr-randr --output "$out" --mode "${res}@${next}" 2>/dev/null
 }
 
