@@ -366,6 +366,7 @@ static void setsel(struct wl_listener *listener, void *data);
 static void setup(void);
 static void spawn(const Arg *arg);
 static void startdrag(struct wl_listener *listener, void *data);
+static void statuscmd(const Arg *arg);
 static int statusin(int fd, unsigned int mask, void *data);
 static void tag(const Arg *arg);
 static void tagmon(const Arg *arg);
@@ -447,7 +448,9 @@ static struct wlr_box sgeom;
 static struct wl_list mons;
 static Monitor *selmon;
 
-static char stext[256];
+static char stext[256];     /* clean status text, drawn in the bar */
+static char rawstext[256];  /* raw status w/ per-block signal bytes, for click routing */
+static int statussig;       /* signal of the status block last clicked (0 = none) */
 static struct wl_event_source *status_event_source;
 
 static const struct wlr_buffer_impl buffer_impl = {
@@ -796,6 +799,23 @@ buttonpress(struct wl_listener *listener, void *data)
 				click = ClkLtSymbol;
 			else if (cx > selmon->b.width - (TEXTW(selmon, stext) - selmon->lrpad + 2)) {
 				click = ClkStatus;
+				/* walk rawstext (signal bytes delimit blocks); the byte
+				 * preceding the segment the cursor sits in is statussig */
+				statussig = 0;
+				char *st, *ss, sc;
+				x = selmon->b.width - (TEXTW(selmon, stext) - selmon->lrpad + 2);
+				for (st = ss = rawstext; *ss && cx >= x; ss++) {
+					if ((unsigned char)*ss < ' ') {
+						sc = *ss;
+						*ss = '\0';
+						x += TEXTW(selmon, st) - selmon->lrpad;
+						*ss = sc;
+						st = ss + 1;
+						if (x >= cx)
+							break;
+						statussig = sc;
+					}
+				}
 			} else
 				click = ClkTitle;
 		}
@@ -2954,10 +2974,39 @@ statusin(int fd, unsigned int mask, void *data)
 	status[n] = '\0';
 	status[strcspn(status, "\n")] = '\0';
 
-	strncpy(stext, status, sizeof(stext));
+	/* keep the raw line (with block signal bytes) for click routing, and a
+	 * cleaned copy (control bytes stripped) for drawing. */
+	strncpy(rawstext, status, sizeof(rawstext) - 1);
+	rawstext[sizeof(rawstext) - 1] = '\0';
+	char *r, *w;
+	for (r = rawstext, w = stext; *r; r++)
+		if ((unsigned char)*r >= ' ')
+			*w++ = *r;
+	*w = '\0';
 	drawbars();
 
 	return 0;
+}
+
+/* run dwl-status.sh in "click" mode with the clicked block's signal and the
+ * mouse button (1=left, 2=middle, 3=right); the script maps these to actions. */
+void
+statuscmd(const Arg *arg)
+{
+	char sig[4], btn[4];
+
+	if (statussig == 0)
+		return;
+	snprintf(sig, sizeof sig, "%d", statussig);
+	snprintf(btn, sizeof btn, "%d", arg->i);
+	if (fork() == 0) {
+		close(STDIN_FILENO);
+		open("/dev/null", O_RDWR);
+		dup2(STDERR_FILENO, STDOUT_FILENO);
+		setsid();
+		execlp("dwl-status.sh", "dwl-status.sh", "click", sig, btn, (char *)NULL);
+		die("dwl: execlp dwl-status.sh failed:");
+	}
 }
 
 void
