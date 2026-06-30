@@ -24,11 +24,10 @@ WLR_LIBS = `$(PKG_CONFIG) --libs wlroots-0.19`
 #	-I$(PWD)/wlroots/0.19/include/wlroots-0.19
 #WLR_LIBS = -Wl,-rpath,$(PWD)/wlroots/0.19/lib64 -L$(PWD)/wlroots/0.19/lib64 -lwlroots-0.19
 
-XWAYLAND =
-XLIBS =
-# Uncomment to build XWayland support
-#XWAYLAND = -DXWAYLAND
-#XLIBS = xcb xcb-icccm
+# XWayland enabled so X11-only apps (e.g. firefox default, Xorg games) run.
+# Needs the `xorg-xwayland` package + wlroots built with xwayland support.
+XWAYLAND = -DXWAYLAND
+XLIBS = xcb xcb-icccm
 
 # dwl itself only uses C99 features, but wlroots' headers use anonymous unions (C11).
 # To avoid warnings about them, we do not use -std=c99 and instead of using the
