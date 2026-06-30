@@ -1,0 +1,8 @@
+datagrip
+datagrip-jre
+gnome-browser-connector-git
+larksuite-bin
+netcoredbg
+networkmanager-qt5
+oracle-sqldeveloper
+sdkmanager
