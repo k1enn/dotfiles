@@ -376,7 +376,6 @@ static void togglefullscreen(const Arg *arg);
 static void addscratchpad(const Arg *arg);
 static void togglescratchpad(const Arg *arg);
 static void removescratchpad(const Arg *arg);
-static void setscratchpad(const Arg *arg);
 static void toggletag(const Arg *arg);
 static void toggleview(const Arg *arg);
 static void unlocksession(struct wl_listener *listener, void *data);

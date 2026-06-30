@@ -63,15 +63,3 @@ removescratchpad(const Arg *arg)
 		}
 	}
 }
-
-void
-setscratchpad(const Arg *arg)
-{
-	int idx = arg->i;
-
-	if (idx < 0)
-		idx = 0;
-	else if (idx >= SCRATCHPAD_COUNT)
-		idx = SCRATCHPAD_COUNT - 1;
-	scratchpad_sel = idx;
-}
