@@ -88,4 +88,11 @@ build() {
 }
 
 [ "$1" = once ] && { build; exit 0; }
-while :; do build; sleep 2; done
+
+# Signal-driven refresh: USR1 forces an immediate rebuild so volume/brightness
+# keypresses update the bar instantly instead of waiting out the 2s poll.
+# `sleep & wait` lets the signal interrupt the sleep (plain `sleep` would block
+# it until the 2s elapse). Keybinds send USR1 to the pid we drop here.
+echo $$ > "${XDG_RUNTIME_DIR:-/tmp}/dwl-status.pid"
+trap build USR1
+while :; do build; sleep 2 & wait; done

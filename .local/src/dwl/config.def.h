@@ -186,13 +186,15 @@ static const Key keys[] = {
 	CHVT(1), CHVT(2), CHVT(3), CHVT(4), CHVT(5), CHVT(6),
 	CHVT(7), CHVT(8), CHVT(9), CHVT(10), CHVT(11), CHVT(12),
 
-	/* media + brightness (deps: pamixer, brightnessctl) */
-	{ 0,                         XKB_KEY_XF86AudioRaiseVolume,  spawn, SHCMD("pamixer -i 5") },
-	{ 0,                         XKB_KEY_XF86AudioLowerVolume,  spawn, SHCMD("pamixer -d 5") },
-	{ 0,                         XKB_KEY_XF86AudioMute,         spawn, SHCMD("pamixer -t") },
-	{ 0,                         XKB_KEY_XF86AudioMicMute,      spawn, SHCMD("pamixer --default-source -t") },
-	{ 0,                         XKB_KEY_XF86MonBrightnessUp,   spawn, SHCMD("brightnessctl set 5%+") },
-	{ 0,                         XKB_KEY_XF86MonBrightnessDown, spawn, SHCMD("brightnessctl set 5%-") },
+	/* media + brightness (deps: pamixer, brightnessctl).
+	 * RF = poke dwl-status.sh (USR1) so the bar redraws instantly, not on the 2s poll. */
+	#define RF "&& kill -USR1 $(cat ${XDG_RUNTIME_DIR:-/tmp}/dwl-status.pid 2>/dev/null) 2>/dev/null"
+	{ 0,                         XKB_KEY_XF86AudioRaiseVolume,  spawn, SHCMD("pamixer -i 5 "RF) },
+	{ 0,                         XKB_KEY_XF86AudioLowerVolume,  spawn, SHCMD("pamixer -d 5 "RF) },
+	{ 0,                         XKB_KEY_XF86AudioMute,         spawn, SHCMD("pamixer -t "RF) },
+	{ 0,                         XKB_KEY_XF86AudioMicMute,      spawn, SHCMD("pamixer --default-source -t "RF) },
+	{ 0,                         XKB_KEY_XF86MonBrightnessUp,   spawn, SHCMD("brightnessctl set 5%+ "RF) },
+	{ 0,                         XKB_KEY_XF86MonBrightnessDown, spawn, SHCMD("brightnessctl set 5%- "RF) },
 	/* lock screen (dep: swaylock) */
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_x,           spawn,           SHCMD("swaylock -f -c 000000") },
 };

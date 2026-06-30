@@ -46,8 +46,8 @@ xdg-shell-protocol.h:
 	$(WAYLAND_SCANNER) server-header \
 		$(WAYLAND_PROTOCOLS)/stable/xdg-shell/xdg-shell.xml $@
 
-config.h:
-	cp config.def.h $@
+config.h: config.def.h
+	cp $< $@
 clean:
 	rm -f dwl *.o *-protocol.h
 
