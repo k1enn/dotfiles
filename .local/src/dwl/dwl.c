@@ -798,11 +798,11 @@ buttonpress(struct wl_listener *listener, void *data)
 			} else if (cx < x + TEXTW(selmon, selmon->ltsymbol))
 				click = ClkLtSymbol;
 			else if (cx > selmon->b.width - (TEXTW(selmon, stext) - selmon->lrpad + 2)) {
-				click = ClkStatus;
+				char *st, *ss, sc;
 				/* walk rawstext (signal bytes delimit blocks); the byte
 				 * preceding the segment the cursor sits in is statussig */
+				click = ClkStatus;
 				statussig = 0;
-				char *st, *ss, sc;
 				x = selmon->b.width - (TEXTW(selmon, stext) - selmon->lrpad + 2);
 				for (st = ss = rawstext; *ss && cx >= x; ss++) {
 					if ((unsigned char)*ss < ' ') {
@@ -2960,6 +2960,7 @@ int
 statusin(int fd, unsigned int mask, void *data)
 {
 	char status[256];
+	char *r, *w;
 	ssize_t n;
 
 	if (mask & WL_EVENT_ERROR)
@@ -2978,7 +2979,6 @@ statusin(int fd, unsigned int mask, void *data)
 	 * cleaned copy (control bytes stripped) for drawing. */
 	strncpy(rawstext, status, sizeof(rawstext) - 1);
 	rawstext[sizeof(rawstext) - 1] = '\0';
-	char *r, *w;
 	for (r = rawstext, w = stext; *r; r++)
 		if ((unsigned char)*r >= ' ')
 			*w++ = *r;
