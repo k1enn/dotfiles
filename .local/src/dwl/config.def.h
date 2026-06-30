@@ -187,14 +187,17 @@ static const Key keys[] = {
 	CHVT(7), CHVT(8), CHVT(9), CHVT(10), CHVT(11), CHVT(12),
 
 	/* media + brightness (deps: pamixer, brightnessctl).
-	 * RF = poke dwl-status.sh (USR1) so the bar redraws instantly, not on the 2s poll. */
-	#define RF "&& kill -USR1 $(cat ${XDG_RUNTIME_DIR:-/tmp}/dwl-status.pid 2>/dev/null) 2>/dev/null"
+	 * RF = poke dwl-status.sh (USR1) so the bar redraws the volume instantly,
+	 * not on the 2s poll. Only the volume keybinds carry it (volume is the one
+	 * shown item that changes on keypress). Fixed $HOME path so this shell and
+	 * the status script always agree on the pidfile. */
+	#define RF "&& kill -USR1 $(cat $HOME/.cache/dwl-status.pid 2>/dev/null) 2>/dev/null"
 	{ 0,                         XKB_KEY_XF86AudioRaiseVolume,  spawn, SHCMD("pamixer -i 5 "RF) },
 	{ 0,                         XKB_KEY_XF86AudioLowerVolume,  spawn, SHCMD("pamixer -d 5 "RF) },
 	{ 0,                         XKB_KEY_XF86AudioMute,         spawn, SHCMD("pamixer -t "RF) },
-	{ 0,                         XKB_KEY_XF86AudioMicMute,      spawn, SHCMD("pamixer --default-source -t "RF) },
-	{ 0,                         XKB_KEY_XF86MonBrightnessUp,   spawn, SHCMD("brightnessctl set 5%+ "RF) },
-	{ 0,                         XKB_KEY_XF86MonBrightnessDown, spawn, SHCMD("brightnessctl set 5%- "RF) },
+	{ 0,                         XKB_KEY_XF86AudioMicMute,      spawn, SHCMD("pamixer --default-source -t") },
+	{ 0,                         XKB_KEY_XF86MonBrightnessUp,   spawn, SHCMD("brightnessctl set 5%+") },
+	{ 0,                         XKB_KEY_XF86MonBrightnessDown, spawn, SHCMD("brightnessctl set 5%-") },
 	/* lock screen (dep: swaylock) */
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_x,           spawn,           SHCMD("swaylock -f -c 000000") },
 };
