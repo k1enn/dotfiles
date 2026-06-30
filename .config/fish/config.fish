@@ -5,6 +5,12 @@ if not status is-interactive
     return
 end
 
+# Auto-start dwl on tty1 login (no display manager). exec replaces the shell,
+# so quitting dwl returns to the console instead of a half-dead login.
+if status is-login; and test (tty) = /dev/tty1; and not set -q WAYLAND_DISPLAY; and not set -q DISPLAY
+    exec ~/.local/bin/start-dwl.sh
+end
+
 # -----------------------------------------------------------------------------
 # CUSTOM GREETING
 # -----------------------------------------------------------------------------
