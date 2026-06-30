@@ -22,11 +22,8 @@ Backup my dotfiles in case Fedora system explode.
 ## **System informations**
 
 - **Linux distro**: Fedora Workstation 42.
-- **WM**: Hyprland (JaKooLit's Dotfiles)
-- **DRM**: XWayland.
-
-### Currently
-- WM: DRM (X11)
+- **WM**: dwl (suckless, Wayland)
+- **Display server**: Wayland (wlroots)
 
 ---
 
@@ -38,3 +35,70 @@ cd ~/.dotfiles
 stow .
 
 ```
+
+## dwl keybindings
+
+`MOD` = Super (Win) key. Config: `.local/src/dwl/config.def.h`.
+
+### Apps & actions
+| Key | Action |
+|-----|--------|
+| `MOD+Return` | Terminal (foot) |
+| `MOD+Space` | App launcher (fuzzel) |
+| `MOD+Shift+~` | Scratchpad terminal |
+| `MOD+grave` | Toggle scratchpad tag (9) |
+| `MOD+O` | Monitor menu |
+| `MOD+Shift+V` | Clipboard history picker |
+| `MOD+Shift+S` | Region screenshot → clipboard |
+| `MOD+Shift+X` | Lock screen (swaylock) |
+
+### Window & focus
+| Key | Action |
+|-----|--------|
+| `MOD+J` / `MOD+K` | Focus next / previous |
+| `MOD+H` / `MOD+L` | Shrink / grow master area |
+| `MOD+I` / `MOD+P` | Increase / decrease master count |
+| `MOD+Shift+Return` | Zoom (promote to master) |
+| `MOD+Tab` | View last tag |
+| `MOD+Q` | Kill window |
+| `MOD+Shift+Space` | Toggle floating |
+| `MOD+E` | Toggle fullscreen |
+
+### Layout
+| Key | Action |
+|-----|--------|
+| `MOD+T` / `MOD+F` / `MOD+M` | Tile / floating / monocle |
+| `MOD+B` | Toggle bar |
+
+### Tags
+| Key | Action |
+|-----|--------|
+| `MOD+1..9` | View tag |
+| `MOD+Ctrl+1..9` | Add / remove tag from view |
+| `MOD+Shift+1..9` | Move window to tag |
+| `MOD+Ctrl+Shift+1..9` | Toggle tag on window |
+| `MOD+0` | View all tags |
+| `MOD+Shift+)` | Window on all tags |
+
+### Monitors
+| Key | Action |
+|-----|--------|
+| `MOD+,` / `MOD+.` | Focus monitor left / right |
+| `MOD+Shift+<` / `MOD+Shift+>` | Move window to monitor left / right |
+
+### Media & brightness
+Function keys (no modifier): volume ±5 / mute, mic mute, brightness ±5%.
+
+### Session
+| Key | Action |
+|-----|--------|
+| `MOD+Shift+Q` | Quit dwl |
+| `Ctrl+Alt+Backspace` | Quit dwl |
+| `Ctrl+Alt+F1..F12` | Switch virtual terminal |
+
+### Mouse
+- **Tag**: Left = view · Right = toggle · `MOD`+Left = move window here · `MOD`+Right = toggle tag
+- **Layout symbol**: Left = tile · Right = monocle
+- **Title**: Middle = zoom
+- **Status**: Middle = open terminal
+- **Window**: `MOD`+Left = move · `MOD`+Right = resize · `MOD`+Middle = toggle floating
