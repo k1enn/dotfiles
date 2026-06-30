@@ -1,0 +1,5 @@
+[screencast]
+# Pick which output/region to share with slurp
+chooser_type=simple
+chooser_cmd=slurp -f %o -or
+max_fps=60

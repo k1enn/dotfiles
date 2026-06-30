@@ -1,0 +1,55 @@
+[global]
+    monitor = 0
+    follow = mouse
+    width = 340
+    height = (0, 300)
+    origin = top-right
+    offset = (16, 16)
+    notification_limit = 5
+    progress_bar = true
+    indicate_hidden = yes
+    separator_height = 2
+    padding = 10
+    horizontal_padding = 12
+    frame_width = 1
+    frame_color = "#444444"
+    gap_size = 6
+    separator_color = frame
+    font = JetBrainsMono Nerd Font 11
+    line_height = 0
+    markup = full
+    format = "<b>%s</b>\n%b"
+    alignment = left
+    vertical_alignment = center
+    show_age_threshold = 60
+    ellipsize = middle
+    ignore_newline = no
+    stack_duplicates = true
+    hide_duplicate_count = false
+    show_indicators = yes
+    icon_position = left
+    min_icon_size = 32
+    max_icon_size = 48
+    sticky_history = yes
+    history_length = 20
+    dmenu = /usr/bin/fuzzel --dmenu
+    browser = /usr/bin/xdg-open
+    mouse_left_click = close_current
+    mouse_middle_click = do_action, close_current
+    mouse_right_click = close_all
+
+[urgency_low]
+    background = "#222222"
+    foreground = "#bbbbbb"
+    timeout = 5
+
+[urgency_normal]
+    background = "#222222"
+    foreground = "#eeeeee"
+    timeout = 8
+
+[urgency_critical]
+    background = "#222222"
+    foreground = "#eeeeee"
+    frame_color = "#770000"
+    timeout = 0
