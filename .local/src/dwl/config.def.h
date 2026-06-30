@@ -10,13 +10,13 @@ static const unsigned int borderpx         = 1;  /* border pixel of windows */
 static const int showbar                   = 1; /* 0 means no bar */
 static const int topbar                    = 1; /* 0 means bottom bar */
 static const char *fonts[]                 = {"JetBrainsMono Nerd Font Mono:style=Bold:size=16"};
-static const float rootcolor[]             = COLOR(0x000000ff);
+static const float rootcolor[]             = COLOR(0x020202ff);
 /* This conforms to the xdg-protocol. Set the alpha to zero to restore the old behavior */
 static const float fullscreen_bg[]         = {0.0f, 0.0f, 0.0f, 1.0f}; /* You can also use glsl colors */
 static uint32_t colors[][3]                = {
 	/*               fg          bg          border    */
-	[SchemeNorm] = { 0xbbbbbbff, 0x222222ff, 0x444444ff },
-	[SchemeSel]  = { 0xeeeeeeff, 0x005577ff, 0x005577ff },
+	[SchemeNorm] = { 0xc2c2c2ff, 0x030303ff, 0x060606ff },
+	[SchemeSel]  = { 0x030303ff, 0xd3d3d3ff, 0xd3d3d3ff },
 	[SchemeUrg]  = { 0,          0,          0x770000ff },
 };
 
@@ -30,6 +30,10 @@ static const Rule rules[] = {
 	/* app_id             title       tags mask     isfloating   monitor */
 	{ "Gimp_EXAMPLE",     NULL,       0,            1,           -1 }, /* Start on currently visible tags floating, not tiled */
 	{ "firefox_EXAMPLE",  NULL,       1 << 8,       0,           -1 }, /* Start on ONLY tag "9" */
+	/* scratchpad: floating terminal parked on tag 9, toggled with MODKEY+grave */
+	{ "scratchpad",       NULL,       1 << 8,       1,           -1 },
+	/* wl-mirror window floats so the monitor-menu mirror option behaves */
+	{ "at.yrlf.wl_mirror",NULL,       0,            1,           -1 },
     /* default/example rule: can be changed but cannot be eliminated; at least one rule must exist */
 };
 
@@ -121,13 +125,24 @@ static const enum libinput_config_tap_button_map button_map = LIBINPUT_CONFIG_TA
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
 /* commands */
-static const char *termcmd[] = { "foot", NULL };
-static const char *menucmd[] = { "wmenu-run", "-f", "JetBrainsMono Nerd Font 16", "-l", "10", NULL };
+static const char *termcmd[]    = { "foot", NULL };
+static const char *menucmd[]    = { "fuzzel", NULL };
+static const char *scratchcmd[] = { "foot", "--app-id=scratchpad", NULL };
+static const char *monitorcmd[] = { "monitor-menu.sh", NULL };
+/* clipboard history: cliphist + fuzzel picker (deps: cliphist, wl-clipboard, fuzzel) */
+static const char *clipcmd[]    = { "/bin/sh", "-c", "cliphist list | fuzzel --dmenu | cliphist decode | wl-copy", NULL };
+/* region screenshot to clipboard (deps: grim, slurp, wl-clipboard) */
+static const char *shotcmd[]    = { "/bin/sh", "-c", "grim -g \"$(slurp)\" - | wl-copy", NULL };
 
 static const Key keys[] = {
 	/* Note that Shift changes certain key codes: 2 -> at, etc. */
 	/* modifier                  key                  function          argument */
-	{ MODKEY,                    XKB_KEY_p,           spawn,            {.v = menucmd} },
+	/* --- custom: clipboard / screenshot / scratchpad / monitor --- */
+	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_V,           spawn,            {.v = clipcmd} },
+	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_S,           spawn,            {.v = shotcmd} },
+	{ MODKEY,                    XKB_KEY_grave,       toggleview,       {.ui = 1 << 8} },
+	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_asciitilde,  spawn,            {.v = scratchcmd} },
+	{ MODKEY,                    XKB_KEY_o,           spawn,            {.v = monitorcmd} },
 	{ MODKEY,					 XKB_KEY_Return,      spawn,            {.v = termcmd} },
 	{ MODKEY,                    XKB_KEY_b,           togglebar,        {0} },
 	{ MODKEY,                    XKB_KEY_j,           focusstack,       {.i = +1} },
@@ -142,7 +157,7 @@ static const Key keys[] = {
 	{ MODKEY,                    XKB_KEY_t,           setlayout,        {.v = &layouts[0]} },
 	{ MODKEY,                    XKB_KEY_f,           setlayout,        {.v = &layouts[1]} },
 	{ MODKEY,                    XKB_KEY_m,           setlayout,        {.v = &layouts[2]} },
-	{ MODKEY,                    XKB_KEY_space,       setlayout,        {0} },
+	{ MODKEY,                    XKB_KEY_space,       spawn,            {.v = menucmd} },
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_space,       togglefloating,   {0} },
 	{ MODKEY,                    XKB_KEY_e,           togglefullscreen, {0} },
 	{ MODKEY,                    XKB_KEY_0,           view,             {.ui = ~0} },
