@@ -7,4 +7,5 @@ export XDG_SESSION_TYPE=wayland
 export XDG_SESSION_DESKTOP=dwl
 
 # -s runs the autostart AFTER the compositor is up (WAYLAND_DISPLAY is set then)
-exec slstatus -s | dwl -s "$HOME/.local/bin/dwl-autostart.sh"
+# dwl-status.sh feeds the bar over stdin (dwl reads one line -> stext)
+exec "$HOME/.local/bin/dwl-status.sh" | dwl -s "$HOME/.local/bin/dwl-autostart.sh"

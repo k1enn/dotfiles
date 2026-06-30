@@ -151,7 +151,7 @@ static const Key keys[] = {
 	{ MODKEY,                    XKB_KEY_p,           incnmaster,       {.i = -1} },
 	{ MODKEY,                    XKB_KEY_h,           setmfact,         {.f = -0.05f} },
 	{ MODKEY,                    XKB_KEY_l,           setmfact,         {.f = +0.05f} },
-	{ MODKEY,                    XKB_KEY_Return,      zoom,             {0} },
+	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_Return,      zoom,             {0} },
 	{ MODKEY,                    XKB_KEY_Tab,         view,             {0} },
 	{ MODKEY,					 XKB_KEY_q,           killclient,       {0} },
 	{ MODKEY,                    XKB_KEY_t,           setlayout,        {.v = &layouts[0]} },
@@ -185,6 +185,16 @@ static const Key keys[] = {
 #define CHVT(n) { WLR_MODIFIER_CTRL|WLR_MODIFIER_ALT,XKB_KEY_XF86Switch_VT_##n, chvt, {.ui = (n)} }
 	CHVT(1), CHVT(2), CHVT(3), CHVT(4), CHVT(5), CHVT(6),
 	CHVT(7), CHVT(8), CHVT(9), CHVT(10), CHVT(11), CHVT(12),
+
+	/* media + brightness (deps: pamixer, brightnessctl) */
+	{ 0,                         XKB_KEY_XF86AudioRaiseVolume,  spawn, SHCMD("pamixer -i 5") },
+	{ 0,                         XKB_KEY_XF86AudioLowerVolume,  spawn, SHCMD("pamixer -d 5") },
+	{ 0,                         XKB_KEY_XF86AudioMute,         spawn, SHCMD("pamixer -t") },
+	{ 0,                         XKB_KEY_XF86AudioMicMute,      spawn, SHCMD("pamixer --default-source -t") },
+	{ 0,                         XKB_KEY_XF86MonBrightnessUp,   spawn, SHCMD("brightnessctl set 5%+") },
+	{ 0,                         XKB_KEY_XF86MonBrightnessDown, spawn, SHCMD("brightnessctl set 5%-") },
+	/* lock screen (dep: swaylock) */
+	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_x,           spawn,           SHCMD("swaylock -f -c 000000") },
 };
 
 static const Button buttons[] = {
