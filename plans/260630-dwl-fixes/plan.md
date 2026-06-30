@@ -54,26 +54,53 @@ before `drawbars();` at 2037). At this point `c->isfloating`, `c->mon`, and
 
 **Check:** floating window (scratchpad / floatterm) opens centered, not top-left.
 
-## Phase 2 — scratchpad (autostart + tag toggle, `dwl-autostart.sh` + `config.def.h`)
-No namedscratchpad patch. Existing rule `config.def.h:34`
-`{ "scratchpad", NULL, 1<<8, 1, -1 }` stays (tag 9, floating).
+## Phase 2 — scratchpad: REAL drop-down (dwl.c togglescratch) — SUPERSEDES tag-trick
+**v1 tag-trick FAILED on the machine:** binary rebuilt (MOD+a works) but `MOD+grave`
+(`toggleview 1<<8`) did nothing usable, and the autostart pre-spawn squatted tag 9.
+Replaced with a self-contained C function (NO external/downloaded patch — hand-written
+into dwl.c; only "patch" sense = fork-local edit, re-apply after upstream pull).
 
-1. `dwl-autostart.sh`: add near the other `&` spawns —
-   ```sh
-   # Scratchpad terminal: parked hidden on tag 9, toggle with MODKEY+grave
-   pgrep -f 'foot.*app-id=scratchpad' >/dev/null || foot --app-id=scratchpad &
+**Design:** one named floating term (`app_id=scratchpad`) toggled in-place on the
+current tag; when hidden it parks on off-screen bit `1<<9` (outside the 9 nav tags →
+never reachable by navigation → no startup squatter ever). Spawns itself on 1st press.
+
+1. `dwl.c` — add define + function, and prototype near ~dwl.c:270:
+   ```c
+   #define SCRATCHTAG (1 << 9)   /* off-screen home; outside the 9 nav tags */
+
+   void
+   togglescratch(const Arg *arg)
+   {
+   	Client *c, *s = NULL;
+   	const char *id;
+   	wl_list_for_each(c, &clients, link)
+   		if ((id = client_get_appid(c)) && !strcmp(id, "scratchpad")) { s = c; break; }
+   	if (!s) { spawn(arg); return; }            /* 1st press: spawn (maps centered, current tag) */
+   	if (s->tags & selmon->tagset[selmon->seltags]) {
+   		s->tags = SCRATCHTAG;                  /* visible here -> hide off-screen */
+   		arrange(selmon);
+   	} else {
+   		setmon(s, selmon, selmon->tagset[selmon->seltags]); /* hidden -> pull to current view */
+   		focusclient(s, 1);
+   		arrange(selmon);
+   	}
+   }
    ```
-2. `config.def.h:143` keep `{ MODKEY, XKB_KEY_grave, toggleview, {.ui = 1 << 8} }`
-   — now works on first press (window pre-spawned).
-3. `config.def.h:144` repurpose `MOD+Shift+~` as respawn fallback (already spawns
-   `scratchcmd`); update comment to say "respawn if killed".
-4. Fix stale comment `config.def.h:33` → "spawned at autostart, hidden on tag 9,
-   toggled with MODKEY+grave".
+   Prototype: `static void togglescratch(const Arg *arg);`. All called fns
+   (`setmon`/`focusclient`/`arrange`/`spawn`/`client_get_appid`) already exist.
+2. `config.def.h` rule: `{ "scratchpad", NULL, 0, 1, -1 }` (tags `0` → spawns on
+   current view, floating, centered). **Was `1<<8`.**
+3. `config.def.h` keybind: `{ MODKEY, XKB_KEY_grave, togglescratch, {.v = scratchcmd} }`.
+   **Was `toggleview {1<<8}`.**
+4. `config.def.h`: remove the `MOD+Shift+~` spawn line (redundant — togglescratch spawns).
+5. `dwl-autostart.sh`: **remove** the `foot --app-id=scratchpad &` pre-spawn line (kills squatter).
+6. Fix stale comment at the rule.
 
-**Caveat (documented, not fixed):** single pad shares tag 9 — other tag-9 windows
-toggle with it. Upgrade path: namedscratchpads patch.
+**Risk (note, don't guard — YAGNI):** spamming grave before 1st foot maps (async) could
+spawn two. **Skipped:** namedscratchpads (multiple), multi-monitor follow.
 
-**Check:** after login, `MOD+grave` shows centered scratchpad; again hides it.
+**Check:** `MOD+grave` drops a centered terminal in; again hides it; never on any tag
+at startup; tag 9 free for normal use.
 
 ## Phase 3 — floating centered terminal (`config.def.h`)
 1. Rule: `{ "floatterm", NULL, 0, 1, -1 }` (current tags, floating).

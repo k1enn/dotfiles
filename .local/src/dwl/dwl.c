@@ -371,6 +371,7 @@ static void tagmon(const Arg *arg);
 static void tile(Monitor *m);
 static void togglebar(const Arg *arg);
 static void togglefloating(const Arg *arg);
+static void togglescratch(const Arg *arg);
 static void togglefullscreen(const Arg *arg);
 static void toggletag(const Arg *arg);
 static void toggleview(const Arg *arg);
@@ -2994,6 +2995,28 @@ togglefloating(const Arg *arg)
 	/* return if fullscreen */
 	if (sel && !sel->isfullscreen)
 		setfloating(sel, !sel->isfloating);
+}
+
+/* Single drop-down scratchpad (fork-local; re-apply after upstream pull).
+ * Hidden it parks on SCRATCHTAG (1<<9), outside the 9 nav tags, so it is never
+ * reachable by tag navigation. First press spawns it (maps centered, current tag). */
+#define SCRATCHTAG (1 << 9)
+void
+togglescratch(const Arg *arg)
+{
+	Client *c, *s = NULL;
+	const char *id;
+	wl_list_for_each(c, &clients, link)
+		if ((id = client_get_appid(c)) && !strcmp(id, "scratchpad")) { s = c; break; }
+	if (!s) { spawn(arg); return; }
+	if (s->tags & selmon->tagset[selmon->seltags]) {
+		s->tags = SCRATCHTAG;                  /* visible here -> hide off-screen */
+		arrange(selmon);
+	} else {
+		setmon(s, selmon, selmon->tagset[selmon->seltags]); /* hidden -> pull to current view */
+		focusclient(s, 1);
+		arrange(selmon);
+	}
 }
 
 void

@@ -38,8 +38,5 @@ pgrep -x dunst >/dev/null || dunst &
 wl-paste --type text  --watch cliphist store &
 wl-paste --type image --watch cliphist store &
 
-# Scratchpad terminal: parked hidden on tag 9, toggle with MODKEY+grave (see config.h)
-pgrep -f 'foot.*app-id=scratchpad' >/dev/null || foot --app-id=scratchpad &
-
 # Wallpaper
 swaybg -i "$HOME/Pictures/wallpapers/a_black_and_white_image_of_a_zombie.jpeg" -m fill &

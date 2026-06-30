@@ -30,8 +30,9 @@ static const Rule rules[] = {
 	/* app_id             title       tags mask     isfloating   monitor */
 	{ "Gimp_EXAMPLE",     NULL,       0,            1,           -1 }, /* Start on currently visible tags floating, not tiled */
 	{ "firefox_EXAMPLE",  NULL,       1 << 8,       0,           -1 }, /* Start on ONLY tag "9" */
-	/* scratchpad: spawned at autostart, hidden on tag 9, toggled with MODKEY+grave */
-	{ "scratchpad",       NULL,       1 << 8,       1,           -1 },
+	/* scratchpad: drop-down floating term, toggled with MODKEY+grave (togglescratch).
+	 * tags=0 -> spawns on current view; hidden it parks off-screen on tag bit 1<<9. */
+	{ "scratchpad",       NULL,       0,            1,           -1 },
 	/* floating terminal: spawned centered with MODKEY+n (centered via alwayscenter) */
 	{ "floatterm",        NULL,       0,            1,           -1 },
 	/* wl-mirror window floats so the monitor-menu mirror option behaves */
@@ -145,8 +146,7 @@ static const Key keys[] = {
 	/* --- custom: clipboard / screenshot / scratchpad / monitor --- */
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_V,           spawn,            {.v = clipcmd} },
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_S,           spawn,            {.v = shotcmd} },
-	{ MODKEY,                    XKB_KEY_grave,       toggleview,       {.ui = 1 << 8} },
-	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_asciitilde,  spawn,            {.v = scratchcmd} }, /* respawn scratchpad if killed */
+	{ MODKEY,                    XKB_KEY_grave,       togglescratch,    {.v = scratchcmd} },
 	{ MODKEY,                    XKB_KEY_n,           spawn,            {.v = floattermcmd} },
 	{ MODKEY,                    XKB_KEY_a,           spawn,            {.v = powercmd} },
 	{ MODKEY,                    XKB_KEY_r,           spawn,            {.v = refreshcmd} },
