@@ -4,7 +4,12 @@
 # Export wayland env to the user D-Bus + systemd --user so portals (screencast) work
 dbus-update-activation-environment --systemd \
 	WAYLAND_DISPLAY XDG_CURRENT_DESKTOP XDG_SESSION_TYPE XDG_SESSION_DESKTOP 2>/dev/null
-# ponytail: portals are dbus-activated on demand; we only need the env above.
+# dbus-update-activation-environment only fixes FUTURE activations. If the portal
+# stack was already socket-activated at login (stale env, no WAYLAND_DISPLAY) OBS
+# would talk to those and screencast fails. Restart them so they re-inherit the
+# env above. Portal-only (not pipewire) — pipewire negotiates fds regardless and
+# restarting it risks audio glitches. `|| true`: units absent on first login.
+systemctl --user restart xdg-desktop-portal xdg-desktop-portal-wlr 2>/dev/null || true
 
 # Secret Service: stores network-share / saved passwords so file managers
 # (Thunar/Nautilus/Dolphin) and gvfs don't re-prompt every session. Best
