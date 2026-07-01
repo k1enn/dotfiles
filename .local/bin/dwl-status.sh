@@ -26,6 +26,7 @@ I_CLK="󰥔"
 # emit the signal byte for a block (octal -> raw control byte)
 sigbyte() { printf "\\$(printf '%03o' "$1")"; }
 
+# Battery icons in %
 bat() {
 	for b in /sys/class/power_supply/BAT*; do
 		[ -r "$b/capacity" ] || continue
@@ -61,14 +62,19 @@ vol() {
 # ponytail: asusctl's "get current profile" output varies by version; grep the
 # name out of `profile -p`, fall back to the last value we set (cache file).
 pp_current() {
-	c=$(asusctl profile -p 2>/dev/null | grep -oE 'Quiet|Balanced|Performance' | head -1)
+	c=$(asusctl profile get 2>/dev/null | grep -oE 'Quiet|Balanced|Performance' | head -1)
 	[ -n "$c" ] && { printf '%s' "$c"; return; }
 	cat "$PROFILE_CACHE" 2>/dev/null || printf 'Balanced'
 }
 
+I_PROF_Q="󰌪"; I_PROF_B="󰖡"; I_PROF_P="󰓅"
 pp() {
-	command -v asusctl >/dev/null 2>&1 || return
-	printf '%s %s' "$I_PROF" "$(pp_current)"
+      command -v asusctl >/dev/null 2>&1 || return
+      case $(pp_current) in
+              Quiet)       printf '%s Q' "$I_PROF_Q" ;;
+              Balanced)    printf '%s B' "$I_PROF_B" ;;
+              Performance) printf '%s P' "$I_PROF_P" ;;
+      esac
 }
 
 # wlr-randr helpers (dwl is a wlroots compositor; xrandr would only see Xwayland)
