@@ -9,8 +9,12 @@ export XDG_SESSION_DESKTOP=dwl
 export QT_QPA_PLATFORMTHEME=qt6ct
 export QT_QPA_PLATFORM=wayland
 # Electron/Chromium apps default to XWayland -> blurry under fractional scale.
-# Hint makes them run native Wayland (crisp). Covers VSCode, Discord, Chromium, etc.
+# Hint makes them run native Wayland. Covers VSCode, Discord, Chromium, etc.
 export ELECTRON_OZONE_PLATFORM_HINT=auto
+# code wrapper reads $XDG_CONFIG_HOME/code-flags.conf; guarantee it points at
+# ~/.config so those flags (--disable-features=WaylandFractionalScaleV1 for
+# crisp fractional scaling) actually load.
+export XDG_CONFIG_HOME="${XDG_CONFIG_HOME:-$HOME/.config}"
 
 # -s runs the autostart AFTER the compositor is up (WAYLAND_DISPLAY is set then)
 # dwl-status.sh feeds the bar over stdin (dwl reads one line -> stext)
