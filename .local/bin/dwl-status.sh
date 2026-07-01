@@ -15,12 +15,12 @@
 PIDFILE="$HOME/.cache/dwl-status.pid"
 PROFILE_CACHE="$HOME/.cache/dwl-profile"
 
-# --- icons (Nerd Font: fa + md) ---
-I_BAT_CHG=""; I_BAT_FULL=""; I_BAT_75=""
-I_BAT_50="";  I_BAT_25="";  I_BAT_EMP=""
-I_ETH="󰈀";  I_WIFI="";     I_NONET="󰤭"
-I_VOL=""; I_VOL_MUTE=""
-I_PROF=""; I_HZ="󰍹"
+# --- icons (Nerd Font: md range only; fa glyphs are absent post-NFv3 remap) ---
+I_BAT_CHG="󰂄"; I_BAT_FULL="󰁹"; I_BAT_75="󰂀"
+I_BAT_50="󰁾";  I_BAT_25="󰁻";  I_BAT_EMP="󰂎"
+I_ETH="󰈀";  I_WIFI="󰤨";     I_NONET="󰤭"
+I_VOL="󰕾"; I_VOL_MUTE="󰝟"
+I_PROF="󰓅"; I_HZ="󰍹"
 I_CLK="󰥔"
 
 # emit the signal byte for a block (octal -> raw control byte)
