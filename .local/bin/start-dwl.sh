@@ -8,6 +8,9 @@ export XDG_SESSION_DESKTOP=dwl
 # Set Qt Theme Engine
 export QT_QPA_PLATFORMTHEME=qt6ct
 export QT_QPA_PLATFORM=wayland
+# Electron/Chromium apps default to XWayland -> blurry under fractional scale.
+# Hint makes them run native Wayland (crisp). Covers VSCode, Discord, Chromium, etc.
+export ELECTRON_OZONE_PLATFORM_HINT=auto
 
 # -s runs the autostart AFTER the compositor is up (WAYLAND_DISPLAY is set then)
 # dwl-status.sh feeds the bar over stdin (dwl reads one line -> stext)
