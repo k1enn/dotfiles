@@ -24,6 +24,7 @@ Backup my dotfiles in case Fedora system explode.
 - **Linux distro**: Fedora Workstation 42.
 - **WM**: dwl (suckless, Wayland)
 - **Display server**: Wayland (wlroots)
+- **Notifications**: dunst — plays `/usr/share/sounds/freedesktop/stereo/bell.oga` on every notification via `~/.config/dunst/play-sound.sh` (needs `paplay` from pipewire-pulse/pulseaudio).
 
 ---
 
