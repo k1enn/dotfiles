@@ -5,6 +5,9 @@
 export XDG_CURRENT_DESKTOP=wlroots
 export XDG_SESSION_TYPE=wayland
 export XDG_SESSION_DESKTOP=dwl
+# Set Qt Theme Engine
+export QT_QPA_PLATFORMTHEME=qt6ct
+export QT_QPA_PLATFORM=wayland
 
 # -s runs the autostart AFTER the compositor is up (WAYLAND_DISPLAY is set then)
 # dwl-status.sh feeds the bar over stdin (dwl reads one line -> stext)
