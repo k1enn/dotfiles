@@ -25,6 +25,12 @@ static const float opacity_inactive        = 0.92f;
 static const int   shadow                  = 1;
 static const float shadow_blur_sigma       = 20;
 static const float shadow_color[]          = {0.0f, 0.0f, 0.0f, 0.5f};
+static const int   blur_num_passes         = 3;
+static const int   blur_radius             = 8;
+static const float blur_noise              = 0.02f;
+static const float blur_brightness         = 0.9f;
+static const float blur_contrast           = 0.9f;
+static const float blur_saturation         = 1.1f;
 static uint32_t colors[][3]                = {
 	/*               fg          bg          border    */
 	[SchemeNorm] = { 0xc2c2c2ff, 0x030303ff, 0x060606ff },

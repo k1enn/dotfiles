@@ -2803,8 +2803,15 @@ setup(void)
 	root_bg = wlr_scene_rect_create(&scene->tree, 0, 0, rootcolor);
 	for (i = 0; i < NUM_LAYERS; i++)
 		layers[i] = wlr_scene_tree_create(&scene->tree);
-	if (blur)
+	if (blur) {
 		blur_layer = wlr_scene_optimized_blur_create(layers[LyrBlur], 0, 0);
+		wlr_scene_set_blur_num_passes(scene, blur_num_passes);
+		wlr_scene_set_blur_radius(scene, blur_radius);
+		wlr_scene_set_blur_noise(scene, blur_noise);
+		wlr_scene_set_blur_brightness(scene, blur_brightness);
+		wlr_scene_set_blur_contrast(scene, blur_contrast);
+		wlr_scene_set_blur_saturation(scene, blur_saturation);
+	}
 	drag_icon = wlr_scene_tree_create(&scene->tree);
 	wlr_scene_node_place_below(&drag_icon->node, &layers[LyrBlock]->node);
 
