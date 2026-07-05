@@ -2062,6 +2062,8 @@ static void
 iterscenebuffer(struct wlr_scene_buffer *buffer, int sx, int sy, void *user_data)
 {
 	Client *c = user_data;
+	fprintf(stderr, "fx: buffer=%p opacity=%.2f radius=%d blur=%d\n",
+			(void *)buffer, c->opacity, c->corner_radius, blur);
 	wlr_scene_buffer_set_opacity(buffer, c->opacity);
 	if (c->corner_radius > 0)
 		wlr_scene_buffer_set_corner_radius(buffer, c->corner_radius, CORNER_LOCATION_ALL);
@@ -2074,9 +2076,12 @@ iterscenebuffer(struct wlr_scene_buffer *buffer, int sx, int sy, void *user_data
 static void
 clienteffects(Client *c, int focused)
 {
-	if (!c || client_is_unmanaged(c) || !c->scene_surface)
+	if (!c || client_is_unmanaged(c) || !c->scene_surface) {
+		fprintf(stderr, "fx: clienteffects skipped (c=%p)\n", (void *)c);
 		return;
+	}
 	c->opacity = focused ? opacity_active : opacity_inactive;
+	fprintf(stderr, "fx: clienteffects focused=%d opacity=%.2f\n", focused, c->opacity);
 	wlr_scene_node_for_each_buffer(&c->scene_surface->node, iterscenebuffer, c);
 }
 
@@ -2805,6 +2810,8 @@ setup(void)
 		layers[i] = wlr_scene_tree_create(&scene->tree);
 	if (blur) {
 		blur_layer = wlr_scene_optimized_blur_create(layers[LyrBlur], 0, 0);
+		fprintf(stderr, "fx: blur layer=%p passes=%d radius=%d\n",
+				(void *)blur_layer, blur_num_passes, blur_radius);
 		wlr_scene_set_blur_num_passes(scene, blur_num_passes);
 		wlr_scene_set_blur_radius(scene, blur_radius);
 		wlr_scene_set_blur_noise(scene, blur_noise);
