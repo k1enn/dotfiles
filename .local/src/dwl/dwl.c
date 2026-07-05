@@ -47,7 +47,10 @@
 #include <wlr/types/wlr_primary_selection.h>
 #include <wlr/types/wlr_primary_selection_v1.h>
 #include <wlr/types/wlr_relative_pointer_v1.h>
-#include <wlr/types/wlr_scene.h>
+#include <scenefx/render/fx_renderer/fx_renderer.h>
+#include <scenefx/types/fx/clipped_region.h>
+#include <scenefx/types/fx/corner_location.h>
+#include <scenefx/types/wlr_scene.h>
 #include <wlr/types/wlr_screencopy_v1.h>
 #include <wlr/types/wlr_seat.h>
 #include <wlr/types/wlr_server_decoration.h>
@@ -91,7 +94,7 @@
 enum { SchemeNorm, SchemeSel, SchemeUrg }; /* color schemes */
 enum { CurNormal, CurPressed, CurMove, CurResize }; /* cursor */
 enum { XDGShell, LayerShell, X11 }; /* client types */
-enum { LyrBg, LyrBottom, LyrTile, LyrFloat, LyrTop, LyrFS, LyrOverlay, LyrBlock, NUM_LAYERS }; /* scene layers */
+enum { LyrBg, LyrBlur, LyrBottom, LyrTile, LyrFloat, LyrTop, LyrFS, LyrOverlay, LyrBlock, NUM_LAYERS }; /* scene layers */
 enum { ClkTagBar, ClkLtSymbol, ClkStatus, ClkTitle, ClkClient, ClkRoot }; /* clicks */
 
 typedef union {
@@ -148,6 +151,9 @@ typedef struct {
 	unsigned int bw;
 	uint32_t tags;
 	int isfloating, isurgent, isfullscreen;
+	float opacity;
+	int corner_radius;
+	struct wlr_scene_shadow *shadow;
 	uint32_t resize; /* configure serial of a pending resize */
 	struct wl_list link_temp; /* simple_scratchpad: membership in a scratchpad slot */
 } Client;
@@ -321,7 +327,9 @@ static void destroykeyboardgroup(struct wl_listener *listener, void *data);
 static Monitor *dirtomon(enum wlr_direction dir);
 static void drawbar(Monitor *m);
 static void drawbars(void);
+static void clienteffects(Client *c, int focused);
 static void focusclient(Client *c, int lift);
+static void iterscenebuffer(struct wlr_scene_buffer *buffer, int sx, int sy, void *user_data);
 static void focusmon(const Arg *arg);
 static void focusstack(const Arg *arg);
 static Client *focustop(Monitor *m);
@@ -406,6 +414,7 @@ static struct wl_display *dpy;
 static struct wl_event_loop *event_loop;
 static struct wlr_backend *backend;
 static struct wlr_scene *scene;
+static struct wlr_scene_optimized_blur *blur_layer;
 static struct wlr_scene_tree *layers[NUM_LAYERS];
 static struct wlr_scene_tree *drag_icon;
 /* Map from ZWLR_LAYER_SHELL_* constants to Lyr* enum */
@@ -1338,6 +1347,8 @@ createmon(struct wl_listener *listener, void *data)
 	 * output (such as DPI, scale factor, manufacturer, etc).
 	 */
 	m->scene_output = wlr_scene_output_create(scene, wlr_output);
+	if (blur_layer)
+		wlr_scene_optimized_blur_set_size(blur_layer, wlr_output->width, wlr_output->height);
 	if (m->m.x == -1 && m->m.y == -1)
 		wlr_output_layout_add_auto(output_layout, wlr_output);
 	else
@@ -1746,6 +1757,7 @@ focusclient(Client *c, int lift)
 		 * handling a drag operation */
 		if (!exclusive_focus && !seat->drag)
 			client_set_border_color(c, (float[])COLOR(colors[SchemeSel][ColBorder]));
+		clienteffects(c, 1);
 	}
 
 	/* Deactivate old client if focus is changing */
@@ -1764,6 +1776,7 @@ focusclient(Client *c, int lift)
 		} else if (old_c && !client_is_unmanaged(old_c) && (!c || !client_wants_focus(c))) {
 			client_set_border_color(old_c, (float[])COLOR(colors[SchemeNorm][ColBorder]));
 			client_activate_surface(old, 0);
+			clienteffects(old_c, 0);
 		}
 	}
 	drawbars();
@@ -1849,7 +1862,7 @@ gpureset(struct wl_listener *listener, void *data)
 	struct wlr_renderer *old_drw = drw;
 	struct wlr_allocator *old_alloc = alloc;
 	struct Monitor *m;
-	if (!(drw = wlr_renderer_autocreate(backend)))
+	if (!(drw = fx_renderer_create(backend)))
 		die("couldn't recreate renderer");
 
 	if (!(alloc = wlr_allocator_autocreate(backend, drw)))
@@ -2045,6 +2058,28 @@ locksession(struct wl_listener *listener, void *data)
 	wlr_session_lock_v1_send_locked(session_lock);
 }
 
+static void
+iterscenebuffer(struct wlr_scene_buffer *buffer, int sx, int sy, void *user_data)
+{
+	Client *c = user_data;
+	wlr_scene_buffer_set_opacity(buffer, c->opacity);
+	if (c->corner_radius > 0)
+		wlr_scene_buffer_set_corner_radius(buffer, c->corner_radius, CORNER_LOCATION_ALL);
+	if (blur) {
+		wlr_scene_buffer_set_backdrop_blur(buffer, true);
+		wlr_scene_buffer_set_backdrop_blur_optimized(buffer, blur_optimized);
+	}
+}
+
+static void
+clienteffects(Client *c, int focused)
+{
+	if (!c || client_is_unmanaged(c) || !c->scene_surface)
+		return;
+	c->opacity = focused ? opacity_active : opacity_inactive;
+	wlr_scene_node_for_each_buffer(&c->scene_surface->node, iterscenebuffer, c);
+}
+
 void
 mapnotify(struct wl_listener *listener, void *data)
 {
@@ -2083,6 +2118,16 @@ mapnotify(struct wl_listener *listener, void *data)
 			(float[])COLOR(colors[c->isurgent ? SchemeUrg : SchemeNorm][ColBorder]));
 		c->border[i]->node.data = c;
 	}
+
+	c->corner_radius = corner_radius;
+	c->opacity = opacity_inactive;
+	if (shadow) {
+		c->shadow = wlr_scene_shadow_create(c->scene, 0, 0, corner_radius,
+			shadow_blur_sigma, shadow_color);
+		c->shadow->node.data = c;
+		wlr_scene_node_lower_to_bottom(&c->shadow->node);
+	}
+	clienteffects(c, 0);
 
 	/* Initialize client geometry with room for border */
 	client_set_tiled(c, WLR_EDGE_TOP | WLR_EDGE_BOTTOM | WLR_EDGE_LEFT | WLR_EDGE_RIGHT);
@@ -2507,6 +2552,9 @@ resize(Client *c, struct wlr_box geo, int interact)
 	wlr_scene_node_set_position(&c->border[2]->node, 0, c->bw);
 	wlr_scene_node_set_position(&c->border[3]->node, c->geom.width - c->bw, c->bw);
 
+	if (c->shadow)
+		wlr_scene_shadow_set_size(c->shadow, c->geom.width, c->geom.height);
+
 	/* this is a no-op if size hasn't changed */
 	c->resize = client_set_size(c, c->geom.width - 2 * c->bw,
 			c->geom.height - 2 * c->bw);
@@ -2755,6 +2803,8 @@ setup(void)
 	root_bg = wlr_scene_rect_create(&scene->tree, 0, 0, rootcolor);
 	for (i = 0; i < NUM_LAYERS; i++)
 		layers[i] = wlr_scene_tree_create(&scene->tree);
+	if (blur)
+		blur_layer = wlr_scene_optimized_blur_create(layers[LyrBlur], 0, 0);
 	drag_icon = wlr_scene_tree_create(&scene->tree);
 	wlr_scene_node_place_below(&drag_icon->node, &layers[LyrBlock]->node);
 
@@ -2762,7 +2812,7 @@ setup(void)
 	 * can also specify a renderer using the WLR_RENDERER env var.
 	 * The renderer is responsible for defining the various pixel formats it
 	 * supports for shared memory, this configures that for clients. */
-	if (!(drw = wlr_renderer_autocreate(backend)))
+	if (!(drw = fx_renderer_create(backend)))
 		die("couldn't create renderer");
 	wl_signal_add(&drw->events.lost, &gpu_reset);
 
@@ -3268,6 +3318,8 @@ updatemons(struct wl_listener *listener, void *data)
 
 	wlr_scene_node_set_position(&root_bg->node, sgeom.x, sgeom.y);
 	wlr_scene_rect_set_size(root_bg, sgeom.width, sgeom.height);
+	if (blur_layer)
+		wlr_scene_optimized_blur_set_size(blur_layer, sgeom.width, sgeom.height);
 
 	/* Make sure the clients are hidden when dwl is locked */
 	wlr_scene_node_set_position(&locked_bg->node, sgeom.x, sgeom.y);

@@ -8,8 +8,8 @@ PREFIX = $(HOME)/.local
 MANDIR = $(PREFIX)/share/man
 DATADIR = $(PREFIX)/share
 
-WLR_INCS = `$(PKG_CONFIG) --cflags wlroots-0.19`
-WLR_LIBS = `$(PKG_CONFIG) --libs wlroots-0.19`
+WLR_INCS = `$(PKG_CONFIG) --cflags scenefx-0.4 wlroots-0.19`
+WLR_LIBS = `$(PKG_CONFIG) --libs   scenefx-0.4 wlroots-0.19`
 
 # Allow using an alternative wlroots installation
 # This has to have all the includes required by wlroots, e.g:

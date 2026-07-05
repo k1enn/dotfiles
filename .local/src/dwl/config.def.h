@@ -16,6 +16,15 @@ static const char *fonts[]                 = {"JetBrainsMono Nerd Font Mono:styl
 static const float rootcolor[]             = COLOR(0x020202ff);
 /* This conforms to the xdg-protocol. Set the alpha to zero to restore the old behavior */
 static const float fullscreen_bg[]         = {0.0f, 0.0f, 0.0f, 1.0f}; /* You can also use glsl colors */
+/* scenefx */
+static const int   corner_radius           = 8;
+static const int   blur                    = 1;
+static const int   blur_optimized          = 1;
+static const float opacity_active          = 1.0f;
+static const float opacity_inactive        = 0.92f;
+static const int   shadow                  = 1;
+static const float shadow_blur_sigma       = 20;
+static const float shadow_color[]          = {0.0f, 0.0f, 0.0f, 0.5f};
 static uint32_t colors[][3]                = {
 	/*               fg          bg          border    */
 	[SchemeNorm] = { 0xc2c2c2ff, 0x030303ff, 0x060606ff },
