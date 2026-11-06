@@ -1,6 +1,9 @@
 #!/bin/sh
 # dwl session launcher
 
+# Display managers don't source the shell config -> dwl and the menu scripts in ~/.local/bin wouldn't be found
+export PATH="$HOME/.local/bin:$PATH"
+
 # Env so xdg-desktop-portal picks the wlroots backend (screensharing under dwl)
 export XDG_CURRENT_DESKTOP=wlroots
 export XDG_SESSION_TYPE=wayland
@@ -8,6 +11,11 @@ export XDG_SESSION_DESKTOP=dwl
 # Set Qt Theme Engine
 export QT_QPA_PLATFORMTHEME=qt6ct
 export QT_QPA_PLATFORM=wayland
+# Scale 1 (sharp text) -> enlarge Qt fonts 1.25x (96*1.25=120)
+export QT_FONT_DPI=120
+# Input method: set here (not autostart) so dwl and every app it spawns inherit it.
+# GTK/Qt reach fcitx5 via these DBus IM modules; others (foot, Electron) use dwl text-input-v3 relay.
+export GTK_IM_MODULE=fcitx QT_IM_MODULE=fcitx XMODIFIERS=@im=fcitx
 # Electron/Chromium apps default to XWayland -> blurry under fractional scale.
 # Hint makes them run native Wayland. Covers VSCode, Discord, Chromium, etc.
 export ELECTRON_OZONE_PLATFORM_HINT=auto

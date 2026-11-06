@@ -1,10 +1,10 @@
 #!/bin/sh
 # dwl status bar feed. One line per tick -> dwl reads stdin into stext.
-# Items: battery | network | volume | power-profile | refresh | date-time
+# Items: battery | network | volume | power-profile | refresh | ime | caffeine | date-time
 # Each component prints nothing if its source/tool is absent, so the bar
 # degrades gracefully on machines missing a given tool.
 #
-# Clickable blocks: each block is prefixed with a signal byte (\001..\006).
+# Clickable blocks: each block is prefixed with a signal byte (\001..\007).
 # dwl's buttonpress maps a click on the status area back to that byte and runs
 # `dwl-status.sh click <signal> <button>` (button: 1=left, 3=right). See the
 # `click` dispatch below for what each block does.
@@ -21,7 +21,7 @@ I_BAT_50="󰁾";  I_BAT_25="󰁻";  I_BAT_EMP="󰂎"
 I_ETH="󰈀";  I_WIFI="󰤨";     I_NONET="󰤭"
 I_VOL="󰕾"; I_VOL_MUTE="󰝟"
 I_PROF="󰓅"; I_HZ="󰍹"
-I_CLK="󰥔"
+I_CLK="󰥔"; I_IME="󰌌"; I_CAF="󰅶"
 
 # emit the signal byte for a block (octal -> raw control byte)
 sigbyte() { printf "\\$(printf '%03o' "$1")"; }
@@ -88,6 +88,26 @@ refresh() {
 	[ -n "$hz" ] && printf '%s %sHz' "$I_HZ" "$hz"
 }
 
+# fcitx5-remote state: 2 = active IM (e.g. Vietnamese), else plain keyboard
+ime() {
+	command -v fcitx5-remote >/dev/null 2>&1 || return
+	if [ "$(fcitx5-remote 2>/dev/null)" = 2 ]; then printf '%s VI' "$I_IME"; else printf '%s EN' "$I_IME"; fi
+}
+
+# Caffeine: shown only while auto lock (swayidle) is off
+caf() {
+	pgrep -x swayidle >/dev/null || printf '%s' "$I_CAF"
+}
+
+# Toggle auto lock. Single owner of the swayidle cmd (autostart calls this too).
+idle_toggle() {
+	pkill -x swayidle && return
+	# Idle: lock at 5min, lock before sleep (deps: swayidle, swaylock)
+	swayidle -w \
+		timeout 300 'swaylock -f -c 000000' \
+		before-sleep 'swaylock -f -c 000000' >/dev/null 2>&1 &
+}
+
 clk() {
 	printf '%s %s' "$I_CLK" "$(date '+%d/%m/%y %H:%M')"
 }
@@ -95,7 +115,7 @@ clk() {
 build() {
 	out=
 	# "func:signal" — signal byte lets clicks route back to the right block
-	for spec in bat:1 net:2 vol:3 pp:4 refresh:5 clk:6; do
+	for spec in bat:1 net:2 vol:3 pp:4 refresh:5 ime:7 caf:8 clk:6; do
 		f=${spec%%:*}; sig=${spec##*:}
 		s=$($f)
 		[ -n "$s" ] || continue
@@ -153,6 +173,8 @@ if [ "$1" = click ]; then
 		3) vol_click "$3" ;;
 		4) pp_click ;;
 		5) refresh_click ;;
+		7) fcitx5-remote -t ;;
+		8) idle_toggle ;;
 		# 1 (battery) and 6 (clock) are display-only
 	esac
 	# nudge the running feed so the bar reflects the change immediately

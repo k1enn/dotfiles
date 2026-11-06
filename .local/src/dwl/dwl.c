@@ -10,6 +10,7 @@
 #include <signal.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <sys/stat.h>
 #include <sys/wait.h>
 #include <time.h>
 #include <unistd.h>
@@ -32,6 +33,7 @@
 #include <wlr/types/wlr_idle_inhibit_v1.h>
 #include <wlr/types/wlr_idle_notify_v1.h>
 #include <wlr/types/wlr_input_device.h>
+#include <wlr/types/wlr_input_method_v2.h>
 #include <wlr/types/wlr_keyboard.h>
 #include <wlr/types/wlr_keyboard_group.h>
 #include <wlr/types/wlr_layer_shell_v1.h>
@@ -54,6 +56,7 @@
 #include <wlr/types/wlr_session_lock_v1.h>
 #include <wlr/types/wlr_single_pixel_buffer_v1.h>
 #include <wlr/types/wlr_subcompositor.h>
+#include <wlr/types/wlr_text_input_v3.h>
 #include <wlr/types/wlr_viewporter.h>
 #include <wlr/types/wlr_virtual_keyboard_v1.h>
 #include <wlr/types/wlr_virtual_pointer_v1.h>
@@ -371,6 +374,7 @@ static void spawn(const Arg *arg);
 static void startdrag(struct wl_listener *listener, void *data);
 static void statuscmd(const Arg *arg);
 static int statusin(int fd, unsigned int mask, void *data);
+static int keyfifoin(int fd, unsigned int mask, void *data);
 static void tag(const Arg *arg);
 static void tagmon(const Arg *arg);
 static void tile(Monitor *m);
@@ -392,6 +396,13 @@ static void updatetitle(struct wl_listener *listener, void *data);
 static void urgent(struct wl_listener *listener, void *data);
 static void view(const Arg *arg);
 static void virtualkeyboard(struct wl_listener *listener, void *data);
+static void imcommit(struct wl_listener *listener, void *data);
+static void imgrabkb(struct wl_listener *listener, void *data);
+static void imgrabdestroy(struct wl_listener *listener, void *data);
+static void imdestroy(struct wl_listener *listener, void *data);
+static void imnew(struct wl_listener *listener, void *data);
+static void tinew(struct wl_listener *listener, void *data);
+static void kbfocuschange(struct wl_listener *listener, void *data);
 static void virtualpointer(struct wl_listener *listener, void *data);
 static Monitor *xytomon(double x, double y);
 static void xytonode(double x, double y, struct wlr_surface **psurface,
@@ -443,6 +454,11 @@ static struct wlr_session_lock_v1 *cur_lock;
 
 static struct wlr_seat *seat;
 static KeyboardGroup *kb_group;
+/* IME relay: apps (text-input-v3) <-> fcitx5 (input-method-v2) */
+static struct wlr_text_input_manager_v3 *text_input_mgr;
+static struct wlr_input_method_manager_v2 *input_method_mgr;
+static struct wlr_input_method_v2 *im;
+static struct wlr_input_method_keyboard_grab_v2 *imgrab;
 static unsigned int cursor_mode;
 static Client *grabc;
 static int grabcx, grabcy; /* client-relative */
@@ -456,6 +472,7 @@ static char stext[256];     /* clean status text, drawn in the bar */
 static char rawstext[256];  /* raw status w/ per-block signal bytes, for click routing */
 static int statussig;       /* signal of the status block last clicked (0 = none) */
 static struct wl_event_source *status_event_source;
+static char keyfifo[256];
 
 static const struct wlr_buffer_impl buffer_impl = {
     .destroy = bufdestroy,
@@ -492,6 +509,13 @@ static struct wl_listener request_set_cursor_shape = {.notify = setcursorshape};
 static struct wl_listener request_start_drag = {.notify = requeststartdrag};
 static struct wl_listener start_drag = {.notify = startdrag};
 static struct wl_listener new_session_lock = {.notify = locksession};
+static struct wl_listener im_commit = {.notify = imcommit};
+static struct wl_listener im_grab = {.notify = imgrabkb};
+static struct wl_listener im_destroy = {.notify = imdestroy};
+static struct wl_listener imgrab_destroy = {.notify = imgrabdestroy};
+static struct wl_listener new_input_method = {.notify = imnew};
+static struct wl_listener new_text_input = {.notify = tinew};
+static struct wl_listener kb_focus_change = {.notify = kbfocuschange};
 
 #ifdef XWAYLAND
 static void activatex11(struct wl_listener *listener, void *data);
@@ -896,6 +920,7 @@ checkidleinhibitor(struct wlr_surface *exclude)
 void
 cleanup(void)
 {
+	unlink(keyfifo);
 	cleanuplisteners();
 #ifdef XWAYLAND
 	wlr_xwayland_destroy(xwayland);
@@ -989,6 +1014,9 @@ cleanuplisteners(void)
 	wl_list_remove(&request_start_drag.link);
 	wl_list_remove(&start_drag.link);
 	wl_list_remove(&new_session_lock.link);
+	wl_list_remove(&new_input_method.link);
+	wl_list_remove(&new_text_input.link);
+	wl_list_remove(&kb_focus_change.link);
 #ifdef XWAYLAND
 	wl_list_remove(&new_xwayland_surface.link);
 	wl_list_remove(&xwayland_ready.link);
@@ -1369,8 +1397,10 @@ void
 createpointer(struct wlr_pointer *pointer)
 {
 	struct libinput_device *device;
+	int touchpad;
 	if (wlr_input_device_is_libinput(&pointer->base)
 			&& (device = wlr_libinput_get_device_handle(&pointer->base))) {
+		touchpad = libinput_device_config_tap_get_finger_count(device) > 0;
 
 		if (libinput_device_config_tap_get_finger_count(device)) {
 			libinput_device_config_tap_set_enabled(device, tap_to_click);
@@ -1380,7 +1410,7 @@ createpointer(struct wlr_pointer *pointer)
 		}
 
 		if (libinput_device_config_scroll_has_natural_scroll(device))
-			libinput_device_config_scroll_set_natural_scroll_enabled(device, natural_scrolling);
+			libinput_device_config_scroll_set_natural_scroll_enabled(device, touchpad && natural_scrolling);
 
 		if (libinput_device_config_dwt_is_available(device))
 			libinput_device_config_dwt_set_enabled(device, disable_while_typing);
@@ -1401,8 +1431,8 @@ createpointer(struct wlr_pointer *pointer)
 			libinput_device_config_send_events_set_mode(device, send_events_mode);
 
 		if (libinput_device_config_accel_is_available(device)) {
-			libinput_device_config_accel_set_profile(device, accel_profile);
-			libinput_device_config_accel_set_speed(device, accel_speed);
+			libinput_device_config_accel_set_profile(device, touchpad ? accel_profile : mouse_accel_profile);
+			libinput_device_config_accel_set_speed(device, touchpad ? accel_speed : mouse_accel_speed);
 		}
 	}
 
@@ -1977,6 +2007,14 @@ keypress(struct wl_listener *listener, void *data)
 	if (handled)
 		return;
 
+	/* fcitx5 grabs typing while active; its virtual keyboard is another group -> no loop */
+	if (imgrab && !locked && group == kb_group) {
+		wlr_input_method_keyboard_grab_v2_set_keyboard(imgrab, &group->wlr_group->keyboard);
+		wlr_input_method_keyboard_grab_v2_send_key(imgrab, event->time_msec,
+				event->keycode, event->state);
+		return;
+	}
+
 	wlr_seat_set_keyboard(seat, &group->wlr_group->keyboard);
 	/* Pass unhandled keycodes along to the client. */
 	wlr_seat_keyboard_notify_key(seat, event->time_msec,
@@ -1989,6 +2027,13 @@ keypressmod(struct wl_listener *listener, void *data)
 	/* This event is raised when a modifier key, such as shift or alt, is
 	 * pressed. We simply communicate this to the client. */
 	KeyboardGroup *group = wl_container_of(listener, group, modifiers);
+
+	if (imgrab && !locked && group == kb_group) {
+		wlr_input_method_keyboard_grab_v2_set_keyboard(imgrab, &group->wlr_group->keyboard);
+		wlr_input_method_keyboard_grab_v2_send_modifiers(imgrab,
+				&group->wlr_group->keyboard.modifiers);
+		return;
+	}
 
 	wlr_seat_set_keyboard(seat, &group->wlr_group->keyboard);
 	/* Send modifiers to the client. */
@@ -2725,6 +2770,180 @@ setsel(struct wl_listener *listener, void *data)
 	wlr_seat_set_selection(seat, event->source, event->serial);
 }
 
+/* ---- IME relay (shortcut: no candidate popup surfaces, fine for unikey/bamboo; add if using CJK) ---- */
+typedef struct {
+	struct wlr_text_input_v3 *ti;
+	struct wl_listener enable, commit, disable, destroy;
+} TextInput;
+
+static struct wlr_text_input_v3 *
+imfocusedti(struct wlr_text_input_v3 *skip)
+{
+	struct wlr_text_input_v3 *ti;
+	wl_list_for_each(ti, &text_input_mgr->text_inputs, link)
+		if (ti != skip && ti->focused_surface && ti->current_enabled)
+			return ti;
+	return NULL;
+}
+
+static void
+imsendstate(struct wlr_text_input_v3 *ti)
+{
+	if (!im)
+		return;
+	if ((ti->active_features & WLR_TEXT_INPUT_V3_FEATURE_SURROUNDING_TEXT)
+			&& ti->current.surrounding.text)
+		wlr_input_method_v2_send_surrounding_text(im, ti->current.surrounding.text,
+				ti->current.surrounding.cursor, ti->current.surrounding.anchor);
+	wlr_input_method_v2_send_text_change_cause(im, ti->current.text_change_cause);
+	if (ti->active_features & WLR_TEXT_INPUT_V3_FEATURE_CONTENT_TYPE)
+		wlr_input_method_v2_send_content_type(im, ti->current.content_type.hint,
+				ti->current.content_type.purpose);
+	wlr_input_method_v2_send_done(im);
+}
+
+/* Recompute from all text inputs: the old window's disable may arrive after the new one's enable */
+static void
+imupdate(struct wlr_text_input_v3 *skip)
+{
+	struct wlr_text_input_v3 *ti = imfocusedti(skip);
+	if (!im)
+		return;
+	if (ti) {
+		wlr_input_method_v2_send_activate(im);
+		imsendstate(ti);
+	} else {
+		wlr_input_method_v2_send_deactivate(im);
+		wlr_input_method_v2_send_done(im);
+	}
+}
+
+static void
+tienable(struct wl_listener *listener, void *data)
+{
+	imupdate(NULL);
+}
+
+static void
+ticommit(struct wl_listener *listener, void *data)
+{
+	struct wlr_text_input_v3 *ti = data;
+	if (ti->current_enabled)
+		imsendstate(ti);
+}
+
+static void
+tidisable(struct wl_listener *listener, void *data)
+{
+	imupdate(NULL);
+}
+
+static void
+tidestroy(struct wl_listener *listener, void *data)
+{
+	TextInput *t = wl_container_of(listener, t, destroy);
+	imupdate(t->ti);
+	wl_list_remove(&t->enable.link);
+	wl_list_remove(&t->commit.link);
+	wl_list_remove(&t->disable.link);
+	wl_list_remove(&t->destroy.link);
+	free(t);
+}
+
+static int
+tisameclient(struct wlr_text_input_v3 *ti, struct wlr_surface *s)
+{
+	return s && wl_resource_get_client(ti->resource) == wl_resource_get_client(s->resource);
+}
+
+void
+tinew(struct wl_listener *listener, void *data)
+{
+	TextInput *t = ecalloc(1, sizeof(*t));
+	t->ti = data;
+	t->enable.notify = tienable;
+	t->commit.notify = ticommit;
+	t->disable.notify = tidisable;
+	t->destroy.notify = tidestroy;
+	wl_signal_add(&t->ti->events.enable, &t->enable);
+	wl_signal_add(&t->ti->events.commit, &t->commit);
+	wl_signal_add(&t->ti->events.disable, &t->disable);
+	wl_signal_add(&t->ti->events.destroy, &t->destroy);
+	if (tisameclient(t->ti, seat->keyboard_state.focused_surface))
+		wlr_text_input_v3_send_enter(t->ti, seat->keyboard_state.focused_surface);
+}
+
+void
+kbfocuschange(struct wl_listener *listener, void *data)
+{
+	struct wlr_seat_keyboard_focus_change_event *e = data;
+	struct wlr_text_input_v3 *ti;
+	wl_list_for_each(ti, &text_input_mgr->text_inputs, link) {
+		if (ti->focused_surface && ti->focused_surface != e->new_surface)
+			wlr_text_input_v3_send_leave(ti);
+		if (!ti->focused_surface && tisameclient(ti, e->new_surface))
+			wlr_text_input_v3_send_enter(ti, e->new_surface);
+	}
+}
+
+void
+imcommit(struct wl_listener *listener, void *data)
+{
+	struct wlr_text_input_v3 *ti = imfocusedti(NULL);
+	if (!ti)
+		return;
+	if (im->current.preedit.text)
+		wlr_text_input_v3_send_preedit_string(ti, im->current.preedit.text,
+				im->current.preedit.cursor_begin, im->current.preedit.cursor_end);
+	if (im->current.commit_text)
+		wlr_text_input_v3_send_commit_string(ti, im->current.commit_text);
+	if (im->current.delete.before_length || im->current.delete.after_length)
+		wlr_text_input_v3_send_delete_surrounding_text(ti,
+				im->current.delete.before_length, im->current.delete.after_length);
+	wlr_text_input_v3_send_done(ti);
+}
+
+void
+imgrabkb(struct wl_listener *listener, void *data)
+{
+	imgrab = data;
+	wlr_input_method_keyboard_grab_v2_set_keyboard(imgrab, &kb_group->wlr_group->keyboard);
+	wl_signal_add(&imgrab->events.destroy, &imgrab_destroy);
+}
+
+void
+imgrabdestroy(struct wl_listener *listener, void *data)
+{
+	wl_list_remove(&imgrab_destroy.link);
+	imgrab = NULL;
+	/* app missed modifier changes during the grab */
+	wlr_seat_keyboard_notify_modifiers(seat, &kb_group->wlr_group->keyboard.modifiers);
+}
+
+void
+imdestroy(struct wl_listener *listener, void *data)
+{
+	wl_list_remove(&im_commit.link);
+	wl_list_remove(&im_grab.link);
+	wl_list_remove(&im_destroy.link);
+	im = NULL;
+}
+
+void
+imnew(struct wl_listener *listener, void *data)
+{
+	if (im) {
+		wlr_input_method_v2_send_unavailable(data);
+		return;
+	}
+	im = data;
+	wl_signal_add(&im->events.commit, &im_commit);
+	wl_signal_add(&im->events.grab_keyboard, &im_grab);
+	wl_signal_add(&im->events.destroy, &im_destroy);
+	if (imfocusedti(NULL))
+		imupdate(NULL);
+}
+
 void
 setup(void)
 {
@@ -2928,6 +3147,11 @@ setup(void)
 	wl_signal_add(&seat->events.request_set_primary_selection, &request_set_psel);
 	wl_signal_add(&seat->events.request_start_drag, &request_start_drag);
 	wl_signal_add(&seat->events.start_drag, &start_drag);
+	wl_signal_add(&seat->keyboard_state.events.focus_change, &kb_focus_change);
+	text_input_mgr = wlr_text_input_manager_v3_create(dpy);
+	wl_signal_add(&text_input_mgr->events.text_input, &new_text_input);
+	input_method_mgr = wlr_input_method_manager_v2_create(dpy);
+	wl_signal_add(&input_method_mgr->events.input_method, &new_input_method);
 
 	kb_group = createkeyboardgroup();
 	wl_list_init(&kb_group->destroy.link);
@@ -2940,6 +3164,16 @@ setup(void)
 
 	status_event_source = wl_event_loop_add_fd(wl_display_get_event_loop(dpy),
 		STDIN_FILENO, WL_EVENT_READABLE, statusin, NULL);
+
+	/* hotkeys-menu.sh writes "<modmask> <keysym>" here to fire a keybind */
+	snprintf(keyfifo, sizeof(keyfifo), "%s/dwl-keys.fifo", getenv("XDG_RUNTIME_DIR"));
+	unlink(keyfifo);
+	if (mkfifo(keyfifo, 0600) == 0) {
+		/* O_RDWR: keep a writer open ourselves so the fifo never hits EOF */
+		int kfd = open(keyfifo, O_RDWR | O_NONBLOCK | O_CLOEXEC);
+		if (kfd >= 0)
+			wl_event_loop_add_fd(event_loop, kfd, WL_EVENT_READABLE, keyfifoin, NULL);
+	}
 
 	/* Make sure XWayland clients don't connect to the parent X server,
 	 * e.g when running in the x11 backend or the wayland backend and the
@@ -3014,6 +3248,21 @@ statusin(int fd, unsigned int mask, void *data)
 	*w = '\0';
 	drawbars();
 
+	return 0;
+}
+
+int
+keyfifoin(int fd, unsigned int mask, void *data)
+{
+	char buf[128], name[64];
+	unsigned int mods;
+	ssize_t n = read(fd, buf, sizeof(buf) - 1);
+
+	if (n <= 0)
+		return 0;
+	buf[n] = '\0';
+	if (sscanf(buf, "%u %63s", &mods, name) == 2)
+		keybinding(mods, xkb_keysym_from_name(name, XKB_KEYSYM_NO_FLAGS));
 	return 0;
 }
 

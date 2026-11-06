@@ -12,7 +12,7 @@ static const unsigned int gappx            = 6;  /* gap pixel between windows */
 static const unsigned int borderpx         = 2;  /* border pixel of windows */
 static const int showbar                   = 1; /* 0 means no bar */
 static const int topbar                    = 1; /* 0 means bottom bar */
-static const char *fonts[]                 = {"JetBrainsMono Nerd Font Mono:style=Bold:size=12"};
+static const char *fonts[]                 = {"JetBrainsMono Nerd Font Mono:style=Bold:size=15"};
 static const float rootcolor[]             = COLOR(0x020202ff);
 /* This conforms to the xdg-protocol. Set the alpha to zero to restore the old behavior */
 static const float fullscreen_bg[]         = {0.0f, 0.0f, 0.0f, 1.0f}; /* You can also use glsl colors */
@@ -39,6 +39,8 @@ static const Rule rules[] = {
 	{ "floatterm",        NULL,       0,            1,           -1 },
 	/* wl-mirror window floats so the monitor-menu mirror option behaves */
 	{ "at.yrlf.wl_mirror",NULL,       0,            1,           -1 },
+	/* file pickers (zed, browsers, etc. via xdg-desktop-portal-gtk) */
+	{ "xdg-desktop-portal-gtk", NULL, 0,          1,           -1 },
     /* default/example rule: can be changed but cannot be eliminated; at least one rule must exist */
 };
 
@@ -58,7 +60,7 @@ static const MonitorRule monrules[] = {
    /* name        mfact  nmaster scale layout       rotate/reflect                x    y
     * example of a HiDPI laptop monitor:
     { "eDP-1",    0.5f,  1,      2,    &layouts[0], WL_OUTPUT_TRANSFORM_NORMAL,   -1,  -1 }, */
-	{ NULL,       0.55f, 1,      1.25f, &layouts[0], WL_OUTPUT_TRANSFORM_NORMAL,  -1,  -1 },
+	{ NULL,       0.55f, 1,      1,     &layouts[0], WL_OUTPUT_TRANSFORM_NORMAL,  -1,  -1 },
 	/* default monitor rule: can be changed but cannot be eliminated; at least one monitor rule must exist */
 };
 
@@ -78,7 +80,7 @@ static const int repeat_delay = 200;
 static const int tap_to_click = 1;
 static const int tap_and_drag = 1;
 static const int drag_lock = 1;
-static const int natural_scrolling = 0;
+static const int natural_scrolling = 1; /* touchpad only, mouse stays normal */
 static const int disable_while_typing = 1;
 static const int left_handed = 0;
 static const int middle_button_emulation = 0;
@@ -108,8 +110,10 @@ static const uint32_t send_events_mode = LIBINPUT_CONFIG_SEND_EVENTS_ENABLED;
 LIBINPUT_CONFIG_ACCEL_PROFILE_FLAT
 LIBINPUT_CONFIG_ACCEL_PROFILE_ADAPTIVE
 */
-static const enum libinput_config_accel_profile accel_profile = LIBINPUT_CONFIG_ACCEL_PROFILE_ADAPTIVE;
-static const double accel_speed = 0.0;
+static const enum libinput_config_accel_profile accel_profile = LIBINPUT_CONFIG_ACCEL_PROFILE_ADAPTIVE; /* touchpad */
+static const double accel_speed = 0.3; /* touchpad */
+static const enum libinput_config_accel_profile mouse_accel_profile = LIBINPUT_CONFIG_ACCEL_PROFILE_FLAT;
+static const double mouse_accel_speed = 0.0;
 
 /* You can choose between:
 LIBINPUT_CONFIG_TAP_MAP_LRM -- 1/2/3 finger tap maps to left/right/middle
@@ -213,6 +217,10 @@ static const Key keys[] = {
 	{ 0,                         XKB_KEY_XF86MonBrightnessDown, spawn, SHCMD("brightnessctl set 5%-") },
 	/* lock screen (dep: swaylock) */
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_x,           spawn,           SHCMD("swaylock -f -c 000000") },
+	/* toggle idle auto lock (swayidle); bar shows coffee icon while off */
+	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_c,           spawn,           SHCMD("dwl-status.sh click 8") },
+	/* hotkey cheatsheet, pick one to run it (dep: fuzzel) */
+	{ MODKEY,                    XKB_KEY_slash,       spawn,           SHCMD("hotkeys-menu.sh") },
 };
 
 static const Button buttons[] = {

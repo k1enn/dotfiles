@@ -27,14 +27,15 @@ fi
 pgrep -f polkit-gnome-authentication-agent-1 >/dev/null \
 	|| /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
-# Input method (Vietnamese/CJK). Env helps XWayland apps; native Wayland uses text-input.
-export GTK_IM_MODULE=fcitx QT_IM_MODULE=fcitx XMODIFIERS=@im=fcitx
-pgrep -x fcitx5 >/dev/null || fcitx5 -d &
+# Scale 1 (sharp text) -> enlarge GTK fonts 1.25x
+gsettings set org.gnome.desktop.interface text-scaling-factor 1.25
 
-# Idle: lock at 5min, lock before sleep (deps: swayidle, swaylock)
-pgrep -x swayidle >/dev/null || swayidle -w \
-	timeout 300 'swaylock -f -c 000000' \
-	before-sleep 'swaylock -f -c 000000' &
+# Input method (Vietnamese/CJK). IM env lives in start-dwl.sh
+# -r replaces a copy D-Bus activated early at login without WAYLAND_DISPLAY (dead IME)
+fcitx5 -d -r &
+
+# Idle auto lock (swayidle cmd lives in dwl-status.sh idle_toggle; MODKEY+Shift+c toggles)
+pgrep -x swayidle >/dev/null || dwl-status.sh click 8
 
 # Notifications
 pgrep -x dunst >/dev/null || dunst &
